@@ -1,0 +1,240 @@
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier}{\section{Multi\-Boost\-:\-:V\-J\-Cascade\-Classifier Class Reference}
+\label{classMultiBoost_1_1VJCascadeClassifier}\index{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}}
+}
+
+
+{\ttfamily \#include $<$V\-J\-Cascade\-Classifier.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1VJCascadeClassifier_a222c036df7f9becf6796558826c19bdc}{V\-J\-Cascade\-Classifier} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args, int verbose=1)
+\item 
+void \hyperlink{classMultiBoost_1_1VJCascadeClassifier_af77b98a8c5a132f4a53f68d0a53ce2c8}{run} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, int num\-Iterations, const string \&out\-Res\-File\-Name=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classMultiBoost_1_1VJCascadeClassifier_a4635aabf0cdfd2c536d2a89c0fd694b2}{print\-Confusion\-Matrix} (const string \&data\-File\-Name, const string \&shyp\-File\-Name)
+\item 
+void \hyperlink{classMultiBoost_1_1VJCascadeClassifier_a5bc2f2a0449709a27c65e930c4e85677}{save\-Confusion\-Matrix} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, const string \&out\-File\-Name)
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_af8a56fdf9882d3685e8439c9789a5f07}{void {\bfseries save\-Posteriors} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, const string \&out\-File\-Name, int num\-Iterations)}\label{classMultiBoost_1_1VJCascadeClassifier_af8a56fdf9882d3685e8439c9789a5f07}
+
+\item 
+void \hyperlink{classMultiBoost_1_1VJCascadeClassifier_a6ec7ef43d142f20a22511612356c4d5a}{output\-Forecast} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, const string \&out\-Res\-File\-Name, vector$<$ \hyperlink{structMultiBoost_1_1CascadeOutputInformation}{Cascade\-Output\-Information} $>$ \&cascade\-Data)
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a6ed3d565dd59a9e953ae1f48fed634f1}{virtual void {\bfseries output\-Header} ()}\label{classMultiBoost_1_1VJCascadeClassifier_a6ed3d565dd59a9e953ae1f48fed634f1}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_aa7b624190b92da1f3556f7bc8e3fdc29}{virtual void {\bfseries output\-Cascade\-Result} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{structMultiBoost_1_1CascadeOutputInformation}{Cascade\-Output\-Information} $>$ \&cascade\-Data)}\label{classMultiBoost_1_1VJCascadeClassifier_aa7b624190b92da1f3556f7bc8e3fdc29}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$ \hyperlink{classMultiBoost_1_1VJCascadeClassifier_a5662bdd86974ffa41e442d78adbfcf50}{load\-Input\-Data} (const string \&data\-File\-Name, const string \&shyp\-File\-Name)
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a765c55e33eb08889d5d93fc2f06161f8}{virtual void {\bfseries update\-Cascade\-Data} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ $>$ \&weak\-Hypotheses, int stagei, const vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&posteriors, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&thresholds, int positive\-Label\-Index, vector$<$ \hyperlink{structMultiBoost_1_1CascadeOutputInformation}{Cascade\-Output\-Information} $>$ \&cascade\-Data)}\label{classMultiBoost_1_1VJCascadeClassifier_a765c55e33eb08889d5d93fc2f06161f8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classMultiBoost_1_1VJCascadeClassifier_a5c9ad0bad3ee3f055a0d48040e512575}{\-\_\-verbose}
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a3bb34f9ca0f58a1bcf5e3d501e4ac201}{const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \& \hyperlink{classMultiBoost_1_1VJCascadeClassifier_a3bb34f9ca0f58a1bcf5e3d501e4ac201}{\-\_\-args}}\label{classMultiBoost_1_1VJCascadeClassifier_a3bb34f9ca0f58a1bcf5e3d501e4ac201}
+
+\begin{DoxyCompactList}\small\item\em The arguments defined by the user. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a3b848c20481145d2cad17756acba1f56}{string \hyperlink{classMultiBoost_1_1VJCascadeClassifier_a3b848c20481145d2cad17756acba1f56}{\-\_\-output\-Info\-File}}\label{classMultiBoost_1_1VJCascadeClassifier_a3b848c20481145d2cad17756acba1f56}
+
+\begin{DoxyCompactList}\small\item\em The filename of the step-\/by-\/step information file that will be updated. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a8d239943188b0fa525ef4b94b5e123b3}{string {\bfseries \-\_\-positive\-Label\-Name}}\label{classMultiBoost_1_1VJCascadeClassifier_a8d239943188b0fa525ef4b94b5e123b3}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a89c62d4d337bc0d34257bbda8890ef69}{int {\bfseries \-\_\-positive\-Label\-Index}}\label{classMultiBoost_1_1VJCascadeClassifier_a89c62d4d337bc0d34257bbda8890ef69}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classify a dataset with Ada\-Boost.\-M\-H learner. Using the strong hypothesis file (shyp.\-xml by default) it builds the list of weak hypothesis (or weak learners), and use them to perform a classification over the given data set. The strong hypothesis is the linear combination of the weak hypotheses and their confidence alpha, and is defined as\-: \[ {\bf g}(x) = \sum_{t=1}^T \alpha^{(t)} {\bf h}^{(t)}(x), \] where the bold defines a vector as returned value. To obtain a single class, we simply take the winning class that receives the \char`\"{}most vote\char`\"{}, that is\-: \[ f(x) = \mathop{\rm arg\, max}_{\ell} g_\ell(x). \] \begin{DoxyDate}{Date}
+15/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 77 of file V\-J\-Cascade\-Classifier.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a222c036df7f9becf6796558826c19bdc}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}!V\-J\-Cascade\-Classifier@{V\-J\-Cascade\-Classifier}}
+\index{V\-J\-Cascade\-Classifier@{V\-J\-Cascade\-Classifier}!MultiBoost::VJCascadeClassifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}}
+\subsubsection[{V\-J\-Cascade\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-V\-J\-Cascade\-Classifier\-::\-V\-J\-Cascade\-Classifier (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args, }
+\item[{int}]{verbose = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1VJCascadeClassifier_a222c036df7f9becf6796558826c19bdc}
+The constructor. It initializes the variable and set them using the information provided by the arguments passed. They are parsed using the helpers provided by class Args. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+{\em verbose} & The level of verbosity \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1VJCascadeClassifier_a5c9ad0bad3ee3f055a0d48040e512575}{\-\_\-verbose} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 55 of file V\-J\-Cascade\-Classifier.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a5662bdd86974ffa41e442d78adbfcf50}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}!load\-Input\-Data@{load\-Input\-Data}}
+\index{load\-Input\-Data@{load\-Input\-Data}!MultiBoost::VJCascadeClassifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}}
+\subsubsection[{load\-Input\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input\-Data} $\ast$ Multi\-Boost\-::\-V\-J\-Cascade\-Classifier\-::load\-Input\-Data (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1VJCascadeClassifier_a5662bdd86974ffa41e442d78adbfcf50}
+Loads the data. It needs the Strong Hypothesis file because it needs the information about the weak learner used to generate it. The weak learner might have associated a special \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} derived class, which is returned by \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{Base\-Learner\-::create\-Input\-Data()} once the weak learner has been identified. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The returned object must be destroyed by the caller. 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 391 of file V\-J\-Cascade\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a6ec7ef43d142f20a22511612356c4d5a}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}!output\-Forecast@{output\-Forecast}}
+\index{output\-Forecast@{output\-Forecast}!MultiBoost::VJCascadeClassifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}}
+\subsubsection[{output\-Forecast}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Classifier\-::output\-Forecast (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{const string \&}]{out\-Res\-File\-Name, }
+\item[{vector$<$ {\bf Cascade\-Output\-Information} $>$ \&}]{cascade\-Data}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1VJCascadeClassifier_a6ec7ef43d142f20a22511612356c4d5a}
+Ouptuts the forecast into a file. 
+
+Definition at line 436 of file V\-J\-Cascade\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a4635aabf0cdfd2c536d2a89c0fd694b2}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}!print\-Confusion\-Matrix@{print\-Confusion\-Matrix}}
+\index{print\-Confusion\-Matrix@{print\-Confusion\-Matrix}!MultiBoost::VJCascadeClassifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}}
+\subsubsection[{print\-Confusion\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Classifier\-::print\-Confusion\-Matrix (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1VJCascadeClassifier_a4635aabf0cdfd2c536d2a89c0fd694b2}
+Print to stdout a nicely formatted confusion matrix. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the list of weak hypotheses that form the strong hypothesis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 249 of file V\-J\-Cascade\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_af77b98a8c5a132f4a53f68d0a53ce2c8}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}!run@{run}}
+\index{run@{run}!MultiBoost::VJCascadeClassifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Classifier\-::run (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{int}]{num\-Iterations, }
+\item[{const string \&}]{out\-Res\-File\-Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1VJCascadeClassifier_af77b98a8c5a132f4a53f68d0a53ce2c8}
+Starts the classification process. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the list of weak hypotheses that form the strong hypothesis. \\
+\hline
+{\em out\-Res\-File\-Name} & The name of the file in which the results of the classification will be saved. \\
+\hline
+{\em num\-Ranks\-Enclosed} & This parameter defines the number of ranks to be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+If {\itshape num\-Ranks\-Enclosed=1}, the only error displayed will be the one in which the $\mathop{\rm arg\, max}_{\ell} g_\ell(x)$ is {\bfseries not} the correct class. 
+
+If {\itshape out\-Res\-File\-Name} is provided, the result of the classification will be saved in a file with the following format\-: \begin{DoxyVerb}1 className
+2 className
+3 className
+...\end{DoxyVerb}
+ If {\itshape --examplelabel} is active the first column of the data file will be used instead of the number of example. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 75 of file V\-J\-Cascade\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a5bc2f2a0449709a27c65e930c4e85677}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}!save\-Confusion\-Matrix@{save\-Confusion\-Matrix}}
+\index{save\-Confusion\-Matrix@{save\-Confusion\-Matrix}!MultiBoost::VJCascadeClassifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}}
+\subsubsection[{save\-Confusion\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Classifier\-::save\-Confusion\-Matrix (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{const string \&}]{out\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1VJCascadeClassifier_a5bc2f2a0449709a27c65e930c4e85677}
+Output to a file a confusion matrix with every element separated by a tab. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the list of weak hypotheses that form the strong hypothesis. \\
+\hline
+{\em out\-File\-Name} & The name of the file in which the confusion matrix will be saved. \\
+\hline
+{\em num\-Iterations} & The number of weak learners to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 255 of file V\-J\-Cascade\-Classifier.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1VJCascadeClassifier_a5c9ad0bad3ee3f055a0d48040e512575}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}!\-\_\-verbose@{\-\_\-verbose}}
+\index{\-\_\-verbose@{\-\_\-verbose}!MultiBoost::VJCascadeClassifier@{Multi\-Boost\-::\-V\-J\-Cascade\-Classifier}}
+\subsubsection[{\-\_\-verbose}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-V\-J\-Cascade\-Classifier\-::\-\_\-verbose\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1VJCascadeClassifier_a5c9ad0bad3ee3f055a0d48040e512575}
+Defines the level of verbosity\-:
+\begin{DoxyItemize}
+\item 0 = no messages
+\item 1 = basic messages
+\item 2 = show all messages 
+\end{DoxyItemize}
+
+Definition at line 176 of file V\-J\-Cascade\-Classifier.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Classifiers/\hyperlink{VJCascadeClassifier_8h}{V\-J\-Cascade\-Classifier.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Classifiers/V\-J\-Cascade\-Classifier.\-cpp\end{DoxyCompactItemize}

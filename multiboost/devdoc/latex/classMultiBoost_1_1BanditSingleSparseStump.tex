@@ -1,0 +1,102 @@
+\hypertarget{classMultiBoost_1_1BanditSingleSparseStump}{
+\section{MultiBoost::BanditSingleSparseStump Class Reference}
+\label{classMultiBoost_1_1BanditSingleSparseStump}\index{MultiBoost::BanditSingleSparseStump@{MultiBoost::BanditSingleSparseStump}}
+}
+
+
+{\ttfamily \#include $<$BanditSingleSparseStump.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1BanditSingleSparseStump_ae74b6227442d0635827a08ac0501d5b0}{$\sim$BanditSingleSparseStump} ()
+\item 
+\hypertarget{classMultiBoost_1_1BanditSingleSparseStump_af7ea75c329631d8ff52e3ed30f8ef39f}{
+virtual void {\bfseries init} ()}
+\label{classMultiBoost_1_1BanditSingleSparseStump_af7ea75c329631d8ff52e3ed30f8ef39f}
+
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1BanditSingleSparseStump_af95646629bcf05b0df1365bff363e3f0}{subCreate} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BanditSingleSparseStump_ac0df8170a157a48d795722624f7772c3}{run} ()
+\item 
+\hypertarget{classMultiBoost_1_1BanditSingleSparseStump_ab8e8082c6f32c18358ca1ce2f4d4e462}{
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries run} (int colIdx)}
+\label{classMultiBoost_1_1BanditSingleSparseStump_ab8e8082c6f32c18358ca1ce2f4d4e462}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\bfseries single} threshold decision stump learner. There is ONE and ONE ONLY threshold here. 
+
+Definition at line 64 of file BanditSingleSparseStump.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1BanditSingleSparseStump_ae74b6227442d0635827a08ac0501d5b0}{
+\index{MultiBoost::BanditSingleSparseStump@{MultiBoost::BanditSingleSparseStump}!$\sim$BanditSingleSparseStump@{$\sim$BanditSingleSparseStump}}
+\index{$\sim$BanditSingleSparseStump@{$\sim$BanditSingleSparseStump}!MultiBoost::BanditSingleSparseStump@{MultiBoost::BanditSingleSparseStump}}
+\subsubsection[{$\sim$BanditSingleSparseStump}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::BanditSingleSparseStump::$\sim$BanditSingleSparseStump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BanditSingleSparseStump_ae74b6227442d0635827a08ac0501d5b0}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 73 of file BanditSingleSparseStump.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1BanditSingleSparseStump_ac0df8170a157a48d795722624f7772c3}{
+\index{MultiBoost::BanditSingleSparseStump@{MultiBoost::BanditSingleSparseStump}!run@{run}}
+\index{run@{run}!MultiBoost::BanditSingleSparseStump@{MultiBoost::BanditSingleSparseStump}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::BanditSingleSparseStump::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BanditSingleSparseStump_ac0df8170a157a48d795722624f7772c3}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 92 of file BanditSingleSparseStump.cpp.
+
+\hypertarget{classMultiBoost_1_1BanditSingleSparseStump_af95646629bcf05b0df1365bff363e3f0}{
+\index{MultiBoost::BanditSingleSparseStump@{MultiBoost::BanditSingleSparseStump}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::BanditSingleSparseStump@{MultiBoost::BanditSingleSparseStump}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::BanditSingleSparseStump::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BanditSingleSparseStump_af95646629bcf05b0df1365bff363e3f0}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 86 of file BanditSingleSparseStump.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{BanditSingleSparseStump_8h}{BanditSingleSparseStump.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/BanditSingleSparseStump.cpp\end{DoxyCompactItemize}

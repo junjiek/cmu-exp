@@ -1,0 +1,540 @@
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner}{\section{Multi\-Boost\-:\-:Soft\-Cascade\-Learner Class Reference}
+\label{classMultiBoost_1_1SoftCascadeLearner}\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+}
+
+
+{\ttfamily \#include $<$Soft\-Cascade\-Learner.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Soft\-Cascade\-Learner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1SoftCascadeLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1SoftCascadeLearner_a5ca76868ff190a12fc3289d1882bcf2f}{Soft\-Cascade\-Learner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_aa6fbd04fc8e89c0195c6d1c02d39e548}{run} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_aa210e0de5f3418cbaaef54a869dd4a7d}{classify} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a7ea7b224b29f8e969446b6caf9f27cb2}{do\-Posteriors} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a694a947eb5192940889aa6f342909bc6}{do\-Confusion\-Matrix} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a716efe648870f74e7051b4d1b4dd835b}{declare\-Base\-Arguments} (\hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_aaebcba9c190f43531f676be41097c316}{get\-Args} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+int \hyperlink{classMultiBoost_1_1SoftCascadeLearner_ad7023d8f1a4642df400bbd7f9cf2c360}{get\-Instance\-Label} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, int i, int positive\-Label\-Index) const 
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a119f02487b1d248263c5ce244aa78bc7}{initialize\-Rejection\-Distribution\-Vector} (const int i\-Number\-Of\-Stages, vector$<$ double $>$ \&o\-Vector)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a753c5089ce5844e409495de229ee27dd}{compute\-Separation\-Span} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, const vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&i\-Posteriors, int positive\-Label\-Index)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_abf4016bdc2072383eba8d58d7996f9ba}{compute\-Posteriors} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&weak\-Hypotheses, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&o\-Posteriors, int positive\-Label\-Index)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_abf5aa83444193d31de96613180fcb0dc}{update\-Posteriors} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$weak\-Hypotheses, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&o\-Posteriors, int positive\-Label\-Index)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a462e01727faa308a58e08466dc1390c0}{find\-Best\-Rejection\-Threshold} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, const vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&i\-Posteriors, const double \&face\-Rejection\-Fraction, double \&o\-Misses\-Fraction)
+\item 
+int \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a52861e2d754a14d4fd4ce4243160d04d}{filter\-Dataset} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, const vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&posteriors, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} threshold, set$<$ int $>$ \&indices)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a3bc1102b9faef5b1177e9ef051cf5f0a}{output\-Header} ()
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a4b44c437226197355a69f92e862755af}{output\-Cascade\-Perf} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $>$ \&out\-Scores)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a22318a7cfbb16b7e6f26991bf2c0886f}{bootstrap\-Training\-Set} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Boot\-Data, set$<$ int $>$ \&indices)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a42f5daa3ec9d2b00e72c8c4eeff04237}{print\-Output\-Info} (\hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} $\ast$p\-Out\-Info, int t, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Test\-Data, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} r)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a6051be1bc49fb0601c3fc5e4fb91091d}{\-\_\-found\-Hypotheses}
+\begin{DoxyCompactList}\small\item\em The list of the hypotheses found. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a2a78d2edb506b231a1df23978f76a7e6}{string \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a2a78d2edb506b231a1df23978f76a7e6}{\-\_\-base\-Learner\-Name}}\label{classMultiBoost_1_1SoftCascadeLearner_a2a78d2edb506b231a1df23978f76a7e6}
+
+\begin{DoxyCompactList}\small\item\em The name of the basic learner used by Ada\-Boost. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a330df7cb13acc64817f3ab629117f4d5}{string \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a330df7cb13acc64817f3ab629117f4d5}{\-\_\-shyp\-File\-Name}}\label{classMultiBoost_1_1SoftCascadeLearner_a330df7cb13acc64817f3ab629117f4d5}
+
+\begin{DoxyCompactList}\small\item\em File name of the strong hypothesis. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_adf21203aac1b7914797186944e972643}{string \hyperlink{classMultiBoost_1_1SoftCascadeLearner_adf21203aac1b7914797186944e972643}{\-\_\-output\-Info\-File}}\label{classMultiBoost_1_1SoftCascadeLearner_adf21203aac1b7914797186944e972643}
+
+\begin{DoxyCompactList}\small\item\em The filename of the step-\/by-\/step information file that will be updated. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_af18bf095df5536a6df2bb20198e2ffde}{string \hyperlink{classMultiBoost_1_1SoftCascadeLearner_af18bf095df5536a6df2bb20198e2ffde}{\-\_\-train\-File\-Name}}\label{classMultiBoost_1_1SoftCascadeLearner_af18bf095df5536a6df2bb20198e2ffde}
+
+\begin{DoxyCompactList}\small\item\em The filename of the input training set file. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a7f87e83c835c9fde033d48fbc65dad7a}{string \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a7f87e83c835c9fde033d48fbc65dad7a}{\-\_\-test\-File\-Name}}\label{classMultiBoost_1_1SoftCascadeLearner_a7f87e83c835c9fde033d48fbc65dad7a}
+
+\begin{DoxyCompactList}\small\item\em The filename of the input test set file. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a342ad3cbbe3222a2aefae680b28ce915}{int \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a342ad3cbbe3222a2aefae680b28ce915}{\-\_\-num\-Iterations}}\label{classMultiBoost_1_1SoftCascadeLearner_a342ad3cbbe3222a2aefae680b28ce915}
+
+\begin{DoxyCompactList}\small\item\em The number of iterations to run the algorithm. \end{DoxyCompactList}\item 
+int \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a4e043a3e930234c2d408230892ec47f5}{\-\_\-verbose}
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_afad4806a216ea5eeaf50e0a7bccea548}{const \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1SoftCascadeLearner_afad4806a216ea5eeaf50e0a7bccea548}{\-\_\-small\-Val}}\label{classMultiBoost_1_1SoftCascadeLearner_afad4806a216ea5eeaf50e0a7bccea548}
+
+\begin{DoxyCompactList}\small\item\em A small value, to solve numeric issues. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a0c4cc1aa2a6dc99f455eaec0a37f2e90}{bool \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a0c4cc1aa2a6dc99f455eaec0a37f2e90}{\-\_\-with\-Constant\-Learner}}\label{classMultiBoost_1_1SoftCascadeLearner_a0c4cc1aa2a6dc99f455eaec0a37f2e90}
+
+\begin{DoxyCompactList}\small\item\em Check or not constant learner in each iteration. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a7136452688512b0fe460a4542164be3b}{string \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a7136452688512b0fe460a4542164be3b}{\-\_\-positive\-Label\-Name}}\label{classMultiBoost_1_1SoftCascadeLearner_a7136452688512b0fe460a4542164be3b}
+
+\begin{DoxyCompactList}\small\item\em The name of the face label in the input examples (provided in command line) \end{DoxyCompactList}\item 
+int \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a2320fe07381d7bf0ea101ff50735ec6e}{\-\_\-positive\-Label\-Index}
+\begin{DoxyCompactList}\small\item\em The index of the face label (. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a9d7d4fff4db6c536d1d2672c14f85402}{ofstream {\bfseries \-\_\-output}}\label{classMultiBoost_1_1SoftCascadeLearner_a9d7d4fff4db6c536d1d2672c14f85402}
+
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a6a264da7f800b97972b4c2ac0b23961f}{int \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a6a264da7f800b97972b4c2ac0b23961f}{\-\_\-sep\-Width}}\label{classMultiBoost_1_1SoftCascadeLearner_a6a264da7f800b97972b4c2ac0b23961f}
+
+\begin{DoxyCompactList}\small\item\em The number of spaces that separate the columns in the output file. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a2aa9de3843fc553b2dec67af66373687}{string {\bfseries \-\_\-train\-Posteriors\-File\-Name}}\label{classMultiBoost_1_1SoftCascadeLearner_a2aa9de3843fc553b2dec67af66373687}
+
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_aac7c63554e3e497e24ba404921835354}{string {\bfseries \-\_\-test\-Posteriors\-File\-Name}}\label{classMultiBoost_1_1SoftCascadeLearner_aac7c63554e3e497e24ba404921835354}
+
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a3ce4c7871038d08fe0c6c7e83420ddbb}{double \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a3ce4c7871038d08fe0c6c7e83420ddbb}{\-\_\-target\-Detection\-Rate}}\label{classMultiBoost_1_1SoftCascadeLearner_a3ce4c7871038d08fe0c6c7e83420ddbb}
+
+\begin{DoxyCompactList}\small\item\em The target true positives rate. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a630f12fd139bb9c85e729395f984f2ec}{double \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a630f12fd139bb9c85e729395f984f2ec}{\-\_\-alpha\-Exponential\-Parameter}}\label{classMultiBoost_1_1SoftCascadeLearner_a630f12fd139bb9c85e729395f984f2ec}
+
+\begin{DoxyCompactList}\small\item\em The parameter of the exponential distribution that shapres the rejection threshold vector. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a6f1bc049f80017bcff26aab6c69e2492}{string \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a6f1bc049f80017bcff26aab6c69e2492}{\-\_\-un\-Calibrated\-Shyp\-File\-Name}}\label{classMultiBoost_1_1SoftCascadeLearner_a6f1bc049f80017bcff26aab6c69e2492}
+
+\begin{DoxyCompactList}\small\item\em The input strong hypothesis to train on. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a8ec7c86d8c8ead0bc5387cc713b76ca7}{bool \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a8ec7c86d8c8ead0bc5387cc713b76ca7}{\-\_\-full\-Run}}\label{classMultiBoost_1_1SoftCascadeLearner_a8ec7c86d8c8ead0bc5387cc713b76ca7}
+
+\begin{DoxyCompactList}\small\item\em Indicates whether we produce first the uncalibrated strong hypothesis and then run the softcascade on the to top of it (not implemented) \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a283842e9d0c1f3ba022c7d5af963a38e}{int \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a283842e9d0c1f3ba022c7d5af963a38e}{\-\_\-in\-Shyp\-Limit}}\label{classMultiBoost_1_1SoftCascadeLearner_a283842e9d0c1f3ba022c7d5af963a38e}
+
+\begin{DoxyCompactList}\small\item\em The number of weak hypotheses read from the input (uncalibrated) shyp file. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a7a2b76e47482bacca3c5716f416d9ec8}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a7a2b76e47482bacca3c5716f416d9ec8}{\-\_\-rejection\-Thresholds}}\label{classMultiBoost_1_1SoftCascadeLearner_a7a2b76e47482bacca3c5716f416d9ec8}
+
+\begin{DoxyCompactList}\small\item\em The rejection found after a weak learner is selected (see the orginial paper) \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_ae86da868d6a33510a6dd98c408d41b34}{double \hyperlink{classMultiBoost_1_1SoftCascadeLearner_ae86da868d6a33510a6dd98c408d41b34}{\-\_\-bootstrap\-Rate}}\label{classMultiBoost_1_1SoftCascadeLearner_ae86da868d6a33510a6dd98c408d41b34}
+
+\begin{DoxyCompactList}\small\item\em The pourcentage of negative examples sampled at each iteration and added to the training set. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_aa5bf9021420be7dfd8e29c6d1f4c78df}{string \hyperlink{classMultiBoost_1_1SoftCascadeLearner_aa5bf9021420be7dfd8e29c6d1f4c78df}{\-\_\-bootstrap\-File\-Name}}\label{classMultiBoost_1_1SoftCascadeLearner_aa5bf9021420be7dfd8e29c6d1f4c78df}
+
+\begin{DoxyCompactList}\small\item\em The name of the bootstrap file \-: a training data set containing the same attributes as the training set and only negatives. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Soft\-Cascade learner. From \char`\"{}\-Robust object detection via soft cascade\char`\"{} This learner takes a strong hypothesis file (by default shyp.\-xml) as input and outputs a embedded-\/cascade like classifier. \hyperlink{}{01/07/2011 }
+
+Definition at line 64 of file Soft\-Cascade\-Learner.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a5ca76868ff190a12fc3289d1882bcf2f}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!Soft\-Cascade\-Learner@{Soft\-Cascade\-Learner}}
+\index{Soft\-Cascade\-Learner@{Soft\-Cascade\-Learner}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{Soft\-Cascade\-Learner}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::\-Soft\-Cascade\-Learner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a5ca76868ff190a12fc3289d1882bcf2f}
+The constructor. \begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 72 of file Soft\-Cascade\-Learner.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a22318a7cfbb16b7e6f26991bf2c0886f}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!bootstrap\-Training\-Set@{bootstrap\-Training\-Set}}
+\index{bootstrap\-Training\-Set@{bootstrap\-Training\-Set}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{bootstrap\-Training\-Set}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::bootstrap\-Training\-Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Boot\-Data, }
+\item[{set$<$ int $>$ \&}]{indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a22318a7cfbb16b7e6f26991bf2c0886f}
+Add sampled negatives to the training set in order to create new false positive (see the paper) 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The training dataset \\
+\hline
+{\em p\-Boot\-Data} & A training set containing only negatives from which false positives are sampled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 340 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_aa210e0de5f3418cbaaef54a869dd4a7d}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!classify@{classify}}
+\index{classify@{classify}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{classify}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::classify (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1SoftCascadeLearner_aa210e0de5f3418cbaaef54a869dd4a7d}
+Performs the classification using the Soft\-Cascadelassifier. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line with all the options for classification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_ad4b2a6aeca5917c841c5747f0bf81e90}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 697 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_abf4016bdc2072383eba8d58d7996f9ba}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!compute\-Posteriors@{compute\-Posteriors}}
+\index{compute\-Posteriors@{compute\-Posteriors}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{compute\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::compute\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Base\-Learner} $\ast$ $>$ \&}]{weak\-Hypotheses, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{o\-Posteriors, }
+\item[{int}]{positive\-Label\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_abf4016bdc2072383eba8d58d7996f9ba}
+Compute the posteriors (the score of the strong learner, sometimes called the predictor) from a set of weak hypotheses \begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 245 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a753c5089ce5844e409495de229ee27dd}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!compute\-Separation\-Span@{compute\-Separation\-Span}}
+\index{compute\-Separation\-Span@{compute\-Separation\-Span}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{compute\-Separation\-Span}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::compute\-Separation\-Span (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{const vector$<$ {\bf Alpha\-Real} $>$ \&}]{i\-Posteriors, }
+\item[{int}]{positive\-Label\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a753c5089ce5844e409495de229ee27dd}
+Compute the balanced edge of a set of weak learners. 
+\begin{DoxyParams}{Parameters}
+{\em i\-Posteriors} & The input posteriors vector of the set of weak learners \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 205 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a716efe648870f74e7051b4d1b4dd835b}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!declare\-Base\-Arguments@{declare\-Base\-Arguments}}
+\index{declare\-Base\-Arguments@{declare\-Base\-Arguments}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{declare\-Base\-Arguments}]{\setlength{\rightskip}{0pt plus 5cm}static void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::declare\-Base\-Arguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a716efe648870f74e7051b4d1b4dd835b}
+Declare argumets specific to Soft\-Cascade algorithm. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 84 of file Soft\-Cascade\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a694a947eb5192940889aa6f342909bc6}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!do\-Confusion\-Matrix@{do\-Confusion\-Matrix}}
+\index{do\-Confusion\-Matrix@{do\-Confusion\-Matrix}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{do\-Confusion\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::do\-Confusion\-Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a694a947eb5192940889aa6f342909bc6}
+Print to stdout (or to file) a confusion matrix. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_a3b9a92fd37fe14cdc56c1b216b4d6889}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 127 of file Soft\-Cascade\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a7ea7b224b29f8e969446b6caf9f27cb2}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!do\-Posteriors@{do\-Posteriors}}
+\index{do\-Posteriors@{do\-Posteriors}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{do\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::do\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a7ea7b224b29f8e969446b6caf9f27cb2}
+Output the outcome of the strong learner for each class. Strictly speaking these are (currently) not posteriors, as the sum of these values is not one. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_adf92c9fd773dab4e960dee744adf3654}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 715 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a52861e2d754a14d4fd4ce4243160d04d}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!filter\-Dataset@{filter\-Dataset}}
+\index{filter\-Dataset@{filter\-Dataset}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{filter\-Dataset}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::filter\-Dataset (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{const vector$<$ {\bf Alpha\-Real} $>$ \&}]{posteriors, }
+\item[{{\bf Alpha\-Real}}]{threshold, }
+\item[{set$<$ int $>$ \&}]{indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a52861e2d754a14d4fd4ce4243160d04d}
+Filter the examples that are below the rejection threshold stage-\/wise. 
+\begin{DoxyParams}{Parameters}
+{\em indices} & The set of example indices that are still used for training \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 316 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a462e01727faa308a58e08466dc1390c0}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!find\-Best\-Rejection\-Threshold@{find\-Best\-Rejection\-Threshold}}
+\index{find\-Best\-Rejection\-Threshold@{find\-Best\-Rejection\-Threshold}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{find\-Best\-Rejection\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::find\-Best\-Rejection\-Threshold (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{const vector$<$ {\bf Alpha\-Real} $>$ \&}]{i\-Posteriors, }
+\item[{const double \&}]{face\-Rejection\-Fraction, }
+\item[{double \&}]{o\-Misses\-Fraction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a462e01727faa308a58e08466dc1390c0}
+Find the rejection threshold that satisfes the rejection distribution vector while discarding the most possible negatives. (see the paper) 
+\begin{DoxyParams}{Parameters}
+{\em face\-Rejection\-Fraction} & The amount of positives that we permit to discard. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 269 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_aaebcba9c190f43531f676be41097c316}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!get\-Args@{get\-Args}}
+\index{get\-Args@{get\-Args}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{get\-Args}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::get\-Args (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_aaebcba9c190f43531f676be41097c316}
+Get the needed parameters (for the strong learner) from the argumens. 
+\begin{DoxyParams}{Parameters}
+{\em The} & arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_ad7023d8f1a4642df400bbd7f9cf2c360}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!get\-Instance\-Label@{get\-Instance\-Label}}
+\index{get\-Instance\-Label@{get\-Instance\-Label}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{get\-Instance\-Label}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::get\-Instance\-Label (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{int}]{i, }
+\item[{int}]{positive\-Label\-Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_ad7023d8f1a4642df400bbd7f9cf2c360}
+Wrapper function to avoid raw/indirect index problems \begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 160 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a119f02487b1d248263c5ce244aa78bc7}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!initialize\-Rejection\-Distribution\-Vector@{initialize\-Rejection\-Distribution\-Vector}}
+\index{initialize\-Rejection\-Distribution\-Vector@{initialize\-Rejection\-Distribution\-Vector}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{initialize\-Rejection\-Distribution\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::initialize\-Rejection\-Distribution\-Vector (
+\begin{DoxyParamCaption}
+\item[{const int}]{i\-Number\-Of\-Stages, }
+\item[{vector$<$ double $>$ \&}]{o\-Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a119f02487b1d248263c5ce244aa78bc7}
+Initialize the per-\/stage rejection allowance of true positives 
+\begin{DoxyParams}{Parameters}
+{\em i\-Number\-Of\-Stages} & The target number of stages (weak classifiers) of the cascade \\
+\hline
+{\em o\-Vector} & The output vector of rejection allowance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 170 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a4b44c437226197355a69f92e862755af}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!output\-Cascade\-Perf@{output\-Cascade\-Perf}}
+\index{output\-Cascade\-Perf@{output\-Cascade\-Perf}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{output\-Cascade\-Perf}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::output\-Cascade\-Perf (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ vector$<$ {\bf Alpha\-Real} $>$ $>$ \&}]{out\-Scores}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a4b44c437226197355a69f92e862755af}
+Ouput the cascade performance (error etc.) 
+\begin{DoxyParams}{Parameters}
+{\em out\-Scores} & A rather general vector that contains some performance information on the examples \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 759 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a3bc1102b9faef5b1177e9ef051cf5f0a}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!output\-Header@{output\-Header}}
+\index{output\-Header@{output\-Header}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{output\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::output\-Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a3bc1102b9faef5b1177e9ef051cf5f0a}
+Output the header to the output file \begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 729 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a42f5daa3ec9d2b00e72c8c4eeff04237}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!print\-Output\-Info@{print\-Output\-Info}}
+\index{print\-Output\-Info@{print\-Output\-Info}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{print\-Output\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::print\-Output\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-Info} $\ast$}]{p\-Out\-Info, }
+\item[{int}]{t, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Test\-Data, }
+\item[{{\bf Base\-Learner} $\ast$}]{p\-Weak\-Hypothesis, }
+\item[{{\bf Alpha\-Real}}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a42f5daa3ec9d2b00e72c8c4eeff04237}
+Print output information if option --outputinfo is specified. \begin{DoxyDate}{Date}
+04/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 649 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_aa6fbd04fc8e89c0195c6d1c02d39e548}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!run@{run}}
+\index{run@{run}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::run (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1SoftCascadeLearner_aa6fbd04fc8e89c0195c6d1c02d39e548}
+Start the learning process. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line with all the options for training. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_a77c75c5cbc867c191b327e5a04e9f147}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 388 of file Soft\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_abf5aa83444193d31de96613180fcb0dc}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!update\-Posteriors@{update\-Posteriors}}
+\index{update\-Posteriors@{update\-Posteriors}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{update\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::update\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{{\bf Base\-Learner} $\ast$}]{weak\-Hypotheses, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{o\-Posteriors, }
+\item[{int}]{positive\-Label\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_abf5aa83444193d31de96613180fcb0dc}
+Upate the posteriors after the addition of a weak hypothesis \begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 230 of file Soft\-Cascade\-Learner.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a6051be1bc49fb0601c3fc5e4fb91091d}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!\-\_\-found\-Hypotheses@{\-\_\-found\-Hypotheses}}
+\index{\-\_\-found\-Hypotheses@{\-\_\-found\-Hypotheses}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{\-\_\-found\-Hypotheses}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Base\-Learner}$\ast$$>$ Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::\-\_\-found\-Hypotheses\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a6051be1bc49fb0601c3fc5e4fb91091d}
+
+
+The list of the hypotheses found. 
+
+Update the posteriors table inside \hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info}. This design was choosen because the cascade structure necessitate a particular posterior updating. \begin{DoxyDate}{Date}
+04/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 231 of file Soft\-Cascade\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a2320fe07381d7bf0ea101ff50735ec6e}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!\-\_\-positive\-Label\-Index@{\-\_\-positive\-Label\-Index}}
+\index{\-\_\-positive\-Label\-Index@{\-\_\-positive\-Label\-Index}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{\-\_\-positive\-Label\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::\-\_\-positive\-Label\-Index\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a2320fe07381d7bf0ea101ff50735ec6e}
+
+
+The index of the face label (. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1NameMap}{Name\-Map}) 
+\end{DoxySeeAlso}
+
+
+Definition at line 255 of file Soft\-Cascade\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeLearner_a4e043a3e930234c2d408230892ec47f5}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Learner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}!\-\_\-verbose@{\-\_\-verbose}}
+\index{\-\_\-verbose@{\-\_\-verbose}!MultiBoost::SoftCascadeLearner@{Multi\-Boost\-::\-Soft\-Cascade\-Learner}}
+\subsubsection[{\-\_\-verbose}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Soft\-Cascade\-Learner\-::\-\_\-verbose\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeLearner_a4e043a3e930234c2d408230892ec47f5}
+Verbose level. There are three levels of verbosity\-:
+\begin{DoxyItemize}
+\item 0 = no messages
+\item 1 = basic messages
+\item 2 = show all messages 
+\end{DoxyItemize}
+
+Definition at line 249 of file Soft\-Cascade\-Learner.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/Soft\-Cascade\-Learner.\-h\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/Soft\-Cascade\-Learner.\-cpp\end{DoxyCompactItemize}

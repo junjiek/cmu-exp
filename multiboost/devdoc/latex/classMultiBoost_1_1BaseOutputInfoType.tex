@@ -1,0 +1,135 @@
+\hypertarget{classMultiBoost_1_1BaseOutputInfoType}{\section{Multi\-Boost\-:\-:Base\-Output\-Info\-Type Class Reference}
+\label{classMultiBoost_1_1BaseOutputInfoType}\index{Multi\-Boost\-::\-Base\-Output\-Info\-Type@{Multi\-Boost\-::\-Base\-Output\-Info\-Type}}
+}
+
+
+{\ttfamily \#include $<$Output\-Info.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Base\-Output\-Info\-Type\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classMultiBoost_1_1BaseOutputInfoType}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1BaseOutputInfoType_ae36d8cf7aea735d6d250910154326c92}{{\bfseries Base\-Output\-Info\-Type} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)}\label{classMultiBoost_1_1BaseOutputInfoType_ae36d8cf7aea735d6d250910154326c92}
+
+\item 
+\hypertarget{classMultiBoost_1_1BaseOutputInfoType_a8037cd83c1f85ebcb2eefa8501e705de}{virtual void {\bfseries compute\-And\-Output} (ostream \&out\-Stream, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \&g\-Table\-Map, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \&margins\-Table\-Map, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&alpha\-Sums, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis=0)=0}\label{classMultiBoost_1_1BaseOutputInfoType_a8037cd83c1f85ebcb2eefa8501e705de}
+
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseOutputInfoType_aec8678cadeec12db720af8b482c63662}{output\-Header} (ostream \&out\-Stream, const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&namemap)=0
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseOutputInfoType_aa2f886100b21c8cf09d5dddc9e4d1dca}{output\-Description} (ostream \&out\-Stream)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1BaseOutputInfoType_a099fffb75ac734da9bb014590d4b7b7c}{get\-Output\-History} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, int iteration)
+\item 
+\hypertarget{classMultiBoost_1_1BaseOutputInfoType_a534836b4bcbc753e8f9c5b349d0cfc64}{virtual O\-U\-T\-P\-U\-T\-I\-N\-F\-O\-\_\-\-O\-P\-T\-I\-M\-I\-Z\-A\-T\-I\-O\-N {\bfseries get\-Optim\-Type} ()}\label{classMultiBoost_1_1BaseOutputInfoType_a534836b4bcbc753e8f9c5b349d0cfc64}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1BaseOutputInfoType_af71d1583812f0fbc2fc41e88977f532d}{static \hyperlink{classMultiBoost_1_1BaseOutputInfoType}{Base\-Output\-Info\-Type} $\ast$ {\bfseries create\-Output} (string type, const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} $\ast$args=N\-U\-L\-L)}\label{classMultiBoost_1_1BaseOutputInfoType_af71d1583812f0fbc2fc41e88977f532d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1BaseOutputInfoType_a157929472287a1dc8527153800453b98}{map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, vector\\*
+$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $>$ {\bfseries \-\_\-output\-History}}\label{classMultiBoost_1_1BaseOutputInfoType_a157929472287a1dc8527153800453b98}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The elementary output information. For the most basic one is Ouput\-Error\-Info. This class is a factory, it creates the different outputs the user specifies in the command line. So adding a new type of output only necessitate to inherit from this class, implement the pure virtual methods and to update the creation method (see further). Please note that the subclasses can use the information on the posteriors and the margin that \hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} handle and they {\bfseries dont} need to update them. Moreover, they can implement specific structures which they will responsible to update.
+
+\begin{DoxyDate}{Date}
+17/06/2011 
+\end{DoxyDate}
+
+
+Definition at line 353 of file Output\-Info.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1BaseOutputInfoType_a099fffb75ac734da9bb014590d4b7b7c}{\index{Multi\-Boost\-::\-Base\-Output\-Info\-Type@{Multi\-Boost\-::\-Base\-Output\-Info\-Type}!get\-Output\-History@{get\-Output\-History}}
+\index{get\-Output\-History@{get\-Output\-History}!MultiBoost::BaseOutputInfoType@{Multi\-Boost\-::\-Base\-Output\-Info\-Type}}
+\subsubsection[{get\-Output\-History}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Base\-Output\-Info\-Type\-::get\-Output\-History (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{int}]{iteration}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1BaseOutputInfoType_a099fffb75ac734da9bb014590d4b7b7c}
+For specific cases (like cascades), the output info needs to keep extra information. This method updates the internal structure \-\_\-specific\-Info. It is left very generic on purpose. 
+\begin{DoxyParams}{Parameters}
+{\em type} & The name of the info to be updated, it is highly recommanded to prefix this name by an abreviation of the class name. \\
+\hline
+{\em value} & The value to be added/updated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+05/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 408 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1BaseOutputInfoType_aa2f886100b21c8cf09d5dddc9e4d1dca}{\index{Multi\-Boost\-::\-Base\-Output\-Info\-Type@{Multi\-Boost\-::\-Base\-Output\-Info\-Type}!output\-Description@{output\-Description}}
+\index{output\-Description@{output\-Description}!MultiBoost::BaseOutputInfoType@{Multi\-Boost\-::\-Base\-Output\-Info\-Type}}
+\subsubsection[{output\-Description}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Base\-Output\-Info\-Type\-::output\-Description (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out\-Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1BaseOutputInfoType_aa2f886100b21c8cf09d5dddc9e4d1dca}
+Print a detailed description of the output. 
+\begin{DoxyParams}{Parameters}
+{\em out\-Stream} & The stream where the output is directed to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+12/12/2012 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1PosteriorsOutput_a024bc0a2baf3baddb5d62b19e677d875}{Multi\-Boost\-::\-Posteriors\-Output}, \hyperlink{classMultiBoost_1_1VJCascadeOutput_afa0b1cf483fd4d20ee93e7688fce0b94}{Multi\-Boost\-::\-V\-J\-Cascade\-Output}, \hyperlink{classMultiBoost_1_1SoftCascadeOutput_ab1774f3f89e45bdde27936f890640065}{Multi\-Boost\-::\-Soft\-Cascade\-Output}, \hyperlink{classMultiBoost_1_1TPRFPROutput_a61a6265361d9a9c74b772f513b7caa21}{Multi\-Boost\-::\-T\-P\-R\-F\-P\-R\-Output}, \hyperlink{classMultiBoost_1_1AUCOutput_a3a85dceee25d28bd4604654faa92e7e4}{Multi\-Boost\-::\-A\-U\-C\-Output}, \hyperlink{classMultiBoost_1_1MarginsOutput_a18adec2c41eb2e097ea0bbeef83a9d6d}{Multi\-Boost\-::\-Margins\-Output}, \hyperlink{classMultiBoost_1_1MAEOuput_a6583e24280a47504100247cc749fc44b}{Multi\-Boost\-::\-M\-A\-E\-Ouput}, \hyperlink{classMultiBoost_1_1BalancedErrorOutput_ace3ff3e4eeb7f7a1697e914963c85e40}{Multi\-Boost\-::\-Balanced\-Error\-Output}, \hyperlink{classMultiBoost_1_1WeightedErrorOutput_ab01deac10cc19d323e6678563e0d863f}{Multi\-Boost\-::\-Weighted\-Error\-Output}, \hyperlink{classMultiBoost_1_1WeightedHammingErrorOutput_ac90950e8768eb62a53ecc01c586ce640}{Multi\-Boost\-::\-Weighted\-Hamming\-Error\-Output}, \hyperlink{classMultiBoost_1_1HammingErrorOutput_af51438a81864b9512648621e993571fb}{Multi\-Boost\-::\-Hamming\-Error\-Output}, \hyperlink{classMultiBoost_1_1WeightedZeroOneErrorOutput_aec75d32d115c03d52f281fd4c47e3478}{Multi\-Boost\-::\-Weighted\-Zero\-One\-Error\-Output}, \hyperlink{classMultiBoost_1_1ZeroOneErrorOutput_ae18378766ab4ca425c79bb58f1688cf2}{Multi\-Boost\-::\-Zero\-One\-Error\-Output}, and \hyperlink{classMultiBoost_1_1RestrictedZeroOneError_a6ed82c03ced104c414a8994b869f5693}{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error}.
+
+
+
+Definition at line 392 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1BaseOutputInfoType_aec8678cadeec12db720af8b482c63662}{\index{Multi\-Boost\-::\-Base\-Output\-Info\-Type@{Multi\-Boost\-::\-Base\-Output\-Info\-Type}!output\-Header@{output\-Header}}
+\index{output\-Header@{output\-Header}!MultiBoost::BaseOutputInfoType@{Multi\-Boost\-::\-Base\-Output\-Info\-Type}}
+\subsubsection[{output\-Header}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Base\-Output\-Info\-Type\-::output\-Header (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out\-Stream, }
+\item[{const {\bf Name\-Map} \&}]{namemap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classMultiBoost_1_1BaseOutputInfoType_aec8678cadeec12db720af8b482c63662}
+Print the header 
+\begin{DoxyParams}{Parameters}
+{\em out\-Stream} & The stream where the output is directed to \\
+\hline
+{\em namemap} & The structure that contains the class information ( \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} ) 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+17/06/2011 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1PosteriorsOutput_a5ee6d5fdf51f7fb3fbe4dc4ef2e7d6de}{Multi\-Boost\-::\-Posteriors\-Output}, \hyperlink{classMultiBoost_1_1VJCascadeOutput_a294c3882cdca5e62f52358d40c7ed156}{Multi\-Boost\-::\-V\-J\-Cascade\-Output}, \hyperlink{classMultiBoost_1_1SoftCascadeOutput_a6af5a3af1f5ecee45ded3db7ce982b41}{Multi\-Boost\-::\-Soft\-Cascade\-Output}, \hyperlink{classMultiBoost_1_1TPRFPROutput_a15b115b85bd48dfcf885b7c72242b46b}{Multi\-Boost\-::\-T\-P\-R\-F\-P\-R\-Output}, \hyperlink{classMultiBoost_1_1AUCOutput_aaad068a71360d488028ba2fec82eaa97}{Multi\-Boost\-::\-A\-U\-C\-Output}, \hyperlink{classMultiBoost_1_1EdgeOutput_abfdaafbb0ce5c69b82342ec1277e4e0c}{Multi\-Boost\-::\-Edge\-Output}, \hyperlink{classMultiBoost_1_1MarginsOutput_a657597f9a22c2628f8fb1110e1625a8c}{Multi\-Boost\-::\-Margins\-Output}, \hyperlink{classMultiBoost_1_1MAEOuput_aea5df1d89f3ea04e20c5b7c2b4604d72}{Multi\-Boost\-::\-M\-A\-E\-Ouput}, \hyperlink{classMultiBoost_1_1BalancedErrorOutput_a8a88ddc687b1d6f04a9720f54f249efa}{Multi\-Boost\-::\-Balanced\-Error\-Output}, \hyperlink{classMultiBoost_1_1WeightedErrorOutput_a389ffaa0bfa49309aca3d8fd9a0e819b}{Multi\-Boost\-::\-Weighted\-Error\-Output}, \hyperlink{classMultiBoost_1_1WeightedHammingErrorOutput_a0d0b87220af1d5db7a4422181eac7073}{Multi\-Boost\-::\-Weighted\-Hamming\-Error\-Output}, \hyperlink{classMultiBoost_1_1HammingErrorOutput_ae5cb9388a296ca15feedcf79ef002466}{Multi\-Boost\-::\-Hamming\-Error\-Output}, \hyperlink{classMultiBoost_1_1WeightedZeroOneErrorOutput_af3bb173deec1f443a8f1b8c9d709e269}{Multi\-Boost\-::\-Weighted\-Zero\-One\-Error\-Output}, \hyperlink{classMultiBoost_1_1ZeroOneErrorOutput_aec8b0221c76cccdd34e2b5905a8bf549}{Multi\-Boost\-::\-Zero\-One\-Error\-Output}, and \hyperlink{classMultiBoost_1_1RestrictedZeroOneError_a5b9ed19e09af40702ca62c79477cfc96}{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{OutputInfo_8h}{Output\-Info.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Output\-Info.\-cpp\end{DoxyCompactItemize}

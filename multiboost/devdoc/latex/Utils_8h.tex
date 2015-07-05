@@ -1,0 +1,77 @@
+\hypertarget{Utils_8h}{\section{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Utils/\-Utils.h File Reference}
+\label{Utils_8h}\index{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Utils/\-Utils.\-h@{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Utils/\-Utils.\-h}}
+}
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$locale$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include \char`\"{}Defaults.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnor__utils_1_1Rect}{nor\-\_\-utils\-::\-Rect}
+\item 
+struct \hyperlink{structnor__utils_1_1white__spaces}{nor\-\_\-utils\-::white\-\_\-spaces}
+\item 
+struct \hyperlink{structcomparePair}{compare\-Pair$<$ N, T1, T2, Pred $>$}
+\item 
+struct \hyperlink{structnor__utils_1_1comparePair_3_011_00_01T1_00_01T2_00_01Pred_01_4}{nor\-\_\-utils\-::compare\-Pair$<$ 1, T1, T2, Pred $>$}
+\item 
+struct \hyperlink{structnor__utils_1_1comparePair_3_012_00_01T1_00_01T2_00_01Pred_01_4}{nor\-\_\-utils\-::compare\-Pair$<$ 2, T1, T2, Pred $>$}
+\item 
+struct \hyperlink{structcomparePairP}{compare\-Pair\-P$<$ N, T1, T2, Pred $>$}
+\item 
+struct \hyperlink{structnor__utils_1_1comparePairP_3_011_00_01T1_00_01T2_00_01Pred_01_4}{nor\-\_\-utils\-::compare\-Pair\-P$<$ 1, T1, T2, Pred $>$}
+\item 
+struct \hyperlink{structnor__utils_1_1comparePairP_3_012_00_01T1_00_01T2_00_01Pred_01_4}{nor\-\_\-utils\-::compare\-Pair\-P$<$ 2, T1, T2, Pred $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries nor\-\_\-utils\-::get\-Escape\-Sequence} (const string \&in\-Str)
+\item 
+void {\bfseries nor\-\_\-utils\-::skip\-\_\-line} (istream \&in\-File, int n\-Lines)
+\item 
+string {\bfseries nor\-\_\-utils\-::add\-And\-Check\-Extension} (const string \&file, const string \&extension)
+\item 
+string {\bfseries nor\-\_\-utils\-::trim} (const string \&str)
+\item 
+\hypertarget{namespacenor__utils_a1737491986cb3c53908e39e1962efcfa}{string {\bfseries nor\-\_\-utils\-::int2string} (const int i)}\label{namespacenor__utils_a1737491986cb3c53908e39e1962efcfa}
+
+\item 
+bool {\bfseries nor\-\_\-utils\-::cmp\-\_\-nocase} (const string \&s1, const string \&s2)
+\item 
+size\-\_\-t {\bfseries nor\-\_\-utils\-::count\-\_\-columns} (istream \&in)
+\item 
+size\-\_\-t {\bfseries nor\-\_\-utils\-::count\-\_\-rows} (istream \&in, bool from\-\_\-start)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries nor\-\_\-utils\-::is\-\_\-zero} (T val, T small\-Val=1\-E-\/10)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries nor\-\_\-utils\-::normalize\-Length\-Of\-Vector} (vector$<$ T $>$ \&vec)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries nor\-\_\-utils\-::innner\-Product} (vector$<$ T $>$ \&vec1, vector$<$ T $>$ \&vec2)
+\item 
+bool {\bfseries nor\-\_\-utils\-::is\-\_\-number} (const string \&str)
+\item 
+string {\bfseries nor\-\_\-utils\-::get\-Alphanumeric} (int num)
+\item 
+size\-\_\-t {\bfseries nor\-\_\-utils\-::get\-File\-Size} (ifstream \&in)
+\item 
+{\footnotesize template$<$typename T $>$ }\\char {\bfseries nor\-\_\-utils\-::sign} (T val)
+\item 
+\hypertarget{namespacenor__utils_a7de7dd09bb41ea687eb24cfe9ff86a1a}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} {\bfseries nor\-\_\-utils\-::get\-R\-O\-C} (vector$<$ pair$<$ int, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $>$ \&data)}\label{namespacenor__utils_a7de7dd09bb41ea687eb24cfe9ff86a1a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Some useful functions. 
+
+Definition in file \hyperlink{Utils_8h_source}{Utils.\-h}.
+

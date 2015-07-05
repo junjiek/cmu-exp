@@ -1,0 +1,334 @@
+\hypertarget{classMultiBoost_1_1SelectorLearner}{
+\section{MultiBoost::SelectorLearner Class Reference}
+\label{classMultiBoost_1_1SelectorLearner}\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+}
+
+
+{\ttfamily \#include $<$SelectorLearner.h$>$}
+
+Inheritance diagram for MultiBoost::SelectorLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classMultiBoost_1_1SelectorLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1SelectorLearner_a59a1d1361ebdc31ad0b45195f7beb51e}{$\sim$SelectorLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1SelectorLearner_a726c67bf94e15eed8de4b55ee587d5e8}{subCreate} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SelectorLearner_aa6cb50a286800554328ba1edbeadc695}{run} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SelectorLearner_a4a1fdd54afebce2b2917eaa638e21ca2}{run} (int colIdx)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SelectorLearner_a1d51fa000c5b04e5ed52dcb8f2981e5a}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SelectorLearner_a6a5b322170c0d52c90219a87815c8d97}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SelectorLearner_aac96f1fddd89c6382240fc7d0ddae478}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SelectorLearner_a52ec1291a8c524c62c7ce633bdc35b20}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SelectorLearner_a1feb0d8989f532ef9336b89919e7c67f}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val, int classIdx) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SelectorLearner_a7aa861aa139b3a4747515f3796fafad9}{cut} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1SelectorLearner_a1e4e129fb68462ec2f404151a00f6f9f}{
+int {\bfseries \_\-positiveIdxOfArrayU}}
+\label{classMultiBoost_1_1SelectorLearner_a1e4e129fb68462ec2f404151a00f6f9f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\bfseries single} threshold decision stump learner. There is ONE and ONE ONLY threshold here. 
+
+Definition at line 60 of file SelectorLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1SelectorLearner_a59a1d1361ebdc31ad0b45195f7beb51e}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!$\sim$SelectorLearner@{$\sim$SelectorLearner}}
+\index{$\sim$SelectorLearner@{$\sim$SelectorLearner}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{$\sim$SelectorLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::SelectorLearner::$\sim$SelectorLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_a59a1d1361ebdc31ad0b45195f7beb51e}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 70 of file SelectorLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1SelectorLearner_a7aa861aa139b3a4747515f3796fafad9}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!cut@{cut}}
+\index{cut@{cut}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{cut}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::SelectorLearner::cut (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_a7aa861aa139b3a4747515f3796fafad9}
+A simple cut on a feature. This simple function is needed for \hyperlink{classMultiBoost_1_1TreeLearner}{TreeLearner}. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The input data. \\
+\hline
+{\em idx} & The index of the data point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if the correspinding value of pData\mbox{[}idx\mbox{]}\mbox{[}\_\-selectedColumn\mbox{]} in array \_\-u is positive and -\/1 otherwise. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+21/07/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1ScalarLearner_a8d52e02fc7664ecdc5fd0b14b04a985e}{MultiBoost::ScalarLearner}.
+
+
+
+Definition at line 156 of file SelectorLearner.h.
+
+\hypertarget{classMultiBoost_1_1SelectorLearner_a6a5b322170c0d52c90219a87815c8d97}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!load@{load}}
+\index{load@{load}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SelectorLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_a6a5b322170c0d52c90219a87815c8d97}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1SelectorLearner_a1d51fa000c5b04e5ed52dcb8f2981e5a}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 212 of file SelectorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SelectorLearner_a1feb0d8989f532ef9336b89919e7c67f}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::SelectorLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_a1feb0d8989f532ef9336b89919e7c67f}
+A scalar discriminative function. 
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate, it is interpreted in the \_\-selectedColumn'th feature \\
+\hline
+{\em classIdx} & The class index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a76a3ea26da7434ebb2b48415cc83fa12}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 146 of file SelectorLearner.h.
+
+\hypertarget{classMultiBoost_1_1SelectorLearner_a52ec1291a8c524c62c7ce633bdc35b20}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SelectorLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_a52ec1291a8c524c62c7ce633bdc35b20}
+A discriminative function. \begin{DoxyRemark}{Remarks}
+Positive or negative do NOT refer to positive or negative classification. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}(int)val\mbox{]} 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+\end{DoxySeeAlso}
+
+
+Definition at line 189 of file SelectorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SelectorLearner_aa6cb50a286800554328ba1edbeadc695}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!run@{run}}
+\index{run@{run}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SelectorLearner::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_aa6cb50a286800554328ba1edbeadc695}
+Run the learner to build the classifier on the given data. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/05/2007 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 46 of file SelectorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SelectorLearner_a4a1fdd54afebce2b2917eaa638e21ca2}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!run@{run}}
+\index{run@{run}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SelectorLearner::run (
+\begin{DoxyParamCaption}
+\item[{int}]{colIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_a4a1fdd54afebce2b2917eaa638e21ca2}
+Run the learner to build the classifier using only one single feature from the given data. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{FeaturewiseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/05/2009 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 178 of file SelectorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SelectorLearner_a1d51fa000c5b04e5ed52dcb8f2981e5a}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!save@{save}}
+\index{save@{save}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SelectorLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_a1d51fa000c5b04e5ed52dcb8f2981e5a}
+Save the current object information needed for classification, that is the \_\-u vector. 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+21/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 201 of file SelectorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SelectorLearner_aac96f1fddd89c6382240fc7d0ddae478}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SelectorLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_aac96f1fddd89c6382240fc7d0ddae478}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1SelectorLearner_aac96f1fddd89c6382240fc7d0ddae478}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1SelectorLearner_a1d51fa000c5b04e5ed52dcb8f2981e5a}{save} 
+
+\hyperlink{classMultiBoost_1_1SelectorLearner_a6a5b322170c0d52c90219a87815c8d97}{load} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 223 of file SelectorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SelectorLearner_a726c67bf94e15eed8de4b55ee587d5e8}{
+\index{MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::SelectorLearner@{MultiBoost::SelectorLearner}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::SelectorLearner::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SelectorLearner_a726c67bf94e15eed8de4b55ee587d5e8}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+21/05/2007 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 78 of file SelectorLearner.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{SelectorLearner_8h}{SelectorLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/SelectorLearner.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,357 @@
+\hypertarget{classMultiBoost_1_1ProductLearner}{
+\section{MultiBoost::ProductLearner Class Reference}
+\label{classMultiBoost_1_1ProductLearner}\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+}
+
+
+{\ttfamily \#include $<$ProductLearner.h$>$}
+
+Inheritance diagram for MultiBoost::ProductLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1ProductLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1ProductLearner_acea7edd1153d8737f1cdb830fc1ef234}{ProductLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1ProductLearner_a5a46d8f7e414df67bd65ec5a2b7ed7f6}{$\sim$ProductLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$ \hyperlink{classMultiBoost_1_1ProductLearner_a46f134cfe65e2af6cb6586db5c3bcd94}{createInputData} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ProductLearner_ad24d70df2c31dcf3b50f08b3185e70c6}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ProductLearner_a989a5e499888f109046acfa5a4edf90a}{initLearningOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1ProductLearner_ae47d69c6e4bbed0d773ee4f87e44d386}{subCreate} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{run} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1ProductLearner_a6ebf313eddcc25f3759aff180b78d919}{classify} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx, int classIdx)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ProductLearner_a98a8d98a95aa5f6ed736c55d1d2b866f}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ProductLearner_a8c6ccbf794ed15b2ae4fa5b6764b3c7f}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ProductLearner_af97192ceef5dcdcaa2a2d1fe7c722cb7}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1ProductLearner_a8e082a80e0c4a0c374ef6ace729aef57}{
+vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ $>$ \hyperlink{classMultiBoost_1_1ProductLearner_a8e082a80e0c4a0c374ef6ace729aef57}{\_\-baseLearners}}
+\label{classMultiBoost_1_1ProductLearner_a8e082a80e0c4a0c374ef6ace729aef57}
+
+\begin{DoxyCompactList}\small\item\em the learners of the product \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1ProductLearner_a96ab7bccfd4581e1928a630255e10124}{
+int {\bfseries \_\-numBaseLearners}}
+\label{classMultiBoost_1_1ProductLearner_a96ab7bccfd4581e1928a630255e10124}
+
+\item 
+\hypertarget{classMultiBoost_1_1ProductLearner_a27a48e44904e8aac9e7fcd5cde960743}{
+vector$<$ vector$<$ char $>$ $>$ \hyperlink{classMultiBoost_1_1ProductLearner_a27a48e44904e8aac9e7fcd5cde960743}{\_\-savedLabels}}
+\label{classMultiBoost_1_1ProductLearner_a27a48e44904e8aac9e7fcd5cde960743}
+
+\begin{DoxyCompactList}\small\item\em original labels saved before run \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A learner that loads a set of base learners, and boosts on the top of them. 
+
+Definition at line 60 of file ProductLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1ProductLearner_acea7edd1153d8737f1cdb830fc1ef234}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!ProductLearner@{ProductLearner}}
+\index{ProductLearner@{ProductLearner}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{ProductLearner}]{\setlength{\rightskip}{0pt plus 5cm}MultiBoost::ProductLearner::ProductLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_acea7edd1153d8737f1cdb830fc1ef234}
+The constructor. It initializes \_\-numBaseLearners to -\/1 \begin{DoxyDate}{Date}
+26/05/2007 
+\end{DoxyDate}
+
+
+Definition at line 69 of file ProductLearner.h.
+
+\hypertarget{classMultiBoost_1_1ProductLearner_a5a46d8f7e414df67bd65ec5a2b7ed7f6}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!$\sim$ProductLearner@{$\sim$ProductLearner}}
+\index{$\sim$ProductLearner@{$\sim$ProductLearner}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{$\sim$ProductLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::ProductLearner::$\sim$ProductLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_a5a46d8f7e414df67bd65ec5a2b7ed7f6}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 75 of file ProductLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1ProductLearner_a6ebf313eddcc25f3759aff180b78d919}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!classify@{classify}}
+\index{classify@{classify}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{classify}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::ProductLearner::classify (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_a6ebf313eddcc25f3759aff180b78d919}
+Return the classification using the learned classifier. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data \\
+\hline
+{\em idx} & The index of the example to classify \\
+\hline
+{\em classIdx} & The index of the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Passing the data and the index to the example is not nice at all. This will soon be replace with the passing of the example itself in some form (probably a structure to the example). 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+the classification using the learned classifier. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 85 of file ProductLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ProductLearner_a46f134cfe65e2af6cb6586db5c3bcd94}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!createInputData@{createInputData}}
+\index{createInputData@{createInputData}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{createInputData}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf InputData}$\ast$ MultiBoost::ProductLearner::createInputData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_a46f134cfe65e2af6cb6586db5c3bcd94}
+Creates an \hyperlink{classMultiBoost_1_1InputData}{InputData} object using the base learner's createInputData. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1InputData}{InputData} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 85 of file ProductLearner.h.
+
+\hypertarget{classMultiBoost_1_1ProductLearner_ad24d70df2c31dcf3b50f08b3185e70c6}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::ProductLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_ad24d70df2c31dcf3b50f08b3185e70c6}
+Declare weak-\/learner-\/specific arguments. adding -\/-\/baselearnertype 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_ab67f4944b1967c7141982b5d47720620}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 50 of file ProductLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ProductLearner_a989a5e499888f109046acfa5a4edf90a}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!initLearningOptions@{initLearningOptions}}
+\index{initLearningOptions@{initLearningOptions}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{initLearningOptions}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::ProductLearner::initLearningOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_a989a5e499888f109046acfa5a4edf90a}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_ad124cba3e0d39493bb731fe362a38e2a}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 64 of file ProductLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ProductLearner_a8c6ccbf794ed15b2ae4fa5b6764b3c7f}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!load@{load}}
+\index{load@{load}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::ProductLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_a8c6ccbf794ed15b2ae4fa5b6764b3c7f}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1ProductLearner_a98a8d98a95aa5f6ed736c55d1d2b866f}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_aab8bdddad2c32654a2e77bbaac79345d}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 230 of file ProductLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!run@{run}}
+\index{run@{run}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::ProductLearner::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}
+Run the learner to build the classifier on the given data. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 95 of file ProductLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ProductLearner_a98a8d98a95aa5f6ed736c55d1d2b866f}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!save@{save}}
+\index{save@{save}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::ProductLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_a98a8d98a95aa5f6ed736c55d1d2b866f}
+Save the current object information needed for classification, that is the single threshold. 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{BaseLearner::save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 216 of file ProductLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ProductLearner_af97192ceef5dcdcaa2a2d1fe7c722cb7}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::ProductLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_af97192ceef5dcdcaa2a2d1fe7c722cb7}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1ProductLearner_a6ebf313eddcc25f3759aff180b78d919}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1ProductLearner_af97192ceef5dcdcaa2a2d1fe7c722cb7}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1ProductLearner_a98a8d98a95aa5f6ed736c55d1d2b866f}{save} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a8c6ccbf794ed15b2ae4fa5b6764b3c7f}{load} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a6ebf313eddcc25f3759aff180b78d919}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 244 of file ProductLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ProductLearner_ae47d69c6e4bbed0d773ee4f87e44d386}{
+\index{MultiBoost::ProductLearner@{MultiBoost::ProductLearner}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::ProductLearner@{MultiBoost::ProductLearner}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::ProductLearner::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ProductLearner_ae47d69c6e4bbed0d773ee4f87e44d386}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 110 of file ProductLearner.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{ProductLearner_8h}{ProductLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/ProductLearner.cpp\end{DoxyCompactItemize}

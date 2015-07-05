@@ -1,0 +1,319 @@
+\hypertarget{classMultiBoost_1_1BanditLearner}{
+\section{MultiBoost::BanditLearner Class Reference}
+\label{classMultiBoost_1_1BanditLearner}\index{MultiBoost::BanditLearner@{MultiBoost::BanditLearner}}
+}
+Inheritance diagram for MultiBoost::BanditLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1BanditLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1BanditLearner_ad3e3007da2df56f0d05a6241e3a230ae}{$\sim$BanditLearner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BanditLearner_a93998b6ffee55cb7255c06065387de11}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BanditLearner_a0247d5ef38af725655e72abd36cd7655}{initLearningOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BanditLearner_a5cb193b8a5e621a462dc96f2c16ef610}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BanditLearner_aaa794acb9c2bb160de2a8dc28f791141}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BanditLearner_ad4edd0f5c1eee1680df304ad1df9f5e9}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_ada7e2bdb3c880d7acf4fb4f465fb8ec7}{
+virtual \hyperlink{classMultiBoost_1_1GenericBanditAlgorithmLS}{GenericBanditAlgorithmLS}$<$ double, string $>$ $\ast$ {\bfseries getBanditAlgoObject} ()}
+\label{classMultiBoost_1_1BanditLearner_ada7e2bdb3c880d7acf4fb4f465fb8ec7}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_ab5a5033fdc057d11d75f145b35df7dcd}{
+virtual void {\bfseries setBanditAlgoObject} (\hyperlink{classMultiBoost_1_1GenericBanditAlgorithmLS}{GenericBanditAlgorithmLS}$<$ double, string $>$ $\ast$banditAlgo)}
+\label{classMultiBoost_1_1BanditLearner_ab5a5033fdc057d11d75f145b35df7dcd}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a89be41dae35d80a59cddda6cbe0360be}{
+virtual BanditAlgoLS {\bfseries getAlgoType} ()}
+\label{classMultiBoost_1_1BanditLearner_a89be41dae35d80a59cddda6cbe0360be}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a267fc0298c1e9b251fae6fd7baf07519}{
+virtual updateType {\bfseries getUpdateRule} ()}
+\label{classMultiBoost_1_1BanditLearner_a267fc0298c1e9b251fae6fd7baf07519}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a494dc0d3550838ed4ca8d70b335151c3}{
+virtual double {\bfseries getReward} ()}
+\label{classMultiBoost_1_1BanditLearner_a494dc0d3550838ed4ca8d70b335151c3}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_aa04428570d0846dbaaa72c8572096776}{
+virtual int {\bfseries getK} ()}
+\label{classMultiBoost_1_1BanditLearner_aa04428570d0846dbaaa72c8572096776}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a719f7896f475a9780567e43e7f4833ed}{
+virtual void {\bfseries getArmsForPulling} (vector$<$ int $>$ \&arms)}
+\label{classMultiBoost_1_1BanditLearner_a719f7896f475a9780567e43e7f4833ed}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a2c2dc2618028ddb8ddaa63787a16f91c}{
+virtual void {\bfseries init} ()}
+\label{classMultiBoost_1_1BanditLearner_a2c2dc2618028ddb8ddaa63787a16f91c}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_aa0b79c6c4226b1e988651e223075df57}{
+virtual void {\bfseries getArms} (void)}
+\label{classMultiBoost_1_1BanditLearner_aa0b79c6c4226b1e988651e223075df57}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_aaeec502a082d31ae48db6de28496bec8}{
+virtual void {\bfseries provideRewardForBanditAlgo} (void)}
+\label{classMultiBoost_1_1BanditLearner_aaeec502a082d31ae48db6de28496bec8}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a3a60e5bbac2c9b330e6ea10ede2f1dab}{
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries getRewardFromEdge} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} edge)}
+\label{classMultiBoost_1_1BanditLearner_a3a60e5bbac2c9b330e6ea10ede2f1dab}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a10a31c2552eec473722e608dcdb289a7}{
+virtual string {\bfseries getKeyToString} ()}
+\label{classMultiBoost_1_1BanditLearner_a10a31c2552eec473722e608dcdb289a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a70ecc0e4e4b00be22da0d33f65de0eff}{
+typedef \hyperlink{classMultiBoost_1_1Exp3LS}{Exp3LS}$<$ double, string $>$ {\bfseries Exp3LSDoubleString}}
+\label{classMultiBoost_1_1BanditLearner_a70ecc0e4e4b00be22da0d33f65de0eff}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a12dc78e7d9f98c6750ccdf8d852068db}{
+typedef \hyperlink{classMultiBoost_1_1Exp3GLS}{Exp3GLS}$<$ double, string $>$ {\bfseries ExpG3LSDoubleString}}
+\label{classMultiBoost_1_1BanditLearner_a12dc78e7d9f98c6750ccdf8d852068db}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a5da18de48f495ca267c83308482d9ed6}{
+enum updateType {\bfseries \_\-updateRule}}
+\label{classMultiBoost_1_1BanditLearner_a5da18de48f495ca267c83308482d9ed6}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a275c2e66fd26c3f2b186b6cbeb5238f6}{
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries \_\-reward}}
+\label{classMultiBoost_1_1BanditLearner_a275c2e66fd26c3f2b186b6cbeb5238f6}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a2d78adb449ebc8dea53550a80f398bac}{
+\hyperlink{classMultiBoost_1_1GenericBanditAlgorithmLS}{GenericBanditAlgorithmLS}$<$ double, string $>$ $\ast$ {\bfseries \_\-banditAlgo}}
+\label{classMultiBoost_1_1BanditLearner_a2d78adb449ebc8dea53550a80f398bac}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a81ef6e87595a53b5a32c7502d560ce5d}{
+BanditAlgoLS {\bfseries \_\-banditAlgoName}}
+\label{classMultiBoost_1_1BanditLearner_a81ef6e87595a53b5a32c7502d560ce5d}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a9474a39d5983d6b2675ce41945ba7dc3}{
+vector$<$ int $>$ {\bfseries \_\-armsForPulling}}
+\label{classMultiBoost_1_1BanditLearner_a9474a39d5983d6b2675ce41945ba7dc3}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_aca2e303cdbad52d15457c693e4aeb5fc}{
+int {\bfseries \_\-K}}
+\label{classMultiBoost_1_1BanditLearner_aca2e303cdbad52d15457c693e4aeb5fc}
+
+\item 
+\hypertarget{classMultiBoost_1_1BanditLearner_a04e95a212a2af4b40a6cc36474193364}{
+locale {\bfseries \_\-loc}}
+\label{classMultiBoost_1_1BanditLearner_a04e95a212a2af4b40a6cc36474193364}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 72 of file BanditLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1BanditLearner_ad3e3007da2df56f0d05a6241e3a230ae}{
+\index{MultiBoost::BanditLearner@{MultiBoost::BanditLearner}!$\sim$BanditLearner@{$\sim$BanditLearner}}
+\index{$\sim$BanditLearner@{$\sim$BanditLearner}!MultiBoost::BanditLearner@{MultiBoost::BanditLearner}}
+\subsubsection[{$\sim$BanditLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::BanditLearner::$\sim$BanditLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BanditLearner_ad3e3007da2df56f0d05a6241e3a230ae}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 87 of file BanditLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1BanditLearner_a93998b6ffee55cb7255c06065387de11}{
+\index{MultiBoost::BanditLearner@{MultiBoost::BanditLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::BanditLearner@{MultiBoost::BanditLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BanditLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BanditLearner_a93998b6ffee55cb7255c06065387de11}
+Declare weak-\/learner-\/specific arguments. These arguments will be added to the list of arguments under the group specific of the weak learner. It is called automatically in main, when the list of arguments is built up. Use this method to declare the arguments that belongs to the weak learner only.
+
+This class declares the argument \char`\"{}rsample\char`\"{} only. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_ab67f4944b1967c7141982b5d47720620}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 44 of file BanditLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BanditLearner_a0247d5ef38af725655e72abd36cd7655}{
+\index{MultiBoost::BanditLearner@{MultiBoost::BanditLearner}!initLearningOptions@{initLearningOptions}}
+\index{initLearningOptions@{initLearningOptions}!MultiBoost::BanditLearner@{MultiBoost::BanditLearner}}
+\subsubsection[{initLearningOptions}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BanditLearner::initLearningOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BanditLearner_a0247d5ef38af725655e72abd36cd7655}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+These options are used for training only! 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_ad124cba3e0d39493bb731fe362a38e2a}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 205 of file BanditLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BanditLearner_aaa794acb9c2bb160de2a8dc28f791141}{
+\index{MultiBoost::BanditLearner@{MultiBoost::BanditLearner}!load@{load}}
+\index{load@{load}!MultiBoost::BanditLearner@{MultiBoost::BanditLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BanditLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BanditLearner_aaa794acb9c2bb160de2a8dc28f791141}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BanditLearner_a5cb193b8a5e621a462dc96f2c16ef610}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_aab8bdddad2c32654a2e77bbaac79345d}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 166 of file BanditLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BanditLearner_a5cb193b8a5e621a462dc96f2c16ef610}{
+\index{MultiBoost::BanditLearner@{MultiBoost::BanditLearner}!save@{save}}
+\index{save@{save}!MultiBoost::BanditLearner@{MultiBoost::BanditLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BanditLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BanditLearner_a5cb193b8a5e621a462dc96f2c16ef610}
+Save the current object information needed for classification, that is: {\itshape \_\-selectedColumn\/}, the column of the data with that yielded the lowest error 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{AbstainableLearner::save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 195 of file BanditLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BanditLearner_ad4edd0f5c1eee1680df304ad1df9f5e9}{
+\index{MultiBoost::BanditLearner@{MultiBoost::BanditLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::BanditLearner@{MultiBoost::BanditLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BanditLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BanditLearner_ad4edd0f5c1eee1680df304ad1df9f5e9}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1BanditLearner_ad4edd0f5c1eee1680df304ad1df9f5e9}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BanditLearner_a5cb193b8a5e621a462dc96f2c16ef610}{save} 
+
+\hyperlink{classMultiBoost_1_1BanditLearner_aaa794acb9c2bb160de2a8dc28f791141}{load} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 151 of file BanditLearner.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/BanditLearner.h\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/BanditLearner.cpp\end{DoxyCompactItemize}

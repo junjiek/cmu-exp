@@ -1,0 +1,9 @@
+
+\begin{DoxyRefList}
+\item[\label{bug__bug000002}%
+\hypertarget{bug__bug000002}{}%
+Member \hyperlink{classMultiBoost_1_1AbstainableLearner_a04438bf3df3599fe42ca26771b6b2aff}{Multi\-Boost\-:\-:Abstainable\-Learner\-:\-:do\-Real\-Abstention} (const vector$<$ s\-Rates $>$ \&mu, const s\-Rates \&eps, Alpha\-Real \&alpha, vector$<$ Alpha\-Real $>$ \&v)]The actual formula should be \[ Z = \mu_0 + 2 \sum_{\ell=1}^k \sqrt{ \mu_{-,\ell} \mu_{+,\ell} }, \] but we do not consider the abstention at weak learner level yet.  
+\item[\label{bug__bug000001}%
+\hypertarget{bug__bug000001}{}%
+Member \hyperlink{classnor__utils_1_1StreamTokenizer_a16acf21421cefcc3c45c54eb0ac8810e}{nor\-\_\-utils\-:\-:Stream\-Tokenizer\-:\-:has\-\_\-token} ()]In fact this method does not know if there are other tokens awaiting. If there are characters after the last delimiter at the end of the stream, they will be considered a token and therefore, this method will return true. This happens also if there is just a newline (in the case it is not a delimiter). It is possible to avoid this problem, but will affect efficency. Because a \char`\"{}spurious\char`\"{} token will just be ignored by the parser I decided to just leave it as it is. 
+\end{DoxyRefList}

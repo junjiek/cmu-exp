@@ -1,0 +1,478 @@
+\hypertarget{classMultiBoost_1_1VJCascadeLearner}{\section{Multi\-Boost\-:\-:V\-J\-Cascade\-Learner Class Reference}
+\label{classMultiBoost_1_1VJCascadeLearner}\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+}
+
+
+{\ttfamily \#include $<$V\-J\-Cascade\-Learner.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:V\-J\-Cascade\-Learner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1VJCascadeLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1VJCascadeLearner_a1f88e07c0a6a9d8af97a23cdb7126905}{V\-J\-Cascade\-Learner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1VJCascadeLearner_a5999a683e72fbc2b088f4fee4ce57b49}{run} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1VJCascadeLearner_a16587bc47a62a429d10df5ab4526c69c}{classify} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1VJCascadeLearner_a607bd8e03f524db52b85ff9f7adca401}{do\-Confusion\-Matrix} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1VJCascadeLearner_ab1108cc910fa9ed25ac6c2bbac458fce}{do\-Posteriors} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classMultiBoost_1_1VJCascadeLearner_ad45c91f32930c935b970a92717397125}{declare\-Base\-Arguments} (\hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+static void \hyperlink{classMultiBoost_1_1VJCascadeLearner_a7fbf26261b14a838496cd9e7e072f021}{calculate\-Posteriors} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&weakhyps, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&posteriors, int positive\-Label\-Index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1VJCascadeLearner_a75932618ef9d9cae65f01aca01882320}{update\-Weights} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1VJCascadeLearner_a022cab386437b6a22036a8801725b9c3}{reset\-Weights} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data)
+\item 
+void \hyperlink{classMultiBoost_1_1VJCascadeLearner_a85852f49b6f84c26ce907109503acc29}{get\-Args} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+int \hyperlink{classMultiBoost_1_1VJCascadeLearner_a989ebcf460dda4102b14bd59907abd43}{resume\-Weak\-Learners} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data)
+\item 
+void \hyperlink{classMultiBoost_1_1VJCascadeLearner_a6e5c7d2f07945b1bb87148d7c5f384ab}{check\-Weights} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1VJCascadeLearner_a32c694530064e3db40e95f9041f38430}{get\-T\-P\-Rand\-F\-P\-R} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&posteriors, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \&T\-P\-R, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \&F\-P\-R, const \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} threshold=0.\-0)
+\item 
+virtual \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} \hyperlink{classMultiBoost_1_1VJCascadeLearner_a9268603874feef64d7562b04f133e7e0}{get\-Threshold\-Based\-On\-T\-P\-R} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&posteriors, const \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} expected\-T\-P\-R, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \&T\-P\-R, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \&F\-P\-R)
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_ab23a15e6ca703f3605cf8dd6317b3d06}{virtual void {\bfseries forecast\-Over\-All\-Cascade} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&posteriors, vector$<$ \hyperlink{structMultiBoost_1_1CascadeOutputInformation}{Cascade\-Output\-Information} $>$ \&cascade\-Data, const \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} threshold)}\label{classMultiBoost_1_1VJCascadeLearner_ab23a15e6ca703f3605cf8dd6317b3d06}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a20ac82bc93d06a3745016862a515929e}{virtual void {\bfseries output\-Header} ()}\label{classMultiBoost_1_1VJCascadeLearner_a20ac82bc93d06a3745016862a515929e}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a7de72edb5b7475605fbd1410235839fe}{virtual void {\bfseries output\-Cascade\-Result} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{structMultiBoost_1_1CascadeOutputInformation}{Cascade\-Output\-Information} $>$ \&cascade\-Data)}\label{classMultiBoost_1_1VJCascadeLearner_a7de72edb5b7475605fbd1410235839fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classMultiBoost_1_1VJCascadeLearner_a101b217959f4fe2ac51eeecd7ce4d080}{update\-Posteriors} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$weakhyps, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&posteriors, int positive\-Label\-Index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a94a603c3841ff56492cbd00fa0bce504}{vector$<$ vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ $>$ \hyperlink{classMultiBoost_1_1VJCascadeLearner_a94a603c3841ff56492cbd00fa0bce504}{\-\_\-found\-Hypotheses}}\label{classMultiBoost_1_1VJCascadeLearner_a94a603c3841ff56492cbd00fa0bce504}
+
+\begin{DoxyCompactList}\small\item\em The list of the hypotheses found. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_aeea649168623b37daf94785a1c05ff4d}{vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \hyperlink{classMultiBoost_1_1VJCascadeLearner_aeea649168623b37daf94785a1c05ff4d}{\-\_\-thresholds}}\label{classMultiBoost_1_1VJCascadeLearner_aeea649168623b37daf94785a1c05ff4d}
+
+\begin{DoxyCompactList}\small\item\em The list of the hypotheses found. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_ab8db3392bac21c725cd0248ea4816139}{string \hyperlink{classMultiBoost_1_1VJCascadeLearner_ab8db3392bac21c725cd0248ea4816139}{\-\_\-base\-Learner\-Name}}\label{classMultiBoost_1_1VJCascadeLearner_ab8db3392bac21c725cd0248ea4816139}
+
+\begin{DoxyCompactList}\small\item\em The name of the basic learner used by Ada\-Boost. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_aebe473f97066b9cd6584bca87d0af37e}{string \hyperlink{classMultiBoost_1_1VJCascadeLearner_aebe473f97066b9cd6584bca87d0af37e}{\-\_\-shyp\-File\-Name}}\label{classMultiBoost_1_1VJCascadeLearner_aebe473f97066b9cd6584bca87d0af37e}
+
+\begin{DoxyCompactList}\small\item\em File name of the strong hypothesis. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_adfb22fcd8c8f13eb2da30d7023a38a7c}{bool {\bfseries \-\_\-is\-Shyp\-Compressed}}\label{classMultiBoost_1_1VJCascadeLearner_adfb22fcd8c8f13eb2da30d7023a38a7c}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a0dab57fe35ffbe2d117f1ced2b7592b0}{string {\bfseries \-\_\-train\-File\-Name}}\label{classMultiBoost_1_1VJCascadeLearner_a0dab57fe35ffbe2d117f1ced2b7592b0}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a24f1eb74603af03489efbfecb41836cb}{string {\bfseries \-\_\-valid\-File\-Name}}\label{classMultiBoost_1_1VJCascadeLearner_a24f1eb74603af03489efbfecb41836cb}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_acf20de04f26cbca31d388127739457c1}{string {\bfseries \-\_\-test\-File\-Name}}\label{classMultiBoost_1_1VJCascadeLearner_acf20de04f26cbca31d388127739457c1}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_ac12743f772c22fc7443041eed9efba07}{ofstream {\bfseries \-\_\-output}}\label{classMultiBoost_1_1VJCascadeLearner_ac12743f772c22fc7443041eed9efba07}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a059085987082b89f3766a4a607c4c30d}{ofstream {\bfseries \-\_\-output\-Posteriors}}\label{classMultiBoost_1_1VJCascadeLearner_a059085987082b89f3766a4a607c4c30d}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_add978cbb5561f3635c05bbc1f0d07718}{string \hyperlink{classMultiBoost_1_1VJCascadeLearner_add978cbb5561f3635c05bbc1f0d07718}{\-\_\-positive\-Label\-Name}}\label{classMultiBoost_1_1VJCascadeLearner_add978cbb5561f3635c05bbc1f0d07718}
+
+\begin{DoxyCompactList}\small\item\em the name of positive class e.\-g. face class in a face detection task \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a400f364b8ec20a89d7dc8b433796204f}{int \hyperlink{classMultiBoost_1_1VJCascadeLearner_a400f364b8ec20a89d7dc8b433796204f}{\-\_\-positive\-Label\-Index}}\label{classMultiBoost_1_1VJCascadeLearner_a400f364b8ec20a89d7dc8b433796204f}
+
+\begin{DoxyCompactList}\small\item\em the index of the positive class \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a9ec824b816342c1301d4b0709b7ad048}{int {\bfseries \-\_\-num\-Iterations}}\label{classMultiBoost_1_1VJCascadeLearner_a9ec824b816342c1301d4b0709b7ad048}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_ad3c9cbb91dca52abd9a99e0571afd614}{int \hyperlink{classMultiBoost_1_1VJCascadeLearner_ad3c9cbb91dca52abd9a99e0571afd614}{\-\_\-max\-Time}}\label{classMultiBoost_1_1VJCascadeLearner_ad3c9cbb91dca52abd9a99e0571afd614}
+
+\begin{DoxyCompactList}\small\item\em Time limit for the whole processing. Default\-: no time limit (-\/1). \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a444e0e5ec004750af5ba2048ea79dc90}{int {\bfseries \-\_\-stage\-Start\-Number}}\label{classMultiBoost_1_1VJCascadeLearner_a444e0e5ec004750af5ba2048ea79dc90}
+
+\item 
+int \hyperlink{classMultiBoost_1_1VJCascadeLearner_a28381536dfa8fd6b11993902a5b16bea}{\-\_\-verbose}
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_aecfd82f72c0a0bd963c5b3c5ca98f7f8}{const \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1VJCascadeLearner_aecfd82f72c0a0bd963c5b3c5ca98f7f8}{\-\_\-small\-Val}}\label{classMultiBoost_1_1VJCascadeLearner_aecfd82f72c0a0bd963c5b3c5ca98f7f8}
+
+\begin{DoxyCompactList}\small\item\em A small value, to solve numeric issues. \end{DoxyCompactList}\item 
+string \hyperlink{classMultiBoost_1_1VJCascadeLearner_af2753ac93b04cd7d77dd584c93a5fe89}{\-\_\-resume\-Shyp\-File\-Name}
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a60b4d842256c138480d523dda4b0ae08}{string \hyperlink{classMultiBoost_1_1VJCascadeLearner_a60b4d842256c138480d523dda4b0ae08}{\-\_\-output\-Info\-File}}\label{classMultiBoost_1_1VJCascadeLearner_a60b4d842256c138480d523dda4b0ae08}
+
+\begin{DoxyCompactList}\small\item\em The filename of the step-\/by-\/step information file that will be updated. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a8fdcfbc909d7f53451598ba66dd73302}{string {\bfseries \-\_\-output\-Posteriors\-File\-Name}}\label{classMultiBoost_1_1VJCascadeLearner_a8fdcfbc909d7f53451598ba66dd73302}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a6ca1d43f79050709bbabca865fe5c38b}{bool {\bfseries \-\_\-with\-Constant\-Learner}}\label{classMultiBoost_1_1VJCascadeLearner_a6ca1d43f79050709bbabca865fe5c38b}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a77586e2117b685f82d975cbca6c4ce3d}{double {\bfseries \-\_\-max\-Acceptable\-False\-Positive\-Rate}}\label{classMultiBoost_1_1VJCascadeLearner_a77586e2117b685f82d975cbca6c4ce3d}
+
+\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_ad00629caf09b515af5808404f3834eb5}{double \hyperlink{classMultiBoost_1_1VJCascadeLearner_ad00629caf09b515af5808404f3834eb5}{\-\_\-min\-Acceptable\-Detection\-Rate}}\label{classMultiBoost_1_1VJCascadeLearner_ad00629caf09b515af5808404f3834eb5}
+
+\begin{DoxyCompactList}\small\item\em this variable is denoted by f in the Viola-\/\-Jones paper \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a8ab2a0ab783db146667b2cddf32ccafd}{vector$<$ vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $>$ \hyperlink{classMultiBoost_1_1VJCascadeLearner_a8ab2a0ab783db146667b2cddf32ccafd}{\-\_\-valid\-Table}}\label{classMultiBoost_1_1VJCascadeLearner_a8ab2a0ab783db146667b2cddf32ccafd}
+
+\begin{DoxyCompactList}\small\item\em this variable is denoted by d in the Viola-\/\-Jones paper \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a0e2d39e2086cfba7f8cdcd3df399ee33}{vector$<$ vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $>$ {\bfseries \-\_\-test\-Table}}\label{classMultiBoost_1_1VJCascadeLearner_a0e2d39e2086cfba7f8cdcd3df399ee33}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Ada\-Boost learner. This class performs the meta-\/learning by calling the weak learners and updating the weights. \begin{DoxyDate}{Date}
+12/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 75 of file V\-J\-Cascade\-Learner.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a1f88e07c0a6a9d8af97a23cdb7126905}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!V\-J\-Cascade\-Learner@{V\-J\-Cascade\-Learner}}
+\index{V\-J\-Cascade\-Learner@{V\-J\-Cascade\-Learner}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{V\-J\-Cascade\-Learner}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::\-V\-J\-Cascade\-Learner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1VJCascadeLearner_a1f88e07c0a6a9d8af97a23cdb7126905}
+The constructor. It initializes the variables and sets them using the information provided by the arguments passed. They are parsed using the helpers provided by class Args. \begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 85 of file V\-J\-Cascade\-Learner.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a7fbf26261b14a838496cd9e7e072f021}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!calculate\-Posteriors@{calculate\-Posteriors}}
+\index{calculate\-Posteriors@{calculate\-Posteriors}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{calculate\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::calculate\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Base\-Learner} $\ast$ $>$ \&}]{weakhyps, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{posteriors, }
+\item[{int}]{positive\-Label\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1VJCascadeLearner_a7fbf26261b14a838496cd9e7e072f021}
+In every stage ut updates the posteriors of the training and validation data. 
+
+Definition at line 540 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a6e5c7d2f07945b1bb87148d7c5f384ab}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!check\-Weights@{check\-Weights}}
+\index{check\-Weights@{check\-Weights}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{check\-Weights}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::check\-Weights (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1VJCascadeLearner_a6e5c7d2f07945b1bb87148d7c5f384ab}
+Auxiliary function for checking whether the sum of the weight is equal to zero.  p\-Data The pointer to the data. \begin{DoxyDate}{Date}
+13/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 724 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a16587bc47a62a429d10df5ab4526c69c}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!classify@{classify}}
+\index{classify@{classify}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{classify}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::classify (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1VJCascadeLearner_a16587bc47a62a429d10df5ab4526c69c}
+Performs the classification using the \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier}{Ada\-Boost\-M\-H\-Classifier}. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line with all the options for classification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_ad4b2a6aeca5917c841c5747f0bf81e90}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 571 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_ad45c91f32930c935b970a92717397125}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!declare\-Base\-Arguments@{declare\-Base\-Arguments}}
+\index{declare\-Base\-Arguments@{declare\-Base\-Arguments}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{declare\-Base\-Arguments}]{\setlength{\rightskip}{0pt plus 5cm}static void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::declare\-Base\-Arguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classMultiBoost_1_1VJCascadeLearner_ad45c91f32930c935b970a92717397125}
+Declare argumets specific to V\-J\-Cascade algorithm. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+02/08/2011 
+\end{DoxyDate}
+
+
+Definition at line 98 of file V\-J\-Cascade\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a607bd8e03f524db52b85ff9f7adca401}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!do\-Confusion\-Matrix@{do\-Confusion\-Matrix}}
+\index{do\-Confusion\-Matrix@{do\-Confusion\-Matrix}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{do\-Confusion\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::do\-Confusion\-Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1VJCascadeLearner_a607bd8e03f524db52b85ff9f7adca401}
+Print to stdout (or to file) a confusion matrix. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+20/3/2006 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_a3b9a92fd37fe14cdc56c1b216b4d6889}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 589 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_ab1108cc910fa9ed25ac6c2bbac458fce}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!do\-Posteriors@{do\-Posteriors}}
+\index{do\-Posteriors@{do\-Posteriors}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{do\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::do\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1VJCascadeLearner_ab1108cc910fa9ed25ac6c2bbac458fce}
+Output the outcome of the strong learner for each class. Strictly speaking these are (currently) not posteriors, as the sum of these values is not one. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_adf92c9fd773dab4e960dee744adf3654}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 615 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a85852f49b6f84c26ce907109503acc29}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!get\-Args@{get\-Args}}
+\index{get\-Args@{get\-Args}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{get\-Args}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::get\-Args (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1VJCascadeLearner_a85852f49b6f84c26ce907109503acc29}
+Get the needed parameters (for the strong learner) from the argumens. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a9268603874feef64d7562b04f133e7e0}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!get\-Threshold\-Based\-On\-T\-P\-R@{get\-Threshold\-Based\-On\-T\-P\-R}}
+\index{get\-Threshold\-Based\-On\-T\-P\-R@{get\-Threshold\-Based\-On\-T\-P\-R}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{get\-Threshold\-Based\-On\-T\-P\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\-Real} Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::get\-Threshold\-Based\-On\-T\-P\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{posteriors, }
+\item[{const {\bf Alpha\-Real}}]{expected\-T\-P\-R, }
+\item[{{\bf Alpha\-Real} \&}]{T\-P\-R, }
+\item[{{\bf Alpha\-Real} \&}]{F\-P\-R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1VJCascadeLearner_a9268603874feef64d7562b04f133e7e0}
+Calculates the threshold for a given T\-P\-R rate.  p\-Data The pointer to the data. The instances above the threshold will be classified as positive.  T\-P\-R The true positive rate.  F\-P\-R The false positive rate.  threshold The threshold (by default it is equal to zero). \begin{DoxyDate}{Date}
+13/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 849 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a32c694530064e3db40e95f9041f38430}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!get\-T\-P\-Rand\-F\-P\-R@{get\-T\-P\-Rand\-F\-P\-R}}
+\index{get\-T\-P\-Rand\-F\-P\-R@{get\-T\-P\-Rand\-F\-P\-R}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{get\-T\-P\-Rand\-F\-P\-R}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::get\-T\-P\-Rand\-F\-P\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{posteriors, }
+\item[{{\bf Alpha\-Real} \&}]{T\-P\-R, }
+\item[{{\bf Alpha\-Real} \&}]{F\-P\-R, }
+\item[{const {\bf Feature\-Real}}]{threshold = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1VJCascadeLearner_a32c694530064e3db40e95f9041f38430}
+Calculates the true positive rate and false negative rate for a given dataset with a given threshold.  p\-Data The pointer to the data. The instances above the threshold will be classified as positive.  T\-P\-R The true positive rate.  F\-P\-R The false positive rate.  threshold The threshold (by default it is equal to zero). \begin{DoxyDate}{Date}
+13/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 819 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a022cab386437b6a22036a8801725b9c3}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!reset\-Weights@{reset\-Weights}}
+\index{reset\-Weights@{reset\-Weights}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{reset\-Weights}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::reset\-Weights (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1VJCascadeLearner_a022cab386437b6a22036a8801725b9c3}
+Resets he weights of the instances. At the begining of each stage, the weights of training instances has to be set according to the proportional weighting. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Training\-Data} & The pointer to the training data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+13/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 748 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a989ebcf460dda4102b14bd59907abd43}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!resume\-Weak\-Learners@{resume\-Weak\-Learners}}
+\index{resume\-Weak\-Learners@{resume\-Weak\-Learners}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{resume\-Weak\-Learners}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::resume\-Weak\-Learners (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1VJCascadeLearner_a989ebcf460dda4102b14bd59907abd43}
+Resume the weak learner list. \begin{DoxyReturn}{Returns}
+The current iteration number. 0 if not -\/resume option has been called 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Training\-Data} & The pointer to the training data, needed for class\-Map, enum\-Maps. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+21/12/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See Also}
+resume\-Process 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+resume\-Process must be called too! 
+\end{DoxyRemark}
+
+
+Definition at line 698 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a5999a683e72fbc2b088f4fee4ce57b49}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!run@{run}}
+\index{run@{run}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::run (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1VJCascadeLearner_a5999a683e72fbc2b088f4fee4ce57b49}
+Start the learning process. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line with all the options for training. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_a77c75c5cbc867c191b327e5a04e9f147}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 140 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a101b217959f4fe2ac51eeecd7ce4d080}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!update\-Posteriors@{update\-Posteriors}}
+\index{update\-Posteriors@{update\-Posteriors}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{update\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::update\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{{\bf Base\-Learner} $\ast$}]{weakhyps, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{posteriors, }
+\item[{int}]{positive\-Label\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classMultiBoost_1_1VJCascadeLearner_a101b217959f4fe2ac51eeecd7ce4d080}
+Updates the posteriors after each stage.  p\-Data The pointer to the data.  weakhyps The array of the weak learners found in the current stage.  posteriors The array of posterios.  positive\-Label\-Index \begin{DoxyDate}{Date}
+13/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 525 of file V\-J\-Cascade\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a75932618ef9d9cae65f01aca01882320}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!update\-Weights@{update\-Weights}}
+\index{update\-Weights@{update\-Weights}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{update\-Weights}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::update\-Weights (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{{\bf Base\-Learner} $\ast$}]{p\-Weak\-Hypothesis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1VJCascadeLearner_a75932618ef9d9cae65f01aca01882320}
+The same weight update like in Ada\-Boost.\-M\-H, but note that the weights of the instances are set to the proportional weighting scheme at the begining of each stage. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a909140ca1b8174c42695e57065b3c8b9}{Ada\-Boost\-M\-H\-Learner\-::update\-Weights()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Training\-Data} & The pointer to the training data. \\
+\hline
+{\em p\-Weak\-Hypothesis} & The current weak hypothesis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the edge. It will be used to see if the algorithm can continue with learning. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+13/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 631 of file V\-J\-Cascade\-Learner.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_af2753ac93b04cd7d77dd584c93a5fe89}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!\-\_\-resume\-Shyp\-File\-Name@{\-\_\-resume\-Shyp\-File\-Name}}
+\index{\-\_\-resume\-Shyp\-File\-Name@{\-\_\-resume\-Shyp\-File\-Name}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{\-\_\-resume\-Shyp\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::\-\_\-resume\-Shyp\-File\-Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1VJCascadeLearner_af2753ac93b04cd7d77dd584c93a5fe89}
+If resume is set, this will hold the strong hypothesis file to load in order to continue with the training process. 
+
+Definition at line 263 of file V\-J\-Cascade\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1VJCascadeLearner_a28381536dfa8fd6b11993902a5b16bea}{\index{Multi\-Boost\-::\-V\-J\-Cascade\-Learner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}!\-\_\-verbose@{\-\_\-verbose}}
+\index{\-\_\-verbose@{\-\_\-verbose}!MultiBoost::VJCascadeLearner@{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}}
+\subsubsection[{\-\_\-verbose}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-V\-J\-Cascade\-Learner\-::\-\_\-verbose\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1VJCascadeLearner_a28381536dfa8fd6b11993902a5b16bea}
+Verbose level. There are three levels of verbosity\-:
+\begin{DoxyItemize}
+\item 0 = no messages
+\item 1 = basic messages
+\item 2 = show all messages 
+\end{DoxyItemize}
+
+Definition at line 256 of file V\-J\-Cascade\-Learner.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/\hyperlink{VJCascadeLearner_8h}{V\-J\-Cascade\-Learner.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/V\-J\-Cascade\-Learner.\-cpp\end{DoxyCompactItemize}

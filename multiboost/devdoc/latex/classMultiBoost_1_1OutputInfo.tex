@@ -1,0 +1,424 @@
+\hypertarget{classMultiBoost_1_1OutputInfo}{\section{Multi\-Boost\-:\-:Output\-Info Class Reference}
+\label{classMultiBoost_1_1OutputInfo}\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}}
+}
+
+
+{\ttfamily \#include $<$Output\-Info.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1OutputInfo_a5f5b3b2096d1c332701272d2480411e1}{Output\-Info} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args, bool custom\-Update=false, const string \&cl\-Arg=\char`\"{}outputinfo\char`\"{})
+\item 
+void \hyperlink{classMultiBoost_1_1OutputInfo_a247a59efd5c6270488009f15c36c84aa}{set\-Output\-List} (const string \&list, const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} $\ast$args=N\-U\-L\-L)
+\item 
+void \hyperlink{classMultiBoost_1_1OutputInfo_ac9210d45cb3c2ed39365f55bd63d1c76}{output\-Iteration} (int t)
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_a165b4d7f473ab024df0d29fd5b43c730}{void {\bfseries initialize} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data)}\label{classMultiBoost_1_1OutputInfo_a165b4d7f473ab024df0d29fd5b43c730}
+
+\item 
+void \hyperlink{classMultiBoost_1_1OutputInfo_a5a12b37b0fe9129ea59616829961dadf}{output\-Current\-Time} (void)
+\item 
+void \hyperlink{classMultiBoost_1_1OutputInfo_a563f8258a59d62a1a432d9616cb09c22}{output\-Header} (const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&namemap, bool output\-Iterations=true, bool output\-Time=true, bool endline=true)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1OutputInfo_a931359742e0d526a9055b47da82c438a}{get\-Sum\-Of\-Alphas} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data)
+\item 
+void \hyperlink{classMultiBoost_1_1OutputInfo_a3e609b64c68fdf8392a969e2f6890941}{output\-Custom} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis=0)
+\item 
+void \hyperlink{classMultiBoost_1_1OutputInfo_a4d9d20e123fdc12c5d4999d6ae6e444a}{end\-Line} ()
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_aead6cdf710ccd7580700eb415d9475c5}{void {\bfseries header\-End\-Line} ()}\label{classMultiBoost_1_1OutputInfo_aead6cdf710ccd7580700eb415d9475c5}
+
+\item 
+void \hyperlink{classMultiBoost_1_1OutputInfo_a215f08683e3d7bdf75c338f564613d7f}{separator} ()
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_afb3deba5970afb8d5ddf44f93abce2ec}{void {\bfseries output\-User\-Data} (float data)}\label{classMultiBoost_1_1OutputInfo_afb3deba5970afb8d5ddf44f93abce2ec}
+
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_ae10ed27b4a35d03f15f9747eff1f6794}{void {\bfseries output\-User\-Header} (const string \&h)}\label{classMultiBoost_1_1OutputInfo_ae10ed27b4a35d03f15f9747eff1f6794}
+
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_a9403bd66833a538689d1e0cd6152879e}{table \& {\bfseries get\-Table} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data)}\label{classMultiBoost_1_1OutputInfo_a9403bd66833a538689d1e0cd6152879e}
+
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_ab3d1c1abc253f07e501b53765bd4292c}{void {\bfseries set\-Table} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, table \&tmp\-Table)}\label{classMultiBoost_1_1OutputInfo_ab3d1c1abc253f07e501b53765bd4292c}
+
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_a4ad5ceba66d6212c548ea6d5cd072f50}{table \& {\bfseries get\-Margins} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data)}\label{classMultiBoost_1_1OutputInfo_a4ad5ceba66d6212c548ea6d5cd072f50}
+
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_af3dca3903e4aae0d0787013568f60ebf}{void {\bfseries update\-Tables} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis)}\label{classMultiBoost_1_1OutputInfo_af3dca3903e4aae0d0787013568f60ebf}
+
+\item 
+\hyperlink{classMultiBoost_1_1BaseOutputInfoType}{Base\-Output\-Info\-Type} $\ast$ \hyperlink{classMultiBoost_1_1OutputInfo_a3ca4fbc83b4acb298bb0ac887c22af4f}{get\-Output\-Info\-Object} (const string \&type)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1OutputInfo_adbb38b8ab53a523227c756a7fab94866}{get\-Output\-History} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, const string \&output\-Name, int iteration=-\/1)
+\item 
+bool \hyperlink{classMultiBoost_1_1OutputInfo_a2b37cd3f75fae8de97ef05401a70798e}{output\-Is\-Activated} (const string \&output\-Name)
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_a25944722d385ef55a8b4aa31e547682f}{void {\bfseries set\-Starting\-Iteration} (unsigned int i)}\label{classMultiBoost_1_1OutputInfo_a25944722d385ef55a8b4aa31e547682f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1OutputInfo_a0c6dfc8babe3815d10888d2ec7c6ccc9}{get\-Output\-List\-From\-String} (const string \&list, const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} $\ast$args=N\-U\-L\-L)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_a9218ec74c3b278be4ad81d90a93d5535}{fstream \hyperlink{classMultiBoost_1_1OutputInfo_a9218ec74c3b278be4ad81d90a93d5535}{\-\_\-out\-Stream}}\label{classMultiBoost_1_1OutputInfo_a9218ec74c3b278be4ad81d90a93d5535}
+
+\begin{DoxyCompactList}\small\item\em The output stream. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_a412abadc6b0171bf233890c00965e62a}{time\-\_\-t {\bfseries \-\_\-begining\-Time}}\label{classMultiBoost_1_1OutputInfo_a412abadc6b0171bf233890c00965e62a}
+
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_a241d192ace61b9ae826e0e076a625980}{time\-\_\-t {\bfseries \-\_\-time\-Bias}}\label{classMultiBoost_1_1OutputInfo_a241d192ace61b9ae826e0e076a625980}
+
+\item 
+map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \hyperlink{classMultiBoost_1_1OutputInfo_a0d95c1f68bad97c49e0333bdde066940}{\-\_\-g\-Table\-Map}
+\item 
+map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \hyperlink{classMultiBoost_1_1OutputInfo_a350f1c9355d0602ec20c99ed70491e85}{\-\_\-margins}
+\item 
+map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \hyperlink{classMultiBoost_1_1OutputInfo_ad887f8e1b0f0be528082f28e3514879b}{\-\_\-alpha\-Sums}
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_ab0d7902cb985b047a13671c1cc0991a1}{map$<$ string, \hyperlink{classMultiBoost_1_1BaseOutputInfoType}{Base\-Output\-Info\-Type} $\ast$ $>$ {\bfseries \-\_\-output\-List}}\label{classMultiBoost_1_1OutputInfo_ab0d7902cb985b047a13671c1cc0991a1}
+
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_a52ee1e8382ca696534809caba70b7de3}{bool {\bfseries \-\_\-custom\-Tables\-Update}}\label{classMultiBoost_1_1OutputInfo_a52ee1e8382ca696534809caba70b7de3}
+
+\item 
+fstream \hyperlink{classMultiBoost_1_1OutputInfo_a18631871093bb6fb65a4ebb0e50909a4}{\-\_\-header\-Out\-Stream}
+\item 
+\hypertarget{classMultiBoost_1_1OutputInfo_a7bfc2b437c1772c4e09966e875d3d391}{unsigned int {\bfseries \-\_\-history\-Starting\-Iteration}}\label{classMultiBoost_1_1OutputInfo_a7bfc2b437c1772c4e09966e875d3d391}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Format and output step-\/by-\/step information. With this class it is possible to output and update the error rates, margins and the edge. These function must be called at each iteration with the newly found weak hypothesis, but {\bfseries before} the update of the weights. \begin{DoxyWarning}{Warning}
+Don't forget to begin the list of information printed with \hyperlink{classMultiBoost_1_1OutputInfo_ac9210d45cb3c2ed39365f55bd63d1c76}{output\-Iteration()}, and close it with a call to \hyperlink{classMultiBoost_1_1OutputInfo_a4d9d20e123fdc12c5d4999d6ae6e444a}{end\-Line()}! 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 92 of file Output\-Info.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1OutputInfo_a5f5b3b2096d1c332701272d2480411e1}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!Output\-Info@{Output\-Info}}
+\index{Output\-Info@{Output\-Info}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{Output\-Info}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Output\-Info\-::\-Output\-Info (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args, }
+\item[{bool}]{custom\-Update = {\ttfamily false}, }
+\item[{const string \&}]{cl\-Arg = {\ttfamily \char`\"{}outputinfo\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classMultiBoost_1_1OutputInfo_a5f5b3b2096d1c332701272d2480411e1}
+The constructor. Create the object and open the output file. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments passed through command line \\
+\hline
+{\em cl\-Arg} & The command line argument that gives the output file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+17/06/2011 
+\end{DoxyDate}
+
+
+Definition at line 48 of file Output\-Info.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1OutputInfo_a4d9d20e123fdc12c5d4999d6ae6e444a}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!end\-Line@{end\-Line}}
+\index{end\-Line@{end\-Line}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{end\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Output\-Info\-::end\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1OutputInfo_a4d9d20e123fdc12c5d4999d6ae6e444a}
+End of line in the file stream. Call it when all the needed information has been outputted. \begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 163 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_adbb38b8ab53a523227c756a7fab94866}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!get\-Output\-History@{get\-Output\-History}}
+\index{get\-Output\-History@{get\-Output\-History}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{get\-Output\-History}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Output\-Info\-::get\-Output\-History (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{const string \&}]{output\-Name, }
+\item[{int}]{iteration = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1OutputInfo_adbb38b8ab53a523227c756a7fab94866}
+Return the specific metric output for a given dataset and a given iteration. If the iteration is -\/1, it returns the last value. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The dataset on which the metric was computed. \\
+\hline
+{\em output\-Name} & The three caracters code of the output (the same as for --outputinfo argument). \\
+\hline
+{\em iteration} & The iteration at which the metric was computed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+05/04/2013 
+\end{DoxyDate}
+
+
+Definition at line 315 of file Output\-Info.\-cpp.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a3ca4fbc83b4acb298bb0ac887c22af4f}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!get\-Output\-Info\-Object@{get\-Output\-Info\-Object}}
+\index{get\-Output\-Info\-Object@{get\-Output\-Info\-Object}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{get\-Output\-Info\-Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Output\-Info\-Type} $\ast$ Multi\-Boost\-::\-Output\-Info\-::get\-Output\-Info\-Object (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{type}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1OutputInfo_a3ca4fbc83b4acb298bb0ac887c22af4f}
+Calls the update\-Specific\-Info method for each Output\-Info\-Type subclass. The subclasses that implement this method must check whether the update is targetted to them or not through the prefix of the param type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & The name of the info to be updated, it is highly recommanded to prefix this name by an abreviation of the class name. \\
+\hline
+{\em value} & The value to be added/updated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+05/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 306 of file Output\-Info.\-cpp.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a0c6dfc8babe3815d10888d2ec7c6ccc9}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!get\-Output\-List\-From\-String@{get\-Output\-List\-From\-String}}
+\index{get\-Output\-List\-From\-String@{get\-Output\-List\-From\-String}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{get\-Output\-List\-From\-String}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Output\-Info\-::get\-Output\-List\-From\-String (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{list, }
+\item[{const {\bf nor\-\_\-utils\-::\-Args} $\ast$}]{args = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1OutputInfo_a0c6dfc8babe3815d10888d2ec7c6ccc9}
+Creates the Output\-Info\-Type instances from a string \begin{DoxyDate}{Date}
+04/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 185 of file Output\-Info.\-cpp.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a931359742e0d526a9055b47da82c438a}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!get\-Sum\-Of\-Alphas@{get\-Sum\-Of\-Alphas}}
+\index{get\-Sum\-Of\-Alphas@{get\-Sum\-Of\-Alphas}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{get\-Sum\-Of\-Alphas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Output\-Info\-::get\-Sum\-Of\-Alphas (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1OutputInfo_a931359742e0d526a9055b47da82c438a}
+Just return the sum of alphas 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & pointer of the input data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+04/04/2012 
+\end{DoxyDate}
+
+
+Definition at line 142 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a5a12b37b0fe9129ea59616829961dadf}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!output\-Current\-Time@{output\-Current\-Time}}
+\index{output\-Current\-Time@{output\-Current\-Time}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{output\-Current\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Output\-Info\-::output\-Current\-Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1OutputInfo_a5a12b37b0fe9129ea59616829961dadf}
+Just output the current time. 
+\begin{DoxyParams}{Parameters}
+{\em \textbackslash{}date} & 14/11/2005 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 335 of file Output\-Info.\-cpp.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a3e609b64c68fdf8392a969e2f6890941}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!output\-Custom@{output\-Custom}}
+\index{output\-Custom@{output\-Custom}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{output\-Custom}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Output\-Info\-::output\-Custom (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{{\bf Base\-Learner} $\ast$}]{p\-Weak\-Hypothesis = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1OutputInfo_a3e609b64c68fdf8392a969e2f6890941}
+Output the information the user wants This \char`\"{}wish-\/list\char`\"{} is specified either through the command line or directly through the constructor 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The input data. \\
+\hline
+{\em p\-Weak\-Hypothesis} & The current weak hypothesis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+17/06/2011 
+\end{DoxyDate}
+
+
+Definition at line 241 of file Output\-Info.\-cpp.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a563f8258a59d62a1a432d9616cb09c22}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!output\-Header@{output\-Header}}
+\index{output\-Header@{output\-Header}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{output\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Output\-Info\-::output\-Header (
+\begin{DoxyParamCaption}
+\item[{const {\bf Name\-Map} \&}]{namemap, }
+\item[{bool}]{output\-Iterations = {\ttfamily true}, }
+\item[{bool}]{output\-Time = {\ttfamily true}, }
+\item[{bool}]{endline = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1OutputInfo_a563f8258a59d62a1a432d9616cb09c22}
+Output the column names Note that this method must be called after the initialization of all the datasets 
+\begin{DoxyParams}{Parameters}
+{\em namemap} & The structure that holds the class information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+04/08/2006 
+\end{DoxyDate}
+
+
+Definition at line 206 of file Output\-Info.\-cpp.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a2b37cd3f75fae8de97ef05401a70798e}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!output\-Is\-Activated@{output\-Is\-Activated}}
+\index{output\-Is\-Activated@{output\-Is\-Activated}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{output\-Is\-Activated}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Output\-Info\-::output\-Is\-Activated (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{output\-Name}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1OutputInfo_a2b37cd3f75fae8de97ef05401a70798e}
+Indicate whether a given Output information is activated. 
+\begin{DoxyParams}{Parameters}
+{\em output\-Name} & The three caracters code of the output (the same as for --outputinfo argument). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+05/04/2013 
+\end{DoxyDate}
+
+
+Definition at line 320 of file Output\-Info.\-cpp.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_ac9210d45cb3c2ed39365f55bd63d1c76}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!output\-Iteration@{output\-Iteration}}
+\index{output\-Iteration@{output\-Iteration}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{output\-Iteration}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Output\-Info\-::output\-Iteration (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1OutputInfo_ac9210d45cb3c2ed39365f55bd63d1c76}
+Just output the iteration number. 
+\begin{DoxyParams}{Parameters}
+{\em t} & The iteration number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 329 of file Output\-Info.\-cpp.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a215f08683e3d7bdf75c338f564613d7f}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!separator@{separator}}
+\index{separator@{separator}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{separator}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Output\-Info\-::separator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1OutputInfo_a215f08683e3d7bdf75c338f564613d7f}
+Separator in the file stream. \begin{DoxyDate}{Date}
+20/06/2011 
+\end{DoxyDate}
+
+
+Definition at line 171 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a247a59efd5c6270488009f15c36c84aa}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!set\-Output\-List@{set\-Output\-List}}
+\index{set\-Output\-List@{set\-Output\-List}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{set\-Output\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Output\-Info\-::set\-Output\-List (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{list, }
+\item[{const {\bf nor\-\_\-utils\-::\-Args} $\ast$}]{args = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1OutputInfo_a247a59efd5c6270488009f15c36c84aa}
+Forces the choice of the output information 
+\begin{DoxyParams}{Parameters}
+{\em list} & The list of the output names (eg. err, auc etc.) \\
+\hline
+{\em append} & If true, \char`\"{}list\char`\"{} is added to the other outputs, otherwise, it replace them. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+04/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 179 of file Output\-Info.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1OutputInfo_ad887f8e1b0f0be528082f28e3514879b}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!\-\_\-alpha\-Sums@{\-\_\-alpha\-Sums}}
+\index{\-\_\-alpha\-Sums@{\-\_\-alpha\-Sums}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{\-\_\-alpha\-Sums}]{\setlength{\rightskip}{0pt plus 5cm}map$<${\bf Input\-Data}$\ast$, {\bf Alpha\-Real}$>$ Multi\-Boost\-::\-Output\-Info\-::\-\_\-alpha\-Sums\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1OutputInfo_ad887f8e1b0f0be528082f28e3514879b}
+Maps the data to the sum of the alpha. It is needed to keep this information saved from iteration to iteration. \begin{DoxySeeAlso}{See Also}
+output\-Margins() 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 295 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a0d95c1f68bad97c49e0333bdde066940}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!\-\_\-g\-Table\-Map@{\-\_\-g\-Table\-Map}}
+\index{\-\_\-g\-Table\-Map@{\-\_\-g\-Table\-Map}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{\-\_\-g\-Table\-Map}]{\setlength{\rightskip}{0pt plus 5cm}map$<${\bf Input\-Data}$\ast$, table$>$ Multi\-Boost\-::\-Output\-Info\-::\-\_\-g\-Table\-Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1OutputInfo_a0d95c1f68bad97c49e0333bdde066940}
+Maps the data to its g(x) table. It is needed to keep this information saved from iteration to iteration. \begin{DoxySeeAlso}{See Also}
+table 
+
+output\-Error() 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 276 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a18631871093bb6fb65a4ebb0e50909a4}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!\-\_\-header\-Out\-Stream@{\-\_\-header\-Out\-Stream}}
+\index{\-\_\-header\-Out\-Stream@{\-\_\-header\-Out\-Stream}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{\-\_\-header\-Out\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}fstream Multi\-Boost\-::\-Output\-Info\-::\-\_\-header\-Out\-Stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1OutputInfo_a18631871093bb6fb65a4ebb0e50909a4}
+The header output stream 
+
+Definition at line 323 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1OutputInfo_a350f1c9355d0602ec20c99ed70491e85}{\index{Multi\-Boost\-::\-Output\-Info@{Multi\-Boost\-::\-Output\-Info}!\-\_\-margins@{\-\_\-margins}}
+\index{\-\_\-margins@{\-\_\-margins}!MultiBoost::OutputInfo@{Multi\-Boost\-::\-Output\-Info}}
+\subsubsection[{\-\_\-margins}]{\setlength{\rightskip}{0pt plus 5cm}map$<${\bf Input\-Data}$\ast$, table$>$ Multi\-Boost\-::\-Output\-Info\-::\-\_\-margins\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1OutputInfo_a350f1c9355d0602ec20c99ed70491e85}
+Maps the data to the margins table. It is needed to keep this information saved from iteration to iteration. \begin{DoxySeeAlso}{See Also}
+table 
+
+output\-Margins() 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 286 of file Output\-Info.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{OutputInfo_8h}{Output\-Info.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Output\-Info.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{structnor__utils_1_1white__spaces}{
+\section{nor\_\-utils::white\_\-spaces Struct Reference}
+\label{structnor__utils_1_1white__spaces}\index{nor\_\-utils::white\_\-spaces@{nor\_\-utils::white\_\-spaces}}
+}
+
+
+{\ttfamily \#include $<$Utils.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnor__utils_1_1white__spaces_a846e83a0ee3429cba8f6d5eb4a79aad9}{white\_\-spaces} (const string \&sepChars=\char`\"{}\char`\"{}, const bool doNewLine=true)
+\item 
+\hypertarget{structnor__utils_1_1white__spaces_ad590d0f1723a9de255ae6755a86095a9}{
+\hyperlink{structnor__utils_1_1white__spaces_ad590d0f1723a9de255ae6755a86095a9}{$\sim$white\_\-spaces} ()}
+\label{structnor__utils_1_1white__spaces_ad590d0f1723a9de255ae6755a86095a9}
+
+\begin{DoxyCompactList}\small\item\em The destructor. Clear the table. \end{DoxyCompactList}\item 
+ctype\_\-base::mask const $\ast$ \hyperlink{structnor__utils_1_1white__spaces_a76cc44ec62f98207f96416d0049a8032}{init} (const string \&sepChars, const bool doNewLine)
+\item 
+ctype\_\-base::mask const $\ast$ \hyperlink{structnor__utils_1_1white__spaces_a1f994bd6a6f35620ac93d56009e61ff7}{get\_\-table} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Set the \hyperlink{structnor__utils_1_1white__spaces}{white\_\-spaces} to anything given in the constructor and newlines only. Use it with: 
+\begin{DoxyCode}
+ "ifstream".imbue( locale(locale(), new nor_utils::white_spaces("\t ,.") ); 
+\end{DoxyCode}
+ \begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 109 of file Utils.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structnor__utils_1_1white__spaces_a846e83a0ee3429cba8f6d5eb4a79aad9}{
+\index{nor\_\-utils::white\_\-spaces@{nor\_\-utils::white\_\-spaces}!white\_\-spaces@{white\_\-spaces}}
+\index{white\_\-spaces@{white\_\-spaces}!nor_utils::white_spaces@{nor\_\-utils::white\_\-spaces}}
+\subsubsection[{white\_\-spaces}]{\setlength{\rightskip}{0pt plus 5cm}nor\_\-utils::white\_\-spaces::white\_\-spaces (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{sepChars = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{const bool}]{doNewLine = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structnor__utils_1_1white__spaces_a846e83a0ee3429cba8f6d5eb4a79aad9}
+Create the \hyperlink{structnor__utils_1_1white__spaces}{white\_\-spaces} object, and initialize the table. \begin{DoxyRemark}{Remarks}
+If no argument is provided, the only white space allowed will be \char`\"{}$\backslash$n\char`\"{}! 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+12/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 116 of file Utils.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structnor__utils_1_1white__spaces_a1f994bd6a6f35620ac93d56009e61ff7}{
+\index{nor\_\-utils::white\_\-spaces@{nor\_\-utils::white\_\-spaces}!get\_\-table@{get\_\-table}}
+\index{get\_\-table@{get\_\-table}!nor_utils::white_spaces@{nor\_\-utils::white\_\-spaces}}
+\subsubsection[{get\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}ctype\_\-base::mask const$\ast$ nor\_\-utils::white\_\-spaces::get\_\-table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structnor__utils_1_1white__spaces_a1f994bd6a6f35620ac93d56009e61ff7}
+Get the local table. \begin{DoxyReturn}{Returns}
+The local table. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+12/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structnor__utils_1_1white__spaces_a76cc44ec62f98207f96416d0049a8032}{init()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 150 of file Utils.h.
+
+\hypertarget{structnor__utils_1_1white__spaces_a76cc44ec62f98207f96416d0049a8032}{
+\index{nor\_\-utils::white\_\-spaces@{nor\_\-utils::white\_\-spaces}!init@{init}}
+\index{init@{init}!nor_utils::white_spaces@{nor\_\-utils::white\_\-spaces}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}ctype\_\-base::mask const$\ast$ nor\_\-utils::white\_\-spaces::init (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{sepChars, }
+\item[{const bool}]{doNewLine}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structnor__utils_1_1white__spaces_a76cc44ec62f98207f96416d0049a8032}
+Initialize the table only with the give sepChars as whitespaces. \begin{DoxyReturn}{Returns}
+The modified table. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+12/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 125 of file Utils.h.
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/Utils/\hyperlink{Utils_8h}{Utils.h}\end{DoxyCompactItemize}

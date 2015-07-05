@@ -1,0 +1,73 @@
+\hypertarget{BaseLearner_8h}{\section{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\-Base\-Learner.h File Reference}
+\label{BaseLearner_8h}\index{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\-Base\-Learner.\-h@{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\-Base\-Learner.\-h}}
+}
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}Defaults.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Utils/\-Args.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Utils/\-Stream\-Tokenizer.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMultiBoost_1_1BaseLearner}{Multi\-Boost\-::\-Base\-Learner}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{BaseLearner_8h_a784f5b7d276202c7de7108eeca341da7}{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R}(X)
+\item 
+\#define \hyperlink{BaseLearner_8h_a186cb2b63be2058a5a377cac0e106ace}{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R\-\_\-\-N\-A\-M\-E}(N\-A\-M\-E, X)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The abstract basic (weak) learner. 
+
+Definition in file \hyperlink{BaseLearner_8h_source}{Base\-Learner.\-h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{BaseLearner_8h_a784f5b7d276202c7de7108eeca341da7}{\index{Base\-Learner.\-h@{Base\-Learner.\-h}!R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R@{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R}}
+\index{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R@{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R}!BaseLearner.h@{Base\-Learner.\-h}}
+\subsubsection[{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R(
+\begin{DoxyParamCaption}
+\item[{}]{X}
+\end{DoxyParamCaption}
+)}}\label{BaseLearner_8h_a784f5b7d276202c7de7108eeca341da7}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{struct }Register\_##X                                                 \(\backslash\)
+    \{ Register\_##X() \{ BaseLearner::RegisteredLearners().addLearner(#X, \textcolor{keyword}{new} X()
+      ); \} \}; \(\backslash\)
+    static Register\_##X r\_##X;
+\end{DoxyCode}
+The macro that {\bfseries must} be declared by all the Derived classes that can be used for classification. \begin{DoxySeeAlso}{See Also}
+\hyperlink{BaseLearner_8h_a186cb2b63be2058a5a377cac0e106ace}{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R\-\_\-\-N\-A\-M\-E} 
+\end{DoxySeeAlso}
+
+
+Definition at line 564 of file Base\-Learner.\-h.
+
+\hypertarget{BaseLearner_8h_a186cb2b63be2058a5a377cac0e106ace}{\index{Base\-Learner.\-h@{Base\-Learner.\-h}!R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R\-\_\-\-N\-A\-M\-E@{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R\-\_\-\-N\-A\-M\-E}}
+\index{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R\-\_\-\-N\-A\-M\-E@{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R\-\_\-\-N\-A\-M\-E}!BaseLearner.h@{Base\-Learner.\-h}}
+\subsubsection[{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R\-\_\-\-N\-A\-M\-E(
+\begin{DoxyParamCaption}
+\item[{}]{N\-A\-M\-E, }
+\item[{}]{X}
+\end{DoxyParamCaption}
+)}}\label{BaseLearner_8h_a186cb2b63be2058a5a377cac0e106ace}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{struct }Register\_##X                                                 \(\backslash\)
+    \{ Register\_##X() \{ BaseLearner::RegisteredLearners().addLearner(#NAME, \textcolor{keyword}{new} 
+      X()); \} \}; \(\backslash\)
+    static Register\_##X r\_##X;
+\end{DoxyCode}
+Similarly to R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R this macro register the derived class, but in this case a name can be specified, that will differ from the class name. \begin{DoxySeeAlso}{See Also}
+\hyperlink{BaseLearner_8h_a784f5b7d276202c7de7108eeca341da7}{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-L\-E\-A\-R\-N\-E\-R} 
+\end{DoxySeeAlso}
+
+
+Definition at line 574 of file Base\-Learner.\-h.
+

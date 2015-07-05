@@ -1,0 +1,79 @@
+\hypertarget{classMultiBoost_1_1ConstantAlgorithm}{\section{Multi\-Boost\-:\-:Constant\-Algorithm Class Reference}
+\label{classMultiBoost_1_1ConstantAlgorithm}\index{Multi\-Boost\-::\-Constant\-Algorithm@{Multi\-Boost\-::\-Constant\-Algorithm}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1ConstantAlgorithm_acbe922e5cc7b110581ee9de303d19710}{find\-Constant\-Weights\-Edges} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&p\-Half\-Weights\-Per\-Class, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&p\-Half\-Edges)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1ConstantAlgorithm_acf2f17822f5825cfea555f12f9bdc4a9}{find\-Constant} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ $\ast$p\-Mu, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $\ast$p\-V)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 50 of file Constant\-Algorithm.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1ConstantAlgorithm_acf2f17822f5825cfea555f12f9bdc4a9}{\index{Multi\-Boost\-::\-Constant\-Algorithm@{Multi\-Boost\-::\-Constant\-Algorithm}!find\-Constant@{find\-Constant}}
+\index{find\-Constant@{find\-Constant}!MultiBoost::ConstantAlgorithm@{Multi\-Boost\-::\-Constant\-Algorithm}}
+\subsubsection[{find\-Constant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Constant\-Algorithm\-::find\-Constant (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf s\-Rates} $>$ $\ast$}]{p\-Mu, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ $\ast$}]{p\-V}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1ConstantAlgorithm_acf2f17822f5825cfea555f12f9bdc4a9}
+Computes the classwise mus and votes (alignment) of the constant classifier 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The pointer to the data. \\
+\hline
+{\em p\-Mu} & The The class-\/wise rates to update. \\
+\hline
+{\em p\-V} & The alignment vector to update. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The edge. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+20/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 83 of file Constant\-Algorithm.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ConstantAlgorithm_acbe922e5cc7b110581ee9de303d19710}{\index{Multi\-Boost\-::\-Constant\-Algorithm@{Multi\-Boost\-::\-Constant\-Algorithm}!find\-Constant\-Weights\-Edges@{find\-Constant\-Weights\-Edges}}
+\index{find\-Constant\-Weights\-Edges@{find\-Constant\-Weights\-Edges}!MultiBoost::ConstantAlgorithm@{Multi\-Boost\-::\-Constant\-Algorithm}}
+\subsubsection[{find\-Constant\-Weights\-Edges}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Constant\-Algorithm\-::find\-Constant\-Weights\-Edges (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{p\-Half\-Weights\-Per\-Class, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{p\-Half\-Edges}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1ConstantAlgorithm_acbe922e5cc7b110581ee9de303d19710}
+Computes the half of the classwise weights and half of the classwise edges. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The pointer to the data. \\
+\hline
+{\em p\-Half\-Weights\-Per\-Class} & The pointer to the half of the classwise weights. \\
+\hline
+{\em p\-Half\-Edges} & The pointer to the half of the classwise edges. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/06/2006 
+\end{DoxyDate}
+
+
+Definition at line 49 of file Constant\-Algorithm.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Algorithms/Constant\-Algorithm.\-h\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Algorithms/Constant\-Algorithm.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,406 @@
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner}{
+\section{MultiBoost::FeaturewiseLearner Class Reference}
+\label{classMultiBoost_1_1FeaturewiseLearner}\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+}
+
+
+{\ttfamily \#include $<$FeaturewiseLearner.h$>$}
+
+Inheritance diagram for MultiBoost::FeaturewiseLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{classMultiBoost_1_1FeaturewiseLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6a884b40e41539f46a0432655b29e78c}{FeaturewiseLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a58a5d780b4db7aae3f3552925093b5ce}{$\sim$FeaturewiseLearner} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{run} (int colIdx)=0
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a2813c451210fc9d4fb4cf96216bcc813}{run} (vector$<$ int $>$ \&colIndices)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a355e35d792aaae83f9e639b8cb5ab2a4}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a24d0666de1f394b2165c2d833d36b5f6}{initLearningOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1FeaturewiseLearner_ac69d42c7eb83a3496ad4cee9b0781b84}{phi} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx, int classIdx) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a76a3ea26da7434ebb2b48415cc83fa12}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val, int classIdx) const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a3b8cf427791c4d7955234e567b287ec6}{
+int \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a3b8cf427791c4d7955234e567b287ec6}{\_\-selectedColumn}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a3b8cf427791c4d7955234e567b287ec6}
+
+\begin{DoxyCompactList}\small\item\em The column of the training data with the lowest error. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a2105ae344afdcf6096cfd266663b5cb6}{
+int \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a2105ae344afdcf6096cfd266663b5cb6}{\_\-maxNumOfDimensions}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a2105ae344afdcf6096cfd266663b5cb6}
+
+\begin{DoxyCompactList}\small\item\em limit on the number of searched dimensions in \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{run()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A generic featurewise learner. It represents all weak learners that search all or or a subset of features, and implement phi(x,l) as phi(x\mbox{[}selectedFeature\mbox{]},l)
+
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 63 of file FeaturewiseLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a6a884b40e41539f46a0432655b29e78c}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!FeaturewiseLearner@{FeaturewiseLearner}}
+\index{FeaturewiseLearner@{FeaturewiseLearner}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{FeaturewiseLearner}]{\setlength{\rightskip}{0pt plus 5cm}MultiBoost::FeaturewiseLearner::FeaturewiseLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a6a884b40e41539f46a0432655b29e78c}
+The constructor. It initializes the selected column to -\/1. \begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 71 of file FeaturewiseLearner.h.
+
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a58a5d780b4db7aae3f3552925093b5ce}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!$\sim$FeaturewiseLearner@{$\sim$FeaturewiseLearner}}
+\index{$\sim$FeaturewiseLearner@{$\sim$FeaturewiseLearner}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{$\sim$FeaturewiseLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::FeaturewiseLearner::$\sim$FeaturewiseLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a58a5d780b4db7aae3f3552925093b5ce}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 77 of file FeaturewiseLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a355e35d792aaae83f9e639b8cb5ab2a4}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::FeaturewiseLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a355e35d792aaae83f9e639b8cb5ab2a4}
+Declare weak-\/learner-\/specific arguments. These arguments will be added to the list of arguments under the group specific of the weak learner. It is called automatically in main, when the list of arguments is built up. Use this method to declare the arguments that belongs to the weak learner only.
+
+This class declares the argument \char`\"{}rsample\char`\"{} only. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_add9773c8057fea7885edb8c1a07cfbd8}{MultiBoost::AbstainableLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_ad994400056663aa2c030fbafaf96ca22}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aff4444f4cce780b47db79650b778b685}{MultiBoost::SigmoidSingleStumpLearner}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_aedbbd65aa2801237f3a6dc3a46e43997}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 49 of file FeaturewiseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a24d0666de1f394b2165c2d833d36b5f6}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!initLearningOptions@{initLearningOptions}}
+\index{initLearningOptions@{initLearningOptions}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{initLearningOptions}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::FeaturewiseLearner::initLearningOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a24d0666de1f394b2165c2d833d36b5f6}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+These options are used for training only! 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_a966b1609a95222953e4116a3fffaadbe}{MultiBoost::AbstainableLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a547dab8fd220684bf2e6dbbf7cb0708f}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a8681907af375892638d04f5429c7a3ee}{MultiBoost::SigmoidSingleStumpLearner}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_acaadef7c0c556c083df313440e974069}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 64 of file FeaturewiseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!load@{load}}
+\index{load@{load}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::FeaturewiseLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_a571f0ef9449cd3a7bc56f8a0131db6f1}{MultiBoost::AbstainableLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_adaab98e0964770ed3309939b164a06c9}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_ab4e079f316f5d882392839aa02f67d16}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a3dc38b2a4c1923866a2e63072c4a0c89}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1SelectorLearner_a6a5b322170c0d52c90219a87815c8d97}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a26f1c20fee776dc11fac049d40e74689}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_a50745d7bcd9da4f3b27be0c4b8a9b472}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_afbd9e4ab80b2483932e03ae675159f0d}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_afa8862221d2dcd260a2ae450ba16f825}{MultiBoost::SingleStumpLearner}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a57d70dfa5047ba4ff322a581a04a6345}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 93 of file FeaturewiseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a76a3ea26da7434ebb2b48415cc83fa12}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::FeaturewiseLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a76a3ea26da7434ebb2b48415cc83fa12}
+A scalar discriminative function. 
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate, it is interpreted in the \_\-selectedColumn'th feature \\
+\hline
+{\em classIdx} & The class index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1IndicatorLearner_ad6da91b334f6624773fb671a3f2ffc3b}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a03dcf4e724c5be8aa72dba6d5169cd56}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1SelectorLearner_a1feb0d8989f532ef9336b89919e7c67f}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aeb660f36dc730d8181253b6d0b28064a}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_ae38b636f7da351a220efeb4637449743}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_ad16a2557090c526ad36306a3704f92ec}{MultiBoost::SingleSparseStump}, and \hyperlink{classMultiBoost_1_1SingleStumpLearner_a1aed018039f3f3ae08f2088ac2d080ba}{MultiBoost::SingleStumpLearner}.
+
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_ac69d42c7eb83a3496ad4cee9b0781b84}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::FeaturewiseLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_ac69d42c7eb83a3496ad4cee9b0781b84}
+A discriminative function. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The data \\
+\hline
+{\em idx} & The index of the data point \\
+\hline
+{\em classIdx} & The class index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output of the discriminant function 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1AbstainableLearner_a76d59e5c6678f43a3f483064beb06f64}{MultiBoost::AbstainableLearner}.
+
+
+
+Definition at line 123 of file FeaturewiseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!run@{run}}
+\index{run@{run}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::FeaturewiseLearner::run (
+\begin{DoxyParamCaption}
+\item[{int}]{colIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}
+Run the learner to build the classifier using only one single feature from the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function {\bfseries must} update \_\-alpha too! You can use the helper functions (the getAlpha with parameters) to update it.  colIdx The index of the feature can be only used. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The energy of the weak classifier (that we want to minimize) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float) 
+
+getAlpha(float, float) 
+
+getAlpha(float, float, float, float) 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1IndicatorLearner_a8ecd0b8a6454b9b6648db679183035b4}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a04e20d164fbe57b89c69a3518a06943c}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1OneClassStumpLearner_a01ca9c278f874d051382080b1eff990f}{MultiBoost::OneClassStumpLearner}, \hyperlink{classMultiBoost_1_1SelectorLearner_a4a1fdd54afebce2b2917eaa638e21ca2}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a2de201161cb87a94f61c33560a1932be}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_a56a84dffe73852152b7db54579eebdef}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a9f71f537668b45e18567ca2f3621b51b}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleSparseStumpLearner_af017ed4761b4a5515816fe3aeecf6dc6}{MultiBoost::SingleSparseStumpLearner}, and \hyperlink{classMultiBoost_1_1SingleStumpLearner_a1d247da7a1f0c73043657f290491b3b5}{MultiBoost::SingleStumpLearner}.
+
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a2813c451210fc9d4fb4cf96216bcc813}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!run@{run}}
+\index{run@{run}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::FeaturewiseLearner::run (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$ \&}]{colIndices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a2813c451210fc9d4fb4cf96216bcc813}
+Run the learner to build the classifier using only a subset of features from the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function {\bfseries must} update \_\-alpha too! You can use the helper functions (the getAlpha with parameters) to update it.  colIndices The indices of the features can be only used. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The energy of the weak classifier (that we want to minimize) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float) 
+
+getAlpha(float, float) 
+
+getAlpha(float, float, float, float) 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1OneClassStumpLearner_a0c4f50119ccb0eda9a3857fddd00fbae}{MultiBoost::OneClassStumpLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a6226810a6656c8628ab25e398e605861}{MultiBoost::SigmoidSingleStumpLearner}, and \hyperlink{classMultiBoost_1_1SingleStumpLearner_a4ada99280f17f0d442468c186e20a55b}{MultiBoost::SingleStumpLearner}.
+
+
+
+Definition at line 130 of file FeaturewiseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!save@{save}}
+\index{save@{save}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::FeaturewiseLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}
+Save the current object information needed for classification, that is: {\itshape \_\-selectedColumn\/}, the column of the data with that yielded the lowest error 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{AbstainableLearner::save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{MultiBoost::AbstainableLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a6a565277105954f5912937ad00b92f1f}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_a66dfec334db068b3ab5806723b4170b4}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a0dd15d2b44a067988ff2496e2efe5aab}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1SelectorLearner_a1d51fa000c5b04e5ed52dcb8f2981e5a}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a974bf887a0c8ddf5be49259d702c9b05}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_a08dc78b056b0f939214637f60e50891d}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a69365508ff9efa93d90450621048905e}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_a25bb9b4151a2a4f547994ef71a2cf152}{MultiBoost::SingleStumpLearner}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a9844f395b5e9315e32e46ec27df50a75}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 76 of file FeaturewiseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{
+\index{MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::FeaturewiseLearner@{MultiBoost::FeaturewiseLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::FeaturewiseLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{save} 
+
+\hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{load} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_a36ad3b89e190941788eee53595b288b0}{MultiBoost::AbstainableLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a918541140437c8d7f7575c76b37ad652}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_a47fb712bf8e44ebd7a7af759423b8fcc}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a093c9a16e80ab2fe90470c43f24b0bfb}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1SelectorLearner_aac96f1fddd89c6382240fc7d0ddae478}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_adb4ca5ac6be19aa7244d04ac7b24d79d}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_af449d15e3389ec33d37613e9684148ba}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a0c815aa6bd664984f0baa6d94cde7cff}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_a81fc70ee14b9714289f998977a8e0e1b}{MultiBoost::SingleStumpLearner}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_ac57c9a360303b9593a0367256e65fed8}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 110 of file FeaturewiseLearner.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{FeaturewiseLearner_8h}{FeaturewiseLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/FeaturewiseLearner.cpp\end{DoxyCompactItemize}

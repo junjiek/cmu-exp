@@ -1,0 +1,118 @@
+\hypertarget{classMultiBoost_1_1TxtParser}{\section{Multi\-Boost\-:\-:Txt\-Parser Class Reference}
+\label{classMultiBoost_1_1TxtParser}\index{Multi\-Boost\-::\-Txt\-Parser@{Multi\-Boost\-::\-Txt\-Parser}}
+}
+
+
+{\ttfamily \#include $<$Txt\-Parser.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Txt\-Parser\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1TxtParser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1TxtParser_a3ae9f6d6cdc97929debd43077878b482}{{\bfseries Txt\-Parser} (const string \&file\-Name, const string \&header\-File\-Name)}\label{classMultiBoost_1_1TxtParser_a3ae9f6d6cdc97929debd43077878b482}
+
+\item 
+\hypertarget{classMultiBoost_1_1TxtParser_a99dc7bc6fd460824bee306286e27f0ea}{void {\bfseries set\-Has\-Example\-Name} (bool has\-Example\-Name)}\label{classMultiBoost_1_1TxtParser_a99dc7bc6fd460824bee306286e27f0ea}
+
+\item 
+\hypertarget{classMultiBoost_1_1TxtParser_ad49833faf09b22abe614eb2c674cc212}{void {\bfseries set\-Class\-End} (bool has\-Class\-End)}\label{classMultiBoost_1_1TxtParser_ad49833faf09b22abe614eb2c674cc212}
+
+\item 
+\hypertarget{classMultiBoost_1_1TxtParser_ac7a8a79de24b4f53a02baea4d84e536f}{void {\bfseries set\-Sep\-Chars} (const string \&sep\-Chars)}\label{classMultiBoost_1_1TxtParser_ac7a8a79de24b4f53a02baea4d84e536f}
+
+\item 
+virtual void \hyperlink{classMultiBoost_1_1TxtParser_a2e1dc396f688ebc41861d7c29122293f}{read\-Data} (vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \&examples, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)
+\item 
+virtual int \hyperlink{classMultiBoost_1_1TxtParser_a9654db113c2a4c15966f01e598c9c675}{get\-Num\-Attributes} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Parse simple text data. Here is an example of valid data (note\-: in this case the argument {\bfseries --examplelabel} has been provided!)\-: \begin{DoxyVerb}/home/music/classical/classical.00078.au       classical       5.72939e+01     2.95128e+02     6.43395e+00
+/home/music/disco/disco.00078.au       disco   1.98315e+02     1.31341e+03     -6.15398e+00
+/home/music/reggae/reggae.00022.au     reggae  2.51418e+02     7.68241e+02     -5.66704e+00
+/home/music/hiphop/hiphop.00080.au     hiphop  2.62773e+02     4.83971e+02     8.80924e-01
+/home/music/rock/rock.00015.au rock    2.03546e+02     9.31192e+02     -7.56387e+00    1.15847e+02
+/home/music/hiphop/hiphop.00027.au     hiphop  2.37860e+02     1.03110e+03     2.50052e-01
+/home/music/rock/rock.00094.au rock    2.48359e+02     1.69432e+02     -1.66508e+01
+\end{DoxyVerb}
+ \begin{DoxyRemark}{Remarks}
+The column can be separated by any white-\/space character. If a particular separator needs to be specified (for instance when the class name contains spaces), use the --d option. 
+
+The \hyperlink{classMultiBoost_1_1TxtParser}{Txt\-Parser} is S\-T\-R\-I\-C\-T\-L\-Y single class (can have many classes but just one per example). 
+\end{DoxyRemark}
+
+
+Definition at line 64 of file Txt\-Parser.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1TxtParser_a9654db113c2a4c15966f01e598c9c675}{\index{Multi\-Boost\-::\-Txt\-Parser@{Multi\-Boost\-::\-Txt\-Parser}!get\-Num\-Attributes@{get\-Num\-Attributes}}
+\index{get\-Num\-Attributes@{get\-Num\-Attributes}!MultiBoost::TxtParser@{Multi\-Boost\-::\-Txt\-Parser}}
+\subsubsection[{get\-Num\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Multi\-Boost\-::\-Txt\-Parser\-::get\-Num\-Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1TxtParser_a9654db113c2a4c15966f01e598c9c675}
+It retrurns the number of features. \begin{DoxyRemark}{Remarks}
+It might be implemented here, and not as an abstract function. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+The number of features.  30/07/2011 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericParser_a5daee3b49a8cb5c2bbb515d19bff3cd6}{Multi\-Boost\-::\-Generic\-Parser}.
+
+
+
+Definition at line 83 of file Txt\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1TxtParser_a2e1dc396f688ebc41861d7c29122293f}{\index{Multi\-Boost\-::\-Txt\-Parser@{Multi\-Boost\-::\-Txt\-Parser}!read\-Data@{read\-Data}}
+\index{read\-Data@{read\-Data}!MultiBoost::TxtParser@{Multi\-Boost\-::\-Txt\-Parser}}
+\subsubsection[{read\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Txt\-Parser\-::read\-Data (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Example} $>$ \&}]{examples, }
+\item[{{\bf Name\-Map} \&}]{class\-Map, }
+\item[{vector$<$ {\bf Name\-Map} $>$ \&}]{enum\-Maps, }
+\item[{{\bf Name\-Map} \&}]{attribute\-Name\-Map, }
+\item[{vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&}]{attribute\-Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1TxtParser_a2e1dc396f688ebc41861d7c29122293f}
+Abstract function for reading data. 
+\begin{DoxyParams}{Parameters}
+{\em examples} & The vector of examples to be filled up. \\
+\hline
+{\em class\-Map} & The map which stores the class names. \\
+\hline
+{\em enum\-Maps} & It stores the mapping of nominal values into natural numbers. \\
+\hline
+{\em attribute\-Name\-Map} & The name of attributes given by the user. \\
+\hline
+{\em attribute\-Types} & The type of attributes, for example numerical or nominal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+Raw\-Data\-::e\-Attribute\-Type  30/07/2011 
+\end{DoxySeeAlso}
+xxx fradav adding 
+
+Implements \hyperlink{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}{Multi\-Boost\-::\-Generic\-Parser}.
+
+
+
+Definition at line 45 of file Txt\-Parser.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{TxtParser_8h}{Txt\-Parser.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Txt\-Parser.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,383 @@
+\hypertarget{classMultiBoost_1_1UnSerialization}{\section{Multi\-Boost\-:\-:Un\-Serialization Class Reference}
+\label{classMultiBoost_1_1UnSerialization}\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}}
+}
+
+
+{\ttfamily \#include $<$Serialization.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1UnSerialization_ad99590df2e49aa62ac8dc996b6523ff7}{load\-Hypotheses} (const string \&shyp\-File\-Name, vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&weak\-Hypotheses, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, int verbose=1)
+\item 
+void \hyperlink{classMultiBoost_1_1UnSerialization_ab5ce803d9b61f0249384130bc4fe4a84}{load\-Cascade\-Hypotheses} (const string \&shyp\-File\-Name, vector$<$ vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ $>$ \&weak\-Hypotheses, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&thresholds, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, int verbose=1)
+\item 
+\hypertarget{classMultiBoost_1_1UnSerialization_a514c986d787cf0760f54eb5668ba9b3f}{void {\bfseries load\-Hypotheses\-With\-Thresholds} (const string \&shyp\-File\-Name, vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&weak\-Hypotheses, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&rejection\-Thresholds, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, int verbose=1)}\label{classMultiBoost_1_1UnSerialization_a514c986d787cf0760f54eb5668ba9b3f}
+
+\item 
+\hypertarget{classMultiBoost_1_1UnSerialization_aa201af9a422ef8c88b584c29a84face9}{bool {\bfseries seek\-And\-Parse\-Specific\-Param\-Tag} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st, const string \&tag, const string \&target\-Tag\-Param, string \&param\-Value)}\label{classMultiBoost_1_1UnSerialization_aa201af9a422ef8c88b584c29a84face9}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classMultiBoost_1_1UnSerialization_af3c09b360fcf813aec472d250faa5cc1}{load\-Hypothesis} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st, vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&weak\-Hypotheses, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, int verbose=1)
+\item 
+static string \hyperlink{classMultiBoost_1_1UnSerialization_ad4348283d4bf8a414b3c099ce790a631}{get\-Weak\-Learner\-Name} (const string \&shyp\-File\-Name)
+\item 
+static bool \hyperlink{classMultiBoost_1_1UnSerialization_a5df00d73e915e5f6fed86143a886a09f}{seek\-Simple\-Tag} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st, const string \&tag)
+\item 
+static bool \hyperlink{classMultiBoost_1_1UnSerialization_a2070b6344d4b4c7729cb5aa685b35fd7}{seek\-Simple\-Tag} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st, const vector$<$ string $>$ \&tags)
+\item 
+static bool \hyperlink{classMultiBoost_1_1UnSerialization_a6b70aa714607156c4bb0a06ee7d40420}{seek\-Param\-Tag} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st, const string \&tag)
+\item 
+static bool \hyperlink{classMultiBoost_1_1UnSerialization_a44d1d30c1f8c8c99ee0ff40c6413ee0d}{seek\-And\-Parse\-Param\-Tag} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st, const string \&tag, string \&tag\-Param, string \&param\-Value)
+\item 
+static void \hyperlink{classMultiBoost_1_1UnSerialization_a7b3827a3a1a78fec2cb33cec68424267}{parse\-Param\-Tag} (const string \&str, string \&tag, string \&tag\-Param, string \&param\-Value)
+\item 
+\hypertarget{classMultiBoost_1_1UnSerialization_a90aeb99246e677ef7d55c92a95ed0e9c}{static void {\bfseries parse\-Param\-Only} (const string \&str, string \&tag\-Param, string \&param\-Value)}\label{classMultiBoost_1_1UnSerialization_a90aeb99246e677ef7d55c92a95ed0e9c}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\static T \hyperlink{classMultiBoost_1_1UnSerialization_a5670d7bfe5a56885d9c61739256e2146}{seek\-And\-Parse\-Enclosed\-Value} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st, const string \&tag)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static void \hyperlink{classMultiBoost_1_1UnSerialization_a36dfaae8f144cef020bd6706d25b27cc}{seek\-And\-Parse\-Vector\-Tag} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st, const string \&array\-Name, const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&id\-Map, const string \&element\-Tag\-Name, vector$<$ T $>$ \&vec\-To\-Fill)
+\item 
+\hypertarget{classMultiBoost_1_1UnSerialization_acc551427f65af0adb764758087410cb5}{{\footnotesize template$<$typename T1 , typename T2 $>$ }\\static void {\bfseries seek\-And\-Parse\-Vector\-Tag} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st, const string \&array\-Name, const string \&element\-Tag\-Name, vector$<$ T1 $>$ \&vec\-To\-Fill1, vector$<$ T2 $>$ \&vec\-To\-Fill2)}\label{classMultiBoost_1_1UnSerialization_acc551427f65af0adb764758087410cb5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The un-\/serialization (loading) of the weak learners found. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1Serialization}{Serialization} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 277 of file Serialization.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1UnSerialization_ad4348283d4bf8a414b3c099ce790a631}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!get\-Weak\-Learner\-Name@{get\-Weak\-Learner\-Name}}
+\index{get\-Weak\-Learner\-Name@{get\-Weak\-Learner\-Name}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{get\-Weak\-Learner\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Multi\-Boost\-::\-Un\-Serialization\-::get\-Weak\-Learner\-Name (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{shyp\-File\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1UnSerialization_ad4348283d4bf8a414b3c099ce790a631}
+Return the name of the weak learner defined at the beginning of the strong hypothesis file. 
+\begin{DoxyParams}{Parameters}
+{\em shyp\-File\-Name} & The strong hypothesis file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the weak learner. 
+\end{DoxyReturn}
+
+
+Definition at line 400 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_ab5ce803d9b61f0249384130bc4fe4a84}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!load\-Cascade\-Hypotheses@{load\-Cascade\-Hypotheses}}
+\index{load\-Cascade\-Hypotheses@{load\-Cascade\-Hypotheses}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{load\-Cascade\-Hypotheses}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Un\-Serialization\-::load\-Cascade\-Hypotheses (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{vector$<$ vector$<$ {\bf Base\-Learner} $\ast$ $>$ $>$ \&}]{weak\-Hypotheses, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{thresholds, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data, }
+\item[{int}]{verbose = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1UnSerialization_ab5ce803d9b61f0249384130bc4fe4a84}
+Load the strong hypothesis file for cascade structure. 
+\begin{DoxyParams}{Parameters}
+{\em shyp\-File\-Name} & The name of the serialized cascade strong hypothesis file. \\
+\hline
+{\em weak\-Hypotheses} & The vector of vector of weak hypotheses that will be filled with the weak hypotheses stored in the xml file. The weak classifiers are stored stagewise. \\
+\hline
+{\em thresholds} & the threshold for each stage ( see V\&J paper ) \\
+\hline
+{\em p\-Training\-Data} & Pointer to the training data, needed for class\-Map, enum\-Maps \\
+\hline
+{\em verbose} & The level of verbosity. Default = 1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 753 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_ad99590df2e49aa62ac8dc996b6523ff7}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!load\-Hypotheses@{load\-Hypotheses}}
+\index{load\-Hypotheses@{load\-Hypotheses}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{load\-Hypotheses}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Un\-Serialization\-::load\-Hypotheses (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{vector$<$ {\bf Base\-Learner} $\ast$ $>$ \&}]{weak\-Hypotheses, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data, }
+\item[{int}]{verbose = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1UnSerialization_ad99590df2e49aa62ac8dc996b6523ff7}
+Load the strong hypothesis file. 
+\begin{DoxyParams}{Parameters}
+{\em shyp\-File\-Name} & The name of the serialized strong hypothesis file. \\
+\hline
+{\em weak\-Hypotheses} & The vector of weak hypotheses that will be filled with the weak hypotheses stored in the xml file. \\
+\hline
+{\em p\-Training\-Data} & Pointer to the training data, needed for class\-Map, enum\-Maps \\
+\hline
+{\em verbose} & The level of verbosity. Default = 1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 273 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_af3c09b360fcf813aec472d250faa5cc1}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!load\-Hypothesis@{load\-Hypothesis}}
+\index{load\-Hypothesis@{load\-Hypothesis}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{load\-Hypothesis}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Un\-Serialization\-::load\-Hypothesis (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Stream\-Tokenizer} \&}]{st, }
+\item[{vector$<$ {\bf Base\-Learner} $\ast$ $>$ \&}]{weak\-Hypotheses, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data, }
+\item[{int}]{verbose = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1UnSerialization_af3c09b360fcf813aec472d250faa5cc1}
+Load one hypothesis. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer on the file stream. \\
+\hline
+{\em weak\-Hypotheses} & The vector of weak hypotheses that will be filled with the weak hypotheses stored in the xml file. \\
+\hline
+{\em p\-Training\-Data} & Pointer to the training data, needed for class\-Map, enum\-Maps \\
+\hline
+{\em verbose} & The level of verbosity. Default = 1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1ProductLearner_a8c6ccbf794ed15b2ae4fa5b6764b3c7f}{Product\-Learner\-::load()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/05/2007 
+\end{DoxyDate}
+
+
+Definition at line 363 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_a7b3827a3a1a78fec2cb33cec68424267}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!parse\-Param\-Tag@{parse\-Param\-Tag}}
+\index{parse\-Param\-Tag@{parse\-Param\-Tag}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{parse\-Param\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Un\-Serialization\-::parse\-Param\-Tag (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{str, }
+\item[{string \&}]{tag, }
+\item[{string \&}]{tag\-Param, }
+\item[{string \&}]{param\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1UnSerialization_a7b3827a3a1a78fec2cb33cec68424267}
+Parse the given token that contains a parameter tag. This kind of tag, differs from the simple one because it is formatted this way\-: $<$tag param=\char`\"{}val\char`\"{}$>$. This method returns the tag, the parameter and the value. 
+\begin{DoxyParams}{Parameters}
+{\em str} & The string containing the token. \\
+\hline
+{\em tag} & The tag to be filled. \\
+\hline
+{\em tag\-Param} & The tag parameter to be filled. \\
+\hline
+{\em param\-Value} & The value of the parameter to be filled. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 491 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_a5670d7bfe5a56885d9c61739256e2146}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!seek\-And\-Parse\-Enclosed\-Value@{seek\-And\-Parse\-Enclosed\-Value}}
+\index{seek\-And\-Parse\-Enclosed\-Value@{seek\-And\-Parse\-Enclosed\-Value}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{seek\-And\-Parse\-Enclosed\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T Multi\-Boost\-::\-Un\-Serialization\-::seek\-And\-Parse\-Enclosed\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Stream\-Tokenizer} \&}]{st, }
+\item[{const string \&}]{tag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1UnSerialization_a5670d7bfe5a56885d9c61739256e2146}
+Move in the stream until it finds the given tag, then it returns the value following the tag. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer on the file stream. \\
+\hline
+{\em tag} & The tag which to look for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The returned value depends on the template parameter. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 445 of file Serialization.\-h.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_a44d1d30c1f8c8c99ee0ff40c6413ee0d}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!seek\-And\-Parse\-Param\-Tag@{seek\-And\-Parse\-Param\-Tag}}
+\index{seek\-And\-Parse\-Param\-Tag@{seek\-And\-Parse\-Param\-Tag}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{seek\-And\-Parse\-Param\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Un\-Serialization\-::seek\-And\-Parse\-Param\-Tag (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Stream\-Tokenizer} \&}]{st, }
+\item[{const string \&}]{tag, }
+\item[{string \&}]{tag\-Param, }
+\item[{string \&}]{param\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1UnSerialization_a44d1d30c1f8c8c99ee0ff40c6413ee0d}
+Move in the stream until it finds the given parameter tag, then it returns its components. This kind of tag, differs from the simple one because it is formatted this way\-: $<$tag param=\char`\"{}val\char`\"{}$>$. This method returns both param and value. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer on the file stream. \\
+\hline
+{\em tag} & The tag which to look for. \\
+\hline
+{\em tag\-Param} & The tag parameter to be filled. \\
+\hline
+{\em param\-Value} & The value of the parameter to be filled. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the tag has been found, otherwise false. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1UnSerialization_a5df00d73e915e5f6fed86143a886a09f}{seek\-Simple\-Tag} 
+
+\hyperlink{classMultiBoost_1_1UnSerialization_a6b70aa714607156c4bb0a06ee7d40420}{seek\-Param\-Tag} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 598 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_a36dfaae8f144cef020bd6706d25b27cc}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!seek\-And\-Parse\-Vector\-Tag@{seek\-And\-Parse\-Vector\-Tag}}
+\index{seek\-And\-Parse\-Vector\-Tag@{seek\-And\-Parse\-Vector\-Tag}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{seek\-And\-Parse\-Vector\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Multi\-Boost\-::\-Un\-Serialization\-::seek\-And\-Parse\-Vector\-Tag (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Stream\-Tokenizer} \&}]{st, }
+\item[{const string \&}]{array\-Name, }
+\item[{const {\bf Name\-Map} \&}]{id\-Map, }
+\item[{const string \&}]{element\-Tag\-Name, }
+\item[{vector$<$ T $>$ \&}]{vec\-To\-Fill}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1UnSerialization_a36dfaae8f144cef020bd6706d25b27cc}
+Move in the stream until it finds the given tag, then parse the vector which follows the tag. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer on the file stream. \\
+\hline
+{\em array\-Name} & The name of the tag that defines the beginning of a vector. \\
+\hline
+{\em vec\-To\-Fill} & The vector that will receive the data. \\
+\hline
+{\em name\-Map} & The map that contains the value$<$-\/$>$is map. \\
+\hline
+{\em element\-Tag\-Name} & E.\-g. \char`\"{}class\char`\"{} for the v vector. \\
+\hline
+{\em default\-Value} & The vector is initialized with this value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The type of data which is stored in the vector depends on how the vector itself has been declared, because this method is templetized. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+19/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 464 of file Serialization.\-h.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_a6b70aa714607156c4bb0a06ee7d40420}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!seek\-Param\-Tag@{seek\-Param\-Tag}}
+\index{seek\-Param\-Tag@{seek\-Param\-Tag}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{seek\-Param\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Un\-Serialization\-::seek\-Param\-Tag (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Stream\-Tokenizer} \&}]{st, }
+\item[{const string \&}]{tag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1UnSerialization_a6b70aa714607156c4bb0a06ee7d40420}
+Move in the stream until it finds the given parameter tag. This kind of tag, differs from the simple one because it is formatted this way\-: $<$tag param=\char`\"{}val\char`\"{}$>$. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer on the file stream. \\
+\hline
+{\em tag} & The tag which to look for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the tag has been found, otherwise false. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1UnSerialization_a5df00d73e915e5f6fed86143a886a09f}{seek\-Simple\-Tag} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 462 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_a5df00d73e915e5f6fed86143a886a09f}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!seek\-Simple\-Tag@{seek\-Simple\-Tag}}
+\index{seek\-Simple\-Tag@{seek\-Simple\-Tag}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{seek\-Simple\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Un\-Serialization\-::seek\-Simple\-Tag (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Stream\-Tokenizer} \&}]{st, }
+\item[{const string \&}]{tag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1UnSerialization_a5df00d73e915e5f6fed86143a886a09f}
+Move in the stream until it finds the given tag. For instance if the stream is at the beginning of \begin{DoxyVerb}<aTag>10<\aTag><anotherTag>15<\anotherTag><thirdTag>1<\thirdTag> \end{DoxyVerb}
+ and {\itshape tag} = third\-Tag, the next token returned by {\itshape st} will be 1. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer on the file stream. \\
+\hline
+{\em tag} & The tag which to look for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the tag has been found, otherwise false. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 450 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UnSerialization_a2070b6344d4b4c7729cb5aa685b35fd7}{\index{Multi\-Boost\-::\-Un\-Serialization@{Multi\-Boost\-::\-Un\-Serialization}!seek\-Simple\-Tag@{seek\-Simple\-Tag}}
+\index{seek\-Simple\-Tag@{seek\-Simple\-Tag}!MultiBoost::UnSerialization@{Multi\-Boost\-::\-Un\-Serialization}}
+\subsubsection[{seek\-Simple\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Un\-Serialization\-::seek\-Simple\-Tag (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Stream\-Tokenizer} \&}]{st, }
+\item[{const vector$<$ string $>$ \&}]{tags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1UnSerialization_a2070b6344d4b4c7729cb5aa685b35fd7}
+Move in the stream until it finds the one of given tags. For instance if the stream is at the beginning of \begin{DoxyVerb}<aTag>10<\aTag><anotherTag>15<\anotherTag><thirdTag>1<\thirdTag> \end{DoxyVerb}
+ and {\itshape tag} = \{another\-Tag,third\-Tag\}, the next token returned by {\itshape st} will be 15. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer on the file stream. \\
+\hline
+{\em tag} & The tag which to look for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the tag has been found, otherwise false. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 433 of file Serialization.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{Serialization_8h}{Serialization.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Serialization.\-cpp\end{DoxyCompactItemize}

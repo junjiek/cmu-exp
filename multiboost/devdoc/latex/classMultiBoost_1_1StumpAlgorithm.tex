@@ -1,0 +1,278 @@
+\hypertarget{classMultiBoost_1_1StumpAlgorithm}{\section{Multi\-Boost\-:\-:Stump\-Algorithm$<$ T $>$ Class Template Reference}
+\label{classMultiBoost_1_1StumpAlgorithm}\index{Multi\-Boost\-::\-Stump\-Algorithm$<$ T $>$@{Multi\-Boost\-::\-Stump\-Algorithm$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$Stump\-Algorithm.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Stump\-Algorithm$<$ T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1StumpAlgorithm}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ pair$<$ int, T $>$\\*
+ $>$\-::const\-\_\-iterator \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator}
+\item 
+typedef vector$<$ pair$<$ int, T $>$\\*
+ $>$\-::const\-\_\-iterator \hyperlink{classMultiBoost_1_1StumpAlgorithm_a0bb544acc46504f3f80a71a58a3ef75a}{cvp\-Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_a0b6cb546c6ac6cfa94ddf036918da745}{{\bfseries Stump\-Algorithm} (int num\-Classes)}\label{classMultiBoost_1_1StumpAlgorithm_a0b6cb546c6ac6cfa94ddf036918da745}
+
+\item 
+void \hyperlink{classMultiBoost_1_1StumpAlgorithm_ab2ffb01e9585d6453ff3f1a418323c4e}{init\-Search\-Loop} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data)
+\item 
+\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} \hyperlink{classMultiBoost_1_1StumpAlgorithm_a5a2f2cb9f4a1b90f63735607988c33ff}{find\-Single\-Threshold} (const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-Begin, const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-End, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} half\-Theta=0.\-0, vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ $\ast$p\-Mu=N\-U\-L\-L, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $\ast$p\-V=N\-U\-L\-L)
+\item 
+\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} \hyperlink{classMultiBoost_1_1StumpAlgorithm_a62e7ed70157186e9ae83e7edec0cd4d7}{find\-Single\-Threshold\-With\-Init} (const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-Begin, const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-End, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} half\-Theta, vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ $\ast$p\-Mu, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $\ast$p\-V)
+\item 
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_ad5da4a93172868d85c28dae3004019a2}{\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} {\bfseries find\-Single\-Threshold\-With\-Init} (const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-Begin, const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-End, const vp\-Reverse\-Iterator \&data\-Reverse\-Begin, const vp\-Reverse\-Iterator \&data\-Reverse\-End, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} half\-Theta, vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ $\ast$p\-Mu, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $\ast$p\-V, \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} most\-Frequent\-Feature\-Value=0)}\label{classMultiBoost_1_1StumpAlgorithm_ad5da4a93172868d85c28dae3004019a2}
+
+\item 
+void \hyperlink{classMultiBoost_1_1StumpAlgorithm_ab50c25e9822b7b09ad5c01028ae624b9}{find\-Multi\-Thresholds} (const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-Begin, const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-End, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&thresholds, vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ $\ast$p\-Mu=N\-U\-L\-L, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $\ast$p\-V=N\-U\-L\-L)
+\item 
+void \hyperlink{classMultiBoost_1_1StumpAlgorithm_ad967b2d0083e2ca6c793c7d8557f2f49}{find\-Multi\-Thresholds\-With\-Init} (const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-Begin, const \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} \&data\-End, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&thresholds, vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ $\ast$p\-Mu=N\-U\-L\-L, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $\ast$p\-V=N\-U\-L\-L)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_abf4380956d42207e3bf5a48f92e980a6}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \hyperlink{classMultiBoost_1_1StumpAlgorithm_abf4380956d42207e3bf5a48f92e980a6}{\-\_\-half\-Edges}}\label{classMultiBoost_1_1StumpAlgorithm_abf4380956d42207e3bf5a48f92e980a6}
+
+\begin{DoxyCompactList}\small\item\em half of the class-\/wise edges \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_a5b1be007eb98e56a6b160e4c555bd6e7}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \hyperlink{classMultiBoost_1_1StumpAlgorithm_a5b1be007eb98e56a6b160e4c555bd6e7}{\-\_\-constant\-Half\-Edges}}\label{classMultiBoost_1_1StumpAlgorithm_a5b1be007eb98e56a6b160e4c555bd6e7}
+
+\begin{DoxyCompactList}\small\item\em half of the class-\/wise edges of the constant classifier \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_a4f3524c5ff101b762d4a01d1d100a269}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \hyperlink{classMultiBoost_1_1StumpAlgorithm_a4f3524c5ff101b762d4a01d1d100a269}{\-\_\-best\-Half\-Edges}}\label{classMultiBoost_1_1StumpAlgorithm_a4f3524c5ff101b762d4a01d1d100a269}
+
+\begin{DoxyCompactList}\small\item\em half of the edges of the best found threshold. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_ac67094c0b8961be3693bfcc401bec53b}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \hyperlink{classMultiBoost_1_1StumpAlgorithm_ac67094c0b8961be3693bfcc401bec53b}{\-\_\-half\-Weights\-Per\-Class}}\label{classMultiBoost_1_1StumpAlgorithm_ac67094c0b8961be3693bfcc401bec53b}
+
+\begin{DoxyCompactList}\small\item\em The half of the total weights per class. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_ad6648537da8d39da5079619cc7cacd72}{vector$<$ \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} $>$ {\bfseries \-\_\-best\-Split\-Poss}}\label{classMultiBoost_1_1StumpAlgorithm_ad6648537da8d39da5079619cc7cacd72}
+
+\item 
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_af38ce488164c204bda0a51bcd989637c}{vector$<$ \hyperlink{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{vp\-Iterator} $>$ {\bfseries \-\_\-best\-Previous\-Split\-Poss}}\label{classMultiBoost_1_1StumpAlgorithm_af38ce488164c204bda0a51bcd989637c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Multi\-Boost\-::\-Stump\-Algorithm$<$ T $>$}
+
+Class specialized in solving decision stump-\/type algorithms. A decision stump is a decision tree with a single level. 
+
+Definition at line 62 of file Stump\-Algorithm.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_a0bb544acc46504f3f80a71a58a3ef75a}{\index{Multi\-Boost\-::\-Stump\-Algorithm@{Multi\-Boost\-::\-Stump\-Algorithm}!cvp\-Iterator@{cvp\-Iterator}}
+\index{cvp\-Iterator@{cvp\-Iterator}!MultiBoost::StumpAlgorithm@{Multi\-Boost\-::\-Stump\-Algorithm}}
+\subsubsection[{cvp\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef vector$<$ pair$<$int, T$>$ $>$\-::const\-\_\-iterator {\bf Multi\-Boost\-::\-Stump\-Algorithm}$<$ T $>$\-::{\bf cvp\-Iterator}}}\label{classMultiBoost_1_1StumpAlgorithm_a0bb544acc46504f3f80a71a58a3ef75a}
+Const iterator on Pair. The pair refers to $<$index, value$>$. 
+
+Definition at line 74 of file Stump\-Algorithm.\-h.
+
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}{\index{Multi\-Boost\-::\-Stump\-Algorithm@{Multi\-Boost\-::\-Stump\-Algorithm}!vp\-Iterator@{vp\-Iterator}}
+\index{vp\-Iterator@{vp\-Iterator}!MultiBoost::StumpAlgorithm@{Multi\-Boost\-::\-Stump\-Algorithm}}
+\subsubsection[{vp\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef vector$<$ pair$<$int, T$>$ $>$\-::const\-\_\-iterator {\bf Multi\-Boost\-::\-Stump\-Algorithm}$<$ T $>$\-::{\bf vp\-Iterator}}}\label{classMultiBoost_1_1StumpAlgorithm_a358eae7c8636c09b6b26ef0cc74bbd51}
+Iterator on Pair. The pair refers to $<$index, value$>$. 
+
+Definition at line 70 of file Stump\-Algorithm.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_ab50c25e9822b7b09ad5c01028ae624b9}{\index{Multi\-Boost\-::\-Stump\-Algorithm@{Multi\-Boost\-::\-Stump\-Algorithm}!find\-Multi\-Thresholds@{find\-Multi\-Thresholds}}
+\index{find\-Multi\-Thresholds@{find\-Multi\-Thresholds}!MultiBoost::StumpAlgorithm@{Multi\-Boost\-::\-Stump\-Algorithm}}
+\subsubsection[{find\-Multi\-Thresholds}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Multi\-Boost\-::\-Stump\-Algorithm}$<$ T $>$\-::find\-Multi\-Thresholds (
+\begin{DoxyParamCaption}
+\item[{const {\bf vp\-Iterator} \&}]{data\-Begin, }
+\item[{const {\bf vp\-Iterator} \&}]{data\-End, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Feature\-Real} $>$ \&}]{thresholds, }
+\item[{vector$<$ {\bf s\-Rates} $>$ $\ast$}]{p\-Mu = {\ttfamily NULL}, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ $\ast$}]{p\-V = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1StumpAlgorithm_ab50c25e9822b7b09ad5c01028ae624b9}
+Find the optimal thresholds (one for each class) that maximizes the edge (or minimizes the error) on the given data weighted data. 
+\begin{DoxyParams}{Parameters}
+{\em data\-Begin} & The iterator to the beginning of the data. \\
+\hline
+{\em data\-End} & The iterator to the end of the data. \\
+\hline
+{\em p\-Data} & The pointer to the original data class. Used to obtain the label of the example from its index. \\
+\hline
+{\em thresholds} & The thresholds to update. \\
+\hline
+{\em p\-Mu} & The The class-\/wise rates to update (if provided). \\
+\hline
+{\em p\-V} & The alignment vector to update (if provided). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The algorithm (suboptimally) maximizes the Edge. This is slightly different from the standard Ada\-Boost which maximizes the energy even in the decision stump algorithm. This is the result of a trade-\/off between speed and full adherence to the theory. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{structMultiBoost_1_1sRates}{s\-Rates} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 554 of file Stump\-Algorithm.\-h.
+
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_ad967b2d0083e2ca6c793c7d8557f2f49}{\index{Multi\-Boost\-::\-Stump\-Algorithm@{Multi\-Boost\-::\-Stump\-Algorithm}!find\-Multi\-Thresholds\-With\-Init@{find\-Multi\-Thresholds\-With\-Init}}
+\index{find\-Multi\-Thresholds\-With\-Init@{find\-Multi\-Thresholds\-With\-Init}!MultiBoost::StumpAlgorithm@{Multi\-Boost\-::\-Stump\-Algorithm}}
+\subsubsection[{find\-Multi\-Thresholds\-With\-Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Multi\-Boost\-::\-Stump\-Algorithm}$<$ T $>$\-::find\-Multi\-Thresholds\-With\-Init (
+\begin{DoxyParamCaption}
+\item[{const {\bf vp\-Iterator} \&}]{data\-Begin, }
+\item[{const {\bf vp\-Iterator} \&}]{data\-End, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Feature\-Real} $>$ \&}]{thresholds, }
+\item[{vector$<$ {\bf s\-Rates} $>$ $\ast$}]{p\-Mu = {\ttfamily NULL}, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ $\ast$}]{p\-V = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1StumpAlgorithm_ad967b2d0083e2ca6c793c7d8557f2f49}
+Same as find\-Multi\-Threshold, but the caller has to call init\-Search\-Loop explicitly before the loop over the dimensions (features). It is more efficient than find\-Multi\-Threshold since find\-Multi\-Threshold calls init\-Search\-Loop in each iteration. However, it can only be used if the data points and their weights do not change between init\-Search\-Loop and subsequent calls to find\-Multi\-Threshold. See \hyperlink{classMultiBoost_1_1MultiStumpLearner_a682f5428b73db0e89de8128539108f6b}{Multi\-Stump\-Learner\-::run} for an example. 
+\begin{DoxyParams}{Parameters}
+{\em data\-Begin} & The iterator to the beginning of the data. \\
+\hline
+{\em data\-End} & The iterator to the end of the data. \\
+\hline
+{\em p\-Data} & The pointer to the original data class. Used to obtain the label of the example from its index. \\
+\hline
+{\em thresholds} & The thresholds to update. \\
+\hline
+{\em p\-Mu} & The The class-\/wise rates to update. (if provided) \\
+\hline
+{\em p\-V} & The alignment vector to update. (if provided) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{structMultiBoost_1_1sRates}{s\-Rates} 
+
+\hyperlink{classMultiBoost_1_1StumpAlgorithm_a5a2f2cb9f4a1b90f63735607988c33ff}{find\-Single\-Threshold} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The threshold found. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+05/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 571 of file Stump\-Algorithm.\-h.
+
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_a5a2f2cb9f4a1b90f63735607988c33ff}{\index{Multi\-Boost\-::\-Stump\-Algorithm@{Multi\-Boost\-::\-Stump\-Algorithm}!find\-Single\-Threshold@{find\-Single\-Threshold}}
+\index{find\-Single\-Threshold@{find\-Single\-Threshold}!MultiBoost::StumpAlgorithm@{Multi\-Boost\-::\-Stump\-Algorithm}}
+\subsubsection[{find\-Single\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Feature\-Real} {\bf Multi\-Boost\-::\-Stump\-Algorithm}$<$ T $>$\-::find\-Single\-Threshold (
+\begin{DoxyParamCaption}
+\item[{const {\bf vp\-Iterator} \&}]{data\-Begin, }
+\item[{const {\bf vp\-Iterator} \&}]{data\-End, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{{\bf Alpha\-Real}}]{half\-Theta = {\ttfamily 0.0}, }
+\item[{vector$<$ {\bf s\-Rates} $>$ $\ast$}]{p\-Mu = {\ttfamily NULL}, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ $\ast$}]{p\-V = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1StumpAlgorithm_a5a2f2cb9f4a1b90f63735607988c33ff}
+Find the optimal threshold that maximizes the edge (or minimizes the error) on the given weighted data. In case of multi-\/class data, the threshold will minimize the error over all the classes\-: 
+\begin{DoxyParams}{Parameters}
+{\em data\-Begin} & The iterator to the beginning of the data. \\
+\hline
+{\em data\-End} & The iterator to the end of the data. \\
+\hline
+{\em p\-Data} & The pointer to the original data class. Used to obtain the label of the example from its index. \\
+\hline
+{\em p\-Mu} & The The class-\/wise rates to update. (if provided) \\
+\hline
+{\em p\-V} & The alignment vector to update. (if provided) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{structMultiBoost_1_1sRates}{s\-Rates} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The threshold found. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+The algorithm (suboptimally) maximizes the Edge. This is slightly different from the standard Ada\-Boost which maximizes the energy even in the decision stump algorithm. This is the result of a trade-\/off between speed and full adherence to the theory. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 227 of file Stump\-Algorithm.\-h.
+
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_a62e7ed70157186e9ae83e7edec0cd4d7}{\index{Multi\-Boost\-::\-Stump\-Algorithm@{Multi\-Boost\-::\-Stump\-Algorithm}!find\-Single\-Threshold\-With\-Init@{find\-Single\-Threshold\-With\-Init}}
+\index{find\-Single\-Threshold\-With\-Init@{find\-Single\-Threshold\-With\-Init}!MultiBoost::StumpAlgorithm@{Multi\-Boost\-::\-Stump\-Algorithm}}
+\subsubsection[{find\-Single\-Threshold\-With\-Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Feature\-Real} {\bf Multi\-Boost\-::\-Stump\-Algorithm}$<$ T $>$\-::find\-Single\-Threshold\-With\-Init (
+\begin{DoxyParamCaption}
+\item[{const {\bf vp\-Iterator} \&}]{data\-Begin, }
+\item[{const {\bf vp\-Iterator} \&}]{data\-End, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{{\bf Alpha\-Real}}]{half\-Theta, }
+\item[{vector$<$ {\bf s\-Rates} $>$ $\ast$}]{p\-Mu, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ $\ast$}]{p\-V}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1StumpAlgorithm_a62e7ed70157186e9ae83e7edec0cd4d7}
+Same as find\-Single\-Threshold, but the caller has to call init\-Search\-Loop explicitly before the loop over the dimensions (features). It is more efficient than find\-Single\-Threshold since find\-Single\-Threshold calls init\-Search\-Loop in each iteration. However, it can only be used if the data points and their weights do not change between init\-Search\-Loop and subsequent calls to find\-Single\-Threshold. See \hyperlink{classMultiBoost_1_1SingleStumpLearner_a9cd7bfe1a0905857993eec0dd462a879}{Single\-Stump\-Learner\-::run} for an example. 
+\begin{DoxyParams}{Parameters}
+{\em data\-Begin} & The iterator to the beginning of the data. \\
+\hline
+{\em data\-End} & The iterator to the end of the data. \\
+\hline
+{\em p\-Data} & The pointer to the original data class. Used to obtain the label of the example from its index. \\
+\hline
+{\em p\-Mu} & The The class-\/wise rates to update. (if provided) \\
+\hline
+{\em p\-V} & The alignment vector to update. (if provided) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{structMultiBoost_1_1sRates}{s\-Rates} 
+
+\hyperlink{classMultiBoost_1_1StumpAlgorithm_a5a2f2cb9f4a1b90f63735607988c33ff}{find\-Single\-Threshold} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The threshold found. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+03/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 245 of file Stump\-Algorithm.\-h.
+
+\hypertarget{classMultiBoost_1_1StumpAlgorithm_ab2ffb01e9585d6453ff3f1a418323c4e}{\index{Multi\-Boost\-::\-Stump\-Algorithm@{Multi\-Boost\-::\-Stump\-Algorithm}!init\-Search\-Loop@{init\-Search\-Loop}}
+\index{init\-Search\-Loop@{init\-Search\-Loop}!MultiBoost::StumpAlgorithm@{Multi\-Boost\-::\-Stump\-Algorithm}}
+\subsubsection[{init\-Search\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Multi\-Boost\-::\-Stump\-Algorithm}$<$ T $>$\-::init\-Search\-Loop (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1StumpAlgorithm_ab2ffb01e9585d6453ff3f1a418323c4e}
+Initilizes half\-Weights\-Per\-Class and constant\-Half\-Edges for subsequent calls to find\-Single\-Threshold\-With\-Init or find\-Multi\-Threshold\-With\-Init 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The pointer to the data class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+03/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 218 of file Stump\-Algorithm.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Algorithms/\hyperlink{StumpAlgorithm_8h}{Stump\-Algorithm.\-h}\end{DoxyCompactItemize}

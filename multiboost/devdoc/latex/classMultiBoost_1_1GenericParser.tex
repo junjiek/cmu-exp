@@ -1,0 +1,213 @@
+\hypertarget{classMultiBoost_1_1GenericParser}{\section{Multi\-Boost\-:\-:Generic\-Parser Class Reference}
+\label{classMultiBoost_1_1GenericParser}\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}}
+}
+Inheritance diagram for Multi\-Boost\-:\-:Generic\-Parser\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMultiBoost_1_1GenericParser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1GenericParser_a1d241680986eb2d61ab9647a4f7c36a8}{Generic\-Parser} (const string \&file\-Name, const string \&header\-File\-Name)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}{read\-Data} (vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \&examples, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)=0
+\item 
+virtual int \hyperlink{classMultiBoost_1_1GenericParser_a5daee3b49a8cb5c2bbb515d19bff3cd6}{get\-Num\-Attributes} () const =0
+\item 
+const e\-Data\-Rep \hyperlink{classMultiBoost_1_1GenericParser_a0997b24d68eca260eaf01c5b20a5bba0}{get\-Data\-Rep} () const 
+\item 
+const e\-Label\-Rep \hyperlink{classMultiBoost_1_1GenericParser_aa6ef9b1f07ac052107a4dbc90edc7289}{get\-Label\-Rep} () const 
+\item 
+bool \hyperlink{classMultiBoost_1_1GenericParser_a9887f8d7904a2ed984d8825bfaa3285c}{has\-Weight\-Initialized} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classMultiBoost_1_1GenericParser_a46c61253bc59b8bcff0bbb5bd1536a41}{\-\_\-verbose\-Level}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \& \hyperlink{classMultiBoost_1_1GenericParser_a56736441432a14e17a81e19b4707e672}{\-\_\-file\-Name}
+\item 
+const string \& \hyperlink{classMultiBoost_1_1GenericParser_a0569fb29d9603285df0fe30fc6cf6c87}{\-\_\-header\-File\-Name}
+\item 
+e\-Data\-Rep \hyperlink{classMultiBoost_1_1GenericParser_a37390f83bc3e4b3788d7f007aeb92389}{\-\_\-data\-Rep}
+\item 
+e\-Label\-Rep \hyperlink{classMultiBoost_1_1GenericParser_ab06970eec068271831eda07846defb8b}{\-\_\-label\-Rep}
+\item 
+bool \hyperlink{classMultiBoost_1_1GenericParser_a2a3966c40707b69fde1dffc85a04a399}{\-\_\-has\-Weigth\-Init}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 56 of file Generic\-Parser.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1GenericParser_a1d241680986eb2d61ab9647a4f7c36a8}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!Generic\-Parser@{Generic\-Parser}}
+\index{Generic\-Parser@{Generic\-Parser}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{Generic\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Generic\-Parser\-::\-Generic\-Parser (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{file\-Name, }
+\item[{const string \&}]{header\-File\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1GenericParser_a1d241680986eb2d61ab9647a4f7c36a8}
+The constructor. It initializes the data file and the header file. \begin{DoxyRemark}{Remarks}
+The data and label representation are set to dense by default.  30/07/2011 
+\end{DoxyRemark}
+
+
+Definition at line 64 of file Generic\-Parser.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1GenericParser_a0997b24d68eca260eaf01c5b20a5bba0}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!get\-Data\-Rep@{get\-Data\-Rep}}
+\index{get\-Data\-Rep@{get\-Data\-Rep}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{get\-Data\-Rep}]{\setlength{\rightskip}{0pt plus 5cm}const e\-Data\-Rep Multi\-Boost\-::\-Generic\-Parser\-::get\-Data\-Rep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1GenericParser_a0997b24d68eca260eaf01c5b20a5bba0}
+It gets the data representation, i.\-e. sparse or dense. \begin{DoxyReturn}{Returns}
+The type of data representation  30/07/2011 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file Generic\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1GenericParser_aa6ef9b1f07ac052107a4dbc90edc7289}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!get\-Label\-Rep@{get\-Label\-Rep}}
+\index{get\-Label\-Rep@{get\-Label\-Rep}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{get\-Label\-Rep}]{\setlength{\rightskip}{0pt plus 5cm}const e\-Label\-Rep Multi\-Boost\-::\-Generic\-Parser\-::get\-Label\-Rep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1GenericParser_aa6ef9b1f07ac052107a4dbc90edc7289}
+It gets the label representation, i.\-e. sparse or dense. \begin{DoxyReturn}{Returns}
+The type of label representation  30/07/2011 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file Generic\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1GenericParser_a5daee3b49a8cb5c2bbb515d19bff3cd6}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!get\-Num\-Attributes@{get\-Num\-Attributes}}
+\index{get\-Num\-Attributes@{get\-Num\-Attributes}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{get\-Num\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Multi\-Boost\-::\-Generic\-Parser\-::get\-Num\-Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classMultiBoost_1_1GenericParser_a5daee3b49a8cb5c2bbb515d19bff3cd6}
+It retrurns the number of features. \begin{DoxyRemark}{Remarks}
+It might be implemented here, and not as an abstract function. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+The number of features.  30/07/2011 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1TxtParser_a9654db113c2a4c15966f01e598c9c675}{Multi\-Boost\-::\-Txt\-Parser}, \hyperlink{classMultiBoost_1_1ArffParser_aa2921ea554b3b8fd14aa893d7ab0eedd}{Multi\-Boost\-::\-Arff\-Parser}, \hyperlink{classMultiBoost_1_1ArffParserBzip2_a0be90fb6c0e87f1d7962effcd2a647cb}{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}, and \hyperlink{classMultiBoost_1_1SVMLightParser_a71e7f44ab883a8e5f5c211d22e29a1d9}{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}.
+
+\hypertarget{classMultiBoost_1_1GenericParser_a9887f8d7904a2ed984d8825bfaa3285c}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!has\-Weight\-Initialized@{has\-Weight\-Initialized}}
+\index{has\-Weight\-Initialized@{has\-Weight\-Initialized}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{has\-Weight\-Initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Generic\-Parser\-::has\-Weight\-Initialized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1GenericParser_a9887f8d7904a2ed984d8825bfaa3285c}
+It gets whether there is an intial weighting or not. \begin{DoxyRemark}{Remarks}
+Initial weights can be set only with sparse labels. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+If the user gave initial weights for the labels, it returns with true, othervise with false.  30/07/2011 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file Generic\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!read\-Data@{read\-Data}}
+\index{read\-Data@{read\-Data}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{read\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Generic\-Parser\-::read\-Data (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Example} $>$ \&}]{examples, }
+\item[{{\bf Name\-Map} \&}]{class\-Map, }
+\item[{vector$<$ {\bf Name\-Map} $>$ \&}]{enum\-Maps, }
+\item[{{\bf Name\-Map} \&}]{attribute\-Name\-Map, }
+\item[{vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&}]{attribute\-Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}
+Abstract function for reading data. 
+\begin{DoxyParams}{Parameters}
+{\em examples} & The vector of examples to be filled up. \\
+\hline
+{\em class\-Map} & The map which stores the class names. \\
+\hline
+{\em enum\-Maps} & It stores the mapping of nominal values into natural numbers. \\
+\hline
+{\em attribute\-Name\-Map} & The name of attributes given by the user. \\
+\hline
+{\em attribute\-Types} & The type of attributes, for example numerical or nominal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+Raw\-Data\-::e\-Attribute\-Type  30/07/2011 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1TxtParser_a2e1dc396f688ebc41861d7c29122293f}{Multi\-Boost\-::\-Txt\-Parser}, \hyperlink{classMultiBoost_1_1ArffParser_a1ede5df98cbce136f1e554dbaf974a4f}{Multi\-Boost\-::\-Arff\-Parser}, \hyperlink{classMultiBoost_1_1ArffParserBzip2_a6f122a7b4a997e5deb7939253c4131c4}{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}, and \hyperlink{classMultiBoost_1_1SVMLightParser_a447e1de2725f5c00d26d4a174b51c916}{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1GenericParser_a37390f83bc3e4b3788d7f007aeb92389}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!\-\_\-data\-Rep@{\-\_\-data\-Rep}}
+\index{\-\_\-data\-Rep@{\-\_\-data\-Rep}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{\-\_\-data\-Rep}]{\setlength{\rightskip}{0pt plus 5cm}e\-Data\-Rep Multi\-Boost\-::\-Generic\-Parser\-::\-\_\-data\-Rep\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1GenericParser_a37390f83bc3e4b3788d7f007aeb92389}
+The data representation, i.\-e. sparse or dense.  30/07/2011 
+
+Definition at line 134 of file Generic\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1GenericParser_a56736441432a14e17a81e19b4707e672}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!\-\_\-file\-Name@{\-\_\-file\-Name}}
+\index{\-\_\-file\-Name@{\-\_\-file\-Name}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{\-\_\-file\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const string\& Multi\-Boost\-::\-Generic\-Parser\-::\-\_\-file\-Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1GenericParser_a56736441432a14e17a81e19b4707e672}
+The data file name.  30/07/2011 
+
+Definition at line 122 of file Generic\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1GenericParser_a2a3966c40707b69fde1dffc85a04a399}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!\-\_\-has\-Weigth\-Init@{\-\_\-has\-Weigth\-Init}}
+\index{\-\_\-has\-Weigth\-Init@{\-\_\-has\-Weigth\-Init}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{\-\_\-has\-Weigth\-Init}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Generic\-Parser\-::\-\_\-has\-Weigth\-Init\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1GenericParser_a2a3966c40707b69fde1dffc85a04a399}
+In the case of sparse label representation the user is allowed to provide initial weigths for each label. If the user do this this flag is set to true.  30/07/2011 
+
+Definition at line 147 of file Generic\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1GenericParser_a0569fb29d9603285df0fe30fc6cf6c87}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!\-\_\-header\-File\-Name@{\-\_\-header\-File\-Name}}
+\index{\-\_\-header\-File\-Name@{\-\_\-header\-File\-Name}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{\-\_\-header\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const string\& Multi\-Boost\-::\-Generic\-Parser\-::\-\_\-header\-File\-Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1GenericParser_a0569fb29d9603285df0fe30fc6cf6c87}
+If there is given a separate header file then this variable stores its name.  30/07/2011 
+
+Definition at line 128 of file Generic\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1GenericParser_ab06970eec068271831eda07846defb8b}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!\-\_\-label\-Rep@{\-\_\-label\-Rep}}
+\index{\-\_\-label\-Rep@{\-\_\-label\-Rep}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{\-\_\-label\-Rep}]{\setlength{\rightskip}{0pt plus 5cm}e\-Label\-Rep Multi\-Boost\-::\-Generic\-Parser\-::\-\_\-label\-Rep\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1GenericParser_ab06970eec068271831eda07846defb8b}
+The label representation.  30/07/2011 
+
+Definition at line 140 of file Generic\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1GenericParser_a46c61253bc59b8bcff0bbb5bd1536a41}{\index{Multi\-Boost\-::\-Generic\-Parser@{Multi\-Boost\-::\-Generic\-Parser}!\-\_\-verbose\-Level@{\-\_\-verbose\-Level}}
+\index{\-\_\-verbose\-Level@{\-\_\-verbose\-Level}!MultiBoost::GenericParser@{Multi\-Boost\-::\-Generic\-Parser}}
+\subsubsection[{\-\_\-verbose\-Level}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Generic\-Parser\-::\-\_\-verbose\-Level}}\label{classMultiBoost_1_1GenericParser_a46c61253bc59b8bcff0bbb5bd1536a41}
+Verbose Level for parsing stages 
+
+Definition at line 115 of file Generic\-Parser.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{GenericParser_8h}{Generic\-Parser.\-h}\end{DoxyCompactItemize}

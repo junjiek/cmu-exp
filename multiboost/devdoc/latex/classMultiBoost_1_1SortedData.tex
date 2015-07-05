@@ -1,0 +1,268 @@
+\hypertarget{classMultiBoost_1_1SortedData}{\section{Multi\-Boost\-:\-:Sorted\-Data Class Reference}
+\label{classMultiBoost_1_1SortedData}\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}}
+}
+
+
+{\ttfamily \#include $<$Sorted\-Data.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Sorted\-Data\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1SortedData}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1SortedData_a89df49203a7d967b2e23e3cfb4403262}{$\sim$\-Sorted\-Data} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SortedData_a4026ff8765982ac0c0edff12a929917f}{load} (const string \&file\-Name, e\-Input\-Type input\-Type=I\-T\-\_\-\-T\-R\-A\-I\-N, int verbose\-Level=1)
+\item 
+virtual bool \hyperlink{classMultiBoost_1_1SortedData_a993e66c0085455528e18f82c40a58385}{is\-Attribute\-Empty} (int idx)
+\item 
+virtual bool \hyperlink{classMultiBoost_1_1SortedData_af773a5fb18bfb18207d8c715aebd96d3}{is\-Filtered\-Attribute\-Empty} ()
+\item 
+virtual bool \hyperlink{classMultiBoost_1_1SortedData_aaa76d92268071910126ae76214ccb6da}{is\-Filtered\-Attribute\-Has\-One\-Value} ()
+\item 
+virtual pair$<$ vp\-Iterator, \\*
+vp\-Iterator $>$ \hyperlink{classMultiBoost_1_1SortedData_a83b6ed8723ff04af5b9d618220887369}{get\-Filtered\-Begin\-End} (int col\-Idx)
+\item 
+virtual pair\\*
+$<$ vp\-Reverse\-Iterator, \\*
+vp\-Reverse\-Iterator $>$ \hyperlink{classMultiBoost_1_1SortedData_a4cad1567441921bbb84ed92792ed6eb2}{get\-Filtered\-Reverse\-Begin\-End} (int col\-Idx)
+\item 
+virtual pair$<$ pair$<$ vp\-Iterator, \\*
+vp\-Iterator $>$, pair\\*
+$<$ vp\-Reverse\-Iterator, \\*
+vp\-Reverse\-Iterator $>$ $>$ \hyperlink{classMultiBoost_1_1SortedData_a86c5a698ca5681859b65ff1ea1a4b67b}{get\-Filteredand\-Reverse\-Begin\-End} (int col\-Idx)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ pair$<$ int, \\*
+\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ $>$ \hyperlink{classMultiBoost_1_1SortedData_a56ab0bfd37309f0a9fcb00eb4feee18e}{column}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1SortedData_a7a2a56a67006842a91f7e865a5e09a35}{vector$<$ \hyperlink{classMultiBoost_1_1SortedData_a56ab0bfd37309f0a9fcb00eb4feee18e}{column} $>$ \hyperlink{classMultiBoost_1_1SortedData_a7a2a56a67006842a91f7e865a5e09a35}{\-\_\-sorted\-Data}}\label{classMultiBoost_1_1SortedData_a7a2a56a67006842a91f7e865a5e09a35}
+
+\begin{DoxyCompactList}\small\item\em the sorted data. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SortedData_aa8169de00052de046285b14ae5a8bb44}{\hyperlink{classMultiBoost_1_1SortedData_a56ab0bfd37309f0a9fcb00eb4feee18e}{column} \hyperlink{classMultiBoost_1_1SortedData_aa8169de00052de046285b14ae5a8bb44}{\-\_\-filtered\-Column}}\label{classMultiBoost_1_1SortedData_aa8169de00052de046285b14ae5a8bb44}
+
+\begin{DoxyCompactList}\small\item\em the sorted filtered data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Overloading of the \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} class to support sorting of the column. This is particularly useful for stump-\/based learner, because they work column-\/by-\/column (dimension-\/by-\/dimension), looking for a threshold that minimizes the error, and sorting the data it's mandatory. The connection between this class and the weak learner that implements decision stump, is done with the overriding of method \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{Base\-Learner\-::create\-Input\-Data()} which will return the desired \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} type (and which might depend on the arguments of the command line too). \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{Base\-Learner\-::create\-Input\-Data()} 
+
+Stump\-Learner\-::create\-Input\-Data() 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 66 of file Sorted\-Data.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classMultiBoost_1_1SortedData_a56ab0bfd37309f0a9fcb00eb4feee18e}{\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}!column@{column}}
+\index{column@{column}!MultiBoost::SortedData@{Multi\-Boost\-::\-Sorted\-Data}}
+\subsubsection[{column}]{\setlength{\rightskip}{0pt plus 5cm}typedef vector$<$ pair$<$int, {\bf Feature\-Real}$>$ $>$ {\bf Multi\-Boost\-::\-Sorted\-Data\-::column}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SortedData_a56ab0bfd37309f0a9fcb00eb4feee18e}
+A column of the data. The pair represents the index of the example and the value of the column. The index of the column is the index of the vector itself. \begin{DoxyRemark}{Remarks}
+I am storing both the index and the value because it is a trade off between speed in a key part of the code (finding the threshold) and the memory consumption. In case of very large databases, this could be turned into a index only vector. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 161 of file Sorted\-Data.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1SortedData_a89df49203a7d967b2e23e3cfb4403262}{\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}!$\sim$\-Sorted\-Data@{$\sim$\-Sorted\-Data}}
+\index{$\sim$\-Sorted\-Data@{$\sim$\-Sorted\-Data}!MultiBoost::SortedData@{Multi\-Boost\-::\-Sorted\-Data}}
+\subsubsection[{$\sim$\-Sorted\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual Multi\-Boost\-::\-Sorted\-Data\-::$\sim$\-Sorted\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1SortedData_a89df49203a7d967b2e23e3cfb4403262}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 74 of file Sorted\-Data.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1SortedData_a86c5a698ca5681859b65ff1ea1a4b67b}{\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}!get\-Filteredand\-Reverse\-Begin\-End@{get\-Filteredand\-Reverse\-Begin\-End}}
+\index{get\-Filteredand\-Reverse\-Begin\-End@{get\-Filteredand\-Reverse\-Begin\-End}!MultiBoost::SortedData@{Multi\-Boost\-::\-Sorted\-Data}}
+\subsubsection[{get\-Filteredand\-Reverse\-Begin\-End}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ pair$<$ vp\-Iterator, vp\-Iterator $>$, pair$<$ vp\-Reverse\-Iterator, vp\-Reverse\-Iterator $>$ $>$ Multi\-Boost\-::\-Sorted\-Data\-::get\-Filteredand\-Reverse\-Begin\-End (
+\begin{DoxyParamCaption}
+\item[{int}]{col\-Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1SortedData_a86c5a698ca5681859b65ff1ea1a4b67b}
+Get a pair of pair of iterators The first pair is obtained through \hyperlink{classMultiBoost_1_1SortedData_a83b6ed8723ff04af5b9d618220887369}{get\-Filtered\-Begin\-End()} The second pair is the reverse pair. 
+\begin{DoxyParams}{Parameters}
+{\em col\-Idx} & The column index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pair of pair containing the iterator to the first and last elements of the column and the second pair is the reverse 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+only used by \hyperlink{classMultiBoost_1_1StumpAlgorithm}{Stump\-Algorithm} 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+04/18/2013 
+\end{DoxyDate}
+
+
+Definition at line 159 of file Sorted\-Data.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SortedData_a83b6ed8723ff04af5b9d618220887369}{\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}!get\-Filtered\-Begin\-End@{get\-Filtered\-Begin\-End}}
+\index{get\-Filtered\-Begin\-End@{get\-Filtered\-Begin\-End}!MultiBoost::SortedData@{Multi\-Boost\-::\-Sorted\-Data}}
+\subsubsection[{get\-Filtered\-Begin\-End}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ vp\-Iterator, vp\-Iterator $>$ Multi\-Boost\-::\-Sorted\-Data\-::get\-Filtered\-Begin\-End (
+\begin{DoxyParamCaption}
+\item[{int}]{col\-Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1SortedData_a83b6ed8723ff04af5b9d618220887369}
+Get the first and last elements of the sorted and filtered column of the data. If there is no filtering, the iterator goes over all elements. 
+\begin{DoxyParams}{Parameters}
+{\em col\-Idx} & The column index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pair containing the iterator to the first and last elements of the column 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+The second is the end() iterator, so it does not point to anything! 
+
+Replaces get\-Sorted\-Begin\-End() in earlier versions 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 120 of file Sorted\-Data.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SortedData_a4cad1567441921bbb84ed92792ed6eb2}{\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}!get\-Filtered\-Reverse\-Begin\-End@{get\-Filtered\-Reverse\-Begin\-End}}
+\index{get\-Filtered\-Reverse\-Begin\-End@{get\-Filtered\-Reverse\-Begin\-End}!MultiBoost::SortedData@{Multi\-Boost\-::\-Sorted\-Data}}
+\subsubsection[{get\-Filtered\-Reverse\-Begin\-End}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ vp\-Reverse\-Iterator, vp\-Reverse\-Iterator $>$ Multi\-Boost\-::\-Sorted\-Data\-::get\-Filtered\-Reverse\-Begin\-End (
+\begin{DoxyParamCaption}
+\item[{int}]{col\-Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1SortedData_a4cad1567441921bbb84ed92792ed6eb2}
+The same as Soterd\-Data\-::get\-Filtered\-Begin\-End but it returns reverse iterator. \textbackslash{} see Soterd\-Data\-::get\-Filtered\-Begin\-End \begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 168 of file Sorted\-Data.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SortedData_a993e66c0085455528e18f82c40a58385}{\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}!is\-Attribute\-Empty@{is\-Attribute\-Empty}}
+\index{is\-Attribute\-Empty@{is\-Attribute\-Empty}!MultiBoost::SortedData@{Multi\-Boost\-::\-Sorted\-Data}}
+\subsubsection[{is\-Attribute\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Multi\-Boost\-::\-Sorted\-Data\-::is\-Attribute\-Empty (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1SortedData_a993e66c0085455528e18f82c40a58385}
+Check whether a feature/attribute is empty.(This can happen using sparse data representation.) 
+\begin{DoxyParams}{Parameters}
+{\em idx} & the index of the attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the attribute is empty, false otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 93 of file Sorted\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1SortedData_af773a5fb18bfb18207d8c715aebd96d3}{\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}!is\-Filtered\-Attribute\-Empty@{is\-Filtered\-Attribute\-Empty}}
+\index{is\-Filtered\-Attribute\-Empty@{is\-Filtered\-Attribute\-Empty}!MultiBoost::SortedData@{Multi\-Boost\-::\-Sorted\-Data}}
+\subsubsection[{is\-Filtered\-Attribute\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Multi\-Boost\-::\-Sorted\-Data\-::is\-Filtered\-Attribute\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1SortedData_af773a5fb18bfb18207d8c715aebd96d3}
+Check whether the current filtered feature/attribute is empty after a filtering. \begin{DoxyReturn}{Returns}
+True if the currrent filtered attribute is empty, false otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 103 of file Sorted\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1SortedData_aaa76d92268071910126ae76214ccb6da}{\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}!is\-Filtered\-Attribute\-Has\-One\-Value@{is\-Filtered\-Attribute\-Has\-One\-Value}}
+\index{is\-Filtered\-Attribute\-Has\-One\-Value@{is\-Filtered\-Attribute\-Has\-One\-Value}!MultiBoost::SortedData@{Multi\-Boost\-::\-Sorted\-Data}}
+\subsubsection[{is\-Filtered\-Attribute\-Has\-One\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Multi\-Boost\-::\-Sorted\-Data\-::is\-Filtered\-Attribute\-Has\-One\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1SortedData_aaa76d92268071910126ae76214ccb6da}
+Check whether a filtered feature has only a single value. (in this case the stump learner is equal to the constant learner) 
+\begin{DoxyParams}{Parameters}
+{\em idx} & the index of the attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the currrent filtered attribute is empty, false otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 113 of file Sorted\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1SortedData_a4026ff8765982ac0c0edff12a929917f}{\index{Multi\-Boost\-::\-Sorted\-Data@{Multi\-Boost\-::\-Sorted\-Data}!load@{load}}
+\index{load@{load}!MultiBoost::SortedData@{Multi\-Boost\-::\-Sorted\-Data}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Sorted\-Data\-::load (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{file\-Name, }
+\item[{e\-Input\-Type}]{input\-Type = {\ttfamily IT\-\_\-TRAIN}, }
+\item[{int}]{verbose\-Level = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1SortedData_a4026ff8765982ac0c0edff12a929917f}
+Overloading of the load function to support sorting. 
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & The name of the file to be loaded. \\
+\hline
+{\em input\-Type} & The type of input. \\
+\hline
+{\em verbose\-Level} & The level of verbosity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1InputData_abf6290345aa3ffc9f81af71c41487390}{Input\-Data\-::load()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Erase the original memory once sorted? \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1InputData_abf6290345aa3ffc9f81af71c41487390}{Multi\-Boost\-::\-Input\-Data}.
+
+
+
+Definition at line 45 of file Sorted\-Data.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{SortedData_8h}{Sorted\-Data.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Sorted\-Data.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\hypertarget{classMultiBoost_1_1NameMap}{\section{Multi\-Boost\-:\-:Name\-Map Class Reference}
+\label{classMultiBoost_1_1NameMap}\index{Multi\-Boost\-::\-Name\-Map@{Multi\-Boost\-::\-Name\-Map}}
+}
+
+
+{\ttfamily \#include $<$Name\-Map.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1NameMap_a8d55d16fd3cde025aca9647271861695}{Name\-Map} ()
+\item 
+int \hyperlink{classMultiBoost_1_1NameMap_a2f068a22f1535b42a1580e9663c82b90}{add\-Name} (const string \&name)
+\item 
+string \hyperlink{classMultiBoost_1_1NameMap_a31b9038a4031c459fd59fc6e39e402d5}{get\-Name\-From\-Idx} (int idx) const 
+\item 
+int \hyperlink{classMultiBoost_1_1NameMap_a949a9878b36ec8949bc845abaa486331}{get\-Idx\-From\-Name} (const string \&name) const 
+\item 
+\hypertarget{classMultiBoost_1_1NameMap_a73571dd54b6f7f292d225b56ad63e8a9}{int \hyperlink{classMultiBoost_1_1NameMap_a73571dd54b6f7f292d225b56ad63e8a9}{get\-Num\-Names} () const }\label{classMultiBoost_1_1NameMap_a73571dd54b6f7f292d225b56ad63e8a9}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of names. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1NameMap_a5569328b823afa71ea9eb8231622dd2b}{void {\bfseries clear} (void)}\label{classMultiBoost_1_1NameMap_a5569328b823afa71ea9eb8231622dd2b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to represent name (classes, enum attributes) map. Each name is mapped into an index for efficiency reasons. \begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 58 of file Name\-Map.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1NameMap_a8d55d16fd3cde025aca9647271861695}{\index{Multi\-Boost\-::\-Name\-Map@{Multi\-Boost\-::\-Name\-Map}!Name\-Map@{Name\-Map}}
+\index{Name\-Map@{Name\-Map}!MultiBoost::NameMap@{Multi\-Boost\-::\-Name\-Map}}
+\subsubsection[{Name\-Map}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Name\-Map\-::\-Name\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1NameMap_a8d55d16fd3cde025aca9647271861695}
+The constructor. It does noting but initializing some variables. \begin{DoxyDate}{Date}
+19/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 66 of file Name\-Map.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1NameMap_a2f068a22f1535b42a1580e9663c82b90}{\index{Multi\-Boost\-::\-Name\-Map@{Multi\-Boost\-::\-Name\-Map}!add\-Name@{add\-Name}}
+\index{add\-Name@{add\-Name}!MultiBoost::NameMap@{Multi\-Boost\-::\-Name\-Map}}
+\subsubsection[{add\-Name}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Name\-Map\-::add\-Name (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1NameMap_a2f068a22f1535b42a1580e9663c82b90}
+Add a name to the registered list. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 47 of file Name\-Map.\-cpp.
+
+\hypertarget{classMultiBoost_1_1NameMap_a949a9878b36ec8949bc845abaa486331}{\index{Multi\-Boost\-::\-Name\-Map@{Multi\-Boost\-::\-Name\-Map}!get\-Idx\-From\-Name@{get\-Idx\-From\-Name}}
+\index{get\-Idx\-From\-Name@{get\-Idx\-From\-Name}!MultiBoost::NameMap@{Multi\-Boost\-::\-Name\-Map}}
+\subsubsection[{get\-Idx\-From\-Name}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Name\-Map\-::get\-Idx\-From\-Name (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+) const}}\label{classMultiBoost_1_1NameMap_a949a9878b36ec8949bc845abaa486331}
+Get the index using the name \hyperlink{classMultiBoost_1_1Example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{classMultiBoost_1_1NameMap_a949a9878b36ec8949bc845abaa486331}{getIdxFromName}(\textcolor{stringliteral}{"rock"}); \textcolor{comment}{// -> 0}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 78 of file Name\-Map.\-cpp.
+
+\hypertarget{classMultiBoost_1_1NameMap_a31b9038a4031c459fd59fc6e39e402d5}{\index{Multi\-Boost\-::\-Name\-Map@{Multi\-Boost\-::\-Name\-Map}!get\-Name\-From\-Idx@{get\-Name\-From\-Idx}}
+\index{get\-Name\-From\-Idx@{get\-Name\-From\-Idx}!MultiBoost::NameMap@{Multi\-Boost\-::\-Name\-Map}}
+\subsubsection[{get\-Name\-From\-Idx}]{\setlength{\rightskip}{0pt plus 5cm}string Multi\-Boost\-::\-Name\-Map\-::get\-Name\-From\-Idx (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const}}\label{classMultiBoost_1_1NameMap_a31b9038a4031c459fd59fc6e39e402d5}
+Get the name using the index. \hyperlink{classMultiBoost_1_1Example}{Example}\-: 
+\begin{DoxyCode}
+\hyperlink{classMultiBoost_1_1NameMap_a31b9038a4031c459fd59fc6e39e402d5}{getNameFromIdx}(0); \textcolor{comment}{// -> "rock"}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 62 of file Name\-Map.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{NameMap_8h}{Name\-Map.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Name\-Map.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{classMultiBoost_1_1ExampleResults}{\section{Multi\-Boost\-:\-:Example\-Results Class Reference}
+\label{classMultiBoost_1_1ExampleResults}\index{Multi\-Boost\-::\-Example\-Results@{Multi\-Boost\-::\-Example\-Results}}
+}
+
+
+{\ttfamily \#include $<$Example\-Results.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1ExampleResults_ac0ba46f037634d5e39f174403c808c4e}{Example\-Results} (const int idx, const int num\-Classes)
+\item 
+\hypertarget{classMultiBoost_1_1ExampleResults_a744760409a943787f542f8983fbfdc9c}{const int {\bfseries get\-Idx} ()}\label{classMultiBoost_1_1ExampleResults_a744760409a943787f542f8983fbfdc9c}
+
+\item 
+\hypertarget{classMultiBoost_1_1ExampleResults_a240b5dfda16c94d9b480239c2531f952}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \& {\bfseries get\-Votes\-Vector} ()}\label{classMultiBoost_1_1ExampleResults_a240b5dfda16c94d9b480239c2531f952}
+
+\item 
+pair$<$ int, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \hyperlink{classMultiBoost_1_1ExampleResults_a41c026e0131cfd2caeb7956afce93cc0}{get\-Winner} (int rank=0)
+\item 
+bool \hyperlink{classMultiBoost_1_1ExampleResults_af9cb40d43d2f0264f901a199ba5dc5ec}{is\-Winner} (const \hyperlink{classMultiBoost_1_1Example}{Example} \&example, int at\-Least\-Rank=0) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the results per example. This class holds all the results obtained with compute\-Results(), which is equivalent to ${\bf g}(x)$. It also offers two methods that allow the quick evaluation of the results. \begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 54 of file Example\-Results.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1ExampleResults_ac0ba46f037634d5e39f174403c808c4e}{\index{Multi\-Boost\-::\-Example\-Results@{Multi\-Boost\-::\-Example\-Results}!Example\-Results@{Example\-Results}}
+\index{Example\-Results@{Example\-Results}!MultiBoost::ExampleResults@{Multi\-Boost\-::\-Example\-Results}}
+\subsubsection[{Example\-Results}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Example\-Results\-::\-Example\-Results (
+\begin{DoxyParamCaption}
+\item[{const int}]{idx, }
+\item[{const int}]{num\-Classes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1ExampleResults_ac0ba46f037634d5e39f174403c808c4e}
+The constructor. Initialize the index and the votes vector. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the example. \\
+\hline
+{\em num\-Classes} & The number of classes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 64 of file Example\-Results.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1ExampleResults_a41c026e0131cfd2caeb7956afce93cc0}{\index{Multi\-Boost\-::\-Example\-Results@{Multi\-Boost\-::\-Example\-Results}!get\-Winner@{get\-Winner}}
+\index{get\-Winner@{get\-Winner}!MultiBoost::ExampleResults@{Multi\-Boost\-::\-Example\-Results}}
+\subsubsection[{get\-Winner}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ int, {\bf Alpha\-Real} $>$ Multi\-Boost\-::\-Example\-Results\-::get\-Winner (
+\begin{DoxyParamCaption}
+\item[{int}]{rank = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1ExampleResults_a41c026e0131cfd2caeb7956afce93cc0}
+Get the winner. 
+\begin{DoxyParams}{Parameters}
+{\em rank} & The rank. 0 = winner. 1 = second, etc.. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pair $<$ $\ell$, $g_\ell(x)$$>$, where $\ell$ is the class index. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 45 of file Example\-Results.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ExampleResults_af9cb40d43d2f0264f901a199ba5dc5ec}{\index{Multi\-Boost\-::\-Example\-Results@{Multi\-Boost\-::\-Example\-Results}!is\-Winner@{is\-Winner}}
+\index{is\-Winner@{is\-Winner}!MultiBoost::ExampleResults@{Multi\-Boost\-::\-Example\-Results}}
+\subsubsection[{is\-Winner}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Example\-Results\-::is\-Winner (
+\begin{DoxyParamCaption}
+\item[{const {\bf Example} \&}]{example, }
+\item[{int}]{at\-Least\-Rank = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{classMultiBoost_1_1ExampleResults_af9cb40d43d2f0264f901a199ba5dc5ec}
+Checks if the given class is the winner class. \hyperlink{classMultiBoost_1_1Example}{Example}\-: if the ranking is 5 2 6 3 1 4 (in class indexes)\-: 
+\begin{DoxyCode}
+\hyperlink{classMultiBoost_1_1ExampleResults_af9cb40d43d2f0264f901a199ba5dc5ec}{isWinner}(5,0); \textcolor{comment}{// -> true}
+\hyperlink{classMultiBoost_1_1ExampleResults_af9cb40d43d2f0264f901a199ba5dc5ec}{isWinner}(2,0); \textcolor{comment}{// -> false}
+\hyperlink{classMultiBoost_1_1ExampleResults_af9cb40d43d2f0264f901a199ba5dc5ec}{isWinner}(2,1); \textcolor{comment}{// -> true}
+\hyperlink{classMultiBoost_1_1ExampleResults_af9cb40d43d2f0264f901a199ba5dc5ec}{isWinner}(3,3); \textcolor{comment}{// -> true}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em idx\-Real\-Class} & The index of the actual class. \\
+\hline
+{\em at\-Least\-Rank} & The maximum rank in which the class must be to be considered a \char`\"{}winner\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 56 of file Example\-Results.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Classifiers/Example\-Results.\-h\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Classifiers/Example\-Results.\-cpp\end{DoxyCompactItemize}

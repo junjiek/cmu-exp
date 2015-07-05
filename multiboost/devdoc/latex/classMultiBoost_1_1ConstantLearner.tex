@@ -1,0 +1,377 @@
+\hypertarget{classMultiBoost_1_1ConstantLearner}{
+\section{MultiBoost::ConstantLearner Class Reference}
+\label{classMultiBoost_1_1ConstantLearner}\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+}
+
+
+{\ttfamily \#include $<$ConstantLearner.h$>$}
+
+Inheritance diagram for MultiBoost::ConstantLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.871795cm]{classMultiBoost_1_1ConstantLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1ConstantLearner_aa71092f0e7659bd51efcc94cb411cf97}{$\sim$ConstantLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1ConstantLearner_a6f1e02f680c99526e2b6f8b2f199a2e0}{subCreate} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ConstantLearner_a02a3a2a863ec66ac0843eb866fbff1d1}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ConstantLearner_a317362704802ea9f97a16511df0131ad}{initLearningOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ConstantLearner_a019e0eebd46b00a15b37bcb1d101f33d}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1ConstantLearner_a1aac8a845d9af374cdfa7348bd9a7df9}{run} ()
+\item 
+\hypertarget{classMultiBoost_1_1ConstantLearner_af0bd47c6e97246c5f2198a9646384e22}{
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries run} (int colNum)}
+\label{classMultiBoost_1_1ConstantLearner_af0bd47c6e97246c5f2198a9646384e22}
+
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ConstantLearner_aee9280a797b4ba4ed38349ae728e9f09}{getStateData} (vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ \&data, const string \&, \hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ConstantLearner_a761f019d5284f616aa02bdced148b3b5}{initLearning} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1ConstantLearner_ad7ad5b2c0c2cfae7caeffccbcea7d520}{finishLearning} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1ConstantLearner_a221454ea3e6a1c9e4fcc1f9b5e8ff73e}{update} (int idx)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1ConstantLearner_a51236bbc05317ffa4e44a0b349d77366}{phi} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx, int classIdx) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1ConstantLearner_a8d4838a07dcb3288d3a473d6b69927e4}{cut} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\bfseries single} threshold decision stump learner. There is ONE and ONE ONLY threshold here. 
+
+Definition at line 63 of file ConstantLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1ConstantLearner_aa71092f0e7659bd51efcc94cb411cf97}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!$\sim$ConstantLearner@{$\sim$ConstantLearner}}
+\index{$\sim$ConstantLearner@{$\sim$ConstantLearner}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{$\sim$ConstantLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::ConstantLearner::$\sim$ConstantLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_aa71092f0e7659bd51efcc94cb411cf97}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 71 of file ConstantLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1ConstantLearner_a8d4838a07dcb3288d3a473d6b69927e4}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!cut@{cut}}
+\index{cut@{cut}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{cut}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::ConstantLearner::cut (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_a8d4838a07dcb3288d3a473d6b69927e4}
+The single cut function for a particular feature. This function can return with zero as well, indicating that the classifier abstained to classify the instance having index idx. \begin{DoxyReturn}{Returns}
++1,-\/1,0 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+21/10/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1ScalarLearner_a8d52e02fc7664ecdc5fd0b14b04a985e}{MultiBoost::ScalarLearner}.
+
+
+
+Definition at line 193 of file ConstantLearner.h.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_a02a3a2a863ec66ac0843eb866fbff1d1}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}virtual void MultiBoost::ConstantLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_a02a3a2a863ec66ac0843eb866fbff1d1}
+Declare weak-\/learner-\/specific arguments. These arguments will be added to the list of arguments under the group specific of the weak learner. It is called automatically in main, when the list of arguments is built up. Use this method to declare the arguments that belongs to the weak learner only.
+
+This class declares the argument \char`\"{}rtrainingsize\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_add9773c8057fea7885edb8c1a07cfbd8}{MultiBoost::AbstainableLearner}.
+
+
+
+Definition at line 94 of file ConstantLearner.h.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_ad7ad5b2c0c2cfae7caeffccbcea7d520}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!finishLearning@{finishLearning}}
+\index{finishLearning@{finishLearning}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{finishLearning}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::ConstantLearner::finishLearning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_ad7ad5b2c0c2cfae7caeffccbcea7d520}
+Release memory used during training. \begin{DoxyDate}{Date}
+03/11/2011 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1StochasticLearner_a54cf5f9cf396b6730da6deb4cfec7bc5}{MultiBoost::StochasticLearner}.
+
+
+
+Definition at line 95 of file ConstantLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_aee9280a797b4ba4ed38349ae728e9f09}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!getStateData@{getStateData}}
+\index{getStateData@{getStateData}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{getStateData}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::ConstantLearner::getStateData (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf FeatureReal} $>$ \&}]{data, }
+\item[{const string \&}]{, }
+\item[{{\bf InputData} $\ast$}]{pData = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_aee9280a797b4ba4ed38349ae728e9f09}
+Returns a vector of float holding any data that the specific weak learner can generate using the given input dataset. Right now just a single case is contemplated, therefore \char`\"{}reason\char`\"{} is not used. The returned vector of data correspond to: \[ \left\{ v^{(t)}_1, v^{(t)}_2, \cdots, v^{(t)}_K, \phi^{(t)}({\bf x}_1), \phi^{(t)}({\bf x}_2), \cdots, \phi^{(t)}({\bf x}_n) \right\} \] where $v$ is the alignment vector, $\phi$ is the discriminative function and $t$ is the current iteration (to which this instantiation of weak learner belongs to). 
+\begin{DoxyParams}{Parameters}
+{\em data} & The vector with the returned data. \\
+\hline
+{\em pData} & The pointer to the data points (the examples) previously loaded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This particular method has been created for analysis purposes (research). If you need to get similar analytical information from this weak learner, add it to the function and uncomment the parameter \char`\"{}reason\char`\"{}. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_aa8945cc5179e0b732728571848bfb52f}{BaseLearner::getStateData} 
+
+Classifier::saveSingelStumpFeatureData 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_aa8945cc5179e0b732728571848bfb52f}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 123 of file ConstantLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_a761f019d5284f616aa02bdced148b3b5}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!initLearning@{initLearning}}
+\index{initLearning@{initLearning}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{initLearning}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::ConstantLearner::initLearning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_a761f019d5284f616aa02bdced148b3b5}
+Initializes the parameters for online learning. This comes from the \hyperlink{classMultiBoost_1_1StochasticLearner}{StochasticLearner} InterFace. 
+
+Implements \hyperlink{classMultiBoost_1_1StochasticLearner_a8deec80f68243d911f7d4ffa9c89d989}{MultiBoost::StochasticLearner}.
+
+
+
+Definition at line 79 of file ConstantLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_a317362704802ea9f97a16511df0131ad}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!initLearningOptions@{initLearningOptions}}
+\index{initLearningOptions@{initLearningOptions}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{initLearningOptions}]{\setlength{\rightskip}{0pt plus 5cm}virtual void MultiBoost::ConstantLearner::initLearningOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_a317362704802ea9f97a16511df0131ad}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_a966b1609a95222953e4116a3fffaadbe}{MultiBoost::AbstainableLearner}.
+
+
+
+Definition at line 106 of file ConstantLearner.h.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_a51236bbc05317ffa4e44a0b349d77366}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::ConstantLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_a51236bbc05317ffa4e44a0b349d77366}
+A discriminative function. \begin{DoxyRemark}{Remarks}
+Positive or negative do NOT refer to positive or negative classification. This function is equivalent to the phi function in my thesis. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate \\
+\hline
+{\em classIdx} & The class index, used by \hyperlink{classMultiBoost_1_1MultiStumpLearner}{MultiStumpLearner} when phi depends on the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 always 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+19/09/2006 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classMultiBoost_1_1AbstainableLearner_a76d59e5c6678f43a3f483064beb06f64}{MultiBoost::AbstainableLearner}.
+
+
+
+Definition at line 191 of file ConstantLearner.h.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_a1aac8a845d9af374cdfa7348bd9a7df9}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!run@{run}}
+\index{run@{run}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::ConstantLearner::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_a1aac8a845d9af374cdfa7348bd9a7df9}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 49 of file ConstantLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_a019e0eebd46b00a15b37bcb1d101f33d}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::ConstantLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_a019e0eebd46b00a15b37bcb1d101f33d}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1ConstantLearner_a019e0eebd46b00a15b37bcb1d101f33d}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{save} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a571f0ef9449cd3a7bc56f8a0131db6f1}{load} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_a36ad3b89e190941788eee53595b288b0}{MultiBoost::AbstainableLearner}.
+
+
+
+Definition at line 87 of file ConstantLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_a6f1e02f680c99526e2b6f8b2f199a2e0}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::ConstantLearner::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_a6f1e02f680c99526e2b6f8b2f199a2e0}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 79 of file ConstantLearner.h.
+
+\hypertarget{classMultiBoost_1_1ConstantLearner_a221454ea3e6a1c9e4fcc1f9b5e8ff73e}{
+\index{MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}!update@{update}}
+\index{update@{update}!MultiBoost::ConstantLearner@{MultiBoost::ConstantLearner}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::ConstantLearner::update (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ConstantLearner_a221454ea3e6a1c9e4fcc1f9b5e8ff73e}
+It updates the parameter of the constant learner in online learning. \begin{DoxyReturn}{Returns}
+edge for the given istance 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+03/11/2011 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1StochasticLearner_a0827c95202f6f3f5180292f72f2f3e0f}{MultiBoost::StochasticLearner}.
+
+
+
+Definition at line 109 of file ConstantLearner.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{ConstantLearner_8h}{ConstantLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/ConstantLearner.cpp\end{DoxyCompactItemize}

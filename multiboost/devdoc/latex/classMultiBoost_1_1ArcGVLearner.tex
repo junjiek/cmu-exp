@@ -1,0 +1,104 @@
+\hypertarget{classMultiBoost_1_1ArcGVLearner}{\section{Multi\-Boost\-:\-:Arc\-G\-V\-Learner Class Reference}
+\label{classMultiBoost_1_1ArcGVLearner}\index{Multi\-Boost\-::\-Arc\-G\-V\-Learner@{Multi\-Boost\-::\-Arc\-G\-V\-Learner}}
+}
+
+
+{\ttfamily \#include $<$Arc\-G\-V\-Learner.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Arc\-G\-V\-Learner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMultiBoost_1_1ArcGVLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1ArcGVLearner_a81c287da8219ca825b0d57acbf26b616}{Arc\-G\-V\-Learner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ArcGVLearner_ad2e5b9873d3c752307d9639ff53ee86a}{run} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1ArcGVLearner_a76add0d16ac879bee32203c428a3e354}{get\-Args} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The arc-\/gv learner. This class performs the meta-\/learning by calling the weak learners and updating the weights. The main difference between Ada\-Boost.\-M\-H and arc-\/gv is that the weight of weak classifier is regularized with the minimal margin. See Breiman, L. (1998). Arcing classifiers. The Annals of Statistics, 26, 801–-\/849. \begin{DoxyDate}{Date}
+04/04/2012 
+\end{DoxyDate}
+
+
+Definition at line 61 of file Arc\-G\-V\-Learner.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1ArcGVLearner_a81c287da8219ca825b0d57acbf26b616}{\index{Multi\-Boost\-::\-Arc\-G\-V\-Learner@{Multi\-Boost\-::\-Arc\-G\-V\-Learner}!Arc\-G\-V\-Learner@{Arc\-G\-V\-Learner}}
+\index{Arc\-G\-V\-Learner@{Arc\-G\-V\-Learner}!MultiBoost::ArcGVLearner@{Multi\-Boost\-::\-Arc\-G\-V\-Learner}}
+\subsubsection[{Arc\-G\-V\-Learner}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Arc\-G\-V\-Learner\-::\-Arc\-G\-V\-Learner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1ArcGVLearner_a81c287da8219ca825b0d57acbf26b616}
+The constructor. It initializes the variables and sets them using the information provided by the arguments passed. They are parsed using the helpers provided by class Args. \begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 71 of file Arc\-G\-V\-Learner.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1ArcGVLearner_a76add0d16ac879bee32203c428a3e354}{\index{Multi\-Boost\-::\-Arc\-G\-V\-Learner@{Multi\-Boost\-::\-Arc\-G\-V\-Learner}!get\-Args@{get\-Args}}
+\index{get\-Args@{get\-Args}!MultiBoost::ArcGVLearner@{Multi\-Boost\-::\-Arc\-G\-V\-Learner}}
+\subsubsection[{get\-Args}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arc\-G\-V\-Learner\-::get\-Args (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1ArcGVLearner_a76add0d16ac879bee32203c428a3e354}
+Get the needed parameters (for the strong learner) from the argumens. 
+\begin{DoxyParams}{Parameters}
+{\em The} & arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file Arc\-G\-V\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ArcGVLearner_ad2e5b9873d3c752307d9639ff53ee86a}{\index{Multi\-Boost\-::\-Arc\-G\-V\-Learner@{Multi\-Boost\-::\-Arc\-G\-V\-Learner}!run@{run}}
+\index{run@{run}!MultiBoost::ArcGVLearner@{Multi\-Boost\-::\-Arc\-G\-V\-Learner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arc\-G\-V\-Learner\-::run (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1ArcGVLearner_ad2e5b9873d3c752307d9639ff53ee86a}
+Start the learning process. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line with all the options for training. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a1171d948bfa1875bf663993f067a8e8d}{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}.
+
+
+
+Definition at line 66 of file Arc\-G\-V\-Learner.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/\hyperlink{ArcGVLearner_8h}{Arc\-G\-V\-Learner.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/Arc\-G\-V\-Learner.\-cpp\end{DoxyCompactItemize}

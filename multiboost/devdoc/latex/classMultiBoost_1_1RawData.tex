@@ -1,0 +1,330 @@
+\hypertarget{classMultiBoost_1_1RawData}{\section{Multi\-Boost\-:\-:Raw\-Data Class Reference}
+\label{classMultiBoost_1_1RawData}\index{Multi\-Boost\-::\-Raw\-Data@{Multi\-Boost\-::\-Raw\-Data}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries e\-Attribute\-Type} \{ {\bfseries A\-T\-T\-R\-I\-B\-U\-T\-E\-\_\-\-N\-U\-M\-E\-R\-I\-C}, 
+{\bfseries A\-T\-T\-R\-I\-B\-U\-T\-E\-\_\-\-E\-N\-U\-M}
+ \}
+\item 
+enum {\bfseries e\-Weight\-Init\-Type} \{ {\bfseries W\-I\-T\-\_\-\-S\-H\-A\-R\-E\-\_\-\-P\-O\-I\-N\-T}, 
+{\bfseries W\-I\-T\-\_\-\-S\-H\-A\-R\-E\-\_\-\-L\-A\-B\-E\-L}, 
+{\bfseries W\-I\-T\-\_\-\-P\-R\-O\-P\-\_\-\-O\-N\-L\-Y}, 
+{\bfseries W\-I\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1RawData_a7631e7187502b371bc39f66a6bd9c577}{Raw\-Data} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1RawData_a18d5e9743af495405f271561ff705b29}{init\-Options} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual \hyperlink{classMultiBoost_1_1RawData}{Raw\-Data} $\ast$ \hyperlink{classMultiBoost_1_1RawData_afc63acdb2dc93c84c90ff9ecc3143b69}{load} (const string \&file\-Name, e\-Input\-Type input\-Type=I\-T\-\_\-\-T\-R\-A\-I\-N, int verbose\-Level=1)
+\item 
+const vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \& \hyperlink{classMultiBoost_1_1RawData_a629b23b663cebeb8d06214cb7e7d66fb}{get\-Labels} (const int idx) const 
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a51773dda76f55fe89875eec147d348f9}{vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \& {\bfseries get\-Labels} (const int idx)}\label{classMultiBoost_1_1RawData_a51773dda76f55fe89875eec147d348f9}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a989917bd16ef31f451632a41940fb6a4}{const bool {\bfseries has\-Label} (const int idx, const int label\-Idx) const }\label{classMultiBoost_1_1RawData_a989917bd16ef31f451632a41940fb6a4}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a1c4188b5d1c6d0f95d6b5dc9b65f6732}{const bool {\bfseries has\-Positive\-Label} (const int idx, const int label\-Idx) const }\label{classMultiBoost_1_1RawData_a1c4188b5d1c6d0f95d6b5dc9b65f6732}
+
+\item 
+const vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \& \hyperlink{classMultiBoost_1_1RawData_ae2815b9fd5b7817f9628952134847c88}{get\-Values} (int idx) const 
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a0f4628b6cdbce3d965bfc790849e807e}{vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \& {\bfseries get\-Values} (int idx)}\label{classMultiBoost_1_1RawData_a0f4628b6cdbce3d965bfc790849e807e}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_aabe21f07d3a5e0477cefc9baf3319115}{\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} {\bfseries get\-Value} (int idx, int column\-Idx) const }\label{classMultiBoost_1_1RawData_aabe21f07d3a5e0477cefc9baf3319115}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_ac88c85821235d011da5b0de6d3fc95c2}{void {\bfseries clear\-Raw\-Data} ()}\label{classMultiBoost_1_1RawData_ac88c85821235d011da5b0de6d3fc95c2}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_adbbb2be7341ca9d8a1ffcc351e7bf6be}{void {\bfseries add\-Example} (\hyperlink{classMultiBoost_1_1Example}{Example} example)}\label{classMultiBoost_1_1RawData_adbbb2be7341ca9d8a1ffcc351e7bf6be}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_aaca66f2cae6040f6c6ccb4a5e7d8d09a}{const \hyperlink{classMultiBoost_1_1Example}{Example} \& {\bfseries get\-Example} (int idx)}\label{classMultiBoost_1_1RawData_aaca66f2cae6040f6c6ccb4a5e7d8d09a}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_ad8125502ad26924c515f7df3f2b796a9}{const vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \& {\bfseries get\-Examples} ()}\label{classMultiBoost_1_1RawData_ad8125502ad26924c515f7df3f2b796a9}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a9b1192007f5acb705cc29772af615f5b}{const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \& {\bfseries get\-Class\-Map} ()}\label{classMultiBoost_1_1RawData_a9b1192007f5acb705cc29772af615f5b}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_adeab9df70df320165e67e57b6e1d0ba1}{const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \& {\bfseries get\-Attribute\-Name\-Map} ()}\label{classMultiBoost_1_1RawData_adeab9df70df320165e67e57b6e1d0ba1}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_afce581d5b5ad200d72bceb1c92c4a9dc}{const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \& {\bfseries get\-Enum\-Map} (int j)}\label{classMultiBoost_1_1RawData_afce581d5b5ad200d72bceb1c92c4a9dc}
+
+\item 
+const string \& \hyperlink{classMultiBoost_1_1RawData_ae07ea2cd42625d78fb8590feaa6b93ac}{get\-Example\-Name} (const int idx)
+\item 
+\hypertarget{classMultiBoost_1_1RawData_af8ab6ec575d8bc6d1ae17e9ad7779909}{const e\-Data\-Rep {\bfseries get\-Data\-Rep} () const }\label{classMultiBoost_1_1RawData_af8ab6ec575d8bc6d1ae17e9ad7779909}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_ab64e86fe75c26935f5f599d29b98caf3}{const e\-Label\-Rep {\bfseries get\-Label\-Rep} () const }\label{classMultiBoost_1_1RawData_ab64e86fe75c26935f5f599d29b98caf3}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a782fb9ab5d9e2af53a55f81fbf68fc04}{int \hyperlink{classMultiBoost_1_1RawData_a782fb9ab5d9e2af53a55f81fbf68fc04}{get\-Num\-Attributes} () const }\label{classMultiBoost_1_1RawData_a782fb9ab5d9e2af53a55f81fbf68fc04}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of attributes. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_ac3feb3a90e9d8445c50ff6d1ff2d4ede}{int \hyperlink{classMultiBoost_1_1RawData_ac3feb3a90e9d8445c50ff6d1ff2d4ede}{get\-Num\-Classes} () const }\label{classMultiBoost_1_1RawData_ac3feb3a90e9d8445c50ff6d1ff2d4ede}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of classes. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_aadbf5575ef65fb14528c697c92604ea5}{int {\bfseries get\-Num\-Example} () const }\label{classMultiBoost_1_1RawData_aadbf5575ef65fb14528c697c92604ea5}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a873c8dd2467e6e9e7da7f95eb01191ff}{const string {\bfseries get\-Sep\-Chars} ()}\label{classMultiBoost_1_1RawData_a873c8dd2467e6e9e7da7f95eb01191ff}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a9f426cd0b37d1e32a43888e5401ae809}{const e\-Data\-Rep {\bfseries get\-Data\-Rep} ()}\label{classMultiBoost_1_1RawData_a9f426cd0b37d1e32a43888e5401ae809}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_ab2fc65dbccd80f3205c5b6a7323ad66b}{vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$\-::iterator {\bfseries raw\-Begin} ()}\label{classMultiBoost_1_1RawData_ab2fc65dbccd80f3205c5b6a7323ad66b}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_ae2c78c8adc025eb4bf1f3618994be049}{vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$\-::iterator {\bfseries raw\-End} ()}\label{classMultiBoost_1_1RawData_ae2c78c8adc025eb4bf1f3618994be049}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a4a610440d2efafbf90988ca2ba9f421a}{vector$<$ int $>$ \& {\bfseries get\-Examples\-Per\-Class} ()}\label{classMultiBoost_1_1RawData_a4a610440d2efafbf90988ca2ba9f421a}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a5852e22937103a032dbcc6bc17faf96e}{vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \& {\bfseries get\-Most\-Frequent\-Value\-Per\-Feature} ()}\label{classMultiBoost_1_1RawData_a5852e22937103a032dbcc6bc17faf96e}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_addc0c665d4f39e5f2a8e892f84187969}{void {\bfseries output\-Data} ()}\label{classMultiBoost_1_1RawData_addc0c665d4f39e5f2a8e892f84187969}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMultiBoost_1_1RawData_a5ad8fc0885ac054846ee38040c765563}{init\-Weights} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a3c3f23869641f00e5443dc6c3d991443}{bool {\bfseries \-\_\-has\-Example\-Name}}\label{classMultiBoost_1_1RawData_a3c3f23869641f00e5443dc6c3d991443}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a9d7641cd85db46efcc78350da7995efc}{bool {\bfseries \-\_\-class\-In\-Last\-Column}}\label{classMultiBoost_1_1RawData_a9d7641cd85db46efcc78350da7995efc}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a63ab67841b17beb6671759d4b9d19e7c}{string {\bfseries \-\_\-sep\-Chars}}\label{classMultiBoost_1_1RawData_a63ab67841b17beb6671759d4b9d19e7c}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a4f328ca0abce5814842c801d61e8b0ae}{int \hyperlink{classMultiBoost_1_1RawData_a4f328ca0abce5814842c801d61e8b0ae}{\-\_\-num\-Attributes}}\label{classMultiBoost_1_1RawData_a4f328ca0abce5814842c801d61e8b0ae}
+
+\begin{DoxyCompactList}\small\item\em The number of columns (dimensions). \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_a2a8799fde92e1031e5328ce4ef7f23db}{int \hyperlink{classMultiBoost_1_1RawData_a2a8799fde92e1031e5328ce4ef7f23db}{\-\_\-num\-Examples}}\label{classMultiBoost_1_1RawData_a2a8799fde92e1031e5328ce4ef7f23db}
+
+\begin{DoxyCompactList}\small\item\em The number of examples. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_a7212a100e5f69ef6085d33ec12566095}{int \hyperlink{classMultiBoost_1_1RawData_a7212a100e5f69ef6085d33ec12566095}{\-\_\-num\-Classes}}\label{classMultiBoost_1_1RawData_a7212a100e5f69ef6085d33ec12566095}
+
+\begin{DoxyCompactList}\small\item\em The number of classes. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_a055c7e87e19af94bcc9cc6a8f1e28d3c}{vector$<$ int $>$ \hyperlink{classMultiBoost_1_1RawData_a055c7e87e19af94bcc9cc6a8f1e28d3c}{\-\_\-n\-Examples\-Per\-Class}}\label{classMultiBoost_1_1RawData_a055c7e87e19af94bcc9cc6a8f1e28d3c}
+
+\begin{DoxyCompactList}\small\item\em The number of examples per class. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_a779d9df345986a3ee2c7efe26f6fd967}{vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \hyperlink{classMultiBoost_1_1RawData_a779d9df345986a3ee2c7efe26f6fd967}{\-\_\-most\-Frequent\-Value\-Per\-Feature}}\label{classMultiBoost_1_1RawData_a779d9df345986a3ee2c7efe26f6fd967}
+
+\begin{DoxyCompactList}\small\item\em The most frequent value used in each feature. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_a8e9505b9bb97b9b1634059f14773a7b5}{e\-File\-Format {\bfseries \-\_\-file\-Format}}\label{classMultiBoost_1_1RawData_a8e9505b9bb97b9b1634059f14773a7b5}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a957b14bb2f413d4b33d59a75d035e822}{e\-Weight\-Init\-Type {\bfseries \-\_\-weight\-Init\-Type}}\label{classMultiBoost_1_1RawData_a957b14bb2f413d4b33d59a75d035e822}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a86f9be0e641095d46bb61ed4ae6f15f2}{vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \hyperlink{classMultiBoost_1_1RawData_a86f9be0e641095d46bb61ed4ae6f15f2}{\-\_\-data}}\label{classMultiBoost_1_1RawData_a86f9be0e641095d46bb61ed4ae6f15f2}
+
+\begin{DoxyCompactList}\small\item\em The vector of the data for the examples. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_afe80f4aa17b61ec80ed9f975cd2bbe1d}{e\-Data\-Rep {\bfseries \-\_\-data\-Rep}}\label{classMultiBoost_1_1RawData_afe80f4aa17b61ec80ed9f975cd2bbe1d}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a7bc8f0fd128d8c4a0c792d6ca381a5b7}{e\-Label\-Rep {\bfseries \-\_\-label\-Rep}}\label{classMultiBoost_1_1RawData_a7bc8f0fd128d8c4a0c792d6ca381a5b7}
+
+\item 
+\hypertarget{classMultiBoost_1_1RawData_a62a84ed4e8bde4d493a8649649589f0d}{\hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \hyperlink{classMultiBoost_1_1RawData_a62a84ed4e8bde4d493a8649649589f0d}{\-\_\-class\-Map}}\label{classMultiBoost_1_1RawData_a62a84ed4e8bde4d493a8649649589f0d}
+
+\begin{DoxyCompactList}\small\item\em The map of class names. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_ae98f220c7dd6f35c33a611f5a2c83cd2}{vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \hyperlink{classMultiBoost_1_1RawData_ae98f220c7dd6f35c33a611f5a2c83cd2}{\-\_\-enum\-Maps}}\label{classMultiBoost_1_1RawData_ae98f220c7dd6f35c33a611f5a2c83cd2}
+
+\begin{DoxyCompactList}\small\item\em The vector of name maps of enum type attributes. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_a5e7e7258143aa6619bf0e82b84afcb91}{\hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \hyperlink{classMultiBoost_1_1RawData_a5e7e7258143aa6619bf0e82b84afcb91}{\-\_\-attribute\-Name\-Map}}\label{classMultiBoost_1_1RawData_a5e7e7258143aa6619bf0e82b84afcb91}
+
+\begin{DoxyCompactList}\small\item\em The map of attribute names. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_a5cac1baeb4985810854c79d74c30a4d6}{vector$<$ e\-Attribute\-Type $>$ \hyperlink{classMultiBoost_1_1RawData_a5cac1baeb4985810854c79d74c30a4d6}{\-\_\-attribute\-Types}}\label{classMultiBoost_1_1RawData_a5cac1baeb4985810854c79d74c30a4d6}
+
+\begin{DoxyCompactList}\small\item\em The vector of attribute types. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1RawData_a579e26d463a5b4128bb4d05b165c2d68}{string {\bfseries \-\_\-header\-File}}\label{classMultiBoost_1_1RawData_a579e26d463a5b4128bb4d05b165c2d68}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 84 of file Raw\-Data.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1RawData_a7631e7187502b371bc39f66a6bd9c577}{\index{Multi\-Boost\-::\-Raw\-Data@{Multi\-Boost\-::\-Raw\-Data}!Raw\-Data@{Raw\-Data}}
+\index{Raw\-Data@{Raw\-Data}!MultiBoost::RawData@{Multi\-Boost\-::\-Raw\-Data}}
+\subsubsection[{Raw\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Raw\-Data\-::\-Raw\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1RawData_a7631e7187502b371bc39f66a6bd9c577}
+The constructor. It does noting but initializing some variables. \begin{DoxyDate}{Date}
+12/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 97 of file Raw\-Data.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1RawData_ae07ea2cd42625d78fb8590feaa6b93ac}{\index{Multi\-Boost\-::\-Raw\-Data@{Multi\-Boost\-::\-Raw\-Data}!get\-Example\-Name@{get\-Example\-Name}}
+\index{get\-Example\-Name@{get\-Example\-Name}!MultiBoost::RawData@{Multi\-Boost\-::\-Raw\-Data}}
+\subsubsection[{get\-Example\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const string\& Multi\-Boost\-::\-Raw\-Data\-::get\-Example\-Name (
+\begin{DoxyParamCaption}
+\item[{const int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1RawData_ae07ea2cd42625d78fb8590feaa6b93ac}
+Get the label of the example. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the example. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string with the label of the example, if this has been specified with --examplename argument. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+14/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 215 of file Raw\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1RawData_a629b23b663cebeb8d06214cb7e7d66fb}{\index{Multi\-Boost\-::\-Raw\-Data@{Multi\-Boost\-::\-Raw\-Data}!get\-Labels@{get\-Labels}}
+\index{get\-Labels@{get\-Labels}!MultiBoost::RawData@{Multi\-Boost\-::\-Raw\-Data}}
+\subsubsection[{get\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<${\bf Label}$>$\& Multi\-Boost\-::\-Raw\-Data\-::get\-Labels (
+\begin{DoxyParamCaption}
+\item[{const int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1RawData_a629b23b663cebeb8d06214cb7e7d66fb}
+Gets the labels of the given example. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the example \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The labels of the example \mbox{[}idx\mbox{]}. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 134 of file Raw\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1RawData_ae2815b9fd5b7817f9628952134847c88}{\index{Multi\-Boost\-::\-Raw\-Data@{Multi\-Boost\-::\-Raw\-Data}!get\-Values@{get\-Values}}
+\index{get\-Values@{get\-Values}!MultiBoost::RawData@{Multi\-Boost\-::\-Raw\-Data}}
+\subsubsection[{get\-Values}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<${\bf Feature\-Real}$>$\& Multi\-Boost\-::\-Raw\-Data\-::get\-Values (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1RawData_ae2815b9fd5b7817f9628952134847c88}
+Get the values of the example {\itshape idx} 
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the example. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 148 of file Raw\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1RawData_a18d5e9743af495405f271561ff705b29}{\index{Multi\-Boost\-::\-Raw\-Data@{Multi\-Boost\-::\-Raw\-Data}!init\-Options@{init\-Options}}
+\index{init\-Options@{init\-Options}!MultiBoost::RawData@{Multi\-Boost\-::\-Raw\-Data}}
+\subsubsection[{init\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Raw\-Data\-::init\-Options (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1RawData_a18d5e9743af495405f271561ff705b29}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. on the derived classes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+It does not have a declare\-Arguments because it is dealt by the weak learner responsible for the input data (so that the option goes under its own group). 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 192 of file Raw\-Data.\-cpp.
+
+\hypertarget{classMultiBoost_1_1RawData_a5ad8fc0885ac054846ee38040c765563}{\index{Multi\-Boost\-::\-Raw\-Data@{Multi\-Boost\-::\-Raw\-Data}!init\-Weights@{init\-Weights}}
+\index{init\-Weights@{init\-Weights}!MultiBoost::RawData@{Multi\-Boost\-::\-Raw\-Data}}
+\subsubsection[{init\-Weights}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Raw\-Data\-::init\-Weights (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1RawData_a5ad8fc0885ac054846ee38040c765563}
+Initialize the weights. The weights initialization formula is defined as\-: \[ w_{i,\ell}^{(1)} = \begin{cases} \frac{1}{2n} & \mbox{ if $\ell$ is the correct class (if $y_{i,\ell} = 1$),} \\ \frac{1}{2n(k-1)} & \mbox{ otherwise (if $y_{i,\ell} = -1$).} \end{cases} \] where $n$ is the number of examples and $k$ the number of classes. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1Example}{Example} 
+
+\hyperlink{classMultiBoost_1_1RawData_a86f9be0e641095d46bb61ed4ae6f15f2}{\-\_\-data} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 262 of file Raw\-Data.\-cpp.
+
+\hypertarget{classMultiBoost_1_1RawData_afc63acdb2dc93c84c90ff9ecc3143b69}{\index{Multi\-Boost\-::\-Raw\-Data@{Multi\-Boost\-::\-Raw\-Data}!load@{load}}
+\index{load@{load}!MultiBoost::RawData@{Multi\-Boost\-::\-Raw\-Data}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Raw\-Data} $\ast$ Multi\-Boost\-::\-Raw\-Data\-::load (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{file\-Name, }
+\item[{e\-Input\-Type}]{input\-Type = {\ttfamily IT\-\_\-TRAIN}, }
+\item[{int}]{verbose\-Level = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1RawData_afc63acdb2dc93c84c90ff9ecc3143b69}
+Load the given file. 
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & The name of the file to be loaded. \\
+\hline
+{\em input\-Type} & The type of input. \\
+\hline
+{\em verbose\-Level} & The level of verbosity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+e\-Input\-Type 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+08/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 55 of file Raw\-Data.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Raw\-Data.\-h\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Raw\-Data.\-cpp\end{DoxyCompactItemize}

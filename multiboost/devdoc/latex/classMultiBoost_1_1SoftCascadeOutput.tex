@@ -1,0 +1,132 @@
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput}{\section{Multi\-Boost\-:\-:Soft\-Cascade\-Output Class Reference}
+\label{classMultiBoost_1_1SoftCascadeOutput}\index{Multi\-Boost\-::\-Soft\-Cascade\-Output@{Multi\-Boost\-::\-Soft\-Cascade\-Output}}
+}
+
+
+{\ttfamily \#include $<$Output\-Info.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Soft\-Cascade\-Output\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1SoftCascadeOutput}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1SoftCascadeOutput_a7b6e7fc344cad80df8bb646e1ef72c5e}{Soft\-Cascade\-Output} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeOutput_a6af5a3af1f5ecee45ded3db7ce982b41}{output\-Header} (ostream \&out\-Stream, const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&namemap)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeOutput_ab1774f3f89e45bdde27936f890640065}{output\-Description} (ostream \&out\-Stream)
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_af04ec06500624d4d79a3cd25910b1c8e}{void {\bfseries compute\-And\-Output} (ostream \&out\-Stream, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \&g\-Table\-Map, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \&margins\-Table\-Map, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&alpha\-Sums, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis=0)}\label{classMultiBoost_1_1SoftCascadeOutput_af04ec06500624d4d79a3cd25910b1c8e}
+
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_a0090b28ef8eb2863ea590ea80407896e}{void {\bfseries append\-Rejection\-Threshold} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} value)}\label{classMultiBoost_1_1SoftCascadeOutput_a0090b28ef8eb2863ea590ea80407896e}
+
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_af3450dd6de288d36350f558ca2d67521}{vector$<$ char $>$ \& {\bfseries get\-Forcast\-Vector} ()}\label{classMultiBoost_1_1SoftCascadeOutput_af3450dd6de288d36350f558ca2d67521}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_a3cc2f6b99f310a99ad289fe1e9dcb82f}{string {\bfseries \-\_\-positive\-Label\-Name}}\label{classMultiBoost_1_1SoftCascadeOutput_a3cc2f6b99f310a99ad289fe1e9dcb82f}
+
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_a9ee41c93f1c95dc2cac0479e601de718}{vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ {\bfseries \-\_\-calibrated\-Weak\-Hypotheses}}\label{classMultiBoost_1_1SoftCascadeOutput_a9ee41c93f1c95dc2cac0479e601de718}
+
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_ab0f05d76faf177db543db65b06f4b2f9}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ {\bfseries \-\_\-rejection\-Thresholds}}\label{classMultiBoost_1_1SoftCascadeOutput_ab0f05d76faf177db543db65b06f4b2f9}
+
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_ad0a6c018b2602bbc1766d1632248390b}{vector$<$ char $>$ {\bfseries \-\_\-forecast}}\label{classMultiBoost_1_1SoftCascadeOutput_ad0a6c018b2602bbc1766d1632248390b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Soft\-Cascade (embedded-\/like) performance. Outputs the error, auc, tpr, fpr. The individual outputs should be refactored if needed. \begin{DoxyDate}{Date}
+04/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 842 of file Output\-Info.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_a7b6e7fc344cad80df8bb646e1ef72c5e}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Output@{Multi\-Boost\-::\-Soft\-Cascade\-Output}!Soft\-Cascade\-Output@{Soft\-Cascade\-Output}}
+\index{Soft\-Cascade\-Output@{Soft\-Cascade\-Output}!MultiBoost::SoftCascadeOutput@{Multi\-Boost\-::\-Soft\-Cascade\-Output}}
+\subsubsection[{Soft\-Cascade\-Output}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Soft\-Cascade\-Output\-::\-Soft\-Cascade\-Output (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1SoftCascadeOutput_a7b6e7fc344cad80df8bb646e1ef72c5e}
+$<$ The name of the positive class, to be used for some kinds of binary classification, otherwise set to \char`\"{}\char`\"{}. 
+
+Definition at line 856 of file Output\-Info.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_ab1774f3f89e45bdde27936f890640065}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Output@{Multi\-Boost\-::\-Soft\-Cascade\-Output}!output\-Description@{output\-Description}}
+\index{output\-Description@{output\-Description}!MultiBoost::SoftCascadeOutput@{Multi\-Boost\-::\-Soft\-Cascade\-Output}}
+\subsubsection[{output\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Output\-::output\-Description (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out\-Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1SoftCascadeOutput_ab1774f3f89e45bdde27936f890640065}
+Print a detailed description of the output. 
+\begin{DoxyParams}{Parameters}
+{\em out\-Stream} & The stream where the output is directed to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+12/12/2012 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseOutputInfoType_aa2f886100b21c8cf09d5dddc9e4d1dca}{Multi\-Boost\-::\-Base\-Output\-Info\-Type}.
+
+
+
+Definition at line 882 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeOutput_a6af5a3af1f5ecee45ded3db7ce982b41}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Output@{Multi\-Boost\-::\-Soft\-Cascade\-Output}!output\-Header@{output\-Header}}
+\index{output\-Header@{output\-Header}!MultiBoost::SoftCascadeOutput@{Multi\-Boost\-::\-Soft\-Cascade\-Output}}
+\subsubsection[{output\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Output\-::output\-Header (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out\-Stream, }
+\item[{const {\bf Name\-Map} \&}]{namemap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1SoftCascadeOutput_a6af5a3af1f5ecee45ded3db7ce982b41}
+Print the header 
+\begin{DoxyParams}{Parameters}
+{\em out\-Stream} & The stream where the output is directed to \\
+\hline
+{\em namemap} & The structure that contains the class information ( \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} ) 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+17/06/2011 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseOutputInfoType_aec8678cadeec12db720af8b482c63662}{Multi\-Boost\-::\-Base\-Output\-Info\-Type}.
+
+
+
+Definition at line 871 of file Output\-Info.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{OutputInfo_8h}{Output\-Info.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Output\-Info.\-cpp\end{DoxyCompactItemize}

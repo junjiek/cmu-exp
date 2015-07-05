@@ -1,0 +1,164 @@
+\hypertarget{classMultiBoost_1_1SparseStumpAlgorithm}{\section{Multi\-Boost\-:\-:Sparse\-Stump\-Algorithm$<$ T $>$ Class Template Reference}
+\label{classMultiBoost_1_1SparseStumpAlgorithm}\index{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm$<$ T $>$@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$Sparse\-Stump\-Algorithm.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ pair$<$ int, T $>$\\*
+ $>$\-::iterator \hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_ac4d346756184d29c08539b2dde0c1d31}{vp\-Iterator}
+\item 
+typedef vector$<$ pair$<$ int, T $>$\\*
+ $>$\-::const\-\_\-iterator \hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_a268cf150b7c667fc60f79dbc55790532}{cvp\-Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1SparseStumpAlgorithm_aa2ad70e9068cab22c6af0ed764fd4145}{{\bfseries Sparse\-Stump\-Algorithm} (int num\-Classes)}\label{classMultiBoost_1_1SparseStumpAlgorithm_aa2ad70e9068cab22c6af0ed764fd4145}
+
+\item 
+void \hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_af27dcfa5cac54e2b14c6b31093dd83b9}{init\-Search\-Loop} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data)
+\item 
+void \hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_a4856f7a704cc7345f713a3f225bebf1e}{find\-Single\-Threshold} (const \hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_ac4d346756184d29c08539b2dde0c1d31}{vp\-Iterator} \&data\-Begin, const \hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_ac4d346756184d29c08539b2dde0c1d31}{vp\-Iterator} \&data\-End, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&thresholds, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} half\-Theta=0.\-0, vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ $\ast$p\-Mu=N\-U\-L\-L, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $\ast$p\-V=N\-U\-L\-L)
+\item 
+void \hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_a5430ca87fd6c89e3e1868326e2c54329}{find\-Single\-Threshold\-With\-Init} (const \hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_ac4d346756184d29c08539b2dde0c1d31}{vp\-Iterator} \&data\-Begin, const \hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_ac4d346756184d29c08539b2dde0c1d31}{vp\-Iterator} \&data\-End, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&thresholds, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} half\-Theta, vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ $\ast$p\-Mu=N\-U\-L\-L, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $\ast$p\-V=N\-U\-L\-L)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Multi\-Boost\-::\-Sparse\-Stump\-Algorithm$<$ T $>$}
+
+Class specialized in solving decision stump-\/type algorithms. A decision stump is a decision tree with a single level. 
+
+Definition at line 61 of file Sparse\-Stump\-Algorithm.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classMultiBoost_1_1SparseStumpAlgorithm_a268cf150b7c667fc60f79dbc55790532}{\index{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}!cvp\-Iterator@{cvp\-Iterator}}
+\index{cvp\-Iterator@{cvp\-Iterator}!MultiBoost::SparseStumpAlgorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}}
+\subsubsection[{cvp\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef vector$<$ pair$<$int, T$>$ $>$\-::const\-\_\-iterator {\bf Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}$<$ T $>$\-::{\bf cvp\-Iterator}}}\label{classMultiBoost_1_1SparseStumpAlgorithm_a268cf150b7c667fc60f79dbc55790532}
+Const iterator on Pair. The pair refers to $<$index, value$>$. 
+
+Definition at line 73 of file Sparse\-Stump\-Algorithm.\-h.
+
+\hypertarget{classMultiBoost_1_1SparseStumpAlgorithm_ac4d346756184d29c08539b2dde0c1d31}{\index{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}!vp\-Iterator@{vp\-Iterator}}
+\index{vp\-Iterator@{vp\-Iterator}!MultiBoost::SparseStumpAlgorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}}
+\subsubsection[{vp\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef vector$<$ pair$<$int, T$>$ $>$\-::iterator {\bf Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}$<$ T $>$\-::{\bf vp\-Iterator}}}\label{classMultiBoost_1_1SparseStumpAlgorithm_ac4d346756184d29c08539b2dde0c1d31}
+Iterator on Pair. The pair refers to $<$index, value$>$. 
+
+Definition at line 69 of file Sparse\-Stump\-Algorithm.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1SparseStumpAlgorithm_a4856f7a704cc7345f713a3f225bebf1e}{\index{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}!find\-Single\-Threshold@{find\-Single\-Threshold}}
+\index{find\-Single\-Threshold@{find\-Single\-Threshold}!MultiBoost::SparseStumpAlgorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}}
+\subsubsection[{find\-Single\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}$<$ T $>$\-::find\-Single\-Threshold (
+\begin{DoxyParamCaption}
+\item[{const {\bf vp\-Iterator} \&}]{data\-Begin, }
+\item[{const {\bf vp\-Iterator} \&}]{data\-End, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Feature\-Real} $>$ \&}]{thresholds, }
+\item[{{\bf Alpha\-Real}}]{half\-Theta = {\ttfamily 0.0}, }
+\item[{vector$<$ {\bf s\-Rates} $>$ $\ast$}]{p\-Mu = {\ttfamily NULL}, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ $\ast$}]{p\-V = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1SparseStumpAlgorithm_a4856f7a704cc7345f713a3f225bebf1e}
+Find the optimal threshold that maximizes the edge (or minimizes the error) on the given weighted data. In case of multi-\/class data, the threshold will minimize the error over all the classes\-: 
+\begin{DoxyParams}{Parameters}
+{\em data\-Begin} & The iterator to the beginning of the data. \\
+\hline
+{\em data\-End} & The iterator to the end of the data. \\
+\hline
+{\em p\-Data} & The pointer to the original data class. Used to obtain the label of the example from its index. \\
+\hline
+{\em p\-Mu} & The The class-\/wise rates to update. (if provided) \\
+\hline
+{\em p\-V} & The alignment vector to update. (if provided) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{structMultiBoost_1_1sRates}{s\-Rates} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The threshold found. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+The algorithm (suboptimally) maximizes the Edge. This is slightly different from the standard Ada\-Boost which maximizes the energy even in the decision stump algorithm. This is the result of a trade-\/off between speed and full adherence to the theory. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 179 of file Sparse\-Stump\-Algorithm.\-h.
+
+\hypertarget{classMultiBoost_1_1SparseStumpAlgorithm_a5430ca87fd6c89e3e1868326e2c54329}{\index{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}!find\-Single\-Threshold\-With\-Init@{find\-Single\-Threshold\-With\-Init}}
+\index{find\-Single\-Threshold\-With\-Init@{find\-Single\-Threshold\-With\-Init}!MultiBoost::SparseStumpAlgorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}}
+\subsubsection[{find\-Single\-Threshold\-With\-Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}$<$ T $>$\-::find\-Single\-Threshold\-With\-Init (
+\begin{DoxyParamCaption}
+\item[{const {\bf vp\-Iterator} \&}]{data\-Begin, }
+\item[{const {\bf vp\-Iterator} \&}]{data\-End, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Feature\-Real} $>$ \&}]{thresholds, }
+\item[{{\bf Alpha\-Real}}]{half\-Theta, }
+\item[{vector$<$ {\bf s\-Rates} $>$ $\ast$}]{p\-Mu = {\ttfamily NULL}, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ $\ast$}]{p\-V = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1SparseStumpAlgorithm_a5430ca87fd6c89e3e1868326e2c54329}
+Same as find\-Single\-Threshold, but the caller has to call init\-Search\-Loop explicitly before the loop over the dimensions (features). It is more efficient than find\-Single\-Threshold since find\-Single\-Threshold calls init\-Search\-Loop in each iteration. However, it can only be used if the data points and their weights do not change between init\-Search\-Loop and subsequent calls to find\-Single\-Threshold. See \hyperlink{classMultiBoost_1_1SingleStumpLearner_a9cd7bfe1a0905857993eec0dd462a879}{Single\-Stump\-Learner\-::run} for an example. 
+\begin{DoxyParams}{Parameters}
+{\em data\-Begin} & The iterator to the beginning of the data. \\
+\hline
+{\em data\-End} & The iterator to the end of the data. \\
+\hline
+{\em p\-Data} & The pointer to the original data class. Used to obtain the label of the example from its index. \\
+\hline
+{\em p\-Mu} & The The class-\/wise rates to update. (if provided) \\
+\hline
+{\em p\-V} & The alignment vector to update. (if provided) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{structMultiBoost_1_1sRates}{s\-Rates} 
+
+\hyperlink{classMultiBoost_1_1SparseStumpAlgorithm_a4856f7a704cc7345f713a3f225bebf1e}{find\-Single\-Threshold} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The threshold found. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+03/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 196 of file Sparse\-Stump\-Algorithm.\-h.
+
+\hypertarget{classMultiBoost_1_1SparseStumpAlgorithm_af27dcfa5cac54e2b14c6b31093dd83b9}{\index{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}!init\-Search\-Loop@{init\-Search\-Loop}}
+\index{init\-Search\-Loop@{init\-Search\-Loop}!MultiBoost::SparseStumpAlgorithm@{Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}}
+\subsubsection[{init\-Search\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Multi\-Boost\-::\-Sparse\-Stump\-Algorithm}$<$ T $>$\-::init\-Search\-Loop (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1SparseStumpAlgorithm_af27dcfa5cac54e2b14c6b31093dd83b9}
+Initilizes half\-Weights\-Per\-Class and constant\-Half\-Edges for subsequent calls to find\-Single\-Threshold\-With\-Init or find\-Multi\-Threshold\-With\-Init 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The pointer to the data class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+03/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 162 of file Sparse\-Stump\-Algorithm.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Algorithms/\hyperlink{SparseStumpAlgorithm_8h}{Sparse\-Stump\-Algorithm.\-h}\end{DoxyCompactItemize}

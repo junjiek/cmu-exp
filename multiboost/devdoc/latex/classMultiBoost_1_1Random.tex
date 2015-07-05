@@ -1,0 +1,133 @@
+\hypertarget{classMultiBoost_1_1Random}{\section{Multi\-Boost\-:\-:Random Class Reference}
+\label{classMultiBoost_1_1Random}\index{Multi\-Boost\-::\-Random@{Multi\-Boost\-::\-Random}}
+}
+Inheritance diagram for Multi\-Boost\-:\-:Random\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1Random}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Random_a011b2cf748994c866148f1979c0b59b1}{get\-K\-Best\-Action} (const int k, vector$<$ int $>$ \&best\-Arms)
+\item 
+virtual int \hyperlink{classMultiBoost_1_1Random_ae38f8c4de358e6261e02ab1a83475128}{get\-Next\-Action} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Random_a8b8cd993571fb86c394e8de747649b60}{init\-Learning\-Options} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Random_a8dbf16884f29168fa9cb3feede07bd4e}{updateith\-Value} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 60 of file Random.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1Random_a011b2cf748994c866148f1979c0b59b1}{\index{Multi\-Boost\-::\-Random@{Multi\-Boost\-::\-Random}!get\-K\-Best\-Action@{get\-K\-Best\-Action}}
+\index{get\-K\-Best\-Action@{get\-K\-Best\-Action}!MultiBoost::Random@{Multi\-Boost\-::\-Random}}
+\subsubsection[{get\-K\-Best\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Random\-::get\-K\-Best\-Action (
+\begin{DoxyParamCaption}
+\item[{const int}]{k, }
+\item[{vector$<$ int $>$ \&}]{best\-Arms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1Random_a011b2cf748994c866148f1979c0b59b1}
+Get the K best arm. Hovewer, in the original bandit framework it is only allowed to pull one arm in an iteration, here we implement that case when we can pull many arms in one iteration. 
+\begin{DoxyParams}{Parameters}
+{\em k} & number of arms to be pulled in the same iteration \\
+\hline
+{\em best\-Arms} & integer vector containing the indices of arms will be pulled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_aba6a5d2e4462644f15df846305783c15}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 52 of file Random.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Random_ae38f8c4de358e6261e02ab1a83475128}{\index{Multi\-Boost\-::\-Random@{Multi\-Boost\-::\-Random}!get\-Next\-Action@{get\-Next\-Action}}
+\index{get\-Next\-Action@{get\-Next\-Action}!MultiBoost::Random@{Multi\-Boost\-::\-Random}}
+\subsubsection[{get\-Next\-Action}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Random\-::get\-Next\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1Random_ae38f8c4de358e6261e02ab1a83475128}
+Get the best action. \begin{DoxyReturn}{Returns}
+The index of arm which then will be pulled. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a73d90995d4694aa23649dc508527cc8c}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 69 of file Random.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Random_a8b8cd993571fb86c394e8de747649b60}{\index{Multi\-Boost\-::\-Random@{Multi\-Boost\-::\-Random}!init\-Learning\-Options@{init\-Learning\-Options}}
+\index{init\-Learning\-Options@{init\-Learning\-Options}!MultiBoost::Random@{Multi\-Boost\-::\-Random}}
+\subsubsection[{init\-Learning\-Options}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Random\-::init\-Learning\-Options (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1Random_a8b8cd993571fb86c394e8de747649b60}
+Set the arguments of the algorithm using the standard interface of the argument handling (see in the weak learners). Call this to set the arguments given by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a61b051648cee17985a8a8bc0332e8bb9}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 70 of file Random.\-h.
+
+\hypertarget{classMultiBoost_1_1Random_a8dbf16884f29168fa9cb3feede07bd4e}{\index{Multi\-Boost\-::\-Random@{Multi\-Boost\-::\-Random}!updateith\-Value@{updateith\-Value}}
+\index{updateith\-Value@{updateith\-Value}!MultiBoost::Random@{Multi\-Boost\-::\-Random}}
+\subsubsection[{updateith\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Random\-::updateith\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{arm\-Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1Random_a8dbf16884f29168fa9cb3feede07bd4e}
+Update the statics of the arms. In the case of stochastic bandit algorithms it updates the B-\/values, and in the case of adversarials bandit methods it updates the probabilities over the arms. 
+\begin{DoxyParams}{Parameters}
+{\em arm\-Num} & the index of arm whose statistics will be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a46066e41b12d20f0b962d3f46d9b0d22}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 79 of file Random.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Bandits/Random.\-h\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Bandits/Random.\-cpp\end{DoxyCompactItemize}

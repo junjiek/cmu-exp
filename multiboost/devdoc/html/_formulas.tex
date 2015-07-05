@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{epsfig}
+\pagestyle{empty}
+\begin{document}
+\[ w_{i,\ell}^{(1)} = \begin{cases} \frac{1}{2n} & \mbox{ if $\ell$ is the correct class (if $y_{i,\ell} = 1$),} \\ \frac{1}{2n(k-1)} & \mbox{ otherwise (if $y_{i,\ell} = -1$).} \end{cases} \]
+\pagebreak
+
+$n$
+\pagebreak
+
+$k$
+\pagebreak
+
+$\mu$
+\pagebreak
+
+\begin{eqnarray*} \mu_{\ell+} & = & \sum_{correct} w_{i,\ell}^{(t)},\\ \mu_{\ell-} &=& \sum_{incorrect} w_{i,\ell}^{(t)}, \\ \mu_{\ell0} & = & \mu_{\ell-} + \mu_{\ell+} \end{eqnarray*}
+\pagebreak
+
+$v=0$
+\pagebreak
+
+$\mu_{\ell+}$
+\pagebreak
+
+$\mu_{\ell-}$
+\pagebreak
+
+$\mu_{\ell0}$
+\pagebreak
+
+$w$
+\pagebreak
+
+\[ w^{(t+1)}_{i, \ell}= \frac{ w^{(t)}_{i, \ell} \exp \left( -\alpha^{(t)} h_\ell^{(t)}(x_i) y_{i, \ell} \right) }{ Z^{(t)} } \]
+\pagebreak
+
+\[ Z^{(t)} = \sum_{j=1}^n \sum_{\ell=1}^k w^{(t)}_{j, \ell} \exp \left( -\alpha^{(t)} h_\ell^{(t)}(x_j) y_{j, \ell} \right) \]
+\pagebreak
+
+$\alpha$
+\pagebreak
+
+$h_\ell(x_i)$
+\pagebreak
+
+$x_i$
+\pagebreak
+
+$\f^{(t)}(\bx)\$f after t iteration. Then the weights of the $
+\pagebreak
+
+\[ Z = 2 \sqrt{\epsilon_+ \epsilon_-} + \epsilon_0 \]
+\pagebreak
+
+\[ Z = \sum_{i=1}^n \sum_{\ell=1}^k w_{i,\ell} \exp{ \left( -\alpha_\ell h_\ell(x_i) y_{i,\ell} \right) }, \]
+\pagebreak
+
+\[ Z = 2 \sum_{\ell=1}^k \sqrt{ \mu_{-,\ell} \mu_{+,\ell} } \]
+\pagebreak
+
+$\theta > 0$
+\pagebreak
+
+\[ Z = \mu_0 + 2 \sum_{\ell=1}^k \sqrt{ \mu_{-,\ell} \mu_{+,\ell} }, \]
+\pagebreak
+
+\[ v_\ell = \begin{cases} +1 & \mbox{ if } \mu_{\ell+} > \mu_{\ell-}\\ -1 & \mbox{ otherwise.} \end{cases} \]
+\pagebreak
+
+\[ \alpha = \frac{1}{2} \log \left( \frac{\epsilon_+ + \delta}{\epsilon_- + \delta} \right) \]
+\pagebreak
+
+$\delta$
+\pagebreak
+
+\[ \alpha = \begin{cases} \ln\left( - \frac{\theta\epsilon^{(t)}_{0}}{2(1+\theta)\epsilon^{(t)}_{-}} + \sqrt{\left(\frac{\theta\epsilon^{(t)}_{0}}{2(1+\theta)\epsilon^{(t)}_{-}}\right)^2 + \frac{(1 - \theta)\epsilon^{(t)}_{+}}{(1 + \theta)\epsilon^{(t)}_{-}}}\right) & \mbox{ if } \epsilon^{(t)}_{-} > 0,\\ \ln\left( \frac{(1-\theta)\epsilon^{(t)}_{+}}{\theta\epsilon^{(t)}_{0}}\right) & \mbox{ if } \epsilon^{(t)}_{-} = 0. \end{cases} \]
+\pagebreak
+
+\[ \left\{ v^{(t)}_1, v^{(t)}_2, \cdots, v^{(t)}_K, \phi^{(t)}({\bf x}_1), \phi^{(t)}({\bf x}_2), \cdots, \phi^{(t)}({\bf x}_n) \right\} \]
+\pagebreak
+
+$t$
+\pagebreak
+
+\end{document}

@@ -1,0 +1,80 @@
+\hypertarget{HaarFeatures_8h}{\section{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\-Haar/\-Haar\-Features.h File Reference}
+\label{HaarFeatures_8h}\index{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\-Haar/\-Haar\-Features.\-h@{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\-Haar/\-Haar\-Features.\-h}}
+}
+{\ttfamily \#include \char`\"{}Defaults.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Utils/\-Utils.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Others/\-Example.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMultiBoost_1_1HaarFeature}{Multi\-Boost\-::\-Haar\-Feature}
+\item 
+class \hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs}{Multi\-Boost\-::\-Haar\-Feature\-::\-Features\-Regs}
+\item 
+class \hyperlink{classMultiBoost_1_1HaarFeature__2H}{Multi\-Boost\-::\-Haar\-Feature\-\_\-2\-H}
+\item 
+class \hyperlink{classMultiBoost_1_1HaarFeature__2V}{Multi\-Boost\-::\-Haar\-Feature\-\_\-2\-V}
+\item 
+class \hyperlink{classMultiBoost_1_1HaarFeature__3H}{Multi\-Boost\-::\-Haar\-Feature\-\_\-3\-H}
+\item 
+class \hyperlink{classMultiBoost_1_1HaarFeature__3V}{Multi\-Boost\-::\-Haar\-Feature\-\_\-3\-V}
+\item 
+class \hyperlink{classMultiBoost_1_1HaarFeature__4SQ}{Multi\-Boost\-::\-Haar\-Feature\-\_\-4\-S\-Q}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{HaarFeatures_8h_adcc549bcab1fba9c2649737e60dd50ea}{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-H\-A\-A\-R\-\_\-\-F\-E\-A\-T\-U\-R\-E}(S\-H\-O\-R\-T\-N\-A\-M\-E, X)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries e\-Feature\-Type} \{ \\*
+{\bfseries Multi\-Boost\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-\-N\-O\-\_\-\-T\-Y\-P\-E}, 
+{\bfseries Multi\-Boost\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-2\-H\-\_\-\-R\-E\-C\-T}, 
+{\bfseries Multi\-Boost\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-2\-V\-\_\-\-R\-E\-C\-T}, 
+{\bfseries Multi\-Boost\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-3\-H\-\_\-\-R\-E\-C\-T}, 
+\\*
+{\bfseries Multi\-Boost\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-3\-V\-\_\-\-R\-E\-C\-T}, 
+{\bfseries Multi\-Boost\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-4\-S\-Q\-U\-A\-R\-E\-\_\-\-R\-E\-C\-T}
+ \}
+\item 
+enum {\bfseries e\-Access\-Type} \{ {\bfseries Multi\-Boost\-::\-A\-T\-\_\-\-F\-U\-L\-L}, 
+{\bfseries Multi\-Boost\-::\-A\-T\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-S\-A\-M\-P\-L\-I\-N\-G}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the Haar-\/like features that are computed by the Haar\-Learner. 
+
+Definition in file \hyperlink{HaarFeatures_8h_source}{Haar\-Features.\-h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{HaarFeatures_8h_adcc549bcab1fba9c2649737e60dd50ea}{\index{Haar\-Features.\-h@{Haar\-Features.\-h}!R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-H\-A\-A\-R\-\_\-\-F\-E\-A\-T\-U\-R\-E@{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-H\-A\-A\-R\-\_\-\-F\-E\-A\-T\-U\-R\-E}}
+\index{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-H\-A\-A\-R\-\_\-\-F\-E\-A\-T\-U\-R\-E@{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-H\-A\-A\-R\-\_\-\-F\-E\-A\-T\-U\-R\-E}!HaarFeatures.h@{Haar\-Features.\-h}}
+\subsubsection[{R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-H\-A\-A\-R\-\_\-\-F\-E\-A\-T\-U\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-H\-A\-A\-R\-\_\-\-F\-E\-A\-T\-U\-R\-E(
+\begin{DoxyParamCaption}
+\item[{}]{S\-H\-O\-R\-T\-N\-A\-M\-E, }
+\item[{}]{X}
+\end{DoxyParamCaption}
+)}}\label{HaarFeatures_8h_adcc549bcab1fba9c2649737e60dd50ea}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{struct }RegisterHF\_##X                                               \(\backslash\)
+    \{ RegisterHF\_##X() \{ HaarFeature::RegisteredFeatures().addFeature(#
+      SHORTNAME, \textcolor{keyword}{new} X(#SHORTNAME)); \} \}; \(\backslash\)
+        static RegisterHF\_##X rHF\_##X;
+\end{DoxyCode}
+The macro that {\bfseries must} be declared by all the Derived classes that can be used as Haar-\/like features. \begin{DoxySeeAlso}{See Also}
+Haar\-Feature\-::\-Features\-Regs 
+\end{DoxySeeAlso}
+
+
+Definition at line 739 of file Haar\-Features.\-h.
+

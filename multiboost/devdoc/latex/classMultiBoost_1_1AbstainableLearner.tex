@@ -1,0 +1,553 @@
+\hypertarget{classMultiBoost_1_1AbstainableLearner}{\section{Multi\-Boost\-:\-:Abstainable\-Learner Class Reference}
+\label{classMultiBoost_1_1AbstainableLearner}\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+}
+Inheritance diagram for Multi\-Boost\-:\-:Abstainable\-Learner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.720306cm]{classMultiBoost_1_1AbstainableLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a06fc9ee8990754c94c1d9d312f9e780c}{Abstainable\-Learner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1AbstainableLearner_a098fcf8c83ad5b80cf01d5973988758c}{$\sim$\-Abstainable\-Learner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AbstainableLearner_add9773c8057fea7885edb8c1a07cfbd8}{declare\-Arguments} (\hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AbstainableLearner_a966b1609a95222953e4116a3fffaadbe}{init\-Learning\-Options} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, int idx, int class\-Idx)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{save} (ofstream \&output\-Stream, int num\-Tabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AbstainableLearner_a571f0ef9449cd3a7bc56f8a0131db6f1}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\-\_\-utils\-::\-Stream\-Tokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AbstainableLearner_a36ad3b89e190941788eee53595b288b0}{sub\-Copy\-State} (\hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Base\-Learner)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1AbstainableLearner_af9deda1ca0bf2145dce5d86e15b7487b}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ {\bfseries \-\_\-v}}\label{classMultiBoost_1_1AbstainableLearner_af9deda1ca0bf2145dce5d86e15b7487b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599}{e\-Abst\-Type} \{ \\*
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599a2019394277d4056625d018cb98290412}{A\-B\-S\-T\-\_\-\-N\-O\-\_\-\-A\-B\-S\-T\-E\-N\-T\-I\-O\-N}, 
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599a0c1ea3b4f4af6824ccb863083529176a}{A\-B\-S\-T\-\_\-\-G\-R\-E\-E\-D\-Y}, 
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599af384457b42d884fdeb23e551f7791a35}{A\-B\-S\-T\-\_\-\-R\-E\-A\-L}, 
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599abc37ef32ac283b194557d98f66e33312}{A\-B\-S\-T\-\_\-\-F\-U\-L\-L}, 
+\\*
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599afeeef2eabc861fca37f0932bc11cfff8}{A\-B\-S\-T\-\_\-\-C\-L\-A\-S\-S\-W\-I\-S\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AbstainableLearner_a76d59e5c6678f43a3f483064beb06f64}{phi} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, int idx, int class\-Idx) const =0
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AbstainableLearner_ae0a99b6a9658f9dd66d55f3b47609675}{get\-Energy} (vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ \&mu, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \&alpha, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&v)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AbstainableLearner_a022edc8c1b04c21720f56c0562db10a7}{do\-Greedy\-Abstention} (vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ \&mu, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} curr\-Energy, \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} \&eps, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \&alpha, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&v)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AbstainableLearner_a08b11f234d6f857343432a7f6c2d0c03}{do\-Full\-Abstention} (const vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ \&mu, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} curr\-Energy, \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} \&eps, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \&alpha, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&v)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AbstainableLearner_a04438bf3df3599fe42ca26771b6b2aff}{do\-Real\-Abstention} (const vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ \&mu, const \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} \&eps, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \&alpha, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&v)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AbstainableLearner_a76a5ca563ef7c9b1c7f906d7a96675e3}{do\-Classwise\-Abstention} (vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ \&mu, \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} \&eps, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \&alpha, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&v)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a25268f708c7e9a89739273444aeffaa6}{\hyperlink{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599}{e\-Abst\-Type} \hyperlink{classMultiBoost_1_1AbstainableLearner_a25268f708c7e9a89739273444aeffaa6}{\-\_\-abstention}}\label{classMultiBoost_1_1AbstainableLearner_a25268f708c7e9a89739273444aeffaa6}
+
+\begin{DoxyCompactList}\small\item\em Activate abstention. Default = 0 (no abstention);. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 68 of file Abstainable\-Learner.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!e\-Abst\-Type@{e\-Abst\-Type}}
+\index{e\-Abst\-Type@{e\-Abst\-Type}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{e\-Abst\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Multi\-Boost\-::\-Abstainable\-Learner\-::e\-Abst\-Type}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599}
+The class-\/wise abstention/alignment vector. If the abstention is {\bfseries not} set to A\-B\-S\-T\-\_\-\-R\-E\-A\-L, it is obtained simply with \[ v_\ell = \begin{cases} +1 & \mbox{ if } \mu_{\ell+} > \mu_{\ell-}\\ -1 & \mbox{ otherwise.} \end{cases} \] where $\mu$ are defined in \hyperlink{structMultiBoost_1_1sRates}{s\-Rates}.
+
+In the case of A\-B\-S\-T\-\_\-\-R\-E\-A\-L, this vector becomes the class-\/wise alpha value, and alpha is set to 1. \begin{DoxySeeAlso}{See Also}
+\hyperlink{structMultiBoost_1_1sRates}{s\-Rates} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a04438bf3df3599fe42ca26771b6b2aff}{do\-Real\-Abstention} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599}{e\-Abst\-Type} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 The type of abstention. 
+
+28/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a022edc8c1b04c21720f56c0562db10a7}{do\-Greedy\-Abstention} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a08b11f234d6f857343432a7f6c2d0c03}{do\-Full\-Abstention} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a04438bf3df3599fe42ca26771b6b2aff}{do\-Real\-Abstention} 
+\end{DoxySeeAlso}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{A\-B\-S\-T\-\_\-\-N\-O\-\_\-\-A\-B\-S\-T\-E\-N\-T\-I\-O\-N@{A\-B\-S\-T\-\_\-\-N\-O\-\_\-\-A\-B\-S\-T\-E\-N\-T\-I\-O\-N}!Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}}\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!A\-B\-S\-T\-\_\-\-N\-O\-\_\-\-A\-B\-S\-T\-E\-N\-T\-I\-O\-N@{A\-B\-S\-T\-\_\-\-N\-O\-\_\-\-A\-B\-S\-T\-E\-N\-T\-I\-O\-N}}\item[{\em 
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599a2019394277d4056625d018cb98290412}{A\-B\-S\-T\-\_\-\-N\-O\-\_\-\-A\-B\-S\-T\-E\-N\-T\-I\-O\-N}\label{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599a2019394277d4056625d018cb98290412}
+}]No abstention is performed. \index{A\-B\-S\-T\-\_\-\-G\-R\-E\-E\-D\-Y@{A\-B\-S\-T\-\_\-\-G\-R\-E\-E\-D\-Y}!Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}}\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!A\-B\-S\-T\-\_\-\-G\-R\-E\-E\-D\-Y@{A\-B\-S\-T\-\_\-\-G\-R\-E\-E\-D\-Y}}\item[{\em 
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599a0c1ea3b4f4af6824ccb863083529176a}{A\-B\-S\-T\-\_\-\-G\-R\-E\-E\-D\-Y}\label{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599a0c1ea3b4f4af6824ccb863083529176a}
+}]The abstention is type greedy, which complexity is O(k$^\wedge$2), where k is the number of classes. \index{A\-B\-S\-T\-\_\-\-R\-E\-A\-L@{A\-B\-S\-T\-\_\-\-R\-E\-A\-L}!Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}}\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!A\-B\-S\-T\-\_\-\-R\-E\-A\-L@{A\-B\-S\-T\-\_\-\-R\-E\-A\-L}}\item[{\em 
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599af384457b42d884fdeb23e551f7791a35}{A\-B\-S\-T\-\_\-\-R\-E\-A\-L}\label{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599af384457b42d884fdeb23e551f7791a35}
+}]The value of the v vector is float instead of \{-\/1,0,+1\} as described in Boostexter's paper. \index{A\-B\-S\-T\-\_\-\-F\-U\-L\-L@{A\-B\-S\-T\-\_\-\-F\-U\-L\-L}!Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}}\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!A\-B\-S\-T\-\_\-\-F\-U\-L\-L@{A\-B\-S\-T\-\_\-\-F\-U\-L\-L}}\item[{\em 
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599abc37ef32ac283b194557d98f66e33312}{A\-B\-S\-T\-\_\-\-F\-U\-L\-L}\label{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599abc37ef32ac283b194557d98f66e33312}
+}]The abstention is full, which complexity is O(2$^\wedge$k). \index{A\-B\-S\-T\-\_\-\-C\-L\-A\-S\-S\-W\-I\-S\-E@{A\-B\-S\-T\-\_\-\-C\-L\-A\-S\-S\-W\-I\-S\-E}!Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}}\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!A\-B\-S\-T\-\_\-\-C\-L\-A\-S\-S\-W\-I\-S\-E@{A\-B\-S\-T\-\_\-\-C\-L\-A\-S\-S\-W\-I\-S\-E}}\item[{\em 
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599afeeef2eabc861fca37f0932bc11cfff8}{A\-B\-S\-T\-\_\-\-C\-L\-A\-S\-S\-W\-I\-S\-E}\label{classMultiBoost_1_1AbstainableLearner_a913d773affdee935e319707266a29599afeeef2eabc861fca37f0932bc11cfff8}
+}]The value of the v vector is \{-\/1,0,+1\} abstain if classwise edge $<$ theta. \end{description}
+\end{Desc}
+
+
+
+Definition at line 306 of file Abstainable\-Learner.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a06fc9ee8990754c94c1d9d312f9e780c}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!Abstainable\-Learner@{Abstainable\-Learner}}
+\index{Abstainable\-Learner@{Abstainable\-Learner}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{Abstainable\-Learner}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Abstainable\-Learner\-::\-Abstainable\-Learner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1AbstainableLearner_a06fc9ee8990754c94c1d9d312f9e780c}
+The constructor. It initializes theta to zero and the abstention to false (that is, their default values). \begin{DoxyDate}{Date}
+19/107/2006 
+\end{DoxyDate}
+
+
+Definition at line 78 of file Abstainable\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a098fcf8c83ad5b80cf01d5973988758c}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!$\sim$\-Abstainable\-Learner@{$\sim$\-Abstainable\-Learner}}
+\index{$\sim$\-Abstainable\-Learner@{$\sim$\-Abstainable\-Learner}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{$\sim$\-Abstainable\-Learner}]{\setlength{\rightskip}{0pt plus 5cm}virtual Multi\-Boost\-::\-Abstainable\-Learner\-::$\sim$\-Abstainable\-Learner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_a098fcf8c83ad5b80cf01d5973988758c}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 85 of file Abstainable\-Learner.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!classify@{classify}}
+\index{classify@{classify}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{classify}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Alpha\-Real} Multi\-Boost\-::\-Abstainable\-Learner\-::classify (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{int}]{idx, }
+\item[{int}]{class\-Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}
+Return \{+1, -\/1\} for the given class and value using the learned classifier. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The pointer to the data \\
+\hline
+{\em idx} & The index of the example to classify \\
+\hline
+{\em class\-Idx} & The index of the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Passing the data and the index to the example is not nice at all. This will soon be replace with the passing of the example itself in some form (probably a structure to the example). 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
++1 if the classifier thinks that {\itshape val} belongs to class {\itshape class\-Idx}, -\/1 if it does not and 0 if it abstain. If A\-B\-S\-T\-\_\-\-R\-E\-A\-L is selected the value returned is a range between -\/1 and +1 which holds the confidence in the classification. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{Multi\-Boost\-::\-Base\-Learner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_ad18695306233436b91f55687f05d77b5}{Multi\-Boost\-::\-U\-C\-B\-V\-Haar\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_a22d0c53fea68b6859c01767b238fddad}{Multi\-Boost\-::\-Haar\-Multi\-Stump\-Learner}, and \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a813d5ad76828496e33529a18f57756c2}{Multi\-Boost\-::\-Haar\-Single\-Stump\-Learner}.
+
+
+
+Definition at line 124 of file Abstainable\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_add9773c8057fea7885edb8c1a07cfbd8}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!declare\-Arguments@{declare\-Arguments}}
+\index{declare\-Arguments@{declare\-Arguments}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{declare\-Arguments}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Abstainable\-Learner\-::declare\-Arguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_add9773c8057fea7885edb8c1a07cfbd8}
+Declare weak-\/learner-\/specific arguments. These arguments will be added to the list of arguments under the group specific of the weak learner. It is called automatically in main, when the list of arguments is built up. Use this method to declare the arguments that belongs to the weak learner only.
+
+This class declares the argument \char`\"{}abstention\char`\"{} and \char`\"{}edgeoffset\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_ab67f4944b1967c7141982b5d47720620}{Multi\-Boost\-::\-Base\-Learner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1MultiStumpLearner_a61d17e2ac24c475f7d11e03abcb2e1de}{Multi\-Boost\-::\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aff4444f4cce780b47db79650b778b685}{Multi\-Boost\-::\-Sigmoid\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a355e35d792aaae83f9e639b8cb5ab2a4}{Multi\-Boost\-::\-Featurewise\-Learner}, \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_aedbbd65aa2801237f3a6dc3a46e43997}{Multi\-Boost\-::\-U\-C\-B\-V\-Haar\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a02a3a2a863ec66ac0843eb866fbff1d1}{Multi\-Boost\-::\-Constant\-Learner}, \hyperlink{classMultiBoost_1_1NeuronLearner_a8c38489a59616866afbbc9d7ad60fee5}{Multi\-Boost\-::\-Neuron\-Learner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_af9cc0a38d034aa794af315ee5299691f}{Multi\-Boost\-::\-Haar\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_ad994400056663aa2c030fbafaf96ca22}{Multi\-Boost\-::\-Haar\-Single\-Stump\-Learner}, and \hyperlink{classMultiBoost_1_1AdaLineLearner_a6c8f143382449c333995c33539bbff04}{Multi\-Boost\-::\-Ada\-Line\-Learner}.
+
+
+
+Definition at line 49 of file Abstainable\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a76a5ca563ef7c9b1c7f906d7a96675e3}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!do\-Classwise\-Abstention@{do\-Classwise\-Abstention}}
+\index{do\-Classwise\-Abstention@{do\-Classwise\-Abstention}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{do\-Classwise\-Abstention}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Abstainable\-Learner\-::do\-Classwise\-Abstention (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf s\-Rates} $>$ \&}]{mu, }
+\item[{{\bf s\-Rates} \&}]{eps, }
+\item[{{\bf Alpha\-Real} \&}]{alpha, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_a76a5ca563ef7c9b1c7f906d7a96675e3}
+Updates the {\itshape v} vector (alignment vector) using a classwise abstention algorithm. If mu.\-r\-Pls -\/ mu.\-r\-Min $<$ \-\_\-theta then abstain on the class. Only makes sense to use with \-\_\-theta $>$ 0. Similar to what real abstention does, but keeps +-\/1 votes. 
+\begin{DoxyParams}{Parameters}
+{\em mu} & The class rates. It is not {\itshape const} because sort() is called. \\
+\hline
+{\em curr\-Energy} & The current energy value, obtained in \hyperlink{classMultiBoost_1_1AbstainableLearner_ae0a99b6a9658f9dd66d55f3b47609675}{get\-Energy()}. \\
+\hline
+{\em eps} & The current epsilons, that the overall error, correct and abstention rates. \\
+\hline
+{\em alpha} & The value of alpha that will be updated by this function minimizing the energy and using the helper function provided by \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner}. \\
+\hline
+{\em v} & The alignment vector that will be updated in the case of abstention. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The complexity of this algorithm is O(k$^\wedge$2). 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+27/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 384 of file Abstainable\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a08b11f234d6f857343432a7f6c2d0c03}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!do\-Full\-Abstention@{do\-Full\-Abstention}}
+\index{do\-Full\-Abstention@{do\-Full\-Abstention}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{do\-Full\-Abstention}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Abstainable\-Learner\-::do\-Full\-Abstention (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf s\-Rates} $>$ \&}]{mu, }
+\item[{{\bf Alpha\-Real}}]{curr\-Energy, }
+\item[{{\bf s\-Rates} \&}]{eps, }
+\item[{{\bf Alpha\-Real} \&}]{alpha, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_a08b11f234d6f857343432a7f6c2d0c03}
+Updates the {\itshape v} vector (alignment vector) evaluating all the possible combinations. Again we do not leave the abstention to the weak learner but we add 0 to the alignment vector {\itshape v}, which decreases most the energy function. 
+\begin{DoxyParams}{Parameters}
+{\em mu} & The class rates. \\
+\hline
+{\em curr\-Energy} & The current energy value, obtained in \hyperlink{classMultiBoost_1_1AbstainableLearner_ae0a99b6a9658f9dd66d55f3b47609675}{get\-Energy()}. \\
+\hline
+{\em eps} & The current epsilons, that is the overall error, correct and abstention rates. \\
+\hline
+{\em alpha} & The value of alpha that will be updated by this function minimizing the energy and using the helper function provided by \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner}. \\
+\hline
+{\em v} & The alignment vector that will be updated in the case of abstention. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The complexity of this algorithm is O(2$^\wedge$k). 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+28/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 267 of file Abstainable\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a022edc8c1b04c21720f56c0562db10a7}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!do\-Greedy\-Abstention@{do\-Greedy\-Abstention}}
+\index{do\-Greedy\-Abstention@{do\-Greedy\-Abstention}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{do\-Greedy\-Abstention}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Abstainable\-Learner\-::do\-Greedy\-Abstention (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf s\-Rates} $>$ \&}]{mu, }
+\item[{{\bf Alpha\-Real}}]{curr\-Energy, }
+\item[{{\bf s\-Rates} \&}]{eps, }
+\item[{{\bf Alpha\-Real} \&}]{alpha, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_a022edc8c1b04c21720f56c0562db10a7}
+Updates the {\itshape v} vector (alignment vector) using a greedy abstention algorithm. We do not leave the decision to the weak learner as usual, but we add 0 to the decisions of the alignment vector {\itshape v}. This is done by optimizing the energy value with a greedy algorithm (that, for the time being, is not proved to be optimal. We first get {\itshape v} from one of the stump algorithms (see for instance Single\-Stump\-Learner\-::find\-Threshold()). Then, in an iteration over the classes, we select the \char`\"{}best\char`\"{} element of v to set to 0, that is, the one that decreases the energy the most. 
+\begin{DoxyParams}{Parameters}
+{\em mu} & The class rates. It is not {\itshape const} because sort() is called. \\
+\hline
+{\em curr\-Energy} & The current energy value, obtained in \hyperlink{classMultiBoost_1_1AbstainableLearner_ae0a99b6a9658f9dd66d55f3b47609675}{get\-Energy()}. \\
+\hline
+{\em eps} & The current epsilons, that the overall error, correct and abstention rates. \\
+\hline
+{\em alpha} & The value of alpha that will be updated by this function minimizing the energy and using the helper function provided by \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner}. \\
+\hline
+{\em v} & The alignment vector that will be updated in the case of abstention. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The complexity of this algorithm is O(k$^\wedge$2). 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+28/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 202 of file Abstainable\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a04438bf3df3599fe42ca26771b6b2aff}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!do\-Real\-Abstention@{do\-Real\-Abstention}}
+\index{do\-Real\-Abstention@{do\-Real\-Abstention}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{do\-Real\-Abstention}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Abstainable\-Learner\-::do\-Real\-Abstention (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf s\-Rates} $>$ \&}]{mu, }
+\item[{const {\bf s\-Rates} \&}]{eps, }
+\item[{{\bf Alpha\-Real} \&}]{alpha, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_a04438bf3df3599fe42ca26771b6b2aff}
+Update the {\itshape v} vector (alignment vector) with {\bfseries real} values, setting alpha to 1. This corresponds to \char`\"{}\-Ada\-Boost.\-M\-H with real valued predictions\char`\"{} (see \char`\"{}\-Boos\-Texter\-:
+  A Boosting-\/based System for Text Categorization\char`\"{} by Schapire \& Singer), which must {\bfseries not} be confused with Real Ada\-Boost, where the weak learner returns a confidence on its prediction. 
+\begin{DoxyParams}{Parameters}
+{\em mu} & The class rates. \\
+\hline
+{\em eps} & The current epsilons, that is the overall error, correct and abstention rates. \\
+\hline
+{\em alpha} & The value of alpha which will be turned into 1. \\
+\hline
+{\em v} & The alignment vector that will be updated with the real valued values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Because here we have an alpha which is not uniform among all the classes, ({\itshape v} in fact becomes the alpha) the energy function to minimize becomes\-: \[ Z = \sum_{i=1}^n \sum_{\ell=1}^k w_{i,\ell} \exp{ \left( -\alpha_\ell h_\ell(x_i) y_{i,\ell} \right) }, \] which simplifies to the new energy function that we have to minimize\-: \[ Z = 2 \sum_{\ell=1}^k \sqrt{ \mu_{-,\ell} \mu_{+,\ell} } \] 
+
+If a margin has been selected ( $\theta > 0$), then the energy function is computed as usual. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{structMultiBoost_1_1sRates}{s\-Rates} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a022edc8c1b04c21720f56c0562db10a7}{do\-Greedy\-Abstention} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a08b11f234d6f857343432a7f6c2d0c03}{do\-Full\-Abstention} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]The actual formula should be \[ Z = \mu_0 + 2 \sum_{\ell=1}^k \sqrt{ \mu_{-,\ell} \mu_{+,\ell} }, \] but we do not consider the abstention at weak learner level yet. \end{DoxyRefDesc}
+
+
+Definition at line 342 of file Abstainable\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_ae0a99b6a9658f9dd66d55f3b47609675}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!get\-Energy@{get\-Energy}}
+\index{get\-Energy@{get\-Energy}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{get\-Energy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Abstainable\-Learner\-::get\-Energy (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf s\-Rates} $>$ \&}]{mu, }
+\item[{{\bf Alpha\-Real} \&}]{alpha, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_ae0a99b6a9658f9dd66d55f3b47609675}
+Return the energy of the current learner. The energy is defined as \[ Z = 2 \sqrt{\epsilon_+ \epsilon_-} + \epsilon_0 \] and it is the value to minimize. 
+\begin{DoxyParams}{Parameters}
+{\em alpha} & The value of alpha that will be updated by this function minimizing the energy and using the helper function provided by \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner}. \\
+\hline
+{\em mu} & The class rates. \\
+\hline
+{\em v} & The alignment vector that will be updated in the case of abstention. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The energy value that we want minimize. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+12/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 136 of file Abstainable\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a966b1609a95222953e4116a3fffaadbe}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!init\-Learning\-Options@{init\-Learning\-Options}}
+\index{init\-Learning\-Options@{init\-Learning\-Options}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{init\-Learning\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Abstainable\-Learner\-::init\-Learning\-Options (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_a966b1609a95222953e4116a3fffaadbe}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_ad124cba3e0d39493bb731fe362a38e2a}{Multi\-Boost\-::\-Base\-Learner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1MultiStumpLearner_a5fe30fa4df79be1937eae9341a96a320}{Multi\-Boost\-::\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a8681907af375892638d04f5429c7a3ee}{Multi\-Boost\-::\-Sigmoid\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a24d0666de1f394b2165c2d833d36b5f6}{Multi\-Boost\-::\-Featurewise\-Learner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a317362704802ea9f97a16511df0131ad}{Multi\-Boost\-::\-Constant\-Learner}, \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_acaadef7c0c556c083df313440e974069}{Multi\-Boost\-::\-U\-C\-B\-V\-Haar\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1NeuronLearner_a0c5b9fd7ee8dc329a3d36c948fd3a207}{Multi\-Boost\-::\-Neuron\-Learner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_a580bf43635d390488d1ccd41e1764daf}{Multi\-Boost\-::\-Haar\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a547dab8fd220684bf2e6dbbf7cb0708f}{Multi\-Boost\-::\-Haar\-Single\-Stump\-Learner}, and \hyperlink{classMultiBoost_1_1AdaLineLearner_a4af94dbbbc29009456ef3e80e104f333}{Multi\-Boost\-::\-Ada\-Line\-Learner}.
+
+
+
+Definition at line 64 of file Abstainable\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a571f0ef9449cd3a7bc56f8a0131db6f1}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!load@{load}}
+\index{load@{load}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Abstainable\-Learner\-::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Stream\-Tokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_a571f0ef9449cd3a7bc56f8a0131db6f1}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_aab8bdddad2c32654a2e77bbaac79345d}{Multi\-Boost\-::\-Base\-Learner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a26f1c20fee776dc11fac049d40e74689}{Multi\-Boost\-::\-Sigmoid\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a57d70dfa5047ba4ff322a581a04a6345}{Multi\-Boost\-::\-U\-C\-B\-V\-Haar\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_adaab98e0964770ed3309939b164a06c9}{Multi\-Boost\-::\-Haar\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_aded39dbe1d2e0c5715a7dd2ee95fea91}{Multi\-Boost\-::\-Haar\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a5fea1fcb77fb6372ee4ed57fcfa8867b}{Multi\-Boost\-::\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{Multi\-Boost\-::\-Featurewise\-Learner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a3dc38b2a4c1923866a2e63072c4a0c89}{Multi\-Boost\-::\-Multi\-Threshold\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_afbd9e4ab80b2483932e03ae675159f0d}{Multi\-Boost\-::\-Single\-Sparse\-Stump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_afa8862221d2dcd260a2ae450ba16f825}{Multi\-Boost\-::\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1NeuronLearner_af6853ce2a99be6986c429bcad760d9f9}{Multi\-Boost\-::\-Neuron\-Learner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_a50745d7bcd9da4f3b27be0c4b8a9b472}{Multi\-Boost\-::\-Single\-Regression\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_ab4e079f316f5d882392839aa02f67d16}{Multi\-Boost\-::\-Indicator\-Learner}, and \hyperlink{classMultiBoost_1_1SelectorLearner_a6a5b322170c0d52c90219a87815c8d97}{Multi\-Boost\-::\-Selector\-Learner}.
+
+
+
+Definition at line 124 of file Abstainable\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a76d59e5c6678f43a3f483064beb06f64}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Alpha\-Real} Multi\-Boost\-::\-Abstainable\-Learner\-::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{int}]{idx, }
+\item[{int}]{class\-Idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_a76d59e5c6678f43a3f483064beb06f64}
+A discriminative function. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The data \\
+\hline
+{\em idx} & The index of the data point \\
+\hline
+{\em class\-Idx} & The class index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1ConstantLearner_a51236bbc05317ffa4e44a0b349d77366}{Multi\-Boost\-::\-Constant\-Learner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a5ccf4057af3064e833ae8da920e29d42}{Multi\-Boost\-::\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_ac69d42c7eb83a3496ad4cee9b0781b84}{Multi\-Boost\-::\-Featurewise\-Learner}, and \hyperlink{classMultiBoost_1_1AdaLineLearner_abd5abb028b90bb25109d582d059e9a03}{Multi\-Boost\-::\-Ada\-Line\-Learner}.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!save@{save}}
+\index{save@{save}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Abstainable\-Learner\-::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{output\-Stream, }
+\item[{int}]{num\-Tabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}
+Save the current object information needed for classification, that is\-: {\itshape \-\_\-v}, The alignment vector and {\itshape \-\_\-selected\-Column}, the column of the data with that yielded the lowest error 
+\begin{DoxyParams}{Parameters}
+{\em output\-Stream} & The stream where the data will be saved \\
+\hline
+{\em num\-Tabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{Base\-Learner\-::save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{Multi\-Boost\-::\-Base\-Learner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a974bf887a0c8ddf5be49259d702c9b05}{Multi\-Boost\-::\-Sigmoid\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a9844f395b5e9315e32e46ec27df50a75}{Multi\-Boost\-::\-U\-C\-B\-V\-Haar\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a6a565277105954f5912937ad00b92f1f}{Multi\-Boost\-::\-Haar\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_ae4b26b79c47ed76ba87b0069ea2fd273}{Multi\-Boost\-::\-Haar\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a1677eba09a926f5a27570506b117f3d1}{Multi\-Boost\-::\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{Multi\-Boost\-::\-Featurewise\-Learner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a0dd15d2b44a067988ff2496e2efe5aab}{Multi\-Boost\-::\-Multi\-Threshold\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a69365508ff9efa93d90450621048905e}{Multi\-Boost\-::\-Single\-Sparse\-Stump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_a25bb9b4151a2a4f547994ef71a2cf152}{Multi\-Boost\-::\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1NeuronLearner_a0364fe14ddcc5f0c92537909832234c1}{Multi\-Boost\-::\-Neuron\-Learner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_a08dc78b056b0f939214637f60e50891d}{Multi\-Boost\-::\-Single\-Regression\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_a66dfec334db068b3ab5806723b4170b4}{Multi\-Boost\-::\-Indicator\-Learner}, and \hyperlink{classMultiBoost_1_1SelectorLearner_a1d51fa000c5b04e5ed52dcb8f2981e5a}{Multi\-Boost\-::\-Selector\-Learner}.
+
+
+
+Definition at line 98 of file Abstainable\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AbstainableLearner_a36ad3b89e190941788eee53595b288b0}{\index{Multi\-Boost\-::\-Abstainable\-Learner@{Multi\-Boost\-::\-Abstainable\-Learner}!sub\-Copy\-State@{sub\-Copy\-State}}
+\index{sub\-Copy\-State@{sub\-Copy\-State}!MultiBoost::AbstainableLearner@{Multi\-Boost\-::\-Abstainable\-Learner}}
+\subsubsection[{sub\-Copy\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Abstainable\-Learner\-::sub\-Copy\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-Learner} $\ast$}]{p\-Base\-Learner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1AbstainableLearner_a36ad3b89e190941788eee53595b288b0}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify()}. p\-Base\-Learner was created by sub\-Create so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1AbstainableLearner_a36ad3b89e190941788eee53595b288b0}{sub\-Copy\-State()}. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Base\-Learner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{save} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_a571f0ef9449cd3a7bc56f8a0131db6f1}{load} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{Product\-Learner\-::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}{Multi\-Boost\-::\-Base\-Learner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_ac57c9a360303b9593a0367256e65fed8}{Multi\-Boost\-::\-U\-C\-B\-V\-Haar\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_adb4ca5ac6be19aa7244d04ac7b24d79d}{Multi\-Boost\-::\-Sigmoid\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a918541140437c8d7f7575c76b37ad652}{Multi\-Boost\-::\-Haar\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_a23e1bf8c0ff7ccb455ca14d5ddae247f}{Multi\-Boost\-::\-Haar\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a261fe1a54a6032f23759c4287afe39e3}{Multi\-Boost\-::\-Multi\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{Multi\-Boost\-::\-Featurewise\-Learner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a093c9a16e80ab2fe90470c43f24b0bfb}{Multi\-Boost\-::\-Multi\-Threshold\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a0c815aa6bd664984f0baa6d94cde7cff}{Multi\-Boost\-::\-Single\-Sparse\-Stump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_a81fc70ee14b9714289f998977a8e0e1b}{Multi\-Boost\-::\-Single\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1NeuronLearner_a123916b011566aad19552783032a3e30}{Multi\-Boost\-::\-Neuron\-Learner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_af449d15e3389ec33d37613e9684148ba}{Multi\-Boost\-::\-Single\-Regression\-Stump\-Learner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_a47fb712bf8e44ebd7a7af759423b8fcc}{Multi\-Boost\-::\-Indicator\-Learner}, \hyperlink{classMultiBoost_1_1SelectorLearner_aac96f1fddd89c6382240fc7d0ddae478}{Multi\-Boost\-::\-Selector\-Learner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a019e0eebd46b00a15b37bcb1d101f33d}{Multi\-Boost\-::\-Constant\-Learner}, and \hyperlink{classMultiBoost_1_1AdaLineLearner_a4b96e7dce0bb66b4dbe48caef6582699}{Multi\-Boost\-::\-Ada\-Line\-Learner}.
+
+
+
+Definition at line 111 of file Abstainable\-Learner.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\hyperlink{AbstainableLearner_8h}{Abstainable\-Learner.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/Abstainable\-Learner.\-cpp\end{DoxyCompactItemize}

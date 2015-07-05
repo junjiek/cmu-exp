@@ -1,0 +1,70 @@
+\hypertarget{classMultiBoost_1_1EdgeOutput}{\section{Multi\-Boost\-:\-:Edge\-Output Class Reference}
+\label{classMultiBoost_1_1EdgeOutput}\index{Multi\-Boost\-::\-Edge\-Output@{Multi\-Boost\-::\-Edge\-Output}}
+}
+
+
+{\ttfamily \#include $<$Output\-Info.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Edge\-Output\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1EdgeOutput}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1EdgeOutput_abfdaafbb0ce5c69b82342ec1277e4e0c}{output\-Header} (ostream \&out\-Stream, const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&namemap)
+\item 
+\hypertarget{classMultiBoost_1_1EdgeOutput_aa68d31b1c4175146519256260c84199a}{void {\bfseries compute\-And\-Output} (ostream \&out\-Stream, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \&g\-Table\-Map, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \&margins\-Table\-Map, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&alpha\-Sums, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis=0)}\label{classMultiBoost_1_1EdgeOutput_aa68d31b1c4175146519256260c84199a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Output the edge. It is the measure of the accuracy of the current weak hypothesis relative to random guessing, and is defined as \[ \gamma = \sum_{i=1}^n \sum_{\ell=1}^k w_{i, \ell}^{(t)} h_\ell^{(t)}(x_i) \] \begin{DoxyDate}{Date}
+20/06/2011 
+\end{DoxyDate}
+
+
+Definition at line 736 of file Output\-Info.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1EdgeOutput_abfdaafbb0ce5c69b82342ec1277e4e0c}{\index{Multi\-Boost\-::\-Edge\-Output@{Multi\-Boost\-::\-Edge\-Output}!output\-Header@{output\-Header}}
+\index{output\-Header@{output\-Header}!MultiBoost::EdgeOutput@{Multi\-Boost\-::\-Edge\-Output}}
+\subsubsection[{output\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Edge\-Output\-::output\-Header (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out\-Stream, }
+\item[{const {\bf Name\-Map} \&}]{namemap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1EdgeOutput_abfdaafbb0ce5c69b82342ec1277e4e0c}
+Print the header 
+\begin{DoxyParams}{Parameters}
+{\em out\-Stream} & The stream where the output is directed to \\
+\hline
+{\em namemap} & The structure that contains the class information ( \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} ) 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+17/06/2011 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseOutputInfoType_aec8678cadeec12db720af8b482c63662}{Multi\-Boost\-::\-Base\-Output\-Info\-Type}.
+
+
+
+Definition at line 740 of file Output\-Info.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{OutputInfo_8h}{Output\-Info.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Output\-Info.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,255 @@
+\hypertarget{classMultiBoost_1_1NeuronLearner}{
+\section{MultiBoost::NeuronLearner Class Reference}
+\label{classMultiBoost_1_1NeuronLearner}\index{MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}}
+}
+
+
+{\ttfamily \#include $<$NeuronLearner.h$>$}
+
+Inheritance diagram for MultiBoost::NeuronLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classMultiBoost_1_1NeuronLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1NeuronLearner_a257dc3f6eb30d8f97b9858b48a1e9cb3}{NeuronLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1NeuronLearner_a5a6f684e0a52cef30a5282f0f50f3534}{$\sim$NeuronLearner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1NeuronLearner_a8c38489a59616866afbbc9d7ad60fee5}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1NeuronLearner_a0c5b9fd7ee8dc329a3d36c948fd3a207}{initLearningOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1NeuronLearner_a0364fe14ddcc5f0c92537909832234c1}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1NeuronLearner_af6853ce2a99be6986c429bcad760d9f9}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1NeuronLearner_a123916b011566aad19552783032a3e30}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1NeuronLearner_a0c0d8e704379b265cdd7d1ba4c2f0334}{
+vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ \hyperlink{classMultiBoost_1_1NeuronLearner_a0c0d8e704379b265cdd7d1ba4c2f0334}{\_\-featuresWeight}}
+\label{classMultiBoost_1_1NeuronLearner_a0c0d8e704379b265cdd7d1ba4c2f0334}
+
+\begin{DoxyCompactList}\small\item\em The weight of the features. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A generic featurewise learner. It represents all weak learners that search all or or a subset of features, and implement phi(x,l) as phi(x\mbox{[}selectedFeature\mbox{]},l)
+
+\begin{DoxyDate}{Date}
+10/11/2010 
+\end{DoxyDate}
+
+
+Definition at line 63 of file NeuronLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1NeuronLearner_a257dc3f6eb30d8f97b9858b48a1e9cb3}{
+\index{MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}!NeuronLearner@{NeuronLearner}}
+\index{NeuronLearner@{NeuronLearner}!MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}}
+\subsubsection[{NeuronLearner}]{\setlength{\rightskip}{0pt plus 5cm}MultiBoost::NeuronLearner::NeuronLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1NeuronLearner_a257dc3f6eb30d8f97b9858b48a1e9cb3}
+The constructor. It initializes the selected column to -\/1. \begin{DoxyDate}{Date}
+10/11/2010 
+\end{DoxyDate}
+
+
+Definition at line 71 of file NeuronLearner.h.
+
+\hypertarget{classMultiBoost_1_1NeuronLearner_a5a6f684e0a52cef30a5282f0f50f3534}{
+\index{MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}!$\sim$NeuronLearner@{$\sim$NeuronLearner}}
+\index{$\sim$NeuronLearner@{$\sim$NeuronLearner}!MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}}
+\subsubsection[{$\sim$NeuronLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::NeuronLearner::$\sim$NeuronLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1NeuronLearner_a5a6f684e0a52cef30a5282f0f50f3534}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 77 of file NeuronLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1NeuronLearner_a8c38489a59616866afbbc9d7ad60fee5}{
+\index{MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::NeuronLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1NeuronLearner_a8c38489a59616866afbbc9d7ad60fee5}
+Declare weak-\/learner-\/specific arguments. These arguments will be added to the list of arguments under the group specific of the weak learner. It is called automatically in main, when the list of arguments is built up. Use this method to declare the arguments that belongs to the weak learner only.
+
+This class declares the argument \char`\"{}rsample\char`\"{} only. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/11/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_add9773c8057fea7885edb8c1a07cfbd8}{MultiBoost::AbstainableLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a6c8f143382449c333995c33539bbff04}{MultiBoost::AdaLineLearner}.
+
+
+
+Definition at line 42 of file NeuronLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1NeuronLearner_a0c5b9fd7ee8dc329a3d36c948fd3a207}{
+\index{MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}!initLearningOptions@{initLearningOptions}}
+\index{initLearningOptions@{initLearningOptions}!MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}}
+\subsubsection[{initLearningOptions}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::NeuronLearner::initLearningOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1NeuronLearner_a0c5b9fd7ee8dc329a3d36c948fd3a207}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/11/2010 
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+These options are used for training only! 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_a966b1609a95222953e4116a3fffaadbe}{MultiBoost::AbstainableLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a4af94dbbbc29009456ef3e80e104f333}{MultiBoost::AdaLineLearner}.
+
+
+
+Definition at line 49 of file NeuronLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1NeuronLearner_af6853ce2a99be6986c429bcad760d9f9}{
+\index{MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}!load@{load}}
+\index{load@{load}!MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::NeuronLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1NeuronLearner_af6853ce2a99be6986c429bcad760d9f9}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1NeuronLearner_a0364fe14ddcc5f0c92537909832234c1}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/11/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_a571f0ef9449cd3a7bc56f8a0131db6f1}{MultiBoost::AbstainableLearner}.
+
+
+
+Definition at line 76 of file NeuronLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1NeuronLearner_a0364fe14ddcc5f0c92537909832234c1}{
+\index{MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}!save@{save}}
+\index{save@{save}!MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::NeuronLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1NeuronLearner_a0364fe14ddcc5f0c92537909832234c1}
+Save the current object information needed for classification, that is: {\itshape \_\-selectedColumn\/}, the column of the data with that yielded the lowest error 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{AbstainableLearner::save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/11/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{MultiBoost::AbstainableLearner}.
+
+
+
+Definition at line 56 of file NeuronLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1NeuronLearner_a123916b011566aad19552783032a3e30}{
+\index{MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::NeuronLearner@{MultiBoost::NeuronLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::NeuronLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1NeuronLearner_a123916b011566aad19552783032a3e30}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1NeuronLearner_a123916b011566aad19552783032a3e30}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1NeuronLearner_a0364fe14ddcc5f0c92537909832234c1}{save} 
+
+\hyperlink{classMultiBoost_1_1NeuronLearner_af6853ce2a99be6986c429bcad760d9f9}{load} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/11/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_a36ad3b89e190941788eee53595b288b0}{MultiBoost::AbstainableLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a4b96e7dce0bb66b4dbe48caef6582699}{MultiBoost::AdaLineLearner}.
+
+
+
+Definition at line 103 of file NeuronLearner.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{NeuronLearner_8h}{NeuronLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/NeuronLearner.cpp\end{DoxyCompactItemize}

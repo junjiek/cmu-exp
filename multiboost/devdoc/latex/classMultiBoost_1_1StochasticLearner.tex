@@ -1,0 +1,261 @@
+\hypertarget{classMultiBoost_1_1StochasticLearner}{
+\section{MultiBoost::StochasticLearner Class Reference}
+\label{classMultiBoost_1_1StochasticLearner}\index{MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}}
+}
+Inheritance diagram for MultiBoost::StochasticLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.314049cm]{classMultiBoost_1_1StochasticLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1StochasticLearner_a6de4051f650759f54b58726c72937b5e}{$\sim$StochasticLearner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1StochasticLearner_acac37929c8e28a71b8f396f28666e912}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1StochasticLearner_a65ba4717def2118659f3adc6ae8a6324}{initLearningOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1StochasticLearner_a1193858b7940baca90c2da3612a6e718}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1StochasticLearner_a8deec80f68243d911f7d4ffa9c89d989}{initLearning} ()=0
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1StochasticLearner_a54cf5f9cf396b6730da6deb4cfec7bc5}{finishLearning} ()=0
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1StochasticLearner_a0827c95202f6f3f5180292f72f2f3e0f}{update} (int idx)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_a85da004238ceb2bc58b49ecf85e18272}{
+GradientMethods {\bfseries \_\-gMethod}}
+\label{classMultiBoost_1_1StochasticLearner_a85da004238ceb2bc58b49ecf85e18272}
+
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_ad01c8d69ac26ccc7427134092268809b}{
+int {\bfseries \_\-maxIter}}
+\label{classMultiBoost_1_1StochasticLearner_ad01c8d69ac26ccc7427134092268809b}
+
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_a3b5072ddef7080dba3e0f772ccce743d}{
+TargetFunctions {\bfseries \_\-tFunction}}
+\label{classMultiBoost_1_1StochasticLearner_a3b5072ddef7080dba3e0f772ccce743d}
+
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_ae4a3560971586635ad168882f9cb1b52}{
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries \_\-gammat}}
+\label{classMultiBoost_1_1StochasticLearner_ae4a3560971586635ad168882f9cb1b52}
+
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_a5d335946d8163772c043dea4e31a14c4}{
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries \_\-gammaDivider}}
+\label{classMultiBoost_1_1StochasticLearner_a5d335946d8163772c043dea4e31a14c4}
+
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_a6b8cb90cfa8ffa886108091eb0bf7102}{
+int {\bfseries \_\-age}}
+\label{classMultiBoost_1_1StochasticLearner_a6b8cb90cfa8ffa886108091eb0bf7102}
+
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_aca09bb7587ba3d740081fa23543ab5a3}{
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries \_\-initialGammat}}
+\label{classMultiBoost_1_1StochasticLearner_aca09bb7587ba3d740081fa23543ab5a3}
+
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_a397a8243bed6deaf901842d245917ae8}{
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries \_\-nu}}
+\label{classMultiBoost_1_1StochasticLearner_a397a8243bed6deaf901842d245917ae8}
+
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_a89336e082b3bb5423ff18569fe70175c}{
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries \_\-lambda}}
+\label{classMultiBoost_1_1StochasticLearner_a89336e082b3bb5423ff18569fe70175c}
+
+\item 
+\hypertarget{classMultiBoost_1_1StochasticLearner_aeaff61bbfd775d12a47e1658348ea695}{
+int {\bfseries \_\-gammdivperiod}}
+\label{classMultiBoost_1_1StochasticLearner_aeaff61bbfd775d12a47e1658348ea695}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 61 of file StochasticLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1StochasticLearner_a6de4051f650759f54b58726c72937b5e}{
+\index{MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}!$\sim$StochasticLearner@{$\sim$StochasticLearner}}
+\index{$\sim$StochasticLearner@{$\sim$StochasticLearner}!MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}}
+\subsubsection[{$\sim$StochasticLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::StochasticLearner::$\sim$StochasticLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1StochasticLearner_a6de4051f650759f54b58726c72937b5e}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 78 of file StochasticLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1StochasticLearner_acac37929c8e28a71b8f396f28666e912}{
+\index{MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::StochasticLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1StochasticLearner_acac37929c8e28a71b8f396f28666e912}
+Declare weak-\/learner-\/specific arguments. These arguments will be added to the list of arguments under the group specific of the weak learner. It is called automatically in main, when the list of arguments is built up. Use this method to declare the arguments that belongs to the weak learner only.
+
+This class declares the argument \char`\"{}rtrainingsize\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_ab67f4944b1967c7141982b5d47720620}{MultiBoost::BaseLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a6c8f143382449c333995c33539bbff04}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a02a3a2a863ec66ac0843eb866fbff1d1}{MultiBoost::ConstantLearner}, and \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aff4444f4cce780b47db79650b778b685}{MultiBoost::SigmoidSingleStumpLearner}.
+
+
+
+Definition at line 40 of file StochasticLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1StochasticLearner_a54cf5f9cf396b6730da6deb4cfec7bc5}{
+\index{MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}!finishLearning@{finishLearning}}
+\index{finishLearning@{finishLearning}!MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}}
+\subsubsection[{finishLearning}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::StochasticLearner::finishLearning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1StochasticLearner_a54cf5f9cf396b6730da6deb4cfec7bc5}
+Release memory usied during training. \begin{DoxyDate}{Date}
+03/11/2011 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a55fc3a35c4ef3374f06c1597122f203d}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_ad7ad5b2c0c2cfae7caeffccbcea7d520}{MultiBoost::ConstantLearner}, and \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aa7b20460f24fa5cf52bf666cb34627d2}{MultiBoost::SigmoidSingleStumpLearner}.
+
+\hypertarget{classMultiBoost_1_1StochasticLearner_a8deec80f68243d911f7d4ffa9c89d989}{
+\index{MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}!initLearning@{initLearning}}
+\index{initLearning@{initLearning}!MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}}
+\subsubsection[{initLearning}]{\setlength{\rightskip}{0pt plus 5cm}virtual void MultiBoost::StochasticLearner::initLearning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1StochasticLearner_a8deec80f68243d911f7d4ffa9c89d989}
+Allocate memory for training. \begin{DoxyDate}{Date}
+03/11/2011 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a7846d9abaa274ed08c6610a6314a2333}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a761f019d5284f616aa02bdced148b3b5}{MultiBoost::ConstantLearner}, and \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a3b03cf3c6993584e77c8880d4e41fb02}{MultiBoost::SigmoidSingleStumpLearner}.
+
+\hypertarget{classMultiBoost_1_1StochasticLearner_a65ba4717def2118659f3adc6ae8a6324}{
+\index{MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}!initLearningOptions@{initLearningOptions}}
+\index{initLearningOptions@{initLearningOptions}!MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}}
+\subsubsection[{initLearningOptions}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::StochasticLearner::initLearningOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1StochasticLearner_a65ba4717def2118659f3adc6ae8a6324}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_ad124cba3e0d39493bb731fe362a38e2a}{MultiBoost::BaseLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a4af94dbbbc29009456ef3e80e104f333}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a317362704802ea9f97a16511df0131ad}{MultiBoost::ConstantLearner}, and \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a8681907af375892638d04f5429c7a3ee}{MultiBoost::SigmoidSingleStumpLearner}.
+
+
+
+Definition at line 77 of file StochasticLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1StochasticLearner_a1193858b7940baca90c2da3612a6e718}{
+\index{MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::StochasticLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1StochasticLearner_a1193858b7940baca90c2da3612a6e718}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1StochasticLearner_a1193858b7940baca90c2da3612a6e718}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{save} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_aab8bdddad2c32654a2e77bbaac79345d}{load} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}{MultiBoost::BaseLearner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a4b96e7dce0bb66b4dbe48caef6582699}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a019e0eebd46b00a15b37bcb1d101f33d}{MultiBoost::ConstantLearner}, and \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_adb4ca5ac6be19aa7244d04ac7b24d79d}{MultiBoost::SigmoidSingleStumpLearner}.
+
+
+
+Definition at line 127 of file StochasticLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1StochasticLearner_a0827c95202f6f3f5180292f72f2f3e0f}{
+\index{MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}!update@{update}}
+\index{update@{update}!MultiBoost::StochasticLearner@{MultiBoost::StochasticLearner}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::StochasticLearner::update (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1StochasticLearner_a0827c95202f6f3f5180292f72f2f3e0f}
+It updates the parameter of weak learner. \begin{DoxyReturn}{Returns}
+edge for the given istance 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+03/11/2011 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a5ce3ad08d70d156c8b72cd5c8990979d}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a221454ea3e6a1c9e4fcc1f9b5e8ff73e}{MultiBoost::ConstantLearner}, and \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a6aefa8c67e0fd6ce354fdcf8cd2bfb2b}{MultiBoost::SigmoidSingleStumpLearner}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{StochasticLearner_8h}{StochasticLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/StochasticLearner.cpp\end{DoxyCompactItemize}

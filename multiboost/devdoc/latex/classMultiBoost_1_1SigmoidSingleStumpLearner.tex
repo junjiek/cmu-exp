@@ -1,0 +1,625 @@
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner}{
+\section{MultiBoost::SigmoidSingleStumpLearner Class Reference}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner}\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+}
+
+
+{\ttfamily \#include $<$SigmoidSingleStumpLearner.h$>$}
+
+Inheritance diagram for MultiBoost::SigmoidSingleStumpLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.085399cm]{classMultiBoost_1_1SigmoidSingleStumpLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_afb4003421fd70feb31c413eb2161a552}{$\sim$SigmoidSingleStumpLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_ae7196f2bf7c89953be0238c90ea9e1b1}{subCreate} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a6aefa8c67e0fd6ce354fdcf8cd2bfb2b}{update} (int idx)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a3b03cf3c6993584e77c8880d4e41fb02}{initLearning} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aa7b20460f24fa5cf52bf666cb34627d2}{finishLearning} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$ \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a90912a288d470c3b5adabbca4c124f86}{createInputData} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aff4444f4cce780b47db79650b778b685}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a8681907af375892638d04f5429c7a3ee}{initLearningOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a5b78075ea6854a2cb4ea045f1f5b1eae}{run} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a2de201161cb87a94f61c33560a1932be}{run} (int colIdx)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a6226810a6656c8628ab25e398e605861}{run} (vector$<$ int $>$ \&colIndexes)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a974bf887a0c8ddf5be49259d702c9b05}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a26f1c20fee776dc11fac049d40e74689}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_adb4ca5ac6be19aa7244d04ac7b24d79d}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_af2a3f587297f4673c44b9a132596c49b}{phi} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int pointIdx) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_afb3ca76f32c641c6b225af93d41f312e}{
+\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} {\bfseries sigmoid} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val, \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} sigSlope=1.0, \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} sigOffset=0.0)}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_afb3ca76f32c641c6b225af93d41f312e}
+
+\item 
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a4f0c63c8a8136bec76de69d85cc016fd}{
+void {\bfseries normalizeLength} (vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} $>$ \&vec)}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a4f0c63c8a8136bec76de69d85cc016fd}
+
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a13b5c4d35be1fae796113b2b84a3f542}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aeb660f36dc730d8181253b6d0b28064a}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val, int classIdx) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_acfef6de317582acc995f6b9c00f4a74d}{cut} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_afd7537d72247baf32e2a46436fb651fa}{
+\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_afd7537d72247baf32e2a46436fb651fa}{\_\-sigmoidSlope}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_afd7537d72247baf32e2a46436fb651fa}
+
+\begin{DoxyCompactList}\small\item\em the slope parameter of sigmoid \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_aa60f2f04b58938e58da455f4b64b6681}{
+\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aa60f2f04b58938e58da455f4b64b6681}{\_\-sigmoidOffset}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_aa60f2f04b58938e58da455f4b64b6681}
+
+\begin{DoxyCompactList}\small\item\em the offset parameter of sigmoid \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a9969b7fa03b22b85ea690c7952b09026}{
+vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ {\bfseries \_\-sigmoidSlopes}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a9969b7fa03b22b85ea690c7952b09026}
+
+\item 
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_ad2ba519ce02594165e8d02283c116102}{
+vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ {\bfseries \_\-sigmoidOffSets}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_ad2ba519ce02594165e8d02283c116102}
+
+\item 
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_adb6647b48448d2d514501572f1753734}{
+vector$<$ vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} $>$ $>$ {\bfseries \_\-vsArray}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_adb6647b48448d2d514501572f1753734}
+
+\item 
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a96b99a8b190b973bdad11603ea2fe39f}{
+vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} $>$ {\bfseries \_\-edges}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a96b99a8b190b973bdad11603ea2fe39f}
+
+\item 
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_ab64c73eb1cc2fb5f7ab479342c8b0230}{
+vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} $>$ {\bfseries \_\-sumEdges}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_ab64c73eb1cc2fb5f7ab479342c8b0230}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\bfseries single} threshold decision stump learner. There is ONE and ONE ONLY threshold here. 
+
+Definition at line 64 of file SigmoidSingleStumpLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_afb4003421fd70feb31c413eb2161a552}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!$\sim$SigmoidSingleStumpLearner@{$\sim$SigmoidSingleStumpLearner}}
+\index{$\sim$SigmoidSingleStumpLearner@{$\sim$SigmoidSingleStumpLearner}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{$\sim$SigmoidSingleStumpLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::SigmoidSingleStumpLearner::$\sim$SigmoidSingleStumpLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_afb4003421fd70feb31c413eb2161a552}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 76 of file SigmoidSingleStumpLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a90912a288d470c3b5adabbca4c124f86}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!createInputData@{createInputData}}
+\index{createInputData@{createInputData}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{createInputData}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf InputData}$\ast$ MultiBoost::SigmoidSingleStumpLearner::createInputData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a90912a288d470c3b5adabbca4c124f86}
+Creates an \hyperlink{classMultiBoost_1_1InputData}{InputData} object that it is good for the weak learner. Overridden to return \hyperlink{classMultiBoost_1_1SortedData}{SortedData}. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1InputData}{InputData} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{BaseLearner::createInputData()} 
+
+\hyperlink{classMultiBoost_1_1SortedData}{SortedData} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+The object {\bfseries must} be destroyed by the caller. 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 116 of file SigmoidSingleStumpLearner.h.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_acfef6de317582acc995f6b9c00f4a74d}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!cut@{cut}}
+\index{cut@{cut}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{cut}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::SigmoidSingleStumpLearner::cut (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_acfef6de317582acc995f6b9c00f4a74d}
+A simple cut on a feature. This simple function is needed for \hyperlink{classMultiBoost_1_1TreeLearner}{TreeLearner}. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The input data. \\
+\hline
+{\em idx} & The index of the data point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape val\/} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1ScalarLearner_a8d52e02fc7664ecdc5fd0b14b04a985e}{MultiBoost::ScalarLearner}.
+
+
+
+Definition at line 240 of file SigmoidSingleStumpLearner.h.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_aff4444f4cce780b47db79650b778b685}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SigmoidSingleStumpLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_aff4444f4cce780b47db79650b778b685}
+Declare weak-\/learner-\/specific arguments. These arguments will be added to the list of arguments under the group specific of the weak learner. It is called automatically in main, when the list of arguments is built up. Use this method to declare the arguments that belongs to the weak learner only.
+
+This class declares the argument \char`\"{}rtrainingsize\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/07/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a355e35d792aaae83f9e639b8cb5ab2a4}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 50 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_aa7b20460f24fa5cf52bf666cb34627d2}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!finishLearning@{finishLearning}}
+\index{finishLearning@{finishLearning}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{finishLearning}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SigmoidSingleStumpLearner::finishLearning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_aa7b20460f24fa5cf52bf666cb34627d2}
+Release memory usied during training. \begin{DoxyDate}{Date}
+03/11/2011 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1StochasticLearner_a54cf5f9cf396b6730da6deb4cfec7bc5}{MultiBoost::StochasticLearner}.
+
+
+
+Definition at line 627 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a3b03cf3c6993584e77c8880d4e41fb02}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!initLearning@{initLearning}}
+\index{initLearning@{initLearning}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{initLearning}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SigmoidSingleStumpLearner::initLearning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a3b03cf3c6993584e77c8880d4e41fb02}
+Allocate memory for training. \begin{DoxyDate}{Date}
+03/11/2011 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1StochasticLearner_a8deec80f68243d911f7d4ffa9c89d989}{MultiBoost::StochasticLearner}.
+
+
+
+Definition at line 592 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a8681907af375892638d04f5429c7a3ee}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!initLearningOptions@{initLearningOptions}}
+\index{initLearningOptions@{initLearningOptions}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{initLearningOptions}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SigmoidSingleStumpLearner::initLearningOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a8681907af375892638d04f5429c7a3ee}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a24d0666de1f394b2165c2d833d36b5f6}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 58 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a26f1c20fee776dc11fac049d40e74689}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!load@{load}}
+\index{load@{load}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SigmoidSingleStumpLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a26f1c20fee776dc11fac049d40e74689}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a974bf887a0c8ddf5be49259d702c9b05}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 456 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a13b5c4d35be1fae796113b2b84a3f542}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SigmoidSingleStumpLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a13b5c4d35be1fae796113b2b84a3f542}
+A discriminative function. \begin{DoxyRemark}{Remarks}
+Positive or negative do NOT refer to positive or negative classification. This function is equivalent to the phi function in my thesis. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate \\
+\hline
+{\em classIdx} & The class index, used by \hyperlink{classMultiBoost_1_1MultiStumpLearner}{MultiStumpLearner} when phi depends on the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape val\/} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+\end{DoxySeeAlso}
+
+
+Definition at line 423 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_aeb660f36dc730d8181253b6d0b28064a}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::SigmoidSingleStumpLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_aeb660f36dc730d8181253b6d0b28064a}
+A discriminative function. \begin{DoxyRemark}{Remarks}
+Positive or negative do NOT refer to positive or negative classification. This function is equivalent to the phi function in my thesis. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate \\
+\hline
+{\em classIdx} & The class index, used by \hyperlink{classMultiBoost_1_1MultiStumpLearner}{MultiStumpLearner} when phi depends on the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape val\/} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a76a3ea26da7434ebb2b48415cc83fa12}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 231 of file SigmoidSingleStumpLearner.h.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_af2a3f587297f4673c44b9a132596c49b}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SigmoidSingleStumpLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{pointIdx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_af2a3f587297f4673c44b9a132596c49b}
+The same discriminative function as below, but called with a data point. Called only from HierarchicalStumpLearner::phi 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The input data. \\
+\hline
+{\em pointIdx} & The index of the data point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape pData\/}\mbox{[}pointIdx\mbox{]}\mbox{[}\_\-selectedColumn\mbox{]} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+17/02/2006 
+\end{DoxyDate}
+
+
+Definition at line 436 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a5b78075ea6854a2cb4ea045f1f5b1eae}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!run@{run}}
+\index{run@{run}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SigmoidSingleStumpLearner::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a5b78075ea6854a2cb4ea045f1f5b1eae}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 67 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a6226810a6656c8628ab25e398e605861}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!run@{run}}
+\index{run@{run}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SigmoidSingleStumpLearner::run (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$ \&}]{colIndices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a6226810a6656c8628ab25e398e605861}
+Run the learner to build the classifier using only a subset of features from the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function {\bfseries must} update \_\-alpha too! You can use the helper functions (the getAlpha with parameters) to update it.  colIndices The indices of the features can be only used. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The energy of the weak classifier (that we want to minimize) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float) 
+
+getAlpha(float, float) 
+
+getAlpha(float, float, float, float) 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a2813c451210fc9d4fb4cf96216bcc813}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 410 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a2de201161cb87a94f61c33560a1932be}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!run@{run}}
+\index{run@{run}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SigmoidSingleStumpLearner::run (
+\begin{DoxyParamCaption}
+\item[{int}]{colIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a2de201161cb87a94f61c33560a1932be}
+Run the learner to build the classifier using only one single feature from the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function {\bfseries must} update \_\-alpha too! You can use the helper functions (the getAlpha with parameters) to update it.  colIdx The index of the feature can be only used. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The energy of the weak classifier (that we want to minimize) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float) 
+
+getAlpha(float, float) 
+
+getAlpha(float, float, float, float) 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 355 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a974bf887a0c8ddf5be49259d702c9b05}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!save@{save}}
+\index{save@{save}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SigmoidSingleStumpLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a974bf887a0c8ddf5be49259d702c9b05}
+Save the current object information needed for classification, that is the single threshold. 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+StumpLearner::save() 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 443 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_adb4ca5ac6be19aa7244d04ac7b24d79d}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SigmoidSingleStumpLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_adb4ca5ac6be19aa7244d04ac7b24d79d}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_adb4ca5ac6be19aa7244d04ac7b24d79d}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a974bf887a0c8ddf5be49259d702c9b05}{save} 
+
+\hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a26f1c20fee776dc11fac049d40e74689}{load} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 471 of file SigmoidSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_ae7196f2bf7c89953be0238c90ea9e1b1}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::SigmoidSingleStumpLearner::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_ae7196f2bf7c89953be0238c90ea9e1b1}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 84 of file SigmoidSingleStumpLearner.h.
+
+\hypertarget{classMultiBoost_1_1SigmoidSingleStumpLearner_a6aefa8c67e0fd6ce354fdcf8cd2bfb2b}{
+\index{MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}!update@{update}}
+\index{update@{update}!MultiBoost::SigmoidSingleStumpLearner@{MultiBoost::SigmoidSingleStumpLearner}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SigmoidSingleStumpLearner::update (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SigmoidSingleStumpLearner_a6aefa8c67e0fd6ce354fdcf8cd2bfb2b}
+It updates the parameter of weak learner. \begin{DoxyReturn}{Returns}
+edge for the given istance 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+03/11/2011 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1StochasticLearner_a0827c95202f6f3f5180292f72f2f3e0f}{MultiBoost::StochasticLearner}.
+
+
+
+Definition at line 501 of file SigmoidSingleStumpLearner.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/SigmoidSingleStumpLearner.h\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/SigmoidSingleStumpLearner.cpp\end{DoxyCompactItemize}

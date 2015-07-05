@@ -1,0 +1,318 @@
+\hypertarget{classMultiBoost_1_1ArffParser}{\section{Multi\-Boost\-:\-:Arff\-Parser Class Reference}
+\label{classMultiBoost_1_1ArffParser}\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}}
+}
+Inheritance diagram for Multi\-Boost\-:\-:Arff\-Parser\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMultiBoost_1_1ArffParser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1ArffParser_a0662914fbd497ca015a9f1b4d89b6cd0}{Arff\-Parser} (const string \&file\-Name, const string \&header\-File\-Name)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ArffParser_a1ede5df98cbce136f1e554dbaf974a4f}{read\-Data} (vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \&examples, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)
+\item 
+virtual int \hyperlink{classMultiBoost_1_1ArffParser_aa2921ea554b3b8fd14aa893d7ab0eedd}{get\-Num\-Attributes} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries e\-Token\-Type} \{ \\*
+{\bfseries T\-T\-\_\-\-E\-O\-F}, 
+{\bfseries T\-T\-\_\-\-C\-O\-M\-M\-E\-N\-T}, 
+{\bfseries T\-T\-\_\-\-R\-E\-L\-A\-T\-I\-O\-N}, 
+{\bfseries T\-T\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E}, 
+\\*
+{\bfseries T\-T\-\_\-\-D\-A\-T\-A}, 
+{\bfseries T\-T\-\_\-\-U\-N\-K\-N\-O\-W\-N}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1ArffParser_ab399500474366a998ceb56b49cd113eb}{read\-Header} (ifstream \&in, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)
+\item 
+void \hyperlink{classMultiBoost_1_1ArffParser_a80e003a25ae5b4201f0fbe490b396c25}{read\-Data} (ifstream \&in, vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \&examples, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, const vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_a73825cf1ad7c4dccebf7f0cc46428389}{string {\bfseries read\-Name} (ifstream \&in)}\label{classMultiBoost_1_1ArffParser_a73825cf1ad7c4dccebf7f0cc46428389}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_a44a540ac1a0904fb75d38e59aa28aa4f}{void {\bfseries read\-Dense\-Values} (ifstream \&in, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&values, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, const vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)}\label{classMultiBoost_1_1ArffParser_a44a540ac1a0904fb75d38e59aa28aa4f}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_a885ffe32985c6549d15ea6fb8a453e9b}{void {\bfseries read\-Sparse\-Values} (istringstream \&ss, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&values, vector$<$ int $>$ \&idxs, map$<$ int, int $>$ \&idxmap, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, const vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)}\label{classMultiBoost_1_1ArffParser_a885ffe32985c6549d15ea6fb8a453e9b}
+
+\item 
+void \hyperlink{classMultiBoost_1_1ArffParser_a82dc32253c2a46ac911e1d711135e6a4}{read\-Simple\-Labels} (istringstream \&ss, vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \&labels, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map)
+\item 
+void \hyperlink{classMultiBoost_1_1ArffParser_a88b6c9ec11b95fb6da69f29f2390665f}{read\-Dense\-Multi\-Labels} (istringstream \&ss, vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \&labels, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map)
+\item 
+void \hyperlink{classMultiBoost_1_1ArffParser_a749d5e5670c7778a526e8ad6b99976e7}{read\-Sparse\-Multi\-Labels} (istringstream \&ss, vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \&labels, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map)
+\item 
+void \hyperlink{classMultiBoost_1_1ArffParser_a56a74bcda059d90bf60033440c42d9de}{read\-Extended\-Labels} (istringstream \&ss, vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \&labels, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map)
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_a138d020be5fb621f64948e8cb0f2182f}{e\-Token\-Type {\bfseries get\-Next\-Token\-Type} (ifstream \&in)}\label{classMultiBoost_1_1ArffParser_a138d020be5fb621f64948e8cb0f2182f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_a4f03f38dd92f4b91d39d10a9818a384a}{int {\bfseries \-\_\-num\-Attributes}}\label{classMultiBoost_1_1ArffParser_a4f03f38dd92f4b91d39d10a9818a384a}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_af75c25eacad6708f6eb8c5c1931c789c}{int {\bfseries \-\_\-last\-Idx}}\label{classMultiBoost_1_1ArffParser_af75c25eacad6708f6eb8c5c1931c789c}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_a82590673bd0a20e5730dea9af90265af}{string {\bfseries \-\_\-header\-File\-Name}}\label{classMultiBoost_1_1ArffParser_a82590673bd0a20e5730dea9af90265af}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_a9d6325db0dcb662b8eac43f90475609b}{locale {\bfseries \-\_\-dense\-Locale}}\label{classMultiBoost_1_1ArffParser_a9d6325db0dcb662b8eac43f90475609b}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_aaa43065735b78b6013d742ad36b80703}{locale {\bfseries \-\_\-sparse\-Locale}}\label{classMultiBoost_1_1ArffParser_aaa43065735b78b6013d742ad36b80703}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_abc27dd8144ce5c86a2fabc517cee154f}{bool {\bfseries \-\_\-has\-Name}}\label{classMultiBoost_1_1ArffParser_abc27dd8144ce5c86a2fabc517cee154f}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParser_afb75e4d4406863248b9d23458c928959}{bool {\bfseries \-\_\-has\-Attribute\-Class\-Form}}\label{classMultiBoost_1_1ArffParser_afb75e4d4406863248b9d23458c928959}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 53 of file Arff\-Parser.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1ArffParser_a0662914fbd497ca015a9f1b4d89b6cd0}{\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}!Arff\-Parser@{Arff\-Parser}}
+\index{Arff\-Parser@{Arff\-Parser}!MultiBoost::ArffParser@{Multi\-Boost\-::\-Arff\-Parser}}
+\subsubsection[{Arff\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Arff\-Parser\-::\-Arff\-Parser (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{file\-Name, }
+\item[{const string \&}]{header\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1ArffParser_a0662914fbd497ca015a9f1b4d89b6cd0}
+The constructor. It initializes the file names and the separators. \begin{DoxyDate}{Date}
+30/07/2010 
+\end{DoxyDate}
+
+
+Definition at line 44 of file Arff\-Parser.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1ArffParser_aa2921ea554b3b8fd14aa893d7ab0eedd}{\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}!get\-Num\-Attributes@{get\-Num\-Attributes}}
+\index{get\-Num\-Attributes@{get\-Num\-Attributes}!MultiBoost::ArffParser@{Multi\-Boost\-::\-Arff\-Parser}}
+\subsubsection[{get\-Num\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Multi\-Boost\-::\-Arff\-Parser\-::get\-Num\-Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1ArffParser_aa2921ea554b3b8fd14aa893d7ab0eedd}
+It retrurns the number of features. \begin{DoxyRemark}{Remarks}
+It might be implemented here, and not as an abstract function. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+The number of features.  30/07/2011 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericParser_a5daee3b49a8cb5c2bbb515d19bff3cd6}{Multi\-Boost\-::\-Generic\-Parser}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1ArffParserBzip2_a0be90fb6c0e87f1d7962effcd2a647cb}{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}.
+
+
+
+Definition at line 79 of file Arff\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1ArffParser_a1ede5df98cbce136f1e554dbaf974a4f}{\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}!read\-Data@{read\-Data}}
+\index{read\-Data@{read\-Data}!MultiBoost::ArffParser@{Multi\-Boost\-::\-Arff\-Parser}}
+\subsubsection[{read\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-::read\-Data (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Example} $>$ \&}]{examples, }
+\item[{{\bf Name\-Map} \&}]{class\-Map, }
+\item[{vector$<$ {\bf Name\-Map} $>$ \&}]{enum\-Maps, }
+\item[{{\bf Name\-Map} \&}]{attribute\-Name\-Map, }
+\item[{vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&}]{attribute\-Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1ArffParser_a1ede5df98cbce136f1e554dbaf974a4f}
+Read the data. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}{Generic\-Parser\-::read\-Data} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+30/07/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}{Multi\-Boost\-::\-Generic\-Parser}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1ArffParserBzip2_a6f122a7b4a997e5deb7939253c4131c4}{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}.
+
+
+
+Definition at line 53 of file Arff\-Parser.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ArffParser_a80e003a25ae5b4201f0fbe490b396c25}{\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}!read\-Data@{read\-Data}}
+\index{read\-Data@{read\-Data}!MultiBoost::ArffParser@{Multi\-Boost\-::\-Arff\-Parser}}
+\subsubsection[{read\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-::read\-Data (
+\begin{DoxyParamCaption}
+\item[{ifstream \&}]{in, }
+\item[{vector$<$ {\bf Example} $>$ \&}]{examples, }
+\item[{{\bf Name\-Map} \&}]{class\-Map, }
+\item[{vector$<$ {\bf Name\-Map} $>$ \&}]{enum\-Maps, }
+\item[{const vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&}]{attribute\-Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1ArffParser_a80e003a25ae5b4201f0fbe490b396c25}
+Read the data. The arff can be sparse and dense as well. 
+\begin{DoxyParams}{Parameters}
+{\em in} & The file stream. \\
+\hline
+{\em \textbackslash{}see} & \hyperlink{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}{Generic\-Parser\-::read\-Data}  30/07/2011 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 227 of file Arff\-Parser.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ArffParser_a88b6c9ec11b95fb6da69f29f2390665f}{\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}!read\-Dense\-Multi\-Labels@{read\-Dense\-Multi\-Labels}}
+\index{read\-Dense\-Multi\-Labels@{read\-Dense\-Multi\-Labels}!MultiBoost::ArffParser@{Multi\-Boost\-::\-Arff\-Parser}}
+\subsubsection[{read\-Dense\-Multi\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-::read\-Dense\-Multi\-Labels (
+\begin{DoxyParamCaption}
+\item[{istringstream \&}]{ss, }
+\item[{vector$<$ {\bf Label} $>$ \&}]{labels, }
+\item[{{\bf Name\-Map} \&}]{class\-Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1ArffParser_a88b6c9ec11b95fb6da69f29f2390665f}
+Read labels declared in the standard arff format, but specified as multiple prefixed \char`\"{}class\char`\"{} Attributes, and with a value that can be positive, or negative. i.\-e.\-: \begin{DoxyVerb}@ATTRIBUTE sepallength  NUMERIC
+@ATTRIBUTE sepalwidth   NUMERIC
+@ATTRIBUTE petallength  NUMERIC
+@ATTRIBUTE petalwidth   NUMERIC
+@ATTRIBUTE classIris-setosa NUMERIC
+@ATTRIBUTE classIris-versicolor NUMERIC
+@ATTRIBUTE classIris-virginica NUMERIC
+@DATA
+4,  2,  4,  2, +1, -2, -1
+25, 23,  1,  0, -1, 0, +1
+0,  1, 10, 12, -1, -3, +1
+\end{DoxyVerb}
+ In this case the labels the the example will respectively be\-: \begin{DoxyVerb}+1, -1, -1
+-1,  0, +1
+-1, -1, +1
+\end{DoxyVerb}
+ and weights \-: \begin{DoxyVerb}1, 2, 1,
+1, 0, 1
+1, 3, 1
+\end{DoxyVerb}
+ 
+
+Definition at line 480 of file Arff\-Parser.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ArffParser_a56a74bcda059d90bf60033440c42d9de}{\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}!read\-Extended\-Labels@{read\-Extended\-Labels}}
+\index{read\-Extended\-Labels@{read\-Extended\-Labels}!MultiBoost::ArffParser@{Multi\-Boost\-::\-Arff\-Parser}}
+\subsubsection[{read\-Extended\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-::read\-Extended\-Labels (
+\begin{DoxyParamCaption}
+\item[{istringstream \&}]{ss, }
+\item[{vector$<$ {\bf Label} $>$ \&}]{labels, }
+\item[{{\bf Name\-Map} \&}]{class\-Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1ArffParser_a56a74bcda059d90bf60033440c42d9de}
+Read sparse labels declared in a non-\/standard arff variant\-: each class (label) is declared with a value that can be positive, or negative left out labels are automatically considered zero (abstention!). i.\-e.\-: \begin{DoxyVerb}@ATTRIBUTE sepallength  NUMERIC
+@ATTRIBUTE sepalwidth   NUMERIC
+@ATTRIBUTE petallength  NUMERIC
+@ATTRIBUTE petalwidth   NUMERIC
+@ATTRIBUTE class        {Iris-setosa, Iris-versicolor, Iris-virginica}
+@DATA
+4,  2,  4,  2, {Iris-setosa -2} 
+25, 23,  1,  0, {Iris-versicolor 1, Iris-virginica -1}
+0,  1, 10, 12, {Iris-setosa +2, Iris-versicolor -1, Iris-virginica -3}
+\end{DoxyVerb}
+ The sign is used to set the value of y\mbox{[}l\mbox{]}, and the magnitude to initialize the weights. In this case the labels the the example will respectively be\-: \begin{DoxyVerb}-1, 0, 0
+0, +1, -1
++1, -1, -1
+\end{DoxyVerb}
+ \begin{DoxyRemark}{Remarks}
+Internally this type of label is stored as sparse. This will have a small hit in terms of memory, but nothing in terms of performance. 
+\end{DoxyRemark}
+
+
+Definition at line 539 of file Arff\-Parser.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ArffParser_ab399500474366a998ceb56b49cd113eb}{\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}!read\-Header@{read\-Header}}
+\index{read\-Header@{read\-Header}!MultiBoost::ArffParser@{Multi\-Boost\-::\-Arff\-Parser}}
+\subsubsection[{read\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-::read\-Header (
+\begin{DoxyParamCaption}
+\item[{ifstream \&}]{in, }
+\item[{{\bf Name\-Map} \&}]{class\-Map, }
+\item[{vector$<$ {\bf Name\-Map} $>$ \&}]{enum\-Maps, }
+\item[{{\bf Name\-Map} \&}]{attribute\-Name\-Map, }
+\item[{vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&}]{attribute\-Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1ArffParser_ab399500474366a998ceb56b49cd113eb}
+Read the header. It reads the class labels, attribute names, attribute types and the mappings of nominal features. 
+\begin{DoxyParams}{Parameters}
+{\em in} & The file stream. \\
+\hline
+{\em \textbackslash{}see} & \hyperlink{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}{Generic\-Parser\-::read\-Data}  30/07/2011 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file Arff\-Parser.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ArffParser_a82dc32253c2a46ac911e1d711135e6a4}{\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}!read\-Simple\-Labels@{read\-Simple\-Labels}}
+\index{read\-Simple\-Labels@{read\-Simple\-Labels}!MultiBoost::ArffParser@{Multi\-Boost\-::\-Arff\-Parser}}
+\subsubsection[{read\-Simple\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-::read\-Simple\-Labels (
+\begin{DoxyParamCaption}
+\item[{istringstream \&}]{ss, }
+\item[{vector$<$ {\bf Label} $>$ \&}]{labels, }
+\item[{{\bf Name\-Map} \&}]{class\-Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1ArffParser_a82dc32253c2a46ac911e1d711135e6a4}
+Read labels declared in the standard arff format\-: each class (label) is set to +1 if it's there, otherwise is -\/1 i.\-e.\-: \begin{DoxyVerb}@ATTRIBUTE sepallength  NUMERIC
+@ATTRIBUTE sepalwidth   NUMERIC
+@ATTRIBUTE petallength  NUMERIC
+@ATTRIBUTE petalwidth   NUMERIC
+@ATTRIBUTE class        {Iris-setosa, Iris-versicolor, Iris-virginica}
+@DATA
+4,  2,  4,  2, Iris-setosa
+25, 23,  1,  0, Iris-versicolor, Iris-virginica
+0,  1, 10, 12, Iris-virginica
+\end{DoxyVerb}
+ In this case the labels the the example will respectively be\-: \begin{DoxyVerb}+1, -1, -1
+-1, +1, +1
+-1, -1, +1
+\end{DoxyVerb}
+ 
+
+Definition at line 454 of file Arff\-Parser.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ArffParser_a749d5e5670c7778a526e8ad6b99976e7}{\index{Multi\-Boost\-::\-Arff\-Parser@{Multi\-Boost\-::\-Arff\-Parser}!read\-Sparse\-Multi\-Labels@{read\-Sparse\-Multi\-Labels}}
+\index{read\-Sparse\-Multi\-Labels@{read\-Sparse\-Multi\-Labels}!MultiBoost::ArffParser@{Multi\-Boost\-::\-Arff\-Parser}}
+\subsubsection[{read\-Sparse\-Multi\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-::read\-Sparse\-Multi\-Labels (
+\begin{DoxyParamCaption}
+\item[{istringstream \&}]{ss, }
+\item[{vector$<$ {\bf Label} $>$ \&}]{labels, }
+\item[{{\bf Name\-Map} \&}]{class\-Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1ArffParser_a749d5e5670c7778a526e8ad6b99976e7}
+Read labels in the same manner than +read\-Dense\-Multi\-Labels+, but with sparse data (hence sparse labels, then) 
+
+Definition at line 504 of file Arff\-Parser.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{ArffParser_8h}{Arff\-Parser.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Arff\-Parser.\-cpp\end{DoxyCompactItemize}

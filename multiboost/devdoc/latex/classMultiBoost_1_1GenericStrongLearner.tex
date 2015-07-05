@@ -1,0 +1,112 @@
+\hypertarget{classMultiBoost_1_1GenericStrongLearner}{\section{Multi\-Boost\-:\-:Generic\-Strong\-Learner Class Reference}
+\label{classMultiBoost_1_1GenericStrongLearner}\index{Multi\-Boost\-::\-Generic\-Strong\-Learner@{Multi\-Boost\-::\-Generic\-Strong\-Learner}}
+}
+
+
+{\ttfamily \#include $<$Generic\-Strong\-Learner.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Generic\-Strong\-Learner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.990521cm]{classMultiBoost_1_1GenericStrongLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMultiBoost_1_1GenericStrongLearner_a77c75c5cbc867c191b327e5a04e9f147}{run} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)=0
+\item 
+virtual void \hyperlink{classMultiBoost_1_1GenericStrongLearner_ad4b2a6aeca5917c841c5747f0bf81e90}{classify} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)=0
+\item 
+virtual void \hyperlink{classMultiBoost_1_1GenericStrongLearner_a3b9a92fd37fe14cdc56c1b216b4d6889}{do\-Confusion\-Matrix} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)=0
+\item 
+virtual void \hyperlink{classMultiBoost_1_1GenericStrongLearner_adf92c9fd773dab4e960dee744adf3654}{do\-Posteriors} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract class for a generic meta-\/learner. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1AdaBoostMHLearner}{Ada\-Boost\-M\-H\-Learner} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+20/3/2006 
+\end{DoxyDate}
+
+
+Definition at line 61 of file Generic\-Strong\-Learner.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1GenericStrongLearner_ad4b2a6aeca5917c841c5747f0bf81e90}{\index{Multi\-Boost\-::\-Generic\-Strong\-Learner@{Multi\-Boost\-::\-Generic\-Strong\-Learner}!classify@{classify}}
+\index{classify@{classify}!MultiBoost::GenericStrongLearner@{Multi\-Boost\-::\-Generic\-Strong\-Learner}}
+\subsubsection[{classify}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Generic\-Strong\-Learner\-::classify (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classMultiBoost_1_1GenericStrongLearner_ad4b2a6aeca5917c841c5747f0bf81e90}
+Performs the classification. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1VJCascadeLearner_a16587bc47a62a429d10df5ab4526c69c}{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}, \hyperlink{classMultiBoost_1_1SoftCascadeLearner_aa210e0de5f3418cbaaef54a869dd4a7d}{Multi\-Boost\-::\-Soft\-Cascade\-Learner}, and \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_ab2370f7d03a14d9cb67e130e3814a6f0}{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}.
+
+\hypertarget{classMultiBoost_1_1GenericStrongLearner_a3b9a92fd37fe14cdc56c1b216b4d6889}{\index{Multi\-Boost\-::\-Generic\-Strong\-Learner@{Multi\-Boost\-::\-Generic\-Strong\-Learner}!do\-Confusion\-Matrix@{do\-Confusion\-Matrix}}
+\index{do\-Confusion\-Matrix@{do\-Confusion\-Matrix}!MultiBoost::GenericStrongLearner@{Multi\-Boost\-::\-Generic\-Strong\-Learner}}
+\subsubsection[{do\-Confusion\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Generic\-Strong\-Learner\-::do\-Confusion\-Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classMultiBoost_1_1GenericStrongLearner_a3b9a92fd37fe14cdc56c1b216b4d6889}
+Print to stdout (or to file) a confusion matrix. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+20/3/2006 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1VJCascadeLearner_a607bd8e03f524db52b85ff9f7adca401}{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}, \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a694a947eb5192940889aa6f342909bc6}{Multi\-Boost\-::\-Soft\-Cascade\-Learner}, and \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a234cd2586240f3a07dcbe5186babf8ad}{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}.
+
+\hypertarget{classMultiBoost_1_1GenericStrongLearner_adf92c9fd773dab4e960dee744adf3654}{\index{Multi\-Boost\-::\-Generic\-Strong\-Learner@{Multi\-Boost\-::\-Generic\-Strong\-Learner}!do\-Posteriors@{do\-Posteriors}}
+\index{do\-Posteriors@{do\-Posteriors}!MultiBoost::GenericStrongLearner@{Multi\-Boost\-::\-Generic\-Strong\-Learner}}
+\subsubsection[{do\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Generic\-Strong\-Learner\-::do\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classMultiBoost_1_1GenericStrongLearner_adf92c9fd773dab4e960dee744adf3654}
+Print to stdout (or to file) the posteriors of each class. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1VJCascadeLearner_ab1108cc910fa9ed25ac6c2bbac458fce}{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}, \hyperlink{classMultiBoost_1_1SoftCascadeLearner_a7ea7b224b29f8e969446b6caf9f27cb2}{Multi\-Boost\-::\-Soft\-Cascade\-Learner}, and \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_ab0067a96a9a7c2648cb0cfc8a97d8004}{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}.
+
+\hypertarget{classMultiBoost_1_1GenericStrongLearner_a77c75c5cbc867c191b327e5a04e9f147}{\index{Multi\-Boost\-::\-Generic\-Strong\-Learner@{Multi\-Boost\-::\-Generic\-Strong\-Learner}!run@{run}}
+\index{run@{run}!MultiBoost::GenericStrongLearner@{Multi\-Boost\-::\-Generic\-Strong\-Learner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Generic\-Strong\-Learner\-::run (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classMultiBoost_1_1GenericStrongLearner_a77c75c5cbc867c191b327e5a04e9f147}
+Performs the learning process. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1VJCascadeLearner_a5999a683e72fbc2b088f4fee4ce57b49}{Multi\-Boost\-::\-V\-J\-Cascade\-Learner}, \hyperlink{classMultiBoost_1_1SoftCascadeLearner_aa6fbd04fc8e89c0195c6d1c02d39e548}{Multi\-Boost\-::\-Soft\-Cascade\-Learner}, \hyperlink{classMultiBoost_1_1FilterBoostLearner_a3209ce71f29e342c84142d9623583109}{Multi\-Boost\-::\-Filter\-Boost\-Learner}, \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a1171d948bfa1875bf663993f067a8e8d}{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}, and \hyperlink{classMultiBoost_1_1ArcGVLearner_ad2e5b9873d3c752307d9639ff53ee86a}{Multi\-Boost\-::\-Arc\-G\-V\-Learner}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/\hyperlink{GenericStrongLearner_8h}{Generic\-Strong\-Learner.\-h}\end{DoxyCompactItemize}

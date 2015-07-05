@@ -1,0 +1,102 @@
+\hypertarget{classnor__utils_1_1StreamTokenizer}{
+\section{nor\_\-utils::StreamTokenizer Class Reference}
+\label{classnor__utils_1_1StreamTokenizer}\index{nor\_\-utils::StreamTokenizer@{nor\_\-utils::StreamTokenizer}}
+}
+
+
+{\ttfamily \#include $<$StreamTokenizer.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnor__utils_1_1StreamTokenizer_a9a06612a0473016c96b09a10a891117b}{StreamTokenizer} (istream \&is, const string delim=\char`\"{} $\backslash$t\char`\"{})
+\item 
+string \hyperlink{classnor__utils_1_1StreamTokenizer_acb0ebaeff2aac10c02b463a994cb1dc1}{next\_\-token} ()
+\item 
+bool \hyperlink{classnor__utils_1_1StreamTokenizer_a16acf21421cefcc3c45c54eb0ac8810e}{has\_\-token} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Can tokenize a stream. It takes a stream, and defined the delimiters, it returns the tokens between these delimiters. \begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 58 of file StreamTokenizer.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnor__utils_1_1StreamTokenizer_a9a06612a0473016c96b09a10a891117b}{
+\index{nor\_\-utils::StreamTokenizer@{nor\_\-utils::StreamTokenizer}!StreamTokenizer@{StreamTokenizer}}
+\index{StreamTokenizer@{StreamTokenizer}!nor_utils::StreamTokenizer@{nor\_\-utils::StreamTokenizer}}
+\subsubsection[{StreamTokenizer}]{\setlength{\rightskip}{0pt plus 5cm}nor\_\-utils::StreamTokenizer::StreamTokenizer (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{is, }
+\item[{const string}]{delim = {\ttfamily \char`\"{}~$\backslash$t\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1StreamTokenizer_a9a06612a0473016c96b09a10a891117b}
+The constructor. It defines the delimiters, and use the normal white-\/spaces on the stream. 
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream. \\
+\hline
+{\em delim} & The delimiters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 71 of file StreamTokenizer.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classnor__utils_1_1StreamTokenizer_a16acf21421cefcc3c45c54eb0ac8810e}{
+\index{nor\_\-utils::StreamTokenizer@{nor\_\-utils::StreamTokenizer}!has\_\-token@{has\_\-token}}
+\index{has\_\-token@{has\_\-token}!nor_utils::StreamTokenizer@{nor\_\-utils::StreamTokenizer}}
+\subsubsection[{has\_\-token}]{\setlength{\rightskip}{0pt plus 5cm}bool nor\_\-utils::StreamTokenizer::has\_\-token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1StreamTokenizer_a16acf21421cefcc3c45c54eb0ac8810e}
+Ask if the stream has other tokens. \begin{DoxyReturn}{Returns}
+True if it is at the end of the stream, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+\begin{Desc}
+\item[\hyperlink{bug__bug000001}{Bug}]In fact this method does not know if there are other tokens awaiting. If there are characters after the last delimiter at the end of the stream, they will be considered a token and therefore, this method will return true. This happens also if there is just a newline (in the case it is not a delimiter). It is possible to avoid this problem, but will affect efficency. Because a \char`\"{}spurious\char`\"{} token will just be ignored by the parser I decided to just leave it as it is. \end{Desc}
+
+
+Definition at line 121 of file StreamTokenizer.h.
+
+\hypertarget{classnor__utils_1_1StreamTokenizer_acb0ebaeff2aac10c02b463a994cb1dc1}{
+\index{nor\_\-utils::StreamTokenizer@{nor\_\-utils::StreamTokenizer}!next\_\-token@{next\_\-token}}
+\index{next\_\-token@{next\_\-token}!nor_utils::StreamTokenizer@{nor\_\-utils::StreamTokenizer}}
+\subsubsection[{next\_\-token}]{\setlength{\rightskip}{0pt plus 5cm}string nor\_\-utils::StreamTokenizer::next\_\-token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1StreamTokenizer_acb0ebaeff2aac10c02b463a994cb1dc1}
+Get the next token. \begin{DoxyReturn}{Returns}
+The string of the next token in the list. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 80 of file StreamTokenizer.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/Utils/\hyperlink{StreamTokenizer_8h}{StreamTokenizer.h}\end{DoxyCompactItemize}

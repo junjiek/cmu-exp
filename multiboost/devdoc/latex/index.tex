@@ -1,0 +1,43 @@
+\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
+\href{http://www.multiboost.com}{\tt MultiBoost} package is a fast C++ implementation of multi-\/class/multi-\/label/multi-\/task boosting algorithms. It is based on AdaBoost.MH but also implements popular cascade classifiers and FilterBoost. The package contains common multi-\/class base learners (stumps, trees, products, Haar filters). Further base learners and strong learners following the boosting paradigm can be easily implemented in a flexible framework. Feel free to use it and to modify it!
+
+This software is covered by the \href{http://www.gnu.org/copyleft/lesser.html}{\tt LGPL} licence.\hypertarget{index_install_sec}{}\section{Installation}\label{index_install_sec}
+Execute the following command in the directory where the zipped source code is located in order to compile :
+
+
+\begin{DoxyCode}
+ % unzip multiboost.zip
+ % cmake .
+ % make
+\end{DoxyCode}
+
+
+Note: you need \href{http://www.cmake.org}{\tt cmake} to create the Makefile. To run the program, just type: 
+\begin{DoxyCode}
+ % multiboost
+\end{DoxyCode}
+
+
+To get some help, type: 
+\begin{DoxyCode}
+ % multiboost -help
+\end{DoxyCode}
+\hypertarget{index_Basic}{}\section{Coding Informations}\label{index_Basic}
+MultiBoost was built with Boosting algorithms in mind, in particular for multi-\/class AdaBoost.MH.
+
+The concept has been centered on the base learner (aka weak learner), which holds the methods to find the best function h(x) at each boosting iteration. Each base function can also decide the type of data to process, and even the strong learner that is calling it.
+
+Here is how it works:\par
+ \begin{DoxyItemize}
+\item Each base learner (i.e. \hyperlink{classMultiBoost_1_1SingleStumpLearner}{SingleStumpLearner}) is registered in a static list, that is a class factory, using just a simple macro (see \hyperlink{BaseLearner_8h_a784f5b7d276202c7de7108eeca341da7}{REGISTER\_\-LEARNER} for details). \item The users selects the base learner either by providing an argument on the command line or by loading a strong hypothesis file. \item If the base learner is in the static list, it will inform the framework what are its InputData and \hyperlink{classMultiBoost_1_1GenericStrongLearner}{GenericStrongLearner}. If the default data format (\hyperlink{classMultiBoost_1_1InputData}{InputData}) and strong learner (\hyperlink{classMultiBoost_1_1AdaBoostMHLearner}{AdaBoostMHLearner}) are not enough they can be overrided with two methods of \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner}: \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{createInputData()} and \hyperlink{classMultiBoost_1_1BaseLearner_a80735a2e6adfc75e52bad70a0072d890}{createGenericStrongLearner()}. \item The strong learner run the boosting process by creating an object of type BaseLearner (any registered weak learner must implement the method subCreate() which returns an allocated copy of itself), that will have to find the best h(x) for the current boosting iteration. Once the function has been received it is stored in the vector of the weak learner. Note that the weighting factor alpha (if needed) needs to be stored in the weak learner. \item The serialization is performed simply by overriding the proper classes of \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner}. \item The classification depends on the strong learner chosen. can classify any type of weak learner that use AdaBoost.MH as strong learner, as long as they implement all the abstract methods.\end{DoxyItemize}
+For any other question, please refer to the documentation or contact one of the authors.\hypertarget{index_References}{}\section{References}\label{index_References}
+Here's the {\bfseries bibtex} reference: \begin{DoxyVerb}
+ @article{multiboost,
+ title={Multiboost: a multi-purpose boosting package},
+ author={Benbouzid, D. and Busa-Fekete, R. and Casagrande, N. and Collin, F.D. and K{\'e}gl, B.},
+ journal={Journal of Machine Learning Research},
+ volume={13},
+ pages={549--553},
+ year={2012}
+ }\end{DoxyVerb}
+ 

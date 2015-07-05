@@ -1,0 +1,586 @@
+\hypertarget{classnor__utils_1_1Args}{
+\section{nor\_\-utils::Args Class Reference}
+\label{classnor__utils_1_1Args}\index{nor\_\-utils::Args@{nor\_\-utils::Args}}
+}
+
+
+{\ttfamily \#include $<$Args.h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries Argument}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnor__utils_1_1Args_ad9540079157b394ae075abf54c51c209}{Args} ()
+\item 
+\hyperlink{classnor__utils_1_1Args_a70b6504df66f800c4f3169609c01c028}{$\sim$Args} ()
+\item 
+void \hyperlink{classnor__utils_1_1Args_af15219ac6311908a29083c5b064fc7d2}{setGroup} (const string \&groupName)
+\item 
+void \hyperlink{classnor__utils_1_1Args_ae42b549afe0ad2294e004a6d30873015}{setArgumentDiscriminator} (const string \&argDiscriminator)
+\item 
+\hypertarget{classnor__utils_1_1Args_a5998493eb9c21b6033b0e168328bfdf8}{
+void {\bfseries setMaxColumns} (const int maxCols)}
+\label{classnor__utils_1_1Args_a5998493eb9c21b6033b0e168328bfdf8}
+
+\item 
+void \hyperlink{classnor__utils_1_1Args_a7ce6f583fb0bc0bd9ecd6f7942fa4076}{declareArgument} (const string \&name)
+\item 
+void \hyperlink{classnor__utils_1_1Args_a0460c8e358336253113799072f30d265}{declareArgument} (const string \&name, const string \&description, int numValues=0, const string \&valuesNamesList=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classnor__utils_1_1Args_ab6ccbab91c17b8fd2901f8463930f1c3}{eraseDeclaration} (const string \&name)
+\item 
+void \hyperlink{classnor__utils_1_1Args_aad24db65e91285a88e4506cf88084c5d}{eraseDeclaration} (const string \&name, const int numValues)
+\item 
+void \hyperlink{classnor__utils_1_1Args_a871ab0d7d08e07af69f6d7d4b3defa07}{printGroup} (const string \&groupName, ostream \&out=cout, int indSpaces=3) const 
+\item 
+ArgsOutType \hyperlink{classnor__utils_1_1Args_adf9e47567a34c429317c7823dc6b2181}{readArguments} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+ArgsOutType \hyperlink{classnor__utils_1_1Args_abde1306618a3aa813873e8babb398dc0}{readInlineArguments} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\hypertarget{classnor__utils_1_1Args_a63df4ec9fc68631cf6629255db149f71}{
+ArgsOutType {\bfseries parseConfigFile} (const string \&configPath)}
+\label{classnor__utils_1_1Args_a63df4ec9fc68631cf6629255db149f71}
+
+\item 
+bool \hyperlink{classnor__utils_1_1Args_afea52d01709ed91c31dac2912c4b9c29}{hasArgument} (const string \&argument) const 
+\item 
+const vector$<$ string $>$ \& \hyperlink{classnor__utils_1_1Args_a28f5efea36c356579ceac99f36fbe234}{getValuesVector} (const string \&argument) const 
+\item 
+int \hyperlink{classnor__utils_1_1Args_ac3c186e3ec1f41097b922c29ec79abee}{getNumValues} (const string \&argument) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classnor__utils_1_1Args_ac809235729078db4ee13778b106b8b49}{getValue} (const string \&argument, int index, T \&valueToFill) const 
+\item 
+void \hyperlink{classnor__utils_1_1Args_a9fe8a682a695155105e086a62f0a64bb}{getValue} (const string \&argument, int index, string \&valueToFill) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classnor__utils_1_1Args_a87c679bdea3c5590ee71a672902fb4f5}{getValue} (const string \&argument, int index=0) const 
+\item 
+void \hyperlink{classnor__utils_1_1Args_aa5afeb4418624d75a719eeffa4e8fd61}{addArgumentOnTheFly} (const string \&name, int numValues,...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle the command line arguments. Provide an easy (but simple) way to handle parameters in a command line program. It works by first declaring the arguments via declareArgument, for instance: 
+\begin{DoxyCode}
+ nor_utils::Args myArgs;
+ // define the character(s) that define what an option is. By default there is no
+      
+ // argument discriminator, but without it no multiple arguments with the same na
+      me
+ // are allowed.
+ myArgs.setArgumentDiscriminator("-")
+ // declare a simple argument
+ myArgs.declareArgument("help"); 
+ // declare an argument -test which takes two following values.
+ myArgs.declareArgument("test", "Test the model.", 2, "<dataFile> <shypFile>");
+ // declare an argument with the same same but 3 values.
+ myArgs.declareArgument("test", "Test the model, and save the results.", 3, "<dat
+      aFile> <shypFile> <outFile>");
+\end{DoxyCode}
+
+
+Once the arguments are declared, \hyperlink{classnor__utils_1_1Args_adf9e47567a34c429317c7823dc6b2181}{readArguments()} takes the standard C arguments (that is {\itshape argv\/} and {\itshape argc\/}) which were passed by the user: \begin{DoxyVerb}myProgram -test file.dat shyp.xml \end{DoxyVerb}
+ and fill a map with the ones selected by the user. If they do not follow the declaration's constraints, readArguments returns an error. When the user needs the values of an argument, it just calls the \hyperlink{classnor__utils_1_1Args_ac809235729078db4ee13778b106b8b49}{getValue()} or \hyperlink{classnor__utils_1_1Args_a28f5efea36c356579ceac99f36fbe234}{getValuesVector()}.
+
+It is also possible to defines groups of arguments, using setGroup before the call of any declareArgument. The name passed, will be used to print a nicely formatted list of the group's arguments using \hyperlink{classnor__utils_1_1Args_a871ab0d7d08e07af69f6d7d4b3defa07}{printGroup()}. \begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 106 of file Args.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnor__utils_1_1Args_ad9540079157b394ae075abf54c51c209}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!Args@{Args}}
+\index{Args@{Args}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{Args}]{\setlength{\rightskip}{0pt plus 5cm}nor\_\-utils::Args::Args (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1Args_ad9540079157b394ae075abf54c51c209}
+The constructor. Set the current group to \char`\"{}general\char`\"{}. \begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 114 of file Args.h.
+
+\hypertarget{classnor__utils_1_1Args_a70b6504df66f800c4f3169609c01c028}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!$\sim$Args@{$\sim$Args}}
+\index{$\sim$Args@{$\sim$Args}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{$\sim$Args}]{\setlength{\rightskip}{0pt plus 5cm}nor\_\-utils::Args::$\sim$Args (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classnor__utils_1_1Args_a70b6504df66f800c4f3169609c01c028}
+The destructor. Deallocates the memory of each Argument object. \begin{DoxyDate}{Date}
+14/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 42 of file Args.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classnor__utils_1_1Args_aa5afeb4418624d75a719eeffa4e8fd61}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!addArgumentOnTheFly@{addArgumentOnTheFly}}
+\index{addArgumentOnTheFly@{addArgumentOnTheFly}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{addArgumentOnTheFly}]{\setlength{\rightskip}{0pt plus 5cm}void nor\_\-utils::Args::addArgumentOnTheFly (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name, }
+\item[{int}]{numValues, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}
+\label{classnor__utils_1_1Args_aa5afeb4418624d75a719eeffa4e8fd61}
+Add an argument from within Multiboost. Useful in case some classes want to communicate each other arguments 
+
+Definition at line 225 of file Args.cpp.
+
+\hypertarget{classnor__utils_1_1Args_a7ce6f583fb0bc0bd9ecd6f7942fa4076}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!declareArgument@{declareArgument}}
+\index{declareArgument@{declareArgument}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{declareArgument}]{\setlength{\rightskip}{0pt plus 5cm}void nor\_\-utils::Args::declareArgument (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+)}}
+\label{classnor__utils_1_1Args_a7ce6f583fb0bc0bd9ecd6f7942fa4076}
+Declare a simple argument. Just declare an argument without following values, nor descriptions. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+28/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 56 of file Args.cpp.
+
+\hypertarget{classnor__utils_1_1Args_a0460c8e358336253113799072f30d265}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!declareArgument@{declareArgument}}
+\index{declareArgument@{declareArgument}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{declareArgument}]{\setlength{\rightskip}{0pt plus 5cm}void nor\_\-utils::Args::declareArgument (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name, }
+\item[{const string \&}]{description, }
+\item[{int}]{numValues = {\ttfamily 0}, }
+\item[{const string \&}]{valuesNamesList = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}
+\label{classnor__utils_1_1Args_a0460c8e358336253113799072f30d265}
+Declare an argument. This type of argument has a description, and might have values. For instance an argument such as -\/file filename.txt is declared as 
+\begin{DoxyCode}
+ declareArgument( "file", "Open a file", 1, "<filename>" );
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the argument. \\
+\hline
+{\em description} & The description of the argument. \\
+\hline
+{\em numValues} & The number of values (numeric or not) that follow the argument. \\
+\hline
+{\em valuesNamesList} & The names list of the values that will be printed with the argument, when help is requested. \\
+\hline
+{\em active} & If true the argument will be showed when printGroup is called. Useful when an argument need to be activated/deactivated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnor__utils_1_1Args_a871ab0d7d08e07af69f6d7d4b3defa07}{printGroup} 
+
+\hyperlink{classnor__utils_1_1Args_af15219ac6311908a29083c5b064fc7d2}{setGroup} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+28/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 63 of file Args.cpp.
+
+\hypertarget{classnor__utils_1_1Args_ab6ccbab91c17b8fd2901f8463930f1c3}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!eraseDeclaration@{eraseDeclaration}}
+\index{eraseDeclaration@{eraseDeclaration}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{eraseDeclaration}]{\setlength{\rightskip}{0pt plus 5cm}void nor\_\-utils::Args::eraseDeclaration (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+)}}
+\label{classnor__utils_1_1Args_ab6ccbab91c17b8fd2901f8463930f1c3}
+Erases a declaration from the list of declarations. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the declaration to be erased. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file Args.cpp.
+
+\hypertarget{classnor__utils_1_1Args_aad24db65e91285a88e4506cf88084c5d}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!eraseDeclaration@{eraseDeclaration}}
+\index{eraseDeclaration@{eraseDeclaration}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{eraseDeclaration}]{\setlength{\rightskip}{0pt plus 5cm}void nor\_\-utils::Args::eraseDeclaration (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name, }
+\item[{const int}]{numValues}
+\end{DoxyParamCaption}
+)}}
+\label{classnor__utils_1_1Args_aad24db65e91285a88e4506cf88084c5d}
+Erases a declaration with a specific number of values from the list of declarations. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the declaration to be erased. \\
+\hline
+{\em numValues} & The number of values (numeric or not) that follow the argument in the previous declaration. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 150 of file Args.cpp.
+
+\hypertarget{classnor__utils_1_1Args_ac3c186e3ec1f41097b922c29ec79abee}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!getNumValues@{getNumValues}}
+\index{getNumValues@{getNumValues}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{getNumValues}]{\setlength{\rightskip}{0pt plus 5cm}int nor\_\-utils::Args::getNumValues (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{argument}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1Args_ac3c186e3ec1f41097b922c29ec79abee}
+Get the number of values of an argument that has been written in the command line. 
+\begin{DoxyParams}{Parameters}
+{\em argument} & The name of the argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This does {\bfseries not} return the number of values for a declared argument! 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+14/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 277 of file Args.h.
+
+\hypertarget{classnor__utils_1_1Args_a87c679bdea3c5590ee71a672902fb4f5}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!getValue@{getValue}}
+\index{getValue@{getValue}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T nor\_\-utils::Args::getValue (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{argument, }
+\item[{int}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1Args_a87c679bdea3c5590ee71a672902fb4f5}
+Get the nth value of the given argument, where n = index. The value is stored in the variable valueToFill which can be any type, thanks to the use of templates and string stream. For instance with the command line: \begin{DoxyVerb}myProgram -arg val1 val2 10 11 \end{DoxyVerb}
+ we have: 
+\begin{DoxyCode}
+ int val = getValue<int>("arg", 2); // -> val = 10
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em argument} & The name of the argument. \\
+\hline
+{\em index} & The index of the value belonging to the argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested value. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+The index start counting from zero. 
+
+The type of the returned value must be specified with the template. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 339 of file Args.h.
+
+\hypertarget{classnor__utils_1_1Args_a9fe8a682a695155105e086a62f0a64bb}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!getValue@{getValue}}
+\index{getValue@{getValue}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}void nor\_\-utils::Args::getValue (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{argument, }
+\item[{int}]{index, }
+\item[{string \&}]{valueToFill}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1Args_a9fe8a682a695155105e086a62f0a64bb}
+Specialization of getValue to simply return the string directly. This is very important in case the string contains white spaces on the edges. With the stringstream they would be erased. 
+\begin{DoxyParams}{Parameters}
+{\em argument} & The name of the argument. \\
+\hline
+{\em index} & The index of the value belonging to the argument. \\
+\hline
+{\em valueToFill} & The value read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The index start counting from zero. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+16/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 315 of file Args.h.
+
+\hypertarget{classnor__utils_1_1Args_ac809235729078db4ee13778b106b8b49}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!getValue@{getValue}}
+\index{getValue@{getValue}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void nor\_\-utils::Args::getValue (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{argument, }
+\item[{int}]{index, }
+\item[{T \&}]{valueToFill}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1Args_ac809235729078db4ee13778b106b8b49}
+Get the nth value of the given argument, where n = index. The value is stored in the variable valueToFill which can be any type, thanks to the use of templates and string stream. For instance with the command line: \begin{DoxyVerb}myProgram -arg val1 val2 10 11 \end{DoxyVerb}
+ we have: 
+\begin{DoxyCode}
+ int val;
+ getValue("arg", 2, val); // -> val = 10
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em argument} & The name of the argument. \\
+\hline
+{\em index} & The index of the value belonging to the argument. \\
+\hline
+{\em valueToFill} & The value read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The index start counting from zero. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 298 of file Args.h.
+
+\hypertarget{classnor__utils_1_1Args_a28f5efea36c356579ceac99f36fbe234}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!getValuesVector@{getValuesVector}}
+\index{getValuesVector@{getValuesVector}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{getValuesVector}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ string $>$ \& nor\_\-utils::Args::getValuesVector (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{argument}
+\end{DoxyParamCaption}
+) const}}
+\label{classnor__utils_1_1Args_a28f5efea36c356579ceac99f36fbe234}
+Returns the vector of the values that belongs to the given argument. For instance with the command line: \begin{DoxyVerb}myProgram -arg val1 val2 10 11 \end{DoxyVerb}
+ we have: 
+\begin{DoxyCode}
+ getValuesVector("arg"); // -> ["val1", "val2", "10", "11"]
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em argument} & The name of the argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector with the values belonging to the argument. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 325 of file Args.cpp.
+
+\hypertarget{classnor__utils_1_1Args_afea52d01709ed91c31dac2912c4b9c29}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!hasArgument@{hasArgument}}
+\index{hasArgument@{hasArgument}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{hasArgument}]{\setlength{\rightskip}{0pt plus 5cm}bool nor\_\-utils::Args::hasArgument (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{argument}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1Args_afea52d01709ed91c31dac2912c4b9c29}
+Ask if an argument has been provided via command line. 
+\begin{DoxyParams}{Parameters}
+{\em argument} & The argument to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the argument has been written by the user, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+It does not check if the argument has been declared, but if it has been called by the user at the command line. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 254 of file Args.h.
+
+\hypertarget{classnor__utils_1_1Args_a871ab0d7d08e07af69f6d7d4b3defa07}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!printGroup@{printGroup}}
+\index{printGroup@{printGroup}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{printGroup}]{\setlength{\rightskip}{0pt plus 5cm}void nor\_\-utils::Args::printGroup (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{groupName, }
+\item[{ostream \&}]{out = {\ttfamily cout}, }
+\item[{int}]{indSpaces = {\ttfamily 3}}
+\end{DoxyParamCaption}
+) const}}
+\label{classnor__utils_1_1Args_a871ab0d7d08e07af69f6d7d4b3defa07}
+Display the arguments (with description and values) associated with the groupName passed. Example: 
+\begin{DoxyCode}
+ Args a;
+ a.setGroup("group1");
+ a.declareArgument("arg1", "The first argument");
+ a.declareArgument("arg2", "The second argument");
+ a.setGroup("group2");
+ a.declareArgument("arg3", "Another argument");
+\end{DoxyCode}
+ Then, printGroup(\char`\"{}group1\char`\"{}), will print: \begin{DoxyVerb}
+group1:
+   -arg1:
+      The first argument
+   -arg2:
+      The second argument\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em groupName} & The name of the group. \\
+\hline
+{\em out} & The output stream. By default is {\itshape cout\/}. \\
+\hline
+{\em indSpaces} & The number of spaces for the indentation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+28/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 198 of file Args.cpp.
+
+\hypertarget{classnor__utils_1_1Args_adf9e47567a34c429317c7823dc6b2181}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!readArguments@{readArguments}}
+\index{readArguments@{readArguments}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{readArguments}]{\setlength{\rightskip}{0pt plus 5cm}ArgsOutType nor\_\-utils::Args::readArguments (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}
+\label{classnor__utils_1_1Args_adf9e47567a34c429317c7823dc6b2181}
+Read the arguments passed with the commandline. 
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of arguments (standard C in \hyperlink{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main()}). \\
+\hline
+{\em argv} & The arguments (standard C in \hyperlink{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main()}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An enum that report on the result of the reading. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+ArgsOutType 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 532 of file Args.cpp.
+
+\hypertarget{classnor__utils_1_1Args_abde1306618a3aa813873e8babb398dc0}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!readInlineArguments@{readInlineArguments}}
+\index{readInlineArguments@{readInlineArguments}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{readInlineArguments}]{\setlength{\rightskip}{0pt plus 5cm}ArgsOutType nor\_\-utils::Args::readInlineArguments (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}
+\label{classnor__utils_1_1Args_abde1306618a3aa813873e8babb398dc0}
+Read the inline argument (as opposed to arguments read from the config file) 
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of arguments (standard C in \hyperlink{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main()}). \\
+\hline
+{\em argv} & The arguments (standard C in \hyperlink{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main()}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An enum that report on the result of the reading. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+16/09/2010 
+\end{DoxyDate}
+
+
+Definition at line 242 of file Args.cpp.
+
+\hypertarget{classnor__utils_1_1Args_ae42b549afe0ad2294e004a6d30873015}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!setArgumentDiscriminator@{setArgumentDiscriminator}}
+\index{setArgumentDiscriminator@{setArgumentDiscriminator}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{setArgumentDiscriminator}]{\setlength{\rightskip}{0pt plus 5cm}void nor\_\-utils::Args::setArgumentDiscriminator (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{argDiscriminator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1Args_ae42b549afe0ad2294e004a6d30873015}
+Defines an argument discriminator. It is helpful to discriminate an argument from a value of the argument. For instance if in the commandline it the user writes: \begin{DoxyVerb}myProgram -arg 1 3 hello -anotherarg 10 -smallarg \end{DoxyVerb}
+ the first argument (arg) has 3 values, the second 1 and the third none. They are discriminated from the values thanks to the string \char`\"{}-\/\char`\"{} which can be defined here. 
+\begin{DoxyParams}{Parameters}
+{\em argDiscriminator} & The string which is used to discriminate arguments from values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+14/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 146 of file Args.h.
+
+\hypertarget{classnor__utils_1_1Args_af15219ac6311908a29083c5b064fc7d2}{
+\index{nor\_\-utils::Args@{nor\_\-utils::Args}!setGroup@{setGroup}}
+\index{setGroup@{setGroup}!nor_utils::Args@{nor\_\-utils::Args}}
+\subsubsection[{setGroup}]{\setlength{\rightskip}{0pt plus 5cm}void nor\_\-utils::Args::setGroup (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{groupName}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classnor__utils_1_1Args_af15219ac6311908a29083c5b064fc7d2}
+Defines the current groups of arguments. The group defines which argument has to be printed together. To be used before the subsequent call of declareArgument. 
+\begin{DoxyParams}{Parameters}
+{\em groupName} & The name of the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnor__utils_1_1Args_a871ab0d7d08e07af69f6d7d4b3defa07}{printGroup} 
+
+\hyperlink{classnor__utils_1_1Args_a7ce6f583fb0bc0bd9ecd6f7942fa4076}{declareArgument(const string\&)} 
+
+\hyperlink{classnor__utils_1_1Args_a0460c8e358336253113799072f30d265}{declareArgument(const string\&, const string\&, int, const string\&)} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+28/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 132 of file Args.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/Utils/\hyperlink{Args_8h}{Args.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/Utils/Args.cpp\end{DoxyCompactItemize}

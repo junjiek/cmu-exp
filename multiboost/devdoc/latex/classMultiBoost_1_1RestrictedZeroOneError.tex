@@ -1,0 +1,111 @@
+\hypertarget{classMultiBoost_1_1RestrictedZeroOneError}{\section{Multi\-Boost\-:\-:Restricted\-Zero\-One\-Error Class Reference}
+\label{classMultiBoost_1_1RestrictedZeroOneError}\index{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error@{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error}}
+}
+
+
+{\ttfamily \#include $<$Output\-Info.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Restricted\-Zero\-One\-Error\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1RestrictedZeroOneError}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1RestrictedZeroOneError_a5b9ed19e09af40702ca62c79477cfc96}{output\-Header} (ostream \&out\-Stream, const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&namemap)
+\item 
+void \hyperlink{classMultiBoost_1_1RestrictedZeroOneError_a6ed82c03ced104c414a8994b869f5693}{output\-Description} (ostream \&out\-Stream)
+\item 
+\hypertarget{classMultiBoost_1_1RestrictedZeroOneError_acc4016532e2dce3f6a943eb3e312adad}{void {\bfseries compute\-And\-Output} (ostream \&out\-Stream, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \&g\-Table\-Map, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, table $>$ \&margins\-Table\-Map, map$<$ \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&alpha\-Sums, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis=0)}\label{classMultiBoost_1_1RestrictedZeroOneError_acc4016532e2dce3f6a943eb3e312adad}
+
+\item 
+\hypertarget{classMultiBoost_1_1RestrictedZeroOneError_a59f70da96a8f57d6c163fa8ba937b407}{O\-U\-T\-P\-U\-T\-I\-N\-F\-O\-\_\-\-O\-P\-T\-I\-M\-I\-Z\-A\-T\-I\-O\-N {\bfseries get\-Optim\-Type} ()}\label{classMultiBoost_1_1RestrictedZeroOneError_a59f70da96a8f57d6c163fa8ba937b407}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+For specific cases (like cascades), the output info needs to keep extra information. This method updates the internal structure \-\_\-specific\-Info. It is left very generic on purpose. 
+\begin{DoxyParams}{Parameters}
+{\em type} & The name of the info to be updated, it is highly recommanded to prefix this name by an abreviation of the class name. \\
+\hline
+{\em value} & The value to be added/updated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+05/07/2011 The default error output Outputs the error of the given data. The error is computed by holding the information on the previous weak hypotheses. In Ada\-Boost, the discriminant function is computed with the formula \[ {\bf g}(x) = \sum_{t=1}^T \alpha^{(t)} {\bf h}^{(t)}(x), \] we therefore update the ${\bf g}(x)$ vector (for each example) each time this method is called\-: \[ {\bf g} = {\bf g} + \alpha^{(t)} {\bf h}^{(t)}(x). \] 
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+There can be any number of data to have the g\-Table. Each one is mapped into a map that uses the pointer of the data as key.
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+17/06/2011 
+\end{DoxyDate}
+
+
+Definition at line 457 of file Output\-Info.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1RestrictedZeroOneError_a6ed82c03ced104c414a8994b869f5693}{\index{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error@{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error}!output\-Description@{output\-Description}}
+\index{output\-Description@{output\-Description}!MultiBoost::RestrictedZeroOneError@{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error}}
+\subsubsection[{output\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Restricted\-Zero\-One\-Error\-::output\-Description (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out\-Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1RestrictedZeroOneError_a6ed82c03ced104c414a8994b869f5693}
+Print a detailed description of the output. 
+\begin{DoxyParams}{Parameters}
+{\em out\-Stream} & The stream where the output is directed to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+12/12/2012 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseOutputInfoType_aa2f886100b21c8cf09d5dddc9e4d1dca}{Multi\-Boost\-::\-Base\-Output\-Info\-Type}.
+
+
+
+Definition at line 466 of file Output\-Info.\-h.
+
+\hypertarget{classMultiBoost_1_1RestrictedZeroOneError_a5b9ed19e09af40702ca62c79477cfc96}{\index{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error@{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error}!output\-Header@{output\-Header}}
+\index{output\-Header@{output\-Header}!MultiBoost::RestrictedZeroOneError@{Multi\-Boost\-::\-Restricted\-Zero\-One\-Error}}
+\subsubsection[{output\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Restricted\-Zero\-One\-Error\-::output\-Header (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out\-Stream, }
+\item[{const {\bf Name\-Map} \&}]{namemap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1RestrictedZeroOneError_a5b9ed19e09af40702ca62c79477cfc96}
+Print the header 
+\begin{DoxyParams}{Parameters}
+{\em out\-Stream} & The stream where the output is directed to \\
+\hline
+{\em namemap} & The structure that contains the class information ( \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} ) 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+17/06/2011 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseOutputInfoType_aec8678cadeec12db720af8b482c63662}{Multi\-Boost\-::\-Base\-Output\-Info\-Type}.
+
+
+
+Definition at line 462 of file Output\-Info.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{OutputInfo_8h}{Output\-Info.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Output\-Info.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,134 @@
+\hypertarget{classMultiBoost_1_1HaarFeature__2H}{
+\section{MultiBoost::HaarFeature\_\-2H Class Reference}
+\label{classMultiBoost_1_1HaarFeature__2H}\index{MultiBoost::HaarFeature\_\-2H@{MultiBoost::HaarFeature\_\-2H}}
+}
+
+
+{\ttfamily \#include $<$HaarFeatures.h$>$}
+
+Inheritance diagram for MultiBoost::HaarFeature\_\-2H:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1HaarFeature__2H}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1HaarFeature__2H_a66f851ca237b7887e46b22a6ae77713b}{HaarFeature\_\-2H} (const string \&shortName)
+\item 
+\hyperlink{classMultiBoost_1_1HaarFeature}{HaarFeature} $\ast$ \hyperlink{classMultiBoost_1_1HaarFeature__2H_af55abf21457be8654bb2c4b94a147883}{create} ()
+\item 
+virtual \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} \hyperlink{classMultiBoost_1_1HaarFeature__2H_aee53febb25c4ad0460b301e902d096c8}{getValue} (const vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ \&intImage, const \hyperlink{structnor__utils_1_1Rect}{nor\_\-utils::Rect} \&r)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Type \char`\"{}2 Blocs Horizontal\char`\"{} feature. \begin{DoxyVerb}
+	 For white:
+	 1      2   
+	 +-----++-----+
+	 | [W] ||  B  |
+	 3+-----4+-----+
+	 ^-- xHalfPos
+	 For black:
+	 1      2
+	 +-----++-----+
+	 |  W  || [B] |
+	 +-----3+-----4
+	 ^-- xHalfPos
+	 \end{DoxyVerb}
+ (W = White, B = Black) The formula is: 4+1 -\/ (2+3) \begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 474 of file HaarFeatures.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1HaarFeature__2H_a66f851ca237b7887e46b22a6ae77713b}{
+\index{MultiBoost::HaarFeature\_\-2H@{MultiBoost::HaarFeature\_\-2H}!HaarFeature\_\-2H@{HaarFeature\_\-2H}}
+\index{HaarFeature\_\-2H@{HaarFeature\_\-2H}!MultiBoost::HaarFeature_2H@{MultiBoost::HaarFeature\_\-2H}}
+\subsubsection[{HaarFeature\_\-2H}]{\setlength{\rightskip}{0pt plus 5cm}MultiBoost::HaarFeature\_\-2H::HaarFeature\_\-2H (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{shortName}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature__2H_a66f851ca237b7887e46b22a6ae77713b}
+The constructor. Defines the name, type and shape of the feature. 
+\begin{DoxyParams}{Parameters}
+{\em shortName} & The short name of the feature. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 483 of file HaarFeatures.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1HaarFeature__2H_af55abf21457be8654bb2c4b94a147883}{
+\index{MultiBoost::HaarFeature\_\-2H@{MultiBoost::HaarFeature\_\-2H}!create@{create}}
+\index{create@{create}!MultiBoost::HaarFeature_2H@{MultiBoost::HaarFeature\_\-2H}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HaarFeature}$\ast$ MultiBoost::HaarFeature\_\-2H::create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature__2H_af55abf21457be8654bb2c4b94a147883}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+FeaturesRegs 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1HaarFeature_a298d8950cb415b3b54b1ad99f54ea6bb}{MultiBoost::HaarFeature}.
+
+
+
+Definition at line 493 of file HaarFeatures.h.
+
+\hypertarget{classMultiBoost_1_1HaarFeature__2H_aee53febb25c4ad0460b301e902d096c8}{
+\index{MultiBoost::HaarFeature\_\-2H@{MultiBoost::HaarFeature\_\-2H}!getValue@{getValue}}
+\index{getValue@{getValue}!MultiBoost::HaarFeature_2H@{MultiBoost::HaarFeature\_\-2H}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FeatureReal} MultiBoost::HaarFeature\_\-2H::getValue (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf FeatureReal} $>$ \&}]{intImage, }
+\item[{const {\bf nor\_\-utils::Rect} \&}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature__2H_aee53febb25c4ad0460b301e902d096c8}
+Transform the example in integral image format, into the scalar output of the feature. 
+\begin{DoxyParams}{Parameters}
+{\em pIntImage} & The array with the integral image data of the single example. \\
+\hline
+{\em r} & The configuration that will be used to compute the value of the feature. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1HaarFeature_a57d0ba94269beef5e8ed1ab984bc3099}{MultiBoost::HaarFeature}.
+
+
+
+Definition at line 242 of file HaarFeatures.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/Haar/\hyperlink{HaarFeatures_8h}{HaarFeatures.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/Haar/HaarFeatures.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,185 @@
+\hypertarget{classMultiBoost_1_1ArffParserBzip2}{\section{Multi\-Boost\-:\-:Arff\-Parser\-Bzip2 Class Reference}
+\label{classMultiBoost_1_1ArffParserBzip2}\index{Multi\-Boost\-::\-Arff\-Parser\-Bzip2@{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}}
+}
+Inheritance diagram for Multi\-Boost\-:\-:Arff\-Parser\-Bzip2\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMultiBoost_1_1ArffParserBzip2}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_addf7ddde5ad871571071425be82a2a9c}{{\bfseries Arff\-Parser\-Bzip2} (const string \&file\-Name, const string \&header\-File\-Name)}\label{classMultiBoost_1_1ArffParserBzip2_addf7ddde5ad871571071425be82a2a9c}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_afd249dd1ff41dc57264e5a520f57c695}{void {\bfseries set\-Header\-File\-Name} (const string \&header\-File\-Name)}\label{classMultiBoost_1_1ArffParserBzip2_afd249dd1ff41dc57264e5a520f57c695}
+
+\item 
+virtual void \hyperlink{classMultiBoost_1_1ArffParserBzip2_a6f122a7b4a997e5deb7939253c4131c4}{read\-Data} (vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \&examples, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)
+\item 
+virtual int \hyperlink{classMultiBoost_1_1ArffParserBzip2_a0be90fb6c0e87f1d7962effcd2a647cb}{get\-Num\-Attributes} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a7450f18d2c01e44a620337ccfe8cd3f7}{void {\bfseries read\-Header} (\hyperlink{classBzip2WrapperReader}{Bzip2\-Wrapper\-Reader} \&in, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)}\label{classMultiBoost_1_1ArffParserBzip2_a7450f18d2c01e44a620337ccfe8cd3f7}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a9b07cbc108356f6cf91643814fcd1c62}{void {\bfseries read\-Data} (\hyperlink{classBzip2WrapperReader}{Bzip2\-Wrapper\-Reader} \&in, vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \&examples, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, const vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)}\label{classMultiBoost_1_1ArffParserBzip2_a9b07cbc108356f6cf91643814fcd1c62}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_afed899802752f9026d1a4305e98dfed3}{string {\bfseries read\-Name} (\hyperlink{classBzip2WrapperReader}{Bzip2\-Wrapper\-Reader} \&in)}\label{classMultiBoost_1_1ArffParserBzip2_afed899802752f9026d1a4305e98dfed3}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a92958d5450b143a8b6750c016591d79b}{void {\bfseries read\-Dense\-Values} (\hyperlink{classBzip2WrapperReader}{Bzip2\-Wrapper\-Reader} \&in, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&values, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, const vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)}\label{classMultiBoost_1_1ArffParserBzip2_a92958d5450b143a8b6750c016591d79b}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_af68e0ae9d5407a44de71f9393365d34d}{void {\bfseries read\-Sparse\-Values} (istringstream \&ss, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&values, vector$<$ int $>$ \&idxs, map$<$ int, int $>$ \&idxmap, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, const vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)}\label{classMultiBoost_1_1ArffParserBzip2_af68e0ae9d5407a44de71f9393365d34d}
+
+\item 
+void \hyperlink{classMultiBoost_1_1ArffParserBzip2_a2ed2111888effa577d2e0fc9cc60f517}{read\-Simple\-Labels} (istringstream \&ss, vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \&labels, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map)
+\item 
+void \hyperlink{classMultiBoost_1_1ArffParserBzip2_a80a6e220bf0a47694ea8406ab4cbcca5}{read\-Extended\-Labels} (istringstream \&ss, vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \&labels, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map)
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a34bb11d0a10cda1458ccb0738dc5694e}{e\-Token\-Type {\bfseries get\-Next\-Token\-Type} (\hyperlink{classBzip2WrapperReader}{Bzip2\-Wrapper\-Reader} \&in)}\label{classMultiBoost_1_1ArffParserBzip2_a34bb11d0a10cda1458ccb0738dc5694e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_aad8ec21f7cd706374d9dd88a9004ffc2}{int {\bfseries \-\_\-num\-Attributes}}\label{classMultiBoost_1_1ArffParserBzip2_aad8ec21f7cd706374d9dd88a9004ffc2}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_abc163986d8f722ef222db0a061bff735}{string {\bfseries \-\_\-header\-File\-Name}}\label{classMultiBoost_1_1ArffParserBzip2_abc163986d8f722ef222db0a061bff735}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a5e847158494abbc442459ed7c7ae943c}{locale {\bfseries \-\_\-dense\-Locale}}\label{classMultiBoost_1_1ArffParserBzip2_a5e847158494abbc442459ed7c7ae943c}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_ae775845aa9e9520b82438f1c4278c22d}{locale {\bfseries \-\_\-sparse\-Locale}}\label{classMultiBoost_1_1ArffParserBzip2_ae775845aa9e9520b82438f1c4278c22d}
+
+\item 
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a30ad96dd995d4c1cf44fd55411d7b65c}{bool {\bfseries \-\_\-has\-Name}}\label{classMultiBoost_1_1ArffParserBzip2_a30ad96dd995d4c1cf44fd55411d7b65c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 54 of file Arff\-Parser\-Bzip2.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a0be90fb6c0e87f1d7962effcd2a647cb}{\index{Multi\-Boost\-::\-Arff\-Parser\-Bzip2@{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}!get\-Num\-Attributes@{get\-Num\-Attributes}}
+\index{get\-Num\-Attributes@{get\-Num\-Attributes}!MultiBoost::ArffParserBzip2@{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}}
+\subsubsection[{get\-Num\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Multi\-Boost\-::\-Arff\-Parser\-Bzip2\-::get\-Num\-Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1ArffParserBzip2_a0be90fb6c0e87f1d7962effcd2a647cb}
+It retrurns the number of features. \begin{DoxyRemark}{Remarks}
+It might be implemented here, and not as an abstract function. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+The number of features.  30/07/2011 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1ArffParser_aa2921ea554b3b8fd14aa893d7ab0eedd}{Multi\-Boost\-::\-Arff\-Parser}.
+
+
+
+Definition at line 66 of file Arff\-Parser\-Bzip2.\-h.
+
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a6f122a7b4a997e5deb7939253c4131c4}{\index{Multi\-Boost\-::\-Arff\-Parser\-Bzip2@{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}!read\-Data@{read\-Data}}
+\index{read\-Data@{read\-Data}!MultiBoost::ArffParserBzip2@{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}}
+\subsubsection[{read\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-Bzip2\-::read\-Data (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Example} $>$ \&}]{examples, }
+\item[{{\bf Name\-Map} \&}]{class\-Map, }
+\item[{vector$<$ {\bf Name\-Map} $>$ \&}]{enum\-Maps, }
+\item[{{\bf Name\-Map} \&}]{attribute\-Name\-Map, }
+\item[{vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&}]{attribute\-Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1ArffParserBzip2_a6f122a7b4a997e5deb7939253c4131c4}
+Read the data. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}{Generic\-Parser\-::read\-Data} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+30/07/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1ArffParser_a1ede5df98cbce136f1e554dbaf974a4f}{Multi\-Boost\-::\-Arff\-Parser}.
+
+
+
+Definition at line 53 of file Arff\-Parser\-Bzip2.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a80a6e220bf0a47694ea8406ab4cbcca5}{\index{Multi\-Boost\-::\-Arff\-Parser\-Bzip2@{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}!read\-Extended\-Labels@{read\-Extended\-Labels}}
+\index{read\-Extended\-Labels@{read\-Extended\-Labels}!MultiBoost::ArffParserBzip2@{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}}
+\subsubsection[{read\-Extended\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-Bzip2\-::read\-Extended\-Labels (
+\begin{DoxyParamCaption}
+\item[{istringstream \&}]{ss, }
+\item[{vector$<$ {\bf Label} $>$ \&}]{labels, }
+\item[{{\bf Name\-Map} \&}]{class\-Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1ArffParserBzip2_a80a6e220bf0a47694ea8406ab4cbcca5}
+Read labels declared in a non-\/standard arff variant\-: each class (label) is declared with a value that can be positive, or negative left out labels are automatically considered zero (abstention!). i.\-e.\-: \begin{DoxyVerb}@ATTRIBUTE sepallength  NUMERIC
+@ATTRIBUTE sepalwidth   NUMERIC
+@ATTRIBUTE petallength  NUMERIC
+@ATTRIBUTE petalwidth   NUMERIC
+@ATTRIBUTE class        {Iris-setosa, Iris-versicolor, Iris-virginica}
+@DATA
+4,  2,  4,  2, {Iris-setosa -2} 
+25, 23,  1,  0, {Iris-versicolor 1, Iris-virginica -1}
+0,  1, 10, 12, {Iris-setosa +2, Iris-versicolor -1, Iris-virginica -3}
+\end{DoxyVerb}
+ The sign is used to set the value of y\mbox{[}l\mbox{]}, and the magnitude to initialize the weights. In this case the labels the the example will respectively be\-: \begin{DoxyVerb}-1, 0, 0
+0, +1, -1
++1, -1, -1
+\end{DoxyVerb}
+ \begin{DoxyRemark}{Remarks}
+Internally this type of label is stored as sparse. This will have a small hit in terms of memory, but nothing in terms of performance. 
+\end{DoxyRemark}
+
+
+Definition at line 398 of file Arff\-Parser\-Bzip2.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ArffParserBzip2_a2ed2111888effa577d2e0fc9cc60f517}{\index{Multi\-Boost\-::\-Arff\-Parser\-Bzip2@{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}!read\-Simple\-Labels@{read\-Simple\-Labels}}
+\index{read\-Simple\-Labels@{read\-Simple\-Labels}!MultiBoost::ArffParserBzip2@{Multi\-Boost\-::\-Arff\-Parser\-Bzip2}}
+\subsubsection[{read\-Simple\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Arff\-Parser\-Bzip2\-::read\-Simple\-Labels (
+\begin{DoxyParamCaption}
+\item[{istringstream \&}]{ss, }
+\item[{vector$<$ {\bf Label} $>$ \&}]{labels, }
+\item[{{\bf Name\-Map} \&}]{class\-Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1ArffParserBzip2_a2ed2111888effa577d2e0fc9cc60f517}
+Read labels declared in the standard arff format\-: each class (label) is set to +1 if it's there, otherwise is -\/1 i.\-e.\-: \begin{DoxyVerb}@ATTRIBUTE sepallength  NUMERIC
+@ATTRIBUTE sepalwidth   NUMERIC
+@ATTRIBUTE petallength  NUMERIC
+@ATTRIBUTE petalwidth   NUMERIC
+@ATTRIBUTE class        {Iris-setosa, Iris-versicolor, Iris-virginica}
+@DATA
+4,  2,  4,  2, Iris-setosa
+25, 23,  1,  0, Iris-versicolor, Iris-virginica
+0,  1, 10, 12, Iris-virginica
+\end{DoxyVerb}
+ In this case the labels the the example will respectively be\-: \begin{DoxyVerb}+1, -1, -1
+-1, +1, +1
+-1, -1, +1
+\end{DoxyVerb}
+ 
+
+Definition at line 372 of file Arff\-Parser\-Bzip2.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{ArffParserBzip2_8h}{Arff\-Parser\-Bzip2.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Arff\-Parser\-Bzip2.\-cpp\end{DoxyCompactItemize}

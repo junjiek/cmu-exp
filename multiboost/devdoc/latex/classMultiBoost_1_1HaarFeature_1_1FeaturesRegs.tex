@@ -1,0 +1,134 @@
+\hypertarget{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs}{
+\section{MultiBoost::HaarFeature::FeaturesRegs Class Reference}
+\label{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs}\index{MultiBoost::HaarFeature::FeaturesRegs@{MultiBoost::HaarFeature::FeaturesRegs}}
+}
+
+
+{\ttfamily \#include $<$HaarFeatures.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a23dec729a5b9e7e4fdbc1ea3eeb3d5e8}{addFeature} (const string \&shortName, \hyperlink{classMultiBoost_1_1HaarFeature}{HaarFeature} $\ast$pFeatureToRegister)
+\item 
+bool \hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a0d6b0b4a000a5763c32f137aef483593}{hasFeature} (const string \&shortName)
+\item 
+\hyperlink{classMultiBoost_1_1HaarFeature}{HaarFeature} $\ast$ \hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_aabf4b0ffdcaa11b508bff0d4d59cc839}{getFeature} (const string \&shortName)
+\item 
+string \hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a68f555cd74a8f2abc8c85943a2b2c87b}{getRegString} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the information about the registered Haar features. Works pretty much like a class factory. \begin{DoxySeeAlso}{See also}
+\hyperlink{HaarFeatures_8h_adcc549bcab1fba9c2649737e60dd50ea}{REGISTER\_\-HAAR\_\-FEATURE} 
+\end{DoxySeeAlso}
+
+
+Definition at line 128 of file HaarFeatures.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a23dec729a5b9e7e4fdbc1ea3eeb3d5e8}{
+\index{MultiBoost::HaarFeature::FeaturesRegs@{MultiBoost::HaarFeature::FeaturesRegs}!addFeature@{addFeature}}
+\index{addFeature@{addFeature}!MultiBoost::HaarFeature::FeaturesRegs@{MultiBoost::HaarFeature::FeaturesRegs}}
+\subsubsection[{addFeature}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarFeature::FeaturesRegs::addFeature (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{shortName, }
+\item[{{\bf HaarFeature} $\ast$}]{pFeatureToRegister}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a23dec729a5b9e7e4fdbc1ea3eeb3d5e8}
+Add a feature type to the list of the registered features. 
+\begin{DoxyParams}{Parameters}
+{\em shortName} & The short name of the feature type. It will be used to retrieve it when necessary. \\
+\hline
+{\em pFeatureToRegister} & The pointer to the object that contain the feature to be registered. The object will be an instantiation of the derived type from which, thanks to the method {\itshape \hyperlink{classMultiBoost_1_1HaarFeature_a298d8950cb415b3b54b1ad99f54ea6bb}{HaarFeature::create()}\/} it will be possible to obtain other objects of the same derived type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 142 of file HaarFeatures.h.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_aabf4b0ffdcaa11b508bff0d4d59cc839}{
+\index{MultiBoost::HaarFeature::FeaturesRegs@{MultiBoost::HaarFeature::FeaturesRegs}!getFeature@{getFeature}}
+\index{getFeature@{getFeature}!MultiBoost::HaarFeature::FeaturesRegs@{MultiBoost::HaarFeature::FeaturesRegs}}
+\subsubsection[{getFeature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HaarFeature}$\ast$ MultiBoost::HaarFeature::FeaturesRegs::getFeature (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{shortName}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_aabf4b0ffdcaa11b508bff0d4d59cc839}
+Get the registered object with the given shortName. 
+\begin{DoxyParams}{Parameters}
+{\em shortName} & The short name of the feature type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object of the registered feature. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a23dec729a5b9e7e4fdbc1ea3eeb3d5e8}{addFeature} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 163 of file HaarFeatures.h.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a68f555cd74a8f2abc8c85943a2b2c87b}{
+\index{MultiBoost::HaarFeature::FeaturesRegs@{MultiBoost::HaarFeature::FeaturesRegs}!getRegString@{getRegString}}
+\index{getRegString@{getRegString}!MultiBoost::HaarFeature::FeaturesRegs@{MultiBoost::HaarFeature::FeaturesRegs}}
+\subsubsection[{getRegString}]{\setlength{\rightskip}{0pt plus 5cm}string MultiBoost::HaarFeature::FeaturesRegs::getRegString (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a68f555cd74a8f2abc8c85943a2b2c87b}
+Get a string with the list of the registered Haar-\/like features. \begin{DoxyReturn}{Returns}
+The string with the list of registered Haar-\/like features (Note: this list will be created with the short names used for the registration). 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 173 of file HaarFeatures.h.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a0d6b0b4a000a5763c32f137aef483593}{
+\index{MultiBoost::HaarFeature::FeaturesRegs@{MultiBoost::HaarFeature::FeaturesRegs}!hasFeature@{hasFeature}}
+\index{hasFeature@{hasFeature}!MultiBoost::HaarFeature::FeaturesRegs@{MultiBoost::HaarFeature::FeaturesRegs}}
+\subsubsection[{hasFeature}]{\setlength{\rightskip}{0pt plus 5cm}bool MultiBoost::HaarFeature::FeaturesRegs::hasFeature (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{shortName}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a0d6b0b4a000a5763c32f137aef483593}
+Ask if a feature with the given shortName has been registered. 
+\begin{DoxyParams}{Parameters}
+{\em shortName} & The short name of the feature type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the feature with the given short name exists, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs_a23dec729a5b9e7e4fdbc1ea3eeb3d5e8}{addFeature} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 153 of file HaarFeatures.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/Haar/\hyperlink{HaarFeatures_8h}{HaarFeatures.h}\end{DoxyCompactItemize}

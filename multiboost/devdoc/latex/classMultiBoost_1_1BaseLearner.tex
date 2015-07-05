@@ -1,0 +1,883 @@
+\hypertarget{classMultiBoost_1_1BaseLearner}{
+\section{MultiBoost::BaseLearner Class Reference}
+\label{classMultiBoost_1_1BaseLearner}\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+}
+
+
+{\ttfamily \#include $<$BaseLearner.h$>$}
+
+Inheritance diagram for MultiBoost::BaseLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{classMultiBoost_1_1BaseLearner}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries LearnersRegs}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1BaseLearner_aef4aefaa9e4bb02983788855594ac30b}{BaseLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner_ab9cf682032357c987f3485063c7eda34}{$\sim$BaseLearner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseLearner_ab67f4944b1967c7141982b5d47720620}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseLearner_ad124cba3e0d39493bb731fe362a38e2a}{initLearningOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{subCreate} ()=0
+\item 
+\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1BaseLearner_a37a031dd966926005056e177e4070c5f}{create} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1GenericStrongLearner}{GenericStrongLearner} $\ast$ \hyperlink{classMultiBoost_1_1BaseLearner_a80735a2e6adfc75e52bad70a0072d890}{createGenericStrongLearner} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual \hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$ \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{createInputData} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseLearner_a3392a509caed2678e948b19446e0d73a}{setTrainingData} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pTrainingData)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{run} ()=0
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{classify} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx, int classIdx)=0
+\item 
+const \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_acf6c8a1548a2d470172be70ac779a23d}{getAlpha} () const 
+\item 
+void \hyperlink{classMultiBoost_1_1BaseLearner_a14801c41060f93d612b3f8b143b7641a}{setAlpha} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} alpha)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseLearner_aab8bdddad2c32654a2e77bbaac79345d}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1BaseLearner_a80dbf3868f40d419f5bfd9a9469be64f}{copyState} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseLearner_aa8945cc5179e0b732728571848bfb52f}{getStateData} (vector$<$ float $>$ \&, const string \&, \hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$)
+\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_a9a12059f9288ca5717dc85340a15ba66}{
+void {\bfseries setName} (const string \&name)}
+\label{classMultiBoost_1_1BaseLearner_a9a12059f9288ca5717dc85340a15ba66}
+
+\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_a8acb45521f977fb11d954b38a5529272}{
+string {\bfseries getName} ()}
+\label{classMultiBoost_1_1BaseLearner_a8acb45521f977fb11d954b38a5529272}
+
+\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_a52d514132baadf40c05c26a78438903c}{
+string {\bfseries getId} () const }
+\label{classMultiBoost_1_1BaseLearner_a52d514132baadf40c05c26a78438903c}
+
+\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_afa4dcc2bd385613ce210f296b7584b47}{
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} {\bfseries getEdge} (bool isNormalized=true)}
+\label{classMultiBoost_1_1BaseLearner_afa4dcc2bd385613ce210f296b7584b47}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static LearnersRegs \& \hyperlink{classMultiBoost_1_1BaseLearner_adbe43a0d12b832e87ed1288004031ec4}{RegisteredLearners} ()
+\item 
+static void \hyperlink{classMultiBoost_1_1BaseLearner_afa55f3a17642588651fb15bf77e744f8}{declareBaseArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMultiBoost_1_1BaseLearner_a02657dfe35ffff80d2b2fb44e2d8731c}{setSmoothingVal} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} smoothingVal)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_a45dad309894d70bf723ff75556eaaff1}{getAlpha} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} eps\_\-min, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} eps\_\-pls) const 
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_adfc0dbabc23275cd98efcdcf506b7371}{getAlpha} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} eps\_\-min, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} eps\_\-pls, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} theta) const 
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_a8d1441eae7f346696848aa158175e27b}{getEnergy} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} eps\_\-min, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} eps\_\-pls) const 
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_a59c8c6a08e003f45a91d813810d0f3d3}{getEnergy} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} eps\_\-min, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} eps\_\-pls, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} alpha, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} theta) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_aee790bde6888a60e2f136a731427edfa}{
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_aee790bde6888a60e2f136a731427edfa}{\_\-theta}}
+\label{classMultiBoost_1_1BaseLearner_aee790bde6888a60e2f136a731427edfa}
+
+\begin{DoxyCompactList}\small\item\em the value of the edge oofset theta. Default = 0; \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_a042fb5ff66939dd2135d769308acc16e}{
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_a042fb5ff66939dd2135d769308acc16e}{\_\-alpha}}
+\label{classMultiBoost_1_1BaseLearner_a042fb5ff66939dd2135d769308acc16e}
+
+\begin{DoxyCompactList}\small\item\em The coefficient of the current learner. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_a92aead604a9bb1f29cc1ee1b8e24e0e7}{
+string {\bfseries \_\-name}}
+\label{classMultiBoost_1_1BaseLearner_a92aead604a9bb1f29cc1ee1b8e24e0e7}
+
+\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_a611233a44538c97b02a1342945cf4a4c}{
+string {\bfseries \_\-id}}
+\label{classMultiBoost_1_1BaseLearner_a611233a44538c97b02a1342945cf4a4c}
+
+\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_a4be60c4c6c2a41ecbf3599d1ce40c9e1}{
+\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$ \hyperlink{classMultiBoost_1_1BaseLearner_a4be60c4c6c2a41ecbf3599d1ce40c9e1}{\_\-pTrainingData}}
+\label{classMultiBoost_1_1BaseLearner_a4be60c4c6c2a41ecbf3599d1ce40c9e1}
+
+\begin{DoxyCompactList}\small\item\em The data, needed in run, save, and load. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_ae03efe7fec838d634449716c445c2bfb}{\_\-smallVal} = 1e-\/3
+\begin{DoxyCompactList}\small\item\em A name that the base learner can set. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1BaseLearner_a481fd8d630a7a62697765341bb2f7d54}{
+static int \hyperlink{classMultiBoost_1_1BaseLearner_a481fd8d630a7a62697765341bb2f7d54}{\_\-verbose} = 1}
+\label{classMultiBoost_1_1BaseLearner_a481fd8d630a7a62697765341bb2f7d54}
+
+\begin{DoxyCompactList}\small\item\em The level of verbosity. \end{DoxyCompactList}\item 
+static \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1BaseLearner_a3b89ad0959563ba3e0fa9d21198aba4d}{\_\-smoothingVal} = \hyperlink{classMultiBoost_1_1BaseLearner_ae03efe7fec838d634449716c445c2bfb}{BaseLearner::\_\-smallVal}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic base learner. All the weak learners used by AdaBoost should inherit from this one. \begin{Desc}
+\item[\hyperlink{todo__todo000002}{Todo}]Add a getAlpha for non-\/binary (ternary) base-\/classifiers, using line-\/search. \end{Desc}
+
+
+Definition at line 64 of file BaseLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1BaseLearner_aef4aefaa9e4bb02983788855594ac30b}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!BaseLearner@{BaseLearner}}
+\index{BaseLearner@{BaseLearner}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{BaseLearner}]{\setlength{\rightskip}{0pt plus 5cm}MultiBoost::BaseLearner::BaseLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_aef4aefaa9e4bb02983788855594ac30b}
+The constructor. It initializes \_\-smallVal to 1E-\/10, and \_\-alpha to 0 \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a042fb5ff66939dd2135d769308acc16e}{\_\-alpha} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 171 of file BaseLearner.h.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_ab9cf682032357c987f3485063c7eda34}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!$\sim$BaseLearner@{$\sim$BaseLearner}}
+\index{$\sim$BaseLearner@{$\sim$BaseLearner}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{$\sim$BaseLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::BaseLearner::$\sim$BaseLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_ab9cf682032357c987f3485063c7eda34}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 177 of file BaseLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!classify@{classify}}
+\index{classify@{classify}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{classify}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::BaseLearner::classify (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}
+Classify the data on the given example index and class using the learned classifier. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+{\em idx} & The index of the example to classify. \\
+\hline
+{\em classIdx} & The index of the class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Passing the data and the index to the example is not nice at all. This will soon be replaced with the passing of the example itself in some form (probably a structure to the example). 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+A positive value if the classifier thinks that {\itshape val\/} belongs to class {\itshape classIdx\/}, a negative if it does not. A real value bounded between -\/1 and 1 is returned for ADTree and real AdaBoost (this latter is not implemented yet!). 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{MultiBoost::AbstainableLearner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_a22d0c53fea68b6859c01767b238fddad}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a813d5ad76828496e33529a18f57756c2}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1ParasiteLearner_ad9481e1c097ccf2575702d677202bb05}{MultiBoost::ParasiteLearner}, \hyperlink{classMultiBoost_1_1ProductLearner_a6ebf313eddcc25f3759aff180b78d919}{MultiBoost::ProductLearner}, \hyperlink{classMultiBoost_1_1ProductLearnerUCT_af9dbabc7a4a2a0cc584448db7d959be5}{MultiBoost::ProductLearnerUCT}, \hyperlink{classMultiBoost_1_1TreeLearner_ae8dc3365720bb37dc29b5c5c67d4d002}{MultiBoost::TreeLearner}, \hyperlink{classMultiBoost_1_1TreeLearnerUCT_a7eb34accb084244812130da690140f41}{MultiBoost::TreeLearnerUCT}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_ad18695306233436b91f55687f05d77b5}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a80dbf3868f40d419f5bfd9a9469be64f}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!copyState@{copyState}}
+\index{copyState@{copyState}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{copyState}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BaseLearner} $\ast$ MultiBoost::BaseLearner::copyState (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classMultiBoost_1_1BaseLearner_a80dbf3868f40d419f5bfd9a9469be64f}
+Creates a copy of the learner containing all the info we need in \hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{classify()} by calling the virtual fucntions \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{subCreate()} and \hyperlink{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}{subCopyState()} \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{subCreate()} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}{subCopyState()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Definition at line 222 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a37a031dd966926005056e177e4070c5f}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!create@{create}}
+\index{create@{create}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BaseLearner}$\ast$ MultiBoost::BaseLearner::create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a37a031dd966926005056e177e4070c5f}
+Returns a new object of the derived type by calling \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{subCreate()} Also copies tha derved type's name \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{subCreate()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+20/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 236 of file BaseLearner.h.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a80735a2e6adfc75e52bad70a0072d890}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!createGenericStrongLearner@{createGenericStrongLearner}}
+\index{createGenericStrongLearner@{createGenericStrongLearner}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{createGenericStrongLearner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf GenericStrongLearner} $\ast$ MultiBoost::BaseLearner::createGenericStrongLearner (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a80735a2e6adfc75e52bad70a0072d890}
+Returns the proper strong learner for the current weak learner. \begin{DoxyReturn}{Returns}
+An instance of the proper strong learner. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+By default it returns a \hyperlink{classMultiBoost_1_1AdaBoostMHLearner}{AdaBoostMHLearner}. 
+\end{DoxyRemark}
+
+
+Definition at line 100 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!createInputData@{createInputData}}
+\index{createInputData@{createInputData}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{createInputData}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InputData} $\ast$ MultiBoost::BaseLearner::createInputData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}
+Creates an \hyperlink{classMultiBoost_1_1InputData}{InputData} object that it is good for the weak learner. Override it if the weak learner requires another type of data to be loaded (which must be an extension of \hyperlink{classMultiBoost_1_1InputData}{InputData}). \begin{DoxyWarning}{Warning}
+The object {\bfseries must} be destroyed by the caller. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1InputData}{InputData} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_aeeefa24435fa10752fbef68417ca3930}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a49f7da9444329db0f7a10b2ed0d55d42}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a62763cd19797a15161ef3134d7b8acc8}{MultiBoost::MultiStumpLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a9c3040ae7a285d0949b1ae277709f6a1}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1ProductLearner_a46f134cfe65e2af6cb6586db5c3bcd94}{MultiBoost::ProductLearner}, \hyperlink{classMultiBoost_1_1ProductLearnerUCT_a114cb105f1cf2f1d2ab9f4d477fe156f}{MultiBoost::ProductLearnerUCT}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a90912a288d470c3b5adabbca4c124f86}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_a1746dfc09faf0d12043c2ade63494b64}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a7fc049426cf8eaf8dcb57b781633269d}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_af8c1f23328ee98a5ea49aa2b4f9874ff}{MultiBoost::SingleStumpLearner}, \hyperlink{classMultiBoost_1_1TreeLearner_a336b8003794abb6997586f6e3d5bc4de}{MultiBoost::TreeLearner}, \hyperlink{classMultiBoost_1_1TreeLearnerUCT_a1af2ca03219b592798e8d7f1c8a5d451}{MultiBoost::TreeLearnerUCT}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a4d03a4efd43a727e7079936100cb56c1}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 139 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_ab67f4944b1967c7141982b5d47720620}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BaseLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_ab67f4944b1967c7141982b5d47720620}
+Declare weak-\/learner-\/specific arguments. These arguments will be added to the list of arguments under the group specific of the weak learner. It is called automatically in main, when the list of arguments is built up. Use this method to declare the arguments that belongs to the weak learner only. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+28/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AbstainableLearner_add9773c8057fea7885edb8c1a07cfbd8}{MultiBoost::AbstainableLearner}, \hyperlink{classMultiBoost_1_1AdaLineLearner_a6c8f143382449c333995c33539bbff04}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1BanditLearner_a93998b6ffee55cb7255c06065387de11}{MultiBoost::BanditLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a02a3a2a863ec66ac0843eb866fbff1d1}{MultiBoost::ConstantLearner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a355e35d792aaae83f9e639b8cb5ab2a4}{MultiBoost::FeaturewiseLearner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_af9cc0a38d034aa794af315ee5299691f}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_ad994400056663aa2c030fbafaf96ca22}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a61d17e2ac24c475f7d11e03abcb2e1de}{MultiBoost::MultiStumpLearner}, \hyperlink{classMultiBoost_1_1NeuronLearner_a8c38489a59616866afbbc9d7ad60fee5}{MultiBoost::NeuronLearner}, \hyperlink{classMultiBoost_1_1ParasiteLearner_ae386b7114e9d144a945e2d6d2d85d3b1}{MultiBoost::ParasiteLearner}, \hyperlink{classMultiBoost_1_1ProductLearner_ad24d70df2c31dcf3b50f08b3185e70c6}{MultiBoost::ProductLearner}, \hyperlink{classMultiBoost_1_1ProductLearnerUCT_a6427928d247044b055d9de4d54010461}{MultiBoost::ProductLearnerUCT}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_aff4444f4cce780b47db79650b778b685}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1StochasticLearner_acac37929c8e28a71b8f396f28666e912}{MultiBoost::StochasticLearner}, \hyperlink{classMultiBoost_1_1TreeLearner_a1cbd38140dac10a3ff10300ccdd10f58}{MultiBoost::TreeLearner}, \hyperlink{classMultiBoost_1_1TreeLearnerUCT_a828445ca0839e251cad66e1f779cbdce}{MultiBoost::TreeLearnerUCT}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_aedbbd65aa2801237f3a6dc3a46e43997}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 60 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_afa55f3a17642588651fb15bf77e744f8}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!declareBaseArguments@{declareBaseArguments}}
+\index{declareBaseArguments@{declareBaseArguments}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{declareBaseArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BaseLearner::declareBaseArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_afa55f3a17642588651fb15bf77e744f8}
+Declare arguments that belongs to all weak-\/learners. \begin{DoxyRemark}{Remarks}
+This method belongs only to this base class and must not be extended. 
+
+I cannot use the standard declareArguments method, as it is called only to instantiated objects, and as this class is abstract I cannot do it. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 66 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_acf6c8a1548a2d470172be70ac779a23d}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!getAlpha@{getAlpha}}
+\index{getAlpha@{getAlpha}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{getAlpha}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf AlphaReal} MultiBoost::BaseLearner::getAlpha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_acf6c8a1548a2d470172be70ac779a23d}
+Get the value of alpha. This {\bfseries must} be computed by the algorithm in \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{run()}! \begin{DoxyReturn}{Returns}
+The value of alpha. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+You can use one of the helper function listed in See also to update \_\-alpha. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float) 
+
+getAlpha(float, float, float) 
+
+getAlpha(float, float, float, float) 
+\end{DoxySeeAlso}
+
+
+Definition at line 305 of file BaseLearner.h.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a45dad309894d70bf723ff75556eaaff1}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!getAlpha@{getAlpha}}
+\index{getAlpha@{getAlpha}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{getAlpha}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::BaseLearner::getAlpha (
+\begin{DoxyParamCaption}
+\item[{{\bf AlphaReal}}]{eps\_\-min, }
+\item[{{\bf AlphaReal}}]{eps\_\-pls}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a45dad309894d70bf723ff75556eaaff1}
+Compute alpha with abstention.
+
+A helper function to compute the alpha for AdaBoost with abstention but no theta. The formula is: \[ \alpha = \frac{1}{2} \log \left( \frac{\epsilon_+ + \delta}{\epsilon_- + \delta} \right) \] where $\delta$ is a smoothing value to avoid the zero on the denominator in case of no error ({\itshape eps\_\-min\/} == 0). 
+\begin{DoxyParams}{Parameters}
+{\em eps\_\-min} & The error rate of the weak learner. \\
+\hline
+{\em eps\_\-pls} & The correct rate of the weak learner. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Use this function to update {\itshape \_\-alpha\/}. 
+
+{\itshape eps\_\-min\/} + {\itshape eps\_\-pls\/} + {\itshape eps\_\-zero\/} = 1! 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a042fb5ff66939dd2135d769308acc16e}{\_\-alpha} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_a02657dfe35ffff80d2b2fb44e2d8731c}{setSmoothingVal} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 146 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_adfc0dbabc23275cd98efcdcf506b7371}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!getAlpha@{getAlpha}}
+\index{getAlpha@{getAlpha}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{getAlpha}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::BaseLearner::getAlpha (
+\begin{DoxyParamCaption}
+\item[{{\bf AlphaReal}}]{eps\_\-min, }
+\item[{{\bf AlphaReal}}]{eps\_\-pls, }
+\item[{{\bf AlphaReal}}]{theta}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_adfc0dbabc23275cd98efcdcf506b7371}
+Compute alpha with abstention and theta $>$ 0.
+
+A helper function to compute the alpha for AdaBoost with abstention and with theta. The formula is: \[ \alpha = \begin{cases} \ln\left( - \frac{\theta\epsilon^{(t)}_{0}}{2(1+\theta)\epsilon^{(t)}_{-}} + \sqrt{\left(\frac{\theta\epsilon^{(t)}_{0}}{2(1+\theta)\epsilon^{(t)}_{-}}\right)^2 + \frac{(1 - \theta)\epsilon^{(t)}_{+}}{(1 + \theta)\epsilon^{(t)}_{-}}}\right) & \mbox{ if } \epsilon^{(t)}_{-} > 0,\\ \ln\left( \frac{(1-\theta)\epsilon^{(t)}_{+}}{\theta\epsilon^{(t)}_{0}}\right) & \mbox{ if } \epsilon^{(t)}_{-} = 0. \end{cases} \] 
+\begin{DoxyParams}{Parameters}
+{\em eps\_\-min} & The error rate of the weak learner. \\
+\hline
+{\em eps\_\-pls} & The correct rate of the weak learner. \\
+\hline
+{\em theta} & The value of theta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Use this function to update {\itshape \_\-alpha\/}. 
+
+{\itshape eps\_\-min\/} + {\itshape eps\_\-pls\/} + {\itshape eps\_\-zero\/} = 1! 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a042fb5ff66939dd2135d769308acc16e}{\_\-alpha} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 153 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a59c8c6a08e003f45a91d813810d0f3d3}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!getEnergy@{getEnergy}}
+\index{getEnergy@{getEnergy}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{getEnergy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::BaseLearner::getEnergy (
+\begin{DoxyParamCaption}
+\item[{{\bf AlphaReal}}]{eps\_\-min, }
+\item[{{\bf AlphaReal}}]{eps\_\-pls, }
+\item[{{\bf AlphaReal}}]{alpha, }
+\item[{{\bf AlphaReal}}]{theta}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a59c8c6a08e003f45a91d813810d0f3d3}
+Compute energy with abstention and theta $>$ 0.
+
+A helper function to compute the alpha for AdaBoost with abstention and with theta. The formula is: \[ \alpha = \begin{cases} \ln\left( - \frac{\theta\epsilon^{(t)}_{0}}{2(1+\theta)\epsilon^{(t)}_{-}} + \sqrt{\left(\frac{\theta\epsilon^{(t)}_{0}}{2(1+\theta)\epsilon^{(t)}_{-}}\right)^2 + \frac{(1 - \theta)\epsilon^{(t)}_{+}}{(1 + \theta)\epsilon^{(t)}_{-}}}\right) & \mbox{ if } \epsilon^{(t)}_{-} > 0,\\ \ln\left( \frac{(1-\theta)\epsilon^{(t)}_{+}}{\theta\epsilon^{(t)}_{0}}\right) & \mbox{ if } \epsilon^{(t)}_{-} = 0. \end{cases} \] 
+\begin{DoxyParams}{Parameters}
+{\em eps\_\-min} & The error rate of the weak learner. \\
+\hline
+{\em eps\_\-pls} & The correct rate of the weak learner. \\
+\hline
+{\em theta} & The value of theta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Use this function to update {\itshape \_\-alpha\/}. 
+
+{\itshape eps\_\-min\/} + {\itshape eps\_\-pls\/} + {\itshape eps\_\-zero\/} = 0! 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a042fb5ff66939dd2135d769308acc16e}{\_\-alpha} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+24/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 187 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a8d1441eae7f346696848aa158175e27b}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!getEnergy@{getEnergy}}
+\index{getEnergy@{getEnergy}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{getEnergy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::BaseLearner::getEnergy (
+\begin{DoxyParamCaption}
+\item[{{\bf AlphaReal}}]{eps\_\-min, }
+\item[{{\bf AlphaReal}}]{eps\_\-pls}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a8d1441eae7f346696848aa158175e27b}
+Compute energy with abstention.
+
+A helper function to compute the alpha for AdaBoost with abstention but no theta. The formula is: \[ \alpha = \frac{1}{2} \log \left( \frac{\epsilon_+ + \delta}{\epsilon_- + \delta} \right) \] where $\delta$ is a smoothing value to avoid the zero on the denominator in case of no error ({\itshape eps\_\-min\/} == 0). 
+\begin{DoxyParams}{Parameters}
+{\em eps\_\-min} & The error rate of the weak learner. \\
+\hline
+{\em eps\_\-pls} & The correct rate of the weak learner. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Use this function to update {\itshape \_\-alpha\/}. 
+
+{\itshape eps\_\-min\/} + {\itshape eps\_\-pls\/} + {\itshape eps\_\-zero\/} = 1! 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a042fb5ff66939dd2135d769308acc16e}{\_\-alpha} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_a02657dfe35ffff80d2b2fb44e2d8731c}{setSmoothingVal} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 180 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_aa8945cc5179e0b732728571848bfb52f}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!getStateData@{getStateData}}
+\index{getStateData@{getStateData}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{getStateData}]{\setlength{\rightskip}{0pt plus 5cm}virtual void MultiBoost::BaseLearner::getStateData (
+\begin{DoxyParamCaption}
+\item[{vector$<$ float $>$ \&}]{, }
+\item[{const string \&}]{, }
+\item[{{\bf InputData} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_aa8945cc5179e0b732728571848bfb52f}
+Returns a vector of float holding any data that the specific weak learner can generate using the given input dataset. This kind of information belongs only to the logic of the weak learner, and is therefore implemented into it. \begin{DoxyRemark}{Remarks}
+This particular function is a form of compromise that arise with the question: \char`\"{}how can I generate weak-\/learner specific data for analysis purposes?\char`\"{}. This almost-\/generic method was created to solve this issue, even it is not the definitive answer. The user can implement any behavior overriding this method, and if one or more behavior are needed, he can specify which one using the parameter {\itshape reason\/}. 
+
+I don't like very much the fact that the returned information is limited to a vector of floats. This is likely to change. I've been thinking about a \char`\"{}templetized\char`\"{} parameter, but I don't like the idea of putting this kind of function into a header. The other possibility is to pass a void pointer, but I don't like that either as void pointers are evil. But sometimes a little bit of evil is necessary. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_aa8945cc5179e0b732728571848bfb52f}{SingleStumpLearner::getStateData} 
+
+Classifier::saveSingleStumpFeatureData 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1ConstantLearner_aee9280a797b4ba4ed38349ae728e9f09}{MultiBoost::ConstantLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_ab1ae07a9910345e6717cbf17dc55fb77}{MultiBoost::HaarSingleStumpLearner}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_aae9295085f9c578965b1b4d4007dbd59}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 395 of file BaseLearner.h.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_ad124cba3e0d39493bb731fe362a38e2a}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!initLearningOptions@{initLearningOptions}}
+\index{initLearningOptions@{initLearningOptions}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{initLearningOptions}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BaseLearner::initLearningOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_ad124cba3e0d39493bb731fe362a38e2a}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/07/2005 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AbstainableLearner_a966b1609a95222953e4116a3fffaadbe}{MultiBoost::AbstainableLearner}, \hyperlink{classMultiBoost_1_1AdaLineLearner_a4af94dbbbc29009456ef3e80e104f333}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1BanditLearner_a0247d5ef38af725655e72abd36cd7655}{MultiBoost::BanditLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a317362704802ea9f97a16511df0131ad}{MultiBoost::ConstantLearner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a24d0666de1f394b2165c2d833d36b5f6}{MultiBoost::FeaturewiseLearner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_a580bf43635d390488d1ccd41e1764daf}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a547dab8fd220684bf2e6dbbf7cb0708f}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a5fe30fa4df79be1937eae9341a96a320}{MultiBoost::MultiStumpLearner}, \hyperlink{classMultiBoost_1_1NeuronLearner_a0c5b9fd7ee8dc329a3d36c948fd3a207}{MultiBoost::NeuronLearner}, \hyperlink{classMultiBoost_1_1ParasiteLearner_acba3030fe77279de824f9809cbd24f66}{MultiBoost::ParasiteLearner}, \hyperlink{classMultiBoost_1_1ProductLearner_a989a5e499888f109046acfa5a4edf90a}{MultiBoost::ProductLearner}, \hyperlink{classMultiBoost_1_1ProductLearnerUCT_a73f300176f9ca4f836611806b837011d}{MultiBoost::ProductLearnerUCT}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a8681907af375892638d04f5429c7a3ee}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1StochasticLearner_a65ba4717def2118659f3adc6ae8a6324}{MultiBoost::StochasticLearner}, \hyperlink{classMultiBoost_1_1TreeLearner_aaab5381d0cb6c70832319614ea51f782}{MultiBoost::TreeLearner}, \hyperlink{classMultiBoost_1_1TreeLearnerUCT_ae57c244a76db59957b6f188ebdc53afa}{MultiBoost::TreeLearnerUCT}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_acaadef7c0c556c083df313440e974069}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 88 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_aab8bdddad2c32654a2e77bbaac79345d}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!load@{load}}
+\index{load@{load}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BaseLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_aab8bdddad2c32654a2e77bbaac79345d}
+Unserialize the object. This method will load the information needed for the classification from the xml file loaded in a StreamTokenizer class. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{save} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AbstainableLearner_a571f0ef9449cd3a7bc56f8a0131db6f1}{MultiBoost::AbstainableLearner}, \hyperlink{classMultiBoost_1_1BanditLearner_aaa794acb9c2bb160de2a8dc28f791141}{MultiBoost::BanditLearner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{MultiBoost::FeaturewiseLearner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_aded39dbe1d2e0c5715a7dd2ee95fea91}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_adaab98e0964770ed3309939b164a06c9}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_ab4e079f316f5d882392839aa02f67d16}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a5fea1fcb77fb6372ee4ed57fcfa8867b}{MultiBoost::MultiStumpLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a3dc38b2a4c1923866a2e63072c4a0c89}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1NeuronLearner_af6853ce2a99be6986c429bcad760d9f9}{MultiBoost::NeuronLearner}, \hyperlink{classMultiBoost_1_1ParasiteLearner_af7331866e43c7ba884fc53e7a66b5afb}{MultiBoost::ParasiteLearner}, \hyperlink{classMultiBoost_1_1ProductLearner_a8c6ccbf794ed15b2ae4fa5b6764b3c7f}{MultiBoost::ProductLearner}, \hyperlink{classMultiBoost_1_1ProductLearnerUCT_a59953dd5aff96535cd206b9c0275709c}{MultiBoost::ProductLearnerUCT}, \hyperlink{classMultiBoost_1_1SelectorLearner_a6a5b322170c0d52c90219a87815c8d97}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a26f1c20fee776dc11fac049d40e74689}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_a50745d7bcd9da4f3b27be0c4b8a9b472}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_afbd9e4ab80b2483932e03ae675159f0d}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_afa8862221d2dcd260a2ae450ba16f825}{MultiBoost::SingleStumpLearner}, \hyperlink{classMultiBoost_1_1TreeLearner_a8bea8a77c5695f3198d2fd1f7f51a92e}{MultiBoost::TreeLearner}, \hyperlink{classMultiBoost_1_1TreeLearnerUCT_ab4bfec66f1b93942e75c5c5c76cfc5c4}{MultiBoost::TreeLearnerUCT}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a57d70dfa5047ba4ff322a581a04a6345}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 211 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_adbe43a0d12b832e87ed1288004031ec4}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!RegisteredLearners@{RegisteredLearners}}
+\index{RegisteredLearners@{RegisteredLearners}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{RegisteredLearners}]{\setlength{\rightskip}{0pt plus 5cm}static LearnersRegs\& MultiBoost::BaseLearner::RegisteredLearners (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_adbe43a0d12b832e87ed1288004031ec4}
+Map of the registered basic learners. This data is updated statically just by adding the macro \hyperlink{BaseLearner_8h_a784f5b7d276202c7de7108eeca341da7}{REGISTER\_\-LEARNER(X)} where X is the name of the learner (which {\bfseries must} match the class name) in the .cpp file. \hyperlink{classMultiBoost_1_1Example}{Example} (in file StumpLearner.cpp): 
+\begin{DoxyCode}
+ REGISTER_LEARNER(SingleStumpLearner)
+\end{DoxyCode}
+ It is possible to register a class with a different name of its class name using \hyperlink{BaseLearner_8h_a186cb2b63be2058a5a377cac0e106ace}{REGISTER\_\-LEARNER\_\-NAME(X, Y)}, where Y is the custom name. For instance: 
+\begin{DoxyCode}
+ REGISTER_LEARNER_NAME(SingleStumpLearner, SStump)
+\end{DoxyCode}
+ \begin{DoxyRemark}{Remarks}
+Only non-\/abstract classes must be registered! 
+
+To prevent the \char`\"{}static initialization order fiasco\char`\"{} I am using the trick described in \href{http://www.parashift.com/c++-faq-lite/ctors.html#faq-10.13}{\tt http://www.parashift.com/c++-\/faq-\/lite/ctors.html\#faq-\/10.13} 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{subCreate()} 
+
+LearnersRegs 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 155 of file BaseLearner.h.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!run@{run}}
+\index{run@{run}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::BaseLearner::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function {\bfseries must} update \_\-alpha too! You can use the helper functions (the getAlpha with parameters) to update it. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The energy of the weak classifier (that we want to minimize). If it cannot find a weak classifier then it must return with signaling\_\-NaN() 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float) 
+
+getAlpha(float, float) 
+
+getAlpha(float, float, float, float) 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_aaf0781525559a349d16b8f6cb8606fcf}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a1aac8a845d9af374cdfa7348bd9a7df9}{MultiBoost::ConstantLearner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_abf51b50b842eab856467cff18479c90c}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a350c476169df330f1adedd040e96ff32}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_af6ebc02b7c3c99c3a37c29b8b315786c}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a682f5428b73db0e89de8128539108f6b}{MultiBoost::MultiStumpLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a9f82c8803d80e1a64427aaca042d37ff}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1OneClassStumpLearner_ab2ef660fcf6f95e176901a82c1904fe9}{MultiBoost::OneClassStumpLearner}, \hyperlink{classMultiBoost_1_1ParasiteLearner_a5f464b4ba2afd3c0c20237ce2615a122}{MultiBoost::ParasiteLearner}, \hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{MultiBoost::ProductLearner}, \hyperlink{classMultiBoost_1_1ProductLearnerUCT_a15651ecc0e1cbb858a4c0a02f0bc5d96}{MultiBoost::ProductLearnerUCT}, \hyperlink{classMultiBoost_1_1SelectorLearner_aa6cb50a286800554328ba1edbeadc695}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a5b78075ea6854a2cb4ea045f1f5b1eae}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_ac07bca49a4faeb17605b564fe5bbfd7b}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_adf6766c237fb974323ca2c49c8b1bf09}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleSparseStumpLearner_ac289b6d69ad526969ebfb4aa4ebf1446}{MultiBoost::SingleSparseStumpLearner}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_a9cd7bfe1a0905857993eec0dd462a879}{MultiBoost::SingleStumpLearner}, \hyperlink{classMultiBoost_1_1TreeLearner_a414a95428a1404296fd63429cdc83184}{MultiBoost::TreeLearner}, \hyperlink{classMultiBoost_1_1TreeLearnerUCT_ae6fa0bb181e98936fdf20068a9c1bff0}{MultiBoost::TreeLearnerUCT}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_aa66e42f767c51d321e788208a5cfb8c5}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!save@{save}}
+\index{save@{save}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BaseLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}
+Save general parameters of the learner, which does not need to be output for every weak learner (every iteration). For instance, in case of Neural Networks, the number of layers. \begin{DoxySeeAlso}{See also}
+loadGeneral 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+20/12/2005 Load general parameters of the learner, which does not need to be output for every weak learner (every iteration). For instance, in case of Neural Networks, the number of layers. 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+saveGeneral 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+20/12/2005 Serialize the object. The object information needed for classification will be saved in xml format. This method should be overridden by the derived classes which will call the superclass first and then serialize their data. 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved. \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+At this level only \_\-alpha is saved. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_aab8bdddad2c32654a2e77bbaac79345d}{load} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AbstainableLearner_adb503537cf9edf4c4469b43d3db47073}{MultiBoost::AbstainableLearner}, \hyperlink{classMultiBoost_1_1BanditLearner_a5cb193b8a5e621a462dc96f2c16ef610}{MultiBoost::BanditLearner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{MultiBoost::FeaturewiseLearner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_ae4b26b79c47ed76ba87b0069ea2fd273}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a6a565277105954f5912937ad00b92f1f}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_a66dfec334db068b3ab5806723b4170b4}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a1677eba09a926f5a27570506b117f3d1}{MultiBoost::MultiStumpLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a0dd15d2b44a067988ff2496e2efe5aab}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1NeuronLearner_a0364fe14ddcc5f0c92537909832234c1}{MultiBoost::NeuronLearner}, \hyperlink{classMultiBoost_1_1ParasiteLearner_a58e4c198a7a0415f237e66d298a0b47a}{MultiBoost::ParasiteLearner}, \hyperlink{classMultiBoost_1_1ProductLearner_a98a8d98a95aa5f6ed736c55d1d2b866f}{MultiBoost::ProductLearner}, \hyperlink{classMultiBoost_1_1ProductLearnerUCT_a6242441aa8eafd7a178a3c814bffff94}{MultiBoost::ProductLearnerUCT}, \hyperlink{classMultiBoost_1_1SelectorLearner_a1d51fa000c5b04e5ed52dcb8f2981e5a}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_a974bf887a0c8ddf5be49259d702c9b05}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_a08dc78b056b0f939214637f60e50891d}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a69365508ff9efa93d90450621048905e}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_a25bb9b4151a2a4f547994ef71a2cf152}{MultiBoost::SingleStumpLearner}, \hyperlink{classMultiBoost_1_1TreeLearner_accb9bf275b24b274f346b34bd7d18b15}{MultiBoost::TreeLearner}, \hyperlink{classMultiBoost_1_1TreeLearnerUCT_ac0b2de0b964bba5700b73b36c532e4c7}{MultiBoost::TreeLearnerUCT}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a9844f395b5e9315e32e46ec27df50a75}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 200 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a14801c41060f93d612b3f8b143b7641a}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!setAlpha@{setAlpha}}
+\index{setAlpha@{setAlpha}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{setAlpha}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BaseLearner::setAlpha (
+\begin{DoxyParamCaption}
+\item[{{\bf AlphaReal}}]{alpha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a14801c41060f93d612b3f8b143b7641a}
+Set the value of alpha. This {\bfseries must} be computed by the algorithm in \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{run()} except SoftBoost \begin{DoxyDate}{Date}
+14/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 311 of file BaseLearner.h.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a02657dfe35ffff80d2b2fb44e2d8731c}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!setSmoothingVal@{setSmoothingVal}}
+\index{setSmoothingVal@{setSmoothingVal}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{setSmoothingVal}]{\setlength{\rightskip}{0pt plus 5cm}virtual void MultiBoost::BaseLearner::setSmoothingVal (
+\begin{DoxyParamCaption}
+\item[{{\bf AlphaReal}}]{smoothingVal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a02657dfe35ffff80d2b2fb44e2d8731c}
+Set the smoothing value for alpha. It is used with the formula to compute alpha without regularization. To avoid smoothing following the paper \char`\"{}Improved Boosting Algorithms using Confidence-\/rated Predictions\char`\"{}, page 11 (\href{http://www.cs.princeton.edu/~schapire/uncompress-papers.cgi/SchapireSi98.ps}{\tt http://www.cs.princeton.edu/$\sim$schapire/uncompress-\/papers.cgi/SchapireSi98.ps}) the value should be $<$$<$ 1/n, where n$\ast$K is the number of examples and K is the number of classes. 
+\begin{DoxyParams}{Parameters}
+{\em smoothingVal} & The new smoothing value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float, float) 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+22/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 427 of file BaseLearner.h.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a3392a509caed2678e948b19446e0d73a}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!setTrainingData@{setTrainingData}}
+\index{setTrainingData@{setTrainingData}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{setTrainingData}]{\setlength{\rightskip}{0pt plus 5cm}virtual void MultiBoost::BaseLearner::setTrainingData (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pTrainingData}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a3392a509caed2678e948b19446e0d73a}
+Sets \_\-pTrainingData. Should be called before \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{run()} 
+\begin{DoxyParams}{Parameters}
+{\em pTrainingData} & Pointer to the training data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+19/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 266 of file BaseLearner.h.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::BaseLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1BaseLearner_a97532baab5306b08014a2de84c0afcc1}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a54e72961217720b3d37083bd07ddf65d}{save} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_aab8bdddad2c32654a2e77bbaac79345d}{load} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1AbstainableLearner_a36ad3b89e190941788eee53595b288b0}{MultiBoost::AbstainableLearner}, \hyperlink{classMultiBoost_1_1AdaLineLearner_a4b96e7dce0bb66b4dbe48caef6582699}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1BanditLearner_ad4edd0f5c1eee1680df304ad1df9f5e9}{MultiBoost::BanditLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a019e0eebd46b00a15b37bcb1d101f33d}{MultiBoost::ConstantLearner}, \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{MultiBoost::FeaturewiseLearner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_a23e1bf8c0ff7ccb455ca14d5ddae247f}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a918541140437c8d7f7575c76b37ad652}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_a47fb712bf8e44ebd7a7af759423b8fcc}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a261fe1a54a6032f23759c4287afe39e3}{MultiBoost::MultiStumpLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a093c9a16e80ab2fe90470c43f24b0bfb}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1NeuronLearner_a123916b011566aad19552783032a3e30}{MultiBoost::NeuronLearner}, \hyperlink{classMultiBoost_1_1ParasiteLearner_a8e200e3b0786abd18dd69ddf5c021d46}{MultiBoost::ParasiteLearner}, \hyperlink{classMultiBoost_1_1ProductLearner_af97192ceef5dcdcaa2a2d1fe7c722cb7}{MultiBoost::ProductLearner}, \hyperlink{classMultiBoost_1_1ProductLearnerUCT_afd69805ce174d2e4b8c5de51660e6aa6}{MultiBoost::ProductLearnerUCT}, \hyperlink{classMultiBoost_1_1SelectorLearner_aac96f1fddd89c6382240fc7d0ddae478}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_adb4ca5ac6be19aa7244d04ac7b24d79d}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_af449d15e3389ec33d37613e9684148ba}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a0c815aa6bd664984f0baa6d94cde7cff}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_a81fc70ee14b9714289f998977a8e0e1b}{MultiBoost::SingleStumpLearner}, \hyperlink{classMultiBoost_1_1StochasticLearner_a1193858b7940baca90c2da3612a6e718}{MultiBoost::StochasticLearner}, \hyperlink{classMultiBoost_1_1TreeLearner_a3d53f42b507438279ac31161a600e9fd}{MultiBoost::TreeLearner}, \hyperlink{classMultiBoost_1_1TreeLearnerUCT_acb8454466d6b97c03273378ad7b83e45}{MultiBoost::TreeLearnerUCT}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_ac57c9a360303b9593a0367256e65fed8}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 231 of file BaseLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::BaseLearner::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}
+Returns a new object of the derived type. For instance the overriding of this method in \hyperlink{classMultiBoost_1_1SingleStumpLearner}{SingleStumpLearner} will be: 
+\begin{DoxyCode}
+ return new SingleStumpLearner();
+\end{DoxyCode}
+ For that reason every learner must have an empty constructor. Use setArguments() if you must define some parameters of the learner. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1SingleStumpLearner_ac78a95b491c3cef2362c6459f2465288}{SingleStumpLearner::subCreate()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1AdaLineLearner_a440d8ba8ddb784db3caa562813c5b293}{MultiBoost::AdaLineLearner}, \hyperlink{classMultiBoost_1_1ConstantLearner_a6f1e02f680c99526e2b6f8b2f199a2e0}{MultiBoost::ConstantLearner}, \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_a97f7761d53ccb83f13ea09ceec6def50}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a5bb8091035885f03075d934a9a0effa6}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_a27db4cf56fa20bbf125a82594ff6d9ac}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1MultiStumpLearner_a2a3c04efd1a250269a741ee83d11d988}{MultiBoost::MultiStumpLearner}, \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_ad924c25c6b9e850621095b26b17deff6}{MultiBoost::MultiThresholdStumpLearner}, \hyperlink{classMultiBoost_1_1OneClassStumpLearner_ac00d7c627e63188969086c4731d1e108}{MultiBoost::OneClassStumpLearner}, \hyperlink{classMultiBoost_1_1ParasiteLearner_a423b9b4b1a48d38f68f7ef5385d375d7}{MultiBoost::ParasiteLearner}, \hyperlink{classMultiBoost_1_1ProductLearner_ae47d69c6e4bbed0d773ee4f87e44d386}{MultiBoost::ProductLearner}, \hyperlink{classMultiBoost_1_1ProductLearnerUCT_a51986d674343402ad5effa74a1586f41}{MultiBoost::ProductLearnerUCT}, \hyperlink{classMultiBoost_1_1SelectorLearner_a726c67bf94e15eed8de4b55ee587d5e8}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_ae7196f2bf7c89953be0238c90ea9e1b1}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleRegressionStumpLearner_a8260b5663864070910f1b8e014984adc}{MultiBoost::SingleRegressionStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a7857e9ed102117f1c10f6642e06d1398}{MultiBoost::SingleSparseStump}, \hyperlink{classMultiBoost_1_1SingleSparseStumpLearner_adfc0829ce34e21d6bb96081ca1233a3f}{MultiBoost::SingleSparseStumpLearner}, \hyperlink{classMultiBoost_1_1SingleStumpLearner_ac78a95b491c3cef2362c6459f2465288}{MultiBoost::SingleStumpLearner}, \hyperlink{classMultiBoost_1_1TreeLearner_ad3d4d99f32e53fbe5f2469c7498656c5}{MultiBoost::TreeLearner}, \hyperlink{classMultiBoost_1_1TreeLearnerUCT_af51e4db05437810a73b7b5d63a4660a4}{MultiBoost::TreeLearnerUCT}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a610378dff74c18b1b5e0f3bacc4c95f5}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1BaseLearner_ae03efe7fec838d634449716c445c2bfb}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!\_\-smallVal@{\_\-smallVal}}
+\index{\_\-smallVal@{\_\-smallVal}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{\_\-smallVal}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf AlphaReal} {\bf MultiBoost::BaseLearner::\_\-smallVal} = 1e-\/3\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_ae03efe7fec838d634449716c445c2bfb}
+
+
+A name that the base learner can set. 
+
+A small value. 
+
+Definition at line 534 of file BaseLearner.h.
+
+\hypertarget{classMultiBoost_1_1BaseLearner_a3b89ad0959563ba3e0fa9d21198aba4d}{
+\index{MultiBoost::BaseLearner@{MultiBoost::BaseLearner}!\_\-smoothingVal@{\_\-smoothingVal}}
+\index{\_\-smoothingVal@{\_\-smoothingVal}!MultiBoost::BaseLearner@{MultiBoost::BaseLearner}}
+\subsubsection[{\_\-smoothingVal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} {\bf MultiBoost::BaseLearner::\_\-smoothingVal} = {\bf BaseLearner::\_\-smallVal}\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}
+\label{classMultiBoost_1_1BaseLearner_a3b89ad0959563ba3e0fa9d21198aba4d}
+The smoothing value for alpha. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a02657dfe35ffff80d2b2fb44e2d8731c}{setSmoothingVal} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+22/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 542 of file BaseLearner.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{BaseLearner_8h}{BaseLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/BaseLearner.cpp\end{DoxyCompactItemize}

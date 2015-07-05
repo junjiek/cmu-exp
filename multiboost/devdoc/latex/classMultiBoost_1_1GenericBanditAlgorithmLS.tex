@@ -1,0 +1,118 @@
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS}{\section{Multi\-Boost\-:\-:Generic\-Bandit\-Algorithm\-L\-S$<$ Base\-Type, Key\-Type $>$ Class Template Reference}
+\label{classMultiBoost_1_1GenericBanditAlgorithmLS}\index{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm\-L\-S$<$ Base\-Type, Key\-Type $>$@{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm\-L\-S$<$ Base\-Type, Key\-Type $>$}}
+}
+
+
+{\ttfamily \#include $<$Generic\-Bandit\-Algorithm\-L\-S.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Generic\-Bandit\-Algorithm\-L\-S$<$ Base\-Type, Key\-Type $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.264151cm]{classMultiBoost_1_1GenericBanditAlgorithmLS}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_af056dcc9da776e5515c58d6d1be659b5}{void {\bfseries set\-Arm\-Number} (int num\-Of\-Arms)}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_af056dcc9da776e5515c58d6d1be659b5}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a78d88d32f5ca2e1a1665371f693df1a8}{virtual int {\bfseries get\-Arm\-Number} ()}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a78d88d32f5ca2e1a1665371f693df1a8}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a44aee8bc490395bb7039fdb733422708}{virtual void {\bfseries receive\-Reward} (Key\-Type key, Base\-Type reward)}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a44aee8bc490395bb7039fdb733422708}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a59000da1d4bd878b0c29c0402aab83ab}{virtual void {\bfseries inc\-Iter} ()}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a59000da1d4bd878b0c29c0402aab83ab}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a95db59af756df85afeee5303a88e1284}{virtual int {\bfseries get\-Iter\-Num} ()}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a95db59af756df85afeee5303a88e1284}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_aca8ffdbefba1eb6d2251708ee37bda5e}{virtual void {\bfseries get\-K\-Best\-Action} (const int k, vector$<$ Key\-Type $>$ \&best\-Arms, Key\-Type default\-Value)}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_aca8ffdbefba1eb6d2251708ee37bda5e}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_ac317eb2f4e04375f02cde0547f2c17a9}{virtual Key\-Type {\bfseries get\-Next\-Action} (Key\-Type default\-Value)=0}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_ac317eb2f4e04375f02cde0547f2c17a9}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a858b5a501243de5a1aaec0af4e2ec902}{void {\bfseries set\-Initialized\-Flag\-To\-True} ()}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a858b5a501243de5a1aaec0af4e2ec902}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a7676523990c78432eee71a949be51b0c}{bool {\bfseries is\-Initialized} (void)}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a7676523990c78432eee71a949be51b0c}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a57b307256cb71c5f2b6fc2b2530fcbe6}{virtual void {\bfseries initialize} (map$<$ Key\-Type, Base\-Type $>$ \&vals)}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a57b307256cb71c5f2b6fc2b2530fcbe6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a012c03d57e531ee49fec43158acce1e6}{typedef pair$<$ Base\-Type, Key\-Type $>$ {\bfseries p\-Base\-Key}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a012c03d57e531ee49fec43158acce1e6}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_af7a52aff0c9de19e0a2215ed762081f4}{typedef vector$<$ p\-Base\-Key $>$ {\bfseries vec\-Base\-Key}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_af7a52aff0c9de19e0a2215ed762081f4}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_ab313cf4a6fc41a3359c0a9dea35c0343}{typedef vector$<$ p\-Base\-Key $>$\\*
+\-::iterator {\bfseries it\-Vector\-Pair\-Base\-Key}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_ab313cf4a6fc41a3359c0a9dea35c0343}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a0d82457b7f8d8f8006f99a796d05a4f8}{typedef map$<$ Key\-Type, Base\-Type $>$ {\bfseries map\-Key\-Base}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a0d82457b7f8d8f8006f99a796d05a4f8}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a2769ff46ffdea1ed2360077ac38b771a}{typedef map$<$ Key\-Type, Base\-Type $>$\\*
+\-::iterator {\bfseries it\-Map\-Key\-Base}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a2769ff46ffdea1ed2360077ac38b771a}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a1d76273ebb23f00e46bf99440e444366}{typedef set$<$ Key\-Type $>$\-::iterator {\bfseries it\-Set\-Key}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a1d76273ebb23f00e46bf99440e444366}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_ae8ed261f8406a8b7143b6a4cda20f5cf}{virtual void {\bfseries updateith\-Value} (Key\-Type key)=0}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_ae8ed261f8406a8b7143b6a4cda20f5cf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_aabdd78debc51cbb5f31dbbc3966709e7}{int {\bfseries \-\_\-num\-Of\-Arms}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_aabdd78debc51cbb5f31dbbc3966709e7}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a91aeb8d35c5cb78998fc94dae72631e4}{int {\bfseries \-\_\-num\-Of\-Iter}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a91aeb8d35c5cb78998fc94dae72631e4}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a7b159c23d990c4572ab31da193226292}{map$<$ Key\-Type, Base\-Type $>$ {\bfseries \-\_\-\-T}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a7b159c23d990c4572ab31da193226292}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_aed82057dee87038297e20e81e204c316}{map$<$ Key\-Type, Base\-Type $>$ {\bfseries \-\_\-\-X}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_aed82057dee87038297e20e81e204c316}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a5547b470ad2193ece9e6f8ba962d2c1c}{bool {\bfseries \-\_\-is\-Initialized}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a5547b470ad2193ece9e6f8ba962d2c1c}
+
+\item 
+\hypertarget{classMultiBoost_1_1GenericBanditAlgorithmLS_a765a14b51253c031ed313b7f3117c880}{ofstream {\bfseries \-\_\-reward\-File}}\label{classMultiBoost_1_1GenericBanditAlgorithmLS_a765a14b51253c031ed313b7f3117c880}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Base\-Type = double, typename Key\-Type = int$>$class Multi\-Boost\-::\-Generic\-Bandit\-Algorithm\-L\-S$<$ Base\-Type, Key\-Type $>$}
+
+An abstract class for a generic bandit algorithms. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1UCBK}{U\-C\-B\-K} 
+
+\hyperlink{classMultiBoost_1_1Exp3}{Exp3} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+09/10/2009 
+\end{DoxyDate}
+
+
+Definition at line 60 of file Generic\-Bandit\-Algorithm\-L\-S.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Bandits\-L\-S/Generic\-Bandit\-Algorithm\-L\-S.\-h\end{DoxyCompactItemize}

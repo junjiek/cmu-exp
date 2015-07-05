@@ -1,0 +1,28 @@
+\hypertarget{AbstainableLearner_8h}{\section{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\-Abstainable\-Learner.h File Reference}
+\label{AbstainableLearner_8h}\index{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\-Abstainable\-Learner.\-h@{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Weak\-Learners/\-Abstainable\-Learner.\-h}}
+}
+{\ttfamily \#include \char`\"{}Weak\-Learners/\-Base\-Learner.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Utils/\-Args.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-Input\-Data.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Others/\-Rates.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMultiBoost_1_1AbstainableLearner}{Multi\-Boost\-::\-Abstainable\-Learner}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+It represents all weak learners that explicitly use a vote vector, that is, implement h(x,l) as v\mbox{[}l\mbox{]} $\ast$ phi(x,l). Vote vector operations (like abstaining) is implemented here. Normally most of the weak learners of this type are of the form v\mbox{[}l\mbox{]} $\ast$ phi(x) (which could be called \char`\"{}\-Classwise\-Learner\char`\"{}), except for Multi\-Stump\-Learner.
+
+It represents all weak learners that explicitly use a vote vector, that is, implement h(x,l) as v\mbox{[}l\mbox{]} $\ast$ phi(x,l). Vote vector operations (like abstaining) is implemented here.
+
+\begin{DoxyDate}{Date}
+19/09/06 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{AbstainableLearner_8h_source}{Abstainable\-Learner.\-h}.
+

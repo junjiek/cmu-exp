@@ -1,0 +1,371 @@
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier}{\section{Multi\-Boost\-:\-:Ada\-Boost\-M\-H\-Classifier Class Reference}
+\label{classMultiBoost_1_1AdaBoostMHClassifier}\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+}
+
+
+{\ttfamily \#include $<$Ada\-Boost\-M\-H\-Classifier.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_a31fa77b75373125fd341e78689c58a99}{Ada\-Boost\-M\-H\-Classifier} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args, int verbose=1)
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_ad057ad026b06da56a17267725506a36c}{run} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, int num\-Iterations, const string \&out\-Res\-File\-Name=\char`\"{}\char`\"{}, int num\-Ranks\-Enclosed=2)
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_aab2e6ac3ebcbffcd858111f08f22a844}{print\-Confusion\-Matrix} (const string \&data\-File\-Name, const string \&shyp\-File\-Name)
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_ada2d25b5a330993290a4fa97b2a52b43}{save\-Confusion\-Matrix} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, const string \&out\-File\-Name)
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_ab25a3086b4915300c1e56f22b0e30c13}{save\-Calibrated\-Posteriors} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, const string \&out\-File\-Name, int num\-Iterations)
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_a0794865bea153fa56836d01f1eaae342}{void {\bfseries save\-Posteriors} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, const string \&out\-File\-Name, int num\-Iterations, int period=0)}\label{classMultiBoost_1_1AdaBoostMHClassifier_a0794865bea153fa56836d01f1eaae342}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_ac741794a51c9607d1a91725eab7b16ac}{void {\bfseries save\-Likelihoods} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, const string \&out\-File\-Name, int num\-Iterations)}\label{classMultiBoost_1_1AdaBoostMHClassifier_ac741794a51c9607d1a91725eab7b16ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$ \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_aebe7426f99d7ce383db674d2f9c61707}{load\-Input\-Data} (const string \&data\-File\-Name, const string \&shyp\-File\-Name)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_a0a1f7718d804518845ef3ce6f2cf1eb7}{compute\-Results} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&weak\-Hypotheses, vector$<$ \hyperlink{classMultiBoost_1_1ExampleResults}{Example\-Results} $\ast$ $>$ \&results, int num\-Iterations)
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_a61ea259cf10c9807efd098b5fcabf832}{virtual void {\bfseries continue\-Computing\-Results} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&weak\-Hypotheses, vector$<$ \hyperlink{classMultiBoost_1_1ExampleResults}{Example\-Results} $\ast$ $>$ \&results, int from\-Iteration, int to\-Iteration)}\label{classMultiBoost_1_1AdaBoostMHClassifier_a61ea259cf10c9807efd098b5fcabf832}
+
+\item 
+float \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_a0b98c67671717ea2321888d87339e933}{get\-Overall\-Error} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, const vector$<$ \hyperlink{classMultiBoost_1_1ExampleResults}{Example\-Results} $\ast$ $>$ \&results, int at\-Least\-Rank=0)
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_a3b03659702a98eb6b49160841c269480}{get\-Class\-Error} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, const vector$<$ \hyperlink{classMultiBoost_1_1ExampleResults}{Example\-Results} $\ast$ $>$ \&results, vector$<$ float $>$ \&class\-Error, int at\-Least\-Rank=0)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_a44a57b43a67952352ab59d9967e9e8b9}{\-\_\-verbose}
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_a5a4a553d8952688ae93df619832fbec9}{const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \& \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_a5a4a553d8952688ae93df619832fbec9}{\-\_\-args}}\label{classMultiBoost_1_1AdaBoostMHClassifier_a5a4a553d8952688ae93df619832fbec9}
+
+\begin{DoxyCompactList}\small\item\em The arguments defined by the user. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_a9a149f48a835e2c0c9e9cb814f597642}{string \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_a9a149f48a835e2c0c9e9cb814f597642}{\-\_\-output\-Info\-File}}\label{classMultiBoost_1_1AdaBoostMHClassifier_a9a149f48a835e2c0c9e9cb814f597642}
+
+\begin{DoxyCompactList}\small\item\em The filename of the step-\/by-\/step information file that will be updated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classify a dataset with Ada\-Boost.\-M\-H learner. Using the strong hypothesis file (shyp.\-xml by default) it builds the list of weak hypothesis (or weak learners), and use them to perform a classification over the given data set. The strong hypothesis is the linear combination of the weak hypotheses and their confidence alpha, and is defined as\-: \[ {\bf g}(x) = \sum_{t=1}^T \alpha^{(t)} {\bf h}^{(t)}(x), \] where the bold defines a vector as returned value. To obtain a single class, we simply take the winning class that receives the \char`\"{}most vote\char`\"{}, that is\-: \[ f(x) = \mathop{\rm arg\, max}_{\ell} g_\ell(x). \] \begin{DoxyDate}{Date}
+15/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 76 of file Ada\-Boost\-M\-H\-Classifier.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_a31fa77b75373125fd341e78689c58a99}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!Ada\-Boost\-M\-H\-Classifier@{Ada\-Boost\-M\-H\-Classifier}}
+\index{Ada\-Boost\-M\-H\-Classifier@{Ada\-Boost\-M\-H\-Classifier}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{Ada\-Boost\-M\-H\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::\-Ada\-Boost\-M\-H\-Classifier (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args, }
+\item[{int}]{verbose = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHClassifier_a31fa77b75373125fd341e78689c58a99}
+The constructor. It initializes the variable and set them using the information provided by the arguments passed. They are parsed using the helpers provided by class Args. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+{\em verbose} & The level of verbosity \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1AdaBoostMHClassifier_a44a57b43a67952352ab59d9967e9e8b9}{\-\_\-verbose} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 53 of file Ada\-Boost\-M\-H\-Classifier.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_a0a1f7718d804518845ef3ce6f2cf1eb7}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!compute\-Results@{compute\-Results}}
+\index{compute\-Results@{compute\-Results}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{compute\-Results}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::compute\-Results (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Base\-Learner} $\ast$ $>$ \&}]{weak\-Hypotheses, }
+\item[{vector$<$ {\bf Example\-Results} $\ast$ $>$ \&}]{results, }
+\item[{int}]{num\-Iterations}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1AdaBoostMHClassifier_a0a1f7718d804518845ef3ce6f2cf1eb7}
+Compute the results using the weak hypotheses. This method is the one that effectively computes ${\bf g}(x)$. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & A pointer to the data to be classified. \\
+\hline
+{\em weak\-Hypotheses} & The list of weak hypotheses. \\
+\hline
+{\em results} & The vector where the results will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1ExampleResults}{Example\-Results} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 769 of file Ada\-Boost\-M\-H\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_a3b03659702a98eb6b49160841c269480}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!get\-Class\-Error@{get\-Class\-Error}}
+\index{get\-Class\-Error@{get\-Class\-Error}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{get\-Class\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::get\-Class\-Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{const vector$<$ {\bf Example\-Results} $\ast$ $>$ \&}]{results, }
+\item[{vector$<$ float $>$ \&}]{class\-Error, }
+\item[{int}]{at\-Least\-Rank = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHClassifier_a3b03659702a98eb6b49160841c269480}
+Compute the error per class. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & A pointer to the data. Needed to get the actual class of the example. \\
+\hline
+{\em results} & The vector where the results are hold. \\
+\hline
+{\em class\-Error} & The returned per class errors. \\
+\hline
+{\em at\-Least\-Rank} & The maximum rank in which the classification will not be considered an error. If {\itshape at\-Least\-Rank} = 0, no errors are allowed. If it is 1, the second \char`\"{}guess\char`\"{} will be taken into consideration, among the first, and so on. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1ExampleResults}{Example\-Results} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 915 of file Ada\-Boost\-M\-H\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_a0b98c67671717ea2321888d87339e933}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!get\-Overall\-Error@{get\-Overall\-Error}}
+\index{get\-Overall\-Error@{get\-Overall\-Error}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{get\-Overall\-Error}]{\setlength{\rightskip}{0pt plus 5cm}float Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::get\-Overall\-Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{const vector$<$ {\bf Example\-Results} $\ast$ $>$ \&}]{results, }
+\item[{int}]{at\-Least\-Rank = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHClassifier_a0b98c67671717ea2321888d87339e933}
+Compute the overall error on the data. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & A pointer to the data. Needed to get the actual class of the example. \\
+\hline
+{\em results} & The vector where the results are hold. \\
+\hline
+{\em at\-Least\-Rank} & The maximum rank in which the classification will not be considered an error. If {\itshape at\-Least\-Rank} = 0, no errors are allowed. If it is 1, the second \char`\"{}guess\char`\"{} will be taken into consideration, among the first, and so on. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1ExampleResults}{Example\-Results} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 893 of file Ada\-Boost\-M\-H\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_aebe7426f99d7ce383db674d2f9c61707}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!load\-Input\-Data@{load\-Input\-Data}}
+\index{load\-Input\-Data@{load\-Input\-Data}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{load\-Input\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input\-Data} $\ast$ Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::load\-Input\-Data (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHClassifier_aebe7426f99d7ce383db674d2f9c61707}
+Save the data generated by using the strong hypothesis file of type \hyperlink{classMultiBoost_1_1SingleStumpLearner}{Single\-Stump\-Learner}, and a given input data file. This kind of data is intended for research, and the output has the following format\-: \[ \begin{array}{ccccc} 0 & \alpha^{(1)} & \alpha^{(2)} & \cdots & \alpha^{(T)}\\& & & &\\ 0 & v^{(1)}_1 & v^{(2)}_1 & \cdots & v^{(T)}_1 \\& & & &\\ 0 & v^{(1)}_2 & v^{(2)}_2 & \cdots & v^{(T)}_2 \\& & & &\\ \vdots & \vdots & \vdots & \ddots & \vdots \\& & & &\\ 0 & v^{(1)}_K & v^{(2)}_K & \cdots & v^{(T)}_K \\& & & &\\ y_1 & \phi^{(1)}({\bf x}_1) & \phi^{(2)}({\bf x}_1) & \cdots & \phi^{(T)}({\bf x}_1) \\& & & &\\ y_2 & \phi^{(1)}({\bf x}_2) & \phi^{(2)}({\bf x}_2) & \cdots & \phi^{(T)}({\bf x}_2) \\& & & &\\ \vdots & \vdots & \vdots & \ddots & \vdots \\& & & &\\ y_n & \phi^{(1)}({\bf x}_n) & \phi^{(2)}({\bf x}_n) & \cdots & \phi^{(T)}({\bf x}_n) \end{array} \] where $v$ is the alignment vector and $\phi$ is the discriminative function. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The name of the input data file. \\
+\hline
+{\em shyp\-File\-Name} & The name of the strong hypothesis file to load. \\
+\hline
+{\em out\-File\-Name} & The name of the file in which the matrix will be saved. \\
+\hline
+{\em num\-Iterations} & The number of iterations up to which the computation should go (the \char`\"{}width\char`\"{} of the matrix). If this parameter is 0, {\bfseries all} the iterations will be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Although we are referring to the output as a \char`\"{}matrix\char`\"{} the component of $y_i$ will be output as a string, which refers to the original definition of the class in the data file. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See Also}
+Stump\-Learner\-::phi 
+
+Sutmp\-Learner\-::\-\_\-v 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+T\-E\-M\-P\-O\-R\-A\-R\-L\-Y O\-F\-F!! Loads the data. It needs the Strong Hypothesis file because it needs the information about the weak learner used to generate it. The weak learner might have associated a special \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} derived class, which is returned by \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{Base\-Learner\-::create\-Input\-Data()} once the weak learner has been identified. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The returned object must be destroyed by the caller. 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 722 of file Ada\-Boost\-M\-H\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_aab2e6ac3ebcbffcd858111f08f22a844}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!print\-Confusion\-Matrix@{print\-Confusion\-Matrix}}
+\index{print\-Confusion\-Matrix@{print\-Confusion\-Matrix}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{print\-Confusion\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::print\-Confusion\-Matrix (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHClassifier_aab2e6ac3ebcbffcd858111f08f22a844}
+Print to stdout a nicely formatted confusion matrix. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the list of weak hypotheses that form the strong hypothesis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 199 of file Ada\-Boost\-M\-H\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_ad057ad026b06da56a17267725506a36c}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!run@{run}}
+\index{run@{run}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::run (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{int}]{num\-Iterations, }
+\item[{const string \&}]{out\-Res\-File\-Name = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{int}]{num\-Ranks\-Enclosed = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHClassifier_ad057ad026b06da56a17267725506a36c}
+Starts the classification process. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the list of weak hypotheses that form the strong hypothesis. \\
+\hline
+{\em out\-Res\-File\-Name} & The name of the file in which the results of the classification will be saved. \\
+\hline
+{\em num\-Ranks\-Enclosed} & This parameter defines the number of ranks to be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+If {\itshape num\-Ranks\-Enclosed=1}, the only error displayed will be the one in which the $\mathop{\rm arg\, max}_{\ell} g_\ell(x)$ is {\bfseries not} the correct class. If {\itshape num\-Ranks\-Enclosed=2}, in addition to the standard error, there will be also the error in which the actual class is not the max, nor the second biggest of ${\bf g}(x)$. With larger values of {\itshape num\-Ranks\-Enclosed} it displays also the other values. This is useful for multi-\/class problems, when if the \char`\"{}first guess\char`\"{} was wrong a \char`\"{}second guess\char`\"{} is allowed. 
+
+If {\itshape out\-Res\-File\-Name} is provided, the result of the classification will be saved in a file with the following format\-: \begin{DoxyVerb}1 className
+2 className
+3 className
+...\end{DoxyVerb}
+ If {\itshape --examplelabel} is active the first column of the data file will be used instead of the number of example. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 66 of file Ada\-Boost\-M\-H\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_ab25a3086b4915300c1e56f22b0e30c13}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!save\-Calibrated\-Posteriors@{save\-Calibrated\-Posteriors}}
+\index{save\-Calibrated\-Posteriors@{save\-Calibrated\-Posteriors}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{save\-Calibrated\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::save\-Calibrated\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{const string \&}]{out\-File\-Name, }
+\item[{int}]{num\-Iterations}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHClassifier_ab25a3086b4915300c1e56f22b0e30c13}
+Output the class conditional probilities of the strong learner for each class. the calibration is based on Platt's method. For more details, see\-: \begin{DoxyVerb}@InProceedings{CaNi06,
+author =       {R. Caruana and A. Niculescu-Mizil},
+title =        {An Empirical Comparison of
+Supervised Learning Algorithms},
+booktitle =    {Proceedings of the 23rd
+International Conference on Machine Learning},
+pages =        {161--168},
+year =         {2006}
+} \end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 457 of file Ada\-Boost\-M\-H\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_ada2d25b5a330993290a4fa97b2a52b43}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!save\-Confusion\-Matrix@{save\-Confusion\-Matrix}}
+\index{save\-Confusion\-Matrix@{save\-Confusion\-Matrix}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{save\-Confusion\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::save\-Confusion\-Matrix (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{const string \&}]{out\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHClassifier_ada2d25b5a330993290a4fa97b2a52b43}
+Output to a file a confusion matrix with every element separated by a tab. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the list of weak hypotheses that form the strong hypothesis. \\
+\hline
+{\em out\-File\-Name} & The name of the file in which the confusion matrix will be saved. \\
+\hline
+{\em num\-Iterations} & The number of weak learners to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+
+
+Definition at line 280 of file Ada\-Boost\-M\-H\-Classifier.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1AdaBoostMHClassifier_a44a57b43a67952352ab59d9967e9e8b9}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}!\-\_\-verbose@{\-\_\-verbose}}
+\index{\-\_\-verbose@{\-\_\-verbose}!MultiBoost::AdaBoostMHClassifier@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier}}
+\subsubsection[{\-\_\-verbose}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Classifier\-::\-\_\-verbose\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHClassifier_a44a57b43a67952352ab59d9967e9e8b9}
+Defines the level of verbosity\-:
+\begin{DoxyItemize}
+\item 0 = no messages
+\item 1 = basic messages
+\item 2 = show all messages 
+\end{DoxyItemize}
+
+Definition at line 271 of file Ada\-Boost\-M\-H\-Classifier.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Classifiers/\hyperlink{AdaBoostMHClassifier_8h}{Ada\-Boost\-M\-H\-Classifier.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Classifiers/Ada\-Boost\-M\-H\-Classifier.\-cpp\end{DoxyCompactItemize}

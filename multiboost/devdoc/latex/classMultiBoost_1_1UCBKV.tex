@@ -1,0 +1,207 @@
+\hypertarget{classMultiBoost_1_1UCBKV}{\section{Multi\-Boost\-:\-:U\-C\-B\-K\-V Class Reference}
+\label{classMultiBoost_1_1UCBKV}\index{Multi\-Boost\-::\-U\-C\-B\-K\-V@{Multi\-Boost\-::\-U\-C\-B\-K\-V}}
+}
+Inheritance diagram for Multi\-Boost\-:\-:U\-C\-B\-K\-V\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1UCBKV}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMultiBoost_1_1UCBKV_a0750e66519a6ee5161c440260926aa91}{receive\-Reward} (int arm\-Num, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} reward)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1UCBKV_abdfa761ad053042bc9898aa11e59ff8f}{initialize} (vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&vals)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1UCBKV_aabc2a1ba83bea7a37e09d8b8a62db0fe}{get\-K\-Best\-Action} (const int k, vector$<$ int $>$ \&best\-Arms)
+\item 
+virtual int \hyperlink{classMultiBoost_1_1UCBKV_af502e23119cc97b8fd2e2afbe6f0dbc4}{get\-Next\-Action} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1UCBKV_ae1cf00a8c9446c2590f7b5a2129765f8}{init\-Learning\-Options} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMultiBoost_1_1UCBKV_a4dca42657cf26182b60ecdf635c01b49}{updateith\-Value} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1UCBKV_a21b71ad1de77364be6f5c6dae3b10a0f}{list$<$ pair$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real}, int $>$ $\ast$ $>$ {\bfseries \-\_\-values\-List}}\label{classMultiBoost_1_1UCBKV_a21b71ad1de77364be6f5c6dae3b10a0f}
+
+\item 
+\hypertarget{classMultiBoost_1_1UCBKV_aeebaaeb4dc1723c84334f99e0baea810}{vector$<$ pair$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real}, int $>$ $\ast$ $>$ {\bfseries \-\_\-value\-Record}}\label{classMultiBoost_1_1UCBKV_aeebaaeb4dc1723c84334f99e0baea810}
+
+\item 
+\hypertarget{classMultiBoost_1_1UCBKV_a27e71e98e29eff493debd8a7892b201c}{vector$<$ vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $>$ {\bfseries \-\_\-table}}\label{classMultiBoost_1_1UCBKV_a27e71e98e29eff493debd8a7892b201c}
+
+\item 
+\hypertarget{classMultiBoost_1_1UCBKV_a7eab6b3f4cc37ea23a292bb9570c261d}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} {\bfseries \-\_\-kszi}}\label{classMultiBoost_1_1UCBKV_a7eab6b3f4cc37ea23a292bb9570c261d}
+
+\item 
+\hypertarget{classMultiBoost_1_1UCBKV_aa632d582977e72df9bae2e326d93fd55}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} {\bfseries \-\_\-c}}\label{classMultiBoost_1_1UCBKV_aa632d582977e72df9bae2e326d93fd55}
+
+\item 
+\hypertarget{classMultiBoost_1_1UCBKV_a8438b91493e39ce0b1e625760e584dfb}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} {\bfseries \-\_\-b}}\label{classMultiBoost_1_1UCBKV_a8438b91493e39ce0b1e625760e584dfb}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 60 of file U\-C\-B\-K\-V.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1UCBKV_aabc2a1ba83bea7a37e09d8b8a62db0fe}{\index{Multi\-Boost\-::\-U\-C\-B\-K\-V@{Multi\-Boost\-::\-U\-C\-B\-K\-V}!get\-K\-Best\-Action@{get\-K\-Best\-Action}}
+\index{get\-K\-Best\-Action@{get\-K\-Best\-Action}!MultiBoost::UCBKV@{Multi\-Boost\-::\-U\-C\-B\-K\-V}}
+\subsubsection[{get\-K\-Best\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-U\-C\-B\-K\-V\-::get\-K\-Best\-Action (
+\begin{DoxyParamCaption}
+\item[{const int}]{k, }
+\item[{vector$<$ int $>$ \&}]{best\-Arms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1UCBKV_aabc2a1ba83bea7a37e09d8b8a62db0fe}
+Get the K best arm. Hovewer, in the original bandit framework it is only allowed to pull one arm in an iteration, here we implement that case when we can pull many arms in one iteration. 
+\begin{DoxyParams}{Parameters}
+{\em k} & number of arms to be pulled in the same iteration \\
+\hline
+{\em best\-Arms} & integer vector containing the indices of arms will be pulled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_aba6a5d2e4462644f15df846305783c15}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 51 of file U\-C\-B\-K\-V.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UCBKV_af502e23119cc97b8fd2e2afbe6f0dbc4}{\index{Multi\-Boost\-::\-U\-C\-B\-K\-V@{Multi\-Boost\-::\-U\-C\-B\-K\-V}!get\-Next\-Action@{get\-Next\-Action}}
+\index{get\-Next\-Action@{get\-Next\-Action}!MultiBoost::UCBKV@{Multi\-Boost\-::\-U\-C\-B\-K\-V}}
+\subsubsection[{get\-Next\-Action}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-U\-C\-B\-K\-V\-::get\-Next\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1UCBKV_af502e23119cc97b8fd2e2afbe6f0dbc4}
+Get the best action. \begin{DoxyReturn}{Returns}
+The index of arm which then will be pulled. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a73d90995d4694aa23649dc508527cc8c}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 63 of file U\-C\-B\-K\-V.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UCBKV_abdfa761ad053042bc9898aa11e59ff8f}{\index{Multi\-Boost\-::\-U\-C\-B\-K\-V@{Multi\-Boost\-::\-U\-C\-B\-K\-V}!initialize@{initialize}}
+\index{initialize@{initialize}!MultiBoost::UCBKV@{Multi\-Boost\-::\-U\-C\-B\-K\-V}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-U\-C\-B\-K\-V\-::initialize (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{vals}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1UCBKV_abdfa761ad053042bc9898aa11e59ff8f}
+A simple interface to initialze the member variables. This function simply sets the flag because all bandit algorithm has an own initialization process. 
+\begin{DoxyParams}{Parameters}
+{\em vals} & the values for the initalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a21bb0d3dc368c96135c387783315cc4f}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 71 of file U\-C\-B\-K\-V.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UCBKV_ae1cf00a8c9446c2590f7b5a2129765f8}{\index{Multi\-Boost\-::\-U\-C\-B\-K\-V@{Multi\-Boost\-::\-U\-C\-B\-K\-V}!init\-Learning\-Options@{init\-Learning\-Options}}
+\index{init\-Learning\-Options@{init\-Learning\-Options}!MultiBoost::UCBKV@{Multi\-Boost\-::\-U\-C\-B\-K\-V}}
+\subsubsection[{init\-Learning\-Options}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-U\-C\-B\-K\-V\-::init\-Learning\-Options (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1UCBKV_ae1cf00a8c9446c2590f7b5a2129765f8}
+Set the arguments of the algorithm using the standard interface of the argument handling (see in the weak learners). Call this to set the arguments given by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a61b051648cee17985a8a8bc0332e8bb9}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 92 of file U\-C\-B\-K\-V.\-h.
+
+\hypertarget{classMultiBoost_1_1UCBKV_a0750e66519a6ee5161c440260926aa91}{\index{Multi\-Boost\-::\-U\-C\-B\-K\-V@{Multi\-Boost\-::\-U\-C\-B\-K\-V}!receive\-Reward@{receive\-Reward}}
+\index{receive\-Reward@{receive\-Reward}!MultiBoost::UCBKV@{Multi\-Boost\-::\-U\-C\-B\-K\-V}}
+\subsubsection[{receive\-Reward}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-U\-C\-B\-K\-V\-::receive\-Reward (
+\begin{DoxyParamCaption}
+\item[{int}]{arm\-Num, }
+\item[{{\bf Alpha\-Real}}]{reward}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1UCBKV_a0750e66519a6ee5161c440260926aa91}
+Receive reward and updates the statistics, i.\-e. the sum of reward of an arm and the number of this arm had been pulled. 
+\begin{DoxyParams}{Parameters}
+{\em arm\-Num} & The index of arm has been pulled. \\
+\hline
+{\em reward} & The reward is incurred by the action, i.\-e. pulling an arm. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_affd61d12f8dc47d4ad45721562ba60b7}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 136 of file U\-C\-B\-K\-V.\-cpp.
+
+\hypertarget{classMultiBoost_1_1UCBKV_a4dca42657cf26182b60ecdf635c01b49}{\index{Multi\-Boost\-::\-U\-C\-B\-K\-V@{Multi\-Boost\-::\-U\-C\-B\-K\-V}!updateith\-Value@{updateith\-Value}}
+\index{updateith\-Value@{updateith\-Value}!MultiBoost::UCBKV@{Multi\-Boost\-::\-U\-C\-B\-K\-V}}
+\subsubsection[{updateith\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-U\-C\-B\-K\-V\-::updateith\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{arm\-Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1UCBKV_a4dca42657cf26182b60ecdf635c01b49}
+Update the statics of the arms. In the case of stochastic bandit algorithms it updates the B-\/values, and in the case of adversarials bandit methods it updates the probabilities over the arms. 
+\begin{DoxyParams}{Parameters}
+{\em arm\-Num} & the index of arm whose statistics will be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a46066e41b12d20f0b962d3f46d9b0d22}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 114 of file U\-C\-B\-K\-V.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Bandits/U\-C\-B\-K\-V.\-h\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Bandits/U\-C\-B\-K\-V.\-cpp\end{DoxyCompactItemize}

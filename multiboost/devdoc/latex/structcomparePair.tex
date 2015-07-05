@@ -1,0 +1,54 @@
+\hypertarget{structcomparePair}{\section{compare\-Pair$<$ N, T1, T2, Pred $>$ Struct Template Reference}
+\label{structcomparePair}\index{compare\-Pair$<$ N, T1, T2, Pred $>$@{compare\-Pair$<$ N, T1, T2, Pred $>$}}
+}
+
+
+{\ttfamily \#include $<$Utils.\-h$>$}
+
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int N, typename T1, typename T2, typename Pred$>$struct compare\-Pair$<$ N, T1, T2, Pred $>$}
+
+Sort pairs on the first or second element. The predicate gives the sorting direction.
+
+To sort from small to big\-: 
+\begin{DoxyCode}
+vector< pair<int, float> > v;
+sort( v.begin(), v.end(), nor\_utils::comparePair< 2, float, less<float> > );
+\end{DoxyCode}
+ From big to small\-: 
+\begin{DoxyCode}
+vector< pair<int, float> > v;
+sort( v.begin(), v.end(), nor\_utils::comparePair< 2, float, greater<float> > );
+\end{DoxyCode}
+ \begin{DoxyRemark}{Remarks}
+Don't forget to include $<$functional$>$ if you use the standard predicates 
+
+I could have done a predicate for the element of the pair too, but they are just two, and I don't really need the first.. \-:P 
+
+T1 The type of the first element of the pair 
+
+T2 The type of the second element of the pair 
+
+Pred The predicate used for the comparison 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em el1} & The first pair \\
+\hline
+{\em el2} & The second pair \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 397 of file Utils.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Utils/\hyperlink{Utils_8h}{Utils.\-h}\end{DoxyCompactItemize}

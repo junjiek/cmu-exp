@@ -1,0 +1,190 @@
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier}{\section{Multi\-Boost\-:\-:Soft\-Cascade\-Classifier Class Reference}
+\label{classMultiBoost_1_1SoftCascadeClassifier}\index{Multi\-Boost\-::\-Soft\-Cascade\-Classifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1SoftCascadeClassifier_aaa7c17b3191c458ae423034ec37266cd}{Soft\-Cascade\-Classifier} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args, int verbose=1)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeClassifier_a394049a60917fde89e09937e9f86e214}{run} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, int num\-Iterations, const string \&out\-Res\-File\-Name=\char`\"{}\char`\"{}, int num\-Ranks\-Enclosed=2)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeClassifier_a9a2f00d323335480a30e03da11f66753}{save\-Posteriors} (const string \&data\-File\-Name, const string \&shyp\-File\-Name, const string \&out\-File\-Name, int num\-Iterations)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$ \hyperlink{classMultiBoost_1_1SoftCascadeClassifier_af4f8becc943de707f3e658d909233029}{load\-Input\-Data} (const string \&data\-File\-Name, const string \&shyp\-File\-Name)
+\item 
+void \hyperlink{classMultiBoost_1_1SoftCascadeClassifier_aa59207416cbc3d9230121f259dc811c2}{print\-Output\-Info} (\hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} $\ast$p\-Out\-Info, int t, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} r)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classMultiBoost_1_1SoftCascadeClassifier_a5aea191918b57fc141dbe4cc83a15ba2}{\-\_\-verbose}
+\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier_ab152e1fc07b0e0a3d1b73bd6c9d5e482}{const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \& \hyperlink{classMultiBoost_1_1SoftCascadeClassifier_ab152e1fc07b0e0a3d1b73bd6c9d5e482}{\-\_\-args}}\label{classMultiBoost_1_1SoftCascadeClassifier_ab152e1fc07b0e0a3d1b73bd6c9d5e482}
+
+\begin{DoxyCompactList}\small\item\em The arguments defined by the user. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier_af3ab5bc7b215b0a521d55a47f0a0748f}{string \hyperlink{classMultiBoost_1_1SoftCascadeClassifier_af3ab5bc7b215b0a521d55a47f0a0748f}{\-\_\-output\-Info\-File}}\label{classMultiBoost_1_1SoftCascadeClassifier_af3ab5bc7b215b0a521d55a47f0a0748f}
+
+\begin{DoxyCompactList}\small\item\em The filename of the step-\/by-\/step information file that will be updated. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier_a63d4537dfe8865ffc71bb5f3d7b4aa3d}{string {\bfseries \-\_\-positive\-Label\-Name}}\label{classMultiBoost_1_1SoftCascadeClassifier_a63d4537dfe8865ffc71bb5f3d7b4aa3d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 55 of file Soft\-Cascade\-Classifier.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier_aaa7c17b3191c458ae423034ec37266cd}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Classifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}!Soft\-Cascade\-Classifier@{Soft\-Cascade\-Classifier}}
+\index{Soft\-Cascade\-Classifier@{Soft\-Cascade\-Classifier}!MultiBoost::SoftCascadeClassifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}}
+\subsubsection[{Soft\-Cascade\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Soft\-Cascade\-Classifier\-::\-Soft\-Cascade\-Classifier (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args, }
+\item[{int}]{verbose = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1SoftCascadeClassifier_aaa7c17b3191c458ae423034ec37266cd}
+The constructor. It initializes the variable and set them using the information provided by the arguments passed. They are parsed using the helpers provided by class Args. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+{\em verbose} & The level of verbosity \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1SoftCascadeClassifier_a5aea191918b57fc141dbe4cc83a15ba2}{\-\_\-verbose} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 48 of file Soft\-Cascade\-Classifier.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier_af4f8becc943de707f3e658d909233029}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Classifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}!load\-Input\-Data@{load\-Input\-Data}}
+\index{load\-Input\-Data@{load\-Input\-Data}!MultiBoost::SoftCascadeClassifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}}
+\subsubsection[{load\-Input\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input\-Data} $\ast$ Multi\-Boost\-::\-Soft\-Cascade\-Classifier\-::load\-Input\-Data (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeClassifier_af4f8becc943de707f3e658d909233029}
+Loads the data. It needs the Strong Hypothesis file because it needs the information about the weak learner used to generate it. The weak learner might have associated a special \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} derived class, which is returned by \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{Base\-Learner\-::create\-Input\-Data()} once the weak learner has been identified. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The returned object must be destroyed by the caller. 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 68 of file Soft\-Cascade\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier_aa59207416cbc3d9230121f259dc811c2}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Classifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}!print\-Output\-Info@{print\-Output\-Info}}
+\index{print\-Output\-Info@{print\-Output\-Info}!MultiBoost::SoftCascadeClassifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}}
+\subsubsection[{print\-Output\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Classifier\-::print\-Output\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-Info} $\ast$}]{p\-Out\-Info, }
+\item[{int}]{t, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{{\bf Base\-Learner} $\ast$}]{p\-Weak\-Hypothesis, }
+\item[{{\bf Alpha\-Real}}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeClassifier_aa59207416cbc3d9230121f259dc811c2}
+Print interation-\/wise information. \begin{DoxyDate}{Date}
+21/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 376 of file Soft\-Cascade\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier_a394049a60917fde89e09937e9f86e214}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Classifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}!run@{run}}
+\index{run@{run}!MultiBoost::SoftCascadeClassifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Classifier\-::run (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{int}]{num\-Iterations, }
+\item[{const string \&}]{out\-Res\-File\-Name = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{int}]{num\-Ranks\-Enclosed = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1SoftCascadeClassifier_a394049a60917fde89e09937e9f86e214}
+Starts the classification process. 
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the list of weak hypotheses that form the strong hypothesis. \\
+\hline
+{\em out\-Res\-File\-Name} & The name of the file in which the results of the classification will be saved. \\
+\hline
+{\em num\-Ranks\-Enclosed} & This parameter defines the number of ranks to be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 113 of file Soft\-Cascade\-Classifier.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier_a9a2f00d323335480a30e03da11f66753}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Classifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}!save\-Posteriors@{save\-Posteriors}}
+\index{save\-Posteriors@{save\-Posteriors}!MultiBoost::SoftCascadeClassifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}}
+\subsubsection[{save\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Soft\-Cascade\-Classifier\-::save\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{data\-File\-Name, }
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{const string \&}]{out\-File\-Name, }
+\item[{int}]{num\-Iterations}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1SoftCascadeClassifier_a9a2f00d323335480a30e03da11f66753}
+
+\begin{DoxyParams}{Parameters}
+{\em data\-File\-Name} & The file name of the data to be classified. \\
+\hline
+{\em shyp\-File\-Name} & The strong hypothesis filename. It is the xml file containing the list of weak hypotheses that form the strong hypothesis. \\
+\hline
+{\em out\-Res\-File\-Name} & The name of the file in which the results of the classification will be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+01/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 217 of file Soft\-Cascade\-Classifier.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1SoftCascadeClassifier_a5aea191918b57fc141dbe4cc83a15ba2}{\index{Multi\-Boost\-::\-Soft\-Cascade\-Classifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}!\-\_\-verbose@{\-\_\-verbose}}
+\index{\-\_\-verbose@{\-\_\-verbose}!MultiBoost::SoftCascadeClassifier@{Multi\-Boost\-::\-Soft\-Cascade\-Classifier}}
+\subsubsection[{\-\_\-verbose}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Soft\-Cascade\-Classifier\-::\-\_\-verbose\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SoftCascadeClassifier_a5aea191918b57fc141dbe4cc83a15ba2}
+Defines the level of verbosity\-:
+\begin{DoxyItemize}
+\item 0 = no messages
+\item 1 = basic messages
+\item 2 = show all messages 
+\end{DoxyItemize}
+
+Definition at line 130 of file Soft\-Cascade\-Classifier.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Classifiers/Soft\-Cascade\-Classifier.\-h\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Classifiers/Soft\-Cascade\-Classifier.\-cpp\end{DoxyCompactItemize}

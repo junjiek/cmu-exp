@@ -1,0 +1,73 @@
+\hypertarget{structMultiBoost_1_1sRates}{\section{Multi\-Boost\-:\-:s\-Rates Struct Reference}
+\label{structMultiBoost_1_1sRates}\index{Multi\-Boost\-::s\-Rates@{Multi\-Boost\-::s\-Rates}}
+}
+
+
+{\ttfamily \#include $<$Rates.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structMultiBoost_1_1sRates_a13fc5aa3f5350baa32d23c73b8fddfe5}{\hyperlink{structMultiBoost_1_1sRates_a13fc5aa3f5350baa32d23c73b8fddfe5}{s\-Rates} ()}\label{structMultiBoost_1_1sRates_a13fc5aa3f5350baa32d23c73b8fddfe5}
+
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\hypertarget{structMultiBoost_1_1sRates_a522e82030ecaadaf3400dc56d65a7dcd}{void {\bfseries clear} ()}\label{structMultiBoost_1_1sRates_a522e82030ecaadaf3400dc56d65a7dcd}
+
+\item 
+bool \hyperlink{structMultiBoost_1_1sRates_a43d3979b8496e8da092254a23f7d949b}{operator$<$} (const \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} \&el) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structMultiBoost_1_1sRates_a609c592f22f0aab484558632eaaaa44a}{int \hyperlink{structMultiBoost_1_1sRates_a609c592f22f0aab484558632eaaaa44a}{class\-Idx}}\label{structMultiBoost_1_1sRates_a609c592f22f0aab484558632eaaaa44a}
+
+\begin{DoxyCompactList}\small\item\em the index of the class. Needed because we will sort the vector that contains this object \end{DoxyCompactList}\item 
+\hypertarget{structMultiBoost_1_1sRates_ad1decfaf0bf6e2ec669134c743f58966}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{structMultiBoost_1_1sRates_ad1decfaf0bf6e2ec669134c743f58966}{r\-Pls}}\label{structMultiBoost_1_1sRates_ad1decfaf0bf6e2ec669134c743f58966}
+
+\begin{DoxyCompactList}\small\item\em positive rate, or $\mu_{\ell+}$ \end{DoxyCompactList}\item 
+\hypertarget{structMultiBoost_1_1sRates_a247fadf30b053ffdccf5c0be9affaa61}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{structMultiBoost_1_1sRates_a247fadf30b053ffdccf5c0be9affaa61}{r\-Min}}\label{structMultiBoost_1_1sRates_a247fadf30b053ffdccf5c0be9affaa61}
+
+\begin{DoxyCompactList}\small\item\em negative rate, or $\mu_{\ell-}$ \end{DoxyCompactList}\item 
+\hypertarget{structMultiBoost_1_1sRates_ad846dd33ebe2152f8e991d840671b113}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{structMultiBoost_1_1sRates_ad846dd33ebe2152f8e991d840671b113}{r\-Zero}}\label{structMultiBoost_1_1sRates_ad846dd33ebe2152f8e991d840671b113}
+
+\begin{DoxyCompactList}\small\item\em abstention rate, or $\mu_{\ell0}$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The per class rates. It is defined (using $\mu$ as variable) as \begin{eqnarray*} \mu_{\ell+} & = & \sum_{correct} w_{i,\ell}^{(t)},\\ \mu_{\ell-} &=& \sum_{incorrect} w_{i,\ell}^{(t)}, \\ \mu_{\ell0} & = & \mu_{\ell-} + \mu_{\ell+} \end{eqnarray*} \begin{DoxyRemark}{Remarks}
+The implemented decision stump algorithms do not abstain themselves. The abstention value, that is for $v=0$ is computed in get\-Energy() 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 57 of file Rates.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structMultiBoost_1_1sRates_a43d3979b8496e8da092254a23f7d949b}{\index{Multi\-Boost\-::s\-Rates@{Multi\-Boost\-::s\-Rates}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!MultiBoost::sRates@{Multi\-Boost\-::s\-Rates}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::s\-Rates\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf s\-Rates} \&}]{el}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structMultiBoost_1_1sRates_a43d3979b8496e8da092254a23f7d949b}
+Overloading of the operator to allow sorting. 
+\begin{DoxyParams}{Parameters}
+{\em el} & The other element to be compared with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 73 of file Rates.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Others/Rates.\-h\end{DoxyCompactItemize}

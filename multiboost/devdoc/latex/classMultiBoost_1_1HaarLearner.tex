@@ -1,0 +1,341 @@
+\hypertarget{classMultiBoost_1_1HaarLearner}{
+\section{MultiBoost::HaarLearner Class Reference}
+\label{classMultiBoost_1_1HaarLearner}\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+}
+
+
+{\ttfamily \#include $<$HaarLearner.h$>$}
+
+Inheritance diagram for MultiBoost::HaarLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.435897cm]{classMultiBoost_1_1HaarLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1HaarLearner_ae155d1ab4c52786488183d797c244313}{HaarLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1HaarLearner_a7fc3c0ebc3804e78a85e906fe79fb763}{$\sim$HaarLearner} ()
+\item 
+void \hyperlink{classMultiBoost_1_1HaarLearner_a5b59a15acc9fc35301ad6813ea54ad21}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+void \hyperlink{classMultiBoost_1_1HaarLearner_ab9daa7951f4d74ed85e7feeca7d1b744}{initOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarLearner_ae8837229c0e3e39431a8b0fd12d58291}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarLearner_a44c313549dd080a952b57eec400f022e}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarLearner_a9a2b6ca97cc29151e1b05b8d32ba52e7}{subCopyState} (\hyperlink{classMultiBoost_1_1HaarLearner}{HaarLearner} $\ast$pHaarLearner)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696}{eSamplingType} \{ \hyperlink{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696a2a74732a5d05064447d1fdb5cc7409c0}{ST\_\-NO\_\-SAMPLING}, 
+\hyperlink{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696ac2c6fa2572b28e92f2102d8588517d55}{ST\_\-NUM}, 
+\hyperlink{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696a46a18d520e35d646bda098f409697fb6}{ST\_\-TIME}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1HaarLearner_a92f1707bb6495029299cd500d50f741a}{
+\hyperlink{structnor__utils_1_1Rect}{nor\_\-utils::Rect} \hyperlink{classMultiBoost_1_1HaarLearner_a92f1707bb6495029299cd500d50f741a}{\_\-selectedConfig}}
+\label{classMultiBoost_1_1HaarLearner_a92f1707bb6495029299cd500d50f741a}
+
+\begin{DoxyCompactList}\small\item\em The selected configuration of the feature. \end{DoxyCompactList}\item 
+\hyperlink{classMultiBoost_1_1HaarFeature}{HaarFeature} $\ast$ \hyperlink{classMultiBoost_1_1HaarLearner_a839d58f0936493fc3b1e06d531eaf4e0}{\_\-pSelectedFeature}
+\begin{DoxyCompactList}\small\item\em The selected feature type. A pointer to the. \end{DoxyCompactList}\item 
+\hyperlink{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696}{eSamplingType} \hyperlink{classMultiBoost_1_1HaarLearner_adc82d4cecfc91b8163ec07fc627edb27}{\_\-samplingType}
+\item 
+int \hyperlink{classMultiBoost_1_1HaarLearner_a2f122e9eaa6c009cc722ff32ad1642c0}{\_\-samplingVal}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A generic interface to the learner based on Haar-\/like features. These features, first described in an AdaBoost environment by Viola and Jones in their 2001 paper (Robust Real-\/time Object Detection) are powerful way to treat with 1 or 2-\/dimensional data. This class it is {\bfseries not} a learner itself, but must be extended among with another class that extend \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner}. For instance, the class \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner}{HaarSingleStumpLearner} extends \hyperlink{classMultiBoost_1_1SingleStumpLearner}{SingleStumpLearner} {\bfseries and} \hyperlink{classMultiBoost_1_1HaarLearner}{HaarLearner}.
+
+This class contains the generic operation for all the Haar-\/based learners. \begin{DoxyDate}{Date}
+16/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 78 of file HaarLearner.h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!eSamplingType@{eSamplingType}}
+\index{eSamplingType@{eSamplingType}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{eSamplingType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf MultiBoost::HaarLearner::eSamplingType}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696}
+The types of sampling techniques in the case not all the configurations are evaluated. \begin{DoxyDate}{Date}
+16/12/2005 
+\end{DoxyDate}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{ST\_\-NO\_\-SAMPLING@{ST\_\-NO\_\-SAMPLING}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!ST\_\-NO\_\-SAMPLING@{ST\_\-NO\_\-SAMPLING}}\item[{\em 
+\hypertarget{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696a2a74732a5d05064447d1fdb5cc7409c0}{
+ST\_\-NO\_\-SAMPLING}
+\label{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696a2a74732a5d05064447d1fdb5cc7409c0}
+}]Default. \index{ST\_\-NUM@{ST\_\-NUM}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!ST\_\-NUM@{ST\_\-NUM}}\item[{\em 
+\hypertarget{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696ac2c6fa2572b28e92f2102d8588517d55}{
+ST\_\-NUM}
+\label{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696ac2c6fa2572b28e92f2102d8588517d55}
+}]A limited number per feature type, per iteration. \index{ST\_\-TIME@{ST\_\-TIME}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!ST\_\-TIME@{ST\_\-TIME}}\item[{\em 
+\hypertarget{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696a46a18d520e35d646bda098f409697fb6}{
+ST\_\-TIME}
+\label{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696a46a18d520e35d646bda098f409697fb6}
+}]A limited time per feature type, per iteration. \end{description}
+\end{Desc}
+
+
+
+Definition at line 155 of file HaarLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1HaarLearner_ae155d1ab4c52786488183d797c244313}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!HaarLearner@{HaarLearner}}
+\index{HaarLearner@{HaarLearner}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{HaarLearner}]{\setlength{\rightskip}{0pt plus 5cm}MultiBoost::HaarLearner::HaarLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarLearner_ae155d1ab4c52786488183d797c244313}
+The constructor. Initializes the attributes belonging to all Haar-\/like based learners. \begin{DoxyDate}{Date}
+16/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 87 of file HaarLearner.h.
+
+\hypertarget{classMultiBoost_1_1HaarLearner_a7fc3c0ebc3804e78a85e906fe79fb763}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!$\sim$HaarLearner@{$\sim$HaarLearner}}
+\index{$\sim$HaarLearner@{$\sim$HaarLearner}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{$\sim$HaarLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::HaarLearner::$\sim$HaarLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarLearner_a7fc3c0ebc3804e78a85e906fe79fb763}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 94 of file HaarLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1HaarLearner_a5b59a15acc9fc35301ad6813ea54ad21}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)}}
+\label{classMultiBoost_1_1HaarLearner_a5b59a15acc9fc35301ad6813ea54ad21}
+Declare Haar-\/learner-\/specific arguments. \begin{DoxyRemark}{Remarks}
+It must be explicitly called by the derived class. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/12/2005 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_af9cc0a38d034aa794af315ee5299691f}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_ad994400056663aa2c030fbafaf96ca22}{MultiBoost::HaarSingleStumpLearner}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_aedbbd65aa2801237f3a6dc3a46e43997}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 49 of file HaarLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarLearner_ab9daa7951f4d74ed85e7feeca7d1b744}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!initOptions@{initOptions}}
+\index{initOptions@{initOptions}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{initOptions}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarLearner::initOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)}}
+\label{classMultiBoost_1_1HaarLearner_ab9daa7951f4d74ed85e7feeca7d1b744}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. \begin{DoxyRemark}{Remarks}
+It must be explicitly called by the derived class. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 83 of file HaarLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarLearner_a44c313549dd080a952b57eec400f022e}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!load@{load}}
+\index{load@{load}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarLearner_a44c313549dd080a952b57eec400f022e}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class. \begin{DoxyRemark}{Remarks}
+It must be explicitly called by the derived class. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarLearner_ae8837229c0e3e39431a8b0fd12d58291}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/12/2005 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_aded39dbe1d2e0c5715a7dd2ee95fea91}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_adaab98e0964770ed3309939b164a06c9}{MultiBoost::HaarSingleStumpLearner}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a57d70dfa5047ba4ff322a581a04a6345}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 120 of file HaarLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarLearner_ae8837229c0e3e39431a8b0fd12d58291}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!save@{save}}
+\index{save@{save}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarLearner_ae8837229c0e3e39431a8b0fd12d58291}
+Save the current object information needed for classification. 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+It must be explicitly called by the derived class. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+StumpLearner::save() 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+16/12/2005 
+\end{DoxyDate}
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1HaarMultiStumpLearner_ae4b26b79c47ed76ba87b0069ea2fd273}{MultiBoost::HaarMultiStumpLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a6a565277105954f5912937ad00b92f1f}{MultiBoost::HaarSingleStumpLearner}, and \hyperlink{classMultiBoost_1_1UCBVHaarSingleStumpLearner_a9844f395b5e9315e32e46ec27df50a75}{MultiBoost::UCBVHaarSingleStumpLearner}.
+
+
+
+Definition at line 103 of file HaarLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarLearner_a9a2b6ca97cc29151e1b05b8d32ba52e7}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf HaarLearner} $\ast$}]{pHaarLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarLearner_a9a2b6ca97cc29151e1b05b8d32ba52e7}
+Copy all the info we need in classify(). pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1HaarLearner_a9a2b6ca97cc29151e1b05b8d32ba52e7}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarLearner_ae8837229c0e3e39431a8b0fd12d58291}{save} 
+
+\hyperlink{classMultiBoost_1_1HaarLearner_a44c313549dd080a952b57eec400f022e}{load} 
+
+classify 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Definition at line 137 of file HaarLearner.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1HaarLearner_a839d58f0936493fc3b1e06d531eaf4e0}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!\_\-pSelectedFeature@{\_\-pSelectedFeature}}
+\index{\_\-pSelectedFeature@{\_\-pSelectedFeature}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{\_\-pSelectedFeature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HaarFeature}$\ast$ {\bf MultiBoost::HaarLearner::\_\-pSelectedFeature}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMultiBoost_1_1HaarLearner_a839d58f0936493fc3b1e06d531eaf4e0}
+
+
+The selected feature type. A pointer to the. 
+
+The selected feature type. This is a copy of the pointer to the loaded features types, and it is only used to access the Haar-\/computation function that belongs to the type. For instance, if during the current iteration a 2 blocs vertical feature is selected the pointer to this type of feature is copied here. During classification, this object is used to obtain the haar value computed with the Haar-\/like feature. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarData_a9afda9dde6bbde709c5e75246e52d56e}{HaarData::\_\-loadedFeatures} 
+
+\hyperlink{classMultiBoost_1_1HaarFeature_a57d0ba94269beef5e8ed1ab984bc3099}{HaarFeature::getValue} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+17/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 174 of file HaarLearner.h.
+
+\hypertarget{classMultiBoost_1_1HaarLearner_adc82d4cecfc91b8163ec07fc627edb27}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!\_\-samplingType@{\_\-samplingType}}
+\index{\_\-samplingType@{\_\-samplingType}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{\_\-samplingType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf eSamplingType} {\bf MultiBoost::HaarLearner::\_\-samplingType}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMultiBoost_1_1HaarLearner_adc82d4cecfc91b8163ec07fc627edb27}
+The type of sampling. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarLearner_adf0e32ac3343991b3bdd302ba8cc0696}{eSamplingType} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+17/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 181 of file HaarLearner.h.
+
+\hypertarget{classMultiBoost_1_1HaarLearner_a2f122e9eaa6c009cc722ff32ad1642c0}{
+\index{MultiBoost::HaarLearner@{MultiBoost::HaarLearner}!\_\-samplingVal@{\_\-samplingVal}}
+\index{\_\-samplingVal@{\_\-samplingVal}!MultiBoost::HaarLearner@{MultiBoost::HaarLearner}}
+\subsubsection[{\_\-samplingVal}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf MultiBoost::HaarLearner::\_\-samplingVal}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMultiBoost_1_1HaarLearner_a2f122e9eaa6c009cc722ff32ad1642c0}
+The value associated the the sampling type.
+
+If {\itshape \_\-samplingType\/} is ST\_\-NUM, this variable holds the number of sampling configurations to be computed per feature, per boosting iteration.
+
+If {\itshape \_\-samplingType\/} is ST\_\-TIME, this variable holds the time limit for evaluating the configurations. This time is per configuration, per boosting iteration. \begin{DoxyDate}{Date}
+17/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 194 of file HaarLearner.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/Haar/\hyperlink{HaarLearner_8h}{HaarLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/Haar/HaarLearner.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,276 @@
+\hypertarget{classMultiBoost_1_1Serialization}{\section{Multi\-Boost\-:\-:Serialization Class Reference}
+\label{classMultiBoost_1_1Serialization}\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}}
+}
+
+
+{\ttfamily \#include $<$Serialization.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1Serialization_a282b01f41daeda1637082b84af2cdfcb}{Serialization} (const string \&shyp\-File\-Name, bool is\-Comp=false)
+\item 
+void \hyperlink{classMultiBoost_1_1Serialization_ac8ebe66a2e9ecd5553cbca64bddbabf5}{write\-Header} (const string \&weak\-Learner\-Name)
+\item 
+void \hyperlink{classMultiBoost_1_1Serialization_ac906f5e085ada6420af345ca82d5d83e}{write\-Footer} ()
+\item 
+void \hyperlink{classMultiBoost_1_1Serialization_ad8697b389ecff656c3b007f2282462a4}{save\-Hypotheses} (vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&weak\-Hypotheses)
+\item 
+void \hyperlink{classMultiBoost_1_1Serialization_a24e67db8a0a7874a43a49c6aadfaa984}{append\-Hypothesis} (int iteration, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis, int num\-Tab=0)
+\item 
+void \hyperlink{classMultiBoost_1_1Serialization_aabf599af41e56e50dac18495ce6c0285}{write\-Cascade\-Header} (const string \&weak\-Learner\-Name)
+\item 
+\hypertarget{classMultiBoost_1_1Serialization_a4c7bfea862d1700a16632e9435725ee5}{void {\bfseries write\-Cascade\-Footer} ()}\label{classMultiBoost_1_1Serialization_a4c7bfea862d1700a16632e9435725ee5}
+
+\item 
+\hypertarget{classMultiBoost_1_1Serialization_a9faf49587967212188f26e90ed7c9369}{virtual void {\bfseries append\-Stage\-Separator\-Header} (int stage\-Index, int hyp\-Num=-\/1, double threshold=0)}\label{classMultiBoost_1_1Serialization_a9faf49587967212188f26e90ed7c9369}
+
+\item 
+\hypertarget{classMultiBoost_1_1Serialization_a8eb1b529fe742e4fdf4163e0ac38e229}{void {\bfseries append\-Hypothesis\-With\-Threshold} (int iteration, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis, double threshold, int num\-Tab=0)}\label{classMultiBoost_1_1Serialization_a8eb1b529fe742e4fdf4163e0ac38e229}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static string \hyperlink{classMultiBoost_1_1Serialization_ad75f8e13f32130be1ba110393598f50e}{standard\-Tag} (const string \&tag\-Name, const T \&value, int num\-Tab=0)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static string \hyperlink{classMultiBoost_1_1Serialization_aeb1f7e2ddfd0e58d4f3d5a5ec78e9f33}{vector\-Tag} (const string \&tag\-Name, const vector$<$ T $>$ \&values, const \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&id\-Map, const string \&element\-Tag\-Name, T default\-Value, int num\-Tab=0)
+\item 
+\hypertarget{classMultiBoost_1_1Serialization_ab5d8d0ae3de812cf2d7e38c5ce16a64e}{{\footnotesize template$<$typename T1 , typename T2 $>$ }\\static string {\bfseries vector\-Tag} (const string \&tag\-Name, const vector$<$ T1 $>$ \&idx, const vector$<$ T2 $>$ values, const string \&element\-Tag\-Name, int num\-Tab)}\label{classMultiBoost_1_1Serialization_ab5d8d0ae3de812cf2d7e38c5ce16a64e}
+
+\item 
+static string \hyperlink{classMultiBoost_1_1Serialization_a0c0e939afedf8c527ee014737583ae78}{get\-Tabs} (int num\-Tabs)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1Serialization_a2e68086de33875ac58a1b927298ea084}{void {\bfseries flush\-Compressed\-Buffer} ()}\label{classMultiBoost_1_1Serialization_a2e68086de33875ac58a1b927298ea084}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The serialization (saving) of the weak learners found. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1UnSerialization}{Un\-Serialization} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 70 of file Serialization.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1Serialization_a282b01f41daeda1637082b84af2cdfcb}{\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}!Serialization@{Serialization}}
+\index{Serialization@{Serialization}!MultiBoost::Serialization@{Multi\-Boost\-::\-Serialization}}
+\subsubsection[{Serialization}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Serialization\-::\-Serialization (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{shyp\-File\-Name, }
+\item[{bool}]{is\-Comp = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1Serialization_a282b01f41daeda1637082b84af2cdfcb}
+The constructor. Create the serialization object 
+\begin{DoxyParams}{Parameters}
+{\em shyp\-File\-Name} & The name of the serialized strong hypothesis file. hypotheses. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 45 of file Serialization.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1Serialization_a24e67db8a0a7874a43a49c6aadfaa984}{\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}!append\-Hypothesis@{append\-Hypothesis}}
+\index{append\-Hypothesis@{append\-Hypothesis}!MultiBoost::Serialization@{Multi\-Boost\-::\-Serialization}}
+\subsubsection[{append\-Hypothesis}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Serialization\-::append\-Hypothesis (
+\begin{DoxyParamCaption}
+\item[{int}]{iteration, }
+\item[{{\bf Base\-Learner} $\ast$}]{p\-Weak\-Hypothesis, }
+\item[{int}]{num\-Tab = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1Serialization_a24e67db8a0a7874a43a49c6aadfaa984}
+Append the passed weak hypothesis to the file. 
+\begin{DoxyParams}{Parameters}
+{\em iteration} & The iteration index. \\
+\hline
+{\em p\-Weak\-Hypothesis} & The current weak hypothesis. \\
+\hline
+{\em num\-Tab} & The number of tabs before the tag. Useful for indentation. (to be added to one default tab for all the weaklearners) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 167 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Serialization_a0c0e939afedf8c527ee014737583ae78}{\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}!get\-Tabs@{get\-Tabs}}
+\index{get\-Tabs@{get\-Tabs}!MultiBoost::Serialization@{Multi\-Boost\-::\-Serialization}}
+\subsubsection[{get\-Tabs}]{\setlength{\rightskip}{0pt plus 5cm}static string Multi\-Boost\-::\-Serialization\-::get\-Tabs (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-Tabs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classMultiBoost_1_1Serialization_a0c0e939afedf8c527ee014737583ae78}
+Create a string which contains only tab characters 
+\begin{DoxyParams}{Parameters}
+{\em num\-Tabs} & the number of tabs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string with only tabs. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 164 of file Serialization.\-h.
+
+\hypertarget{classMultiBoost_1_1Serialization_ad8697b389ecff656c3b007f2282462a4}{\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}!save\-Hypotheses@{save\-Hypotheses}}
+\index{save\-Hypotheses@{save\-Hypotheses}!MultiBoost::Serialization@{Multi\-Boost\-::\-Serialization}}
+\subsubsection[{save\-Hypotheses}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Serialization\-::save\-Hypotheses (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Base\-Learner} $\ast$ $>$ \&}]{weak\-Hypotheses}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1Serialization_ad8697b389ecff656c3b007f2282462a4}
+Save all the weak hypothesis all at once. 
+\begin{DoxyParams}{Parameters}
+{\em weak\-Hypotheses} & The vector of weak hypotheses found during training. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 139 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Serialization_ad75f8e13f32130be1ba110393598f50e}{\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}!standard\-Tag@{standard\-Tag}}
+\index{standard\-Tag@{standard\-Tag}!MultiBoost::Serialization@{Multi\-Boost\-::\-Serialization}}
+\subsubsection[{standard\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ string Multi\-Boost\-::\-Serialization\-::standard\-Tag (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{tag\-Name, }
+\item[{const T \&}]{value, }
+\item[{int}]{num\-Tab = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1Serialization_ad75f8e13f32130be1ba110393598f50e}
+Create a standard xml $<$tag$>$value$<$\textbackslash{}tag$>$. 
+\begin{DoxyParams}{Parameters}
+{\em tag\-Name} & The name of the tag. \\
+\hline
+{\em value} & The value enclosed in the tag opening and closing. \\
+\hline
+{\em num\-Tab} & The number of tabs before the tag. Useful for indentation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string with the formatted tag and value. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 194 of file Serialization.\-h.
+
+\hypertarget{classMultiBoost_1_1Serialization_aeb1f7e2ddfd0e58d4f3d5a5ec78e9f33}{\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}!vector\-Tag@{vector\-Tag}}
+\index{vector\-Tag@{vector\-Tag}!MultiBoost::Serialization@{Multi\-Boost\-::\-Serialization}}
+\subsubsection[{vector\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ string Multi\-Boost\-::\-Serialization\-::vector\-Tag (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{tag\-Name, }
+\item[{const vector$<$ T $>$ \&}]{values, }
+\item[{const {\bf Name\-Map} \&}]{id\-Map, }
+\item[{const string \&}]{element\-Tag\-Name, }
+\item[{T}]{default\-Value, }
+\item[{int}]{num\-Tab = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classMultiBoost_1_1Serialization_aeb1f7e2ddfd0e58d4f3d5a5ec78e9f33}
+Create a set of xml tags that describes a vector. For instance, if the vector {\itshape values} is \mbox{[}-\/1, 1, 1\mbox{]}, with {\itshape tag\-Name=\char`\"{}v\-Array\char`\"{}}, and the classes are \mbox{[}\char`\"{}one\char`\"{}, \char`\"{}two\char`\"{}, \char`\"{}three\char`\"{}\mbox{]} will return\-: \begin{DoxyVerb}<vArray size="3">
+<class id="one">-1</class>
+<class id="two">1</class>
+<class id="three">1</class>
+</vArray> \end{DoxyVerb}
+ Default values are not saved (sparse representation) 
+\begin{DoxyParams}{Parameters}
+{\em tag\-Name} & The name of the tag. \\
+\hline
+{\em values} & The vector of the values. \\
+\hline
+{\em name\-Map} & The map that contains the value$<$-\/$>$is map. \\
+\hline
+{\em element\-Tag\-Name} & E.\-g. \char`\"{}class\char`\"{} for the v vector. \\
+\hline
+{\em default\-Value} & The default value that is not explicitly saved. \\
+\hline
+{\em num\-Tab} & The number of tabs before the tag. Useful for indentation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+23/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 205 of file Serialization.\-h.
+
+\hypertarget{classMultiBoost_1_1Serialization_aabf599af41e56e50dac18495ce6c0285}{\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}!write\-Cascade\-Header@{write\-Cascade\-Header}}
+\index{write\-Cascade\-Header@{write\-Cascade\-Header}!MultiBoost::Serialization@{Multi\-Boost\-::\-Serialization}}
+\subsubsection[{write\-Cascade\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Serialization\-::write\-Cascade\-Header (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{weak\-Learner\-Name}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1Serialization_aabf599af41e56e50dac18495ce6c0285}
+Put a stage separator in the X\-M\-L. The V\-J cascade consists of stages. 
+\begin{DoxyParams}{Parameters}
+{\em stage\-Index} & is the index of stage  17/03/2010 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Serialization_ac906f5e085ada6420af345ca82d5d83e}{\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}!write\-Footer@{write\-Footer}}
+\index{write\-Footer@{write\-Footer}!MultiBoost::Serialization@{Multi\-Boost\-::\-Serialization}}
+\subsubsection[{write\-Footer}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Serialization\-::write\-Footer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1Serialization_ac906f5e085ada6420af345ca82d5d83e}
+Write the footer. Important because it closes the xml file. \begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 82 of file Serialization.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Serialization_ac8ebe66a2e9ecd5553cbca64bddbabf5}{\index{Multi\-Boost\-::\-Serialization@{Multi\-Boost\-::\-Serialization}!write\-Header@{write\-Header}}
+\index{write\-Header@{write\-Header}!MultiBoost::Serialization@{Multi\-Boost\-::\-Serialization}}
+\subsubsection[{write\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Serialization\-::write\-Header (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{weak\-Learner\-Name}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1Serialization_ac8ebe66a2e9ecd5553cbca64bddbabf5}
+Write the header. 
+\begin{DoxyParams}{Parameters}
+{\em weak\-Learner\-Name} & The name of the weak learner used to find the weak hypotheses. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 57 of file Serialization.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{Serialization_8h}{Serialization.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Serialization.\-cpp\end{DoxyCompactItemize}

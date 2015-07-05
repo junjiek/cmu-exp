@@ -1,0 +1,180 @@
+\hypertarget{classMultiBoost_1_1OneClassStumpLearner}{
+\section{MultiBoost::OneClassStumpLearner Class Reference}
+\label{classMultiBoost_1_1OneClassStumpLearner}\index{MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}}
+}
+
+
+{\ttfamily \#include $<$OneClassStumpLearner.h$>$}
+
+Inheritance diagram for MultiBoost::OneClassStumpLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.211009cm]{classMultiBoost_1_1OneClassStumpLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1OneClassStumpLearner_a1950c8ee328113ce758232175e30e197}{$\sim$OneClassStumpLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1OneClassStumpLearner_ac00d7c627e63188969086c4731d1e108}{subCreate} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1OneClassStumpLearner_ab2ef660fcf6f95e176901a82c1904fe9}{run} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1OneClassStumpLearner_a01ca9c278f874d051382080b1eff990f}{run} (int colIdx)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1OneClassStumpLearner_a0c4f50119ccb0eda9a3857fddd00fbae}{run} (vector$<$ int $>$ \&colIndexes)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\bfseries single} threshold decision stump learner. There is ONE and ONE ONLY threshold here. 
+
+Definition at line 63 of file OneClassStumpLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1OneClassStumpLearner_a1950c8ee328113ce758232175e30e197}{
+\index{MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}!$\sim$OneClassStumpLearner@{$\sim$OneClassStumpLearner}}
+\index{$\sim$OneClassStumpLearner@{$\sim$OneClassStumpLearner}!MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}}
+\subsubsection[{$\sim$OneClassStumpLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::OneClassStumpLearner::$\sim$OneClassStumpLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1OneClassStumpLearner_a1950c8ee328113ce758232175e30e197}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 73 of file OneClassStumpLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1OneClassStumpLearner_ab2ef660fcf6f95e176901a82c1904fe9}{
+\index{MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}!run@{run}}
+\index{run@{run}!MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::OneClassStumpLearner::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1OneClassStumpLearner_ab2ef660fcf6f95e176901a82c1904fe9}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1SingleStumpLearner_a9cd7bfe1a0905857993eec0dd462a879}{MultiBoost::SingleStumpLearner}.
+
+
+
+Definition at line 51 of file OneClassStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1OneClassStumpLearner_a0c4f50119ccb0eda9a3857fddd00fbae}{
+\index{MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}!run@{run}}
+\index{run@{run}!MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::OneClassStumpLearner::run (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$ \&}]{colIndices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1OneClassStumpLearner_a0c4f50119ccb0eda9a3857fddd00fbae}
+Run the learner to build the classifier using only a subset of features from the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function {\bfseries must} update \_\-alpha too! You can use the helper functions (the getAlpha with parameters) to update it.  colIndices The indices of the features can be only used. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The energy of the weak classifier (that we want to minimize) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float) 
+
+getAlpha(float, float) 
+
+getAlpha(float, float, float, float) 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a2813c451210fc9d4fb4cf96216bcc813}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 203 of file OneClassStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1OneClassStumpLearner_a01ca9c278f874d051382080b1eff990f}{
+\index{MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}!run@{run}}
+\index{run@{run}!MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::OneClassStumpLearner::run (
+\begin{DoxyParamCaption}
+\item[{int}]{colIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1OneClassStumpLearner_a01ca9c278f874d051382080b1eff990f}
+Run the learner to build the classifier using only one single feature from the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function {\bfseries must} update \_\-alpha too! You can use the helper functions (the getAlpha with parameters) to update it.  colIdx The index of the feature can be only used. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The energy of the weak classifier (that we want to minimize) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float) 
+
+getAlpha(float, float) 
+
+getAlpha(float, float, float, float) 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 147 of file OneClassStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1OneClassStumpLearner_ac00d7c627e63188969086c4731d1e108}{
+\index{MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::OneClassStumpLearner@{MultiBoost::OneClassStumpLearner}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::OneClassStumpLearner::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1OneClassStumpLearner_ac00d7c627e63188969086c4731d1e108}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1SingleStumpLearner_ac78a95b491c3cef2362c6459f2465288}{MultiBoost::SingleStumpLearner}.
+
+
+
+Definition at line 81 of file OneClassStumpLearner.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{OneClassStumpLearner_8h}{OneClassStumpLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/OneClassStumpLearner.cpp\end{DoxyCompactItemize}

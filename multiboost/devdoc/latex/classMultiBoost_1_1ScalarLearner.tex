@@ -1,0 +1,68 @@
+\hypertarget{classMultiBoost_1_1ScalarLearner}{
+\section{MultiBoost::ScalarLearner Class Reference}
+\label{classMultiBoost_1_1ScalarLearner}\index{MultiBoost::ScalarLearner@{MultiBoost::ScalarLearner}}
+}
+Inheritance diagram for MultiBoost::ScalarLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.957265cm]{classMultiBoost_1_1ScalarLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1ScalarLearner_a68c76e57e7587ee2082dfa02e2d85bab}{$\sim$ScalarLearner} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1ScalarLearner_a8d52e02fc7664ecdc5fd0b14b04a985e}{cut} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 53 of file ScalarLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1ScalarLearner_a68c76e57e7587ee2082dfa02e2d85bab}{
+\index{MultiBoost::ScalarLearner@{MultiBoost::ScalarLearner}!$\sim$ScalarLearner@{$\sim$ScalarLearner}}
+\index{$\sim$ScalarLearner@{$\sim$ScalarLearner}!MultiBoost::ScalarLearner@{MultiBoost::ScalarLearner}}
+\subsubsection[{$\sim$ScalarLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::ScalarLearner::$\sim$ScalarLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ScalarLearner_a68c76e57e7587ee2082dfa02e2d85bab}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 60 of file ScalarLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1ScalarLearner_a8d52e02fc7664ecdc5fd0b14b04a985e}{
+\index{MultiBoost::ScalarLearner@{MultiBoost::ScalarLearner}!cut@{cut}}
+\index{cut@{cut}!MultiBoost::ScalarLearner@{MultiBoost::ScalarLearner}}
+\subsubsection[{cut}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::ScalarLearner::cut (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1ScalarLearner_a8d52e02fc7664ecdc5fd0b14b04a985e}
+The single cut function for a particular feature. This function can return with zero as well, indicating that the classifier abstained to classify the instance having index idx. \begin{DoxyReturn}{Returns}
++1,-\/1,0 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+21/10/2010 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1ConstantLearner_a8d4838a07dcb3288d3a473d6b69927e4}{MultiBoost::ConstantLearner}, \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a80794c0b71642003fbba26c6f37e4044}{MultiBoost::HaarSingleStumpLearner}, \hyperlink{classMultiBoost_1_1IndicatorLearner_a80e95e42cb85dcfa8575919269099c34}{MultiBoost::IndicatorLearner}, \hyperlink{classMultiBoost_1_1SelectorLearner_a7aa861aa139b3a4747515f3796fafad9}{MultiBoost::SelectorLearner}, \hyperlink{classMultiBoost_1_1SigmoidSingleStumpLearner_acfef6de317582acc995f6b9c00f4a74d}{MultiBoost::SigmoidSingleStumpLearner}, \hyperlink{classMultiBoost_1_1SingleSparseStump_a959f78588455daafd0fce520953bdcb4}{MultiBoost::SingleSparseStump}, and \hyperlink{classMultiBoost_1_1SingleStumpLearner_a95c26833c3258967ddb4f5e4d20cdea9}{MultiBoost::SingleStumpLearner}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{ScalarLearner_8h}{ScalarLearner.h}\end{DoxyCompactItemize}

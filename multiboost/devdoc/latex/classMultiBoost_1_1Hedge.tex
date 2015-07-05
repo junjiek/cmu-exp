@@ -1,0 +1,181 @@
+\hypertarget{classMultiBoost_1_1Hedge}{\section{Multi\-Boost\-:\-:Hedge Class Reference}
+\label{classMultiBoost_1_1Hedge}\index{Multi\-Boost\-::\-Hedge@{Multi\-Boost\-::\-Hedge}}
+}
+Inheritance diagram for Multi\-Boost\-:\-:Hedge\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1Hedge}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1Hedge_a4cb3e7f0b8d197990a4068a42cd73ecd}{double {\bfseries get\-Alpha} ()}\label{classMultiBoost_1_1Hedge_a4cb3e7f0b8d197990a4068a42cd73ecd}
+
+\item 
+\hypertarget{classMultiBoost_1_1Hedge_a67e832dae5c15b677020a39e95756c15}{void {\bfseries set\-Alpha} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} alpha)}\label{classMultiBoost_1_1Hedge_a67e832dae5c15b677020a39e95756c15}
+
+\item 
+\hypertarget{classMultiBoost_1_1Hedge_a00e676f4c81a242ffb182ec9bc8c98da}{void {\bfseries get\-Probability\-Vector} (vector$<$ double $>$ \&p)}\label{classMultiBoost_1_1Hedge_a00e676f4c81a242ffb182ec9bc8c98da}
+
+\item 
+\hypertarget{classMultiBoost_1_1Hedge_a843d6f226847596c4b19ded07e5fd34f}{void {\bfseries receive\-Reward\-Vector} (vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&r)}\label{classMultiBoost_1_1Hedge_a843d6f226847596c4b19ded07e5fd34f}
+
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Hedge_afe145603b5a8948cf8d7af6a50106b9a}{initialize} (vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&vals)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Hedge_a3da38a7f74df23c6dc373ebc7e79a57b}{get\-K\-Best\-Action} (const int k, vector$<$ int $>$ \&best\-Arms)
+\item 
+virtual int \hyperlink{classMultiBoost_1_1Hedge_a0651f257320f77ceb495d3c03e5d549f}{get\-Next\-Action} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Hedge_ac16dd9e98bad81d6977a8854519c4833}{init\-Learning\-Options} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Hedge_a49a9fa2dc295c11be60d43e3a6a102e7}{updateith\-Value} (int arm\-Num)
+\item 
+\hypertarget{classMultiBoost_1_1Hedge_a50c7fe62aa5a48bc322e542072ffb207}{void {\bfseries set\-P\-Vector} (void)}\label{classMultiBoost_1_1Hedge_a50c7fe62aa5a48bc322e542072ffb207}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1Hedge_a9e6d18f351d87f1900ddb2290e6f4753}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} {\bfseries \-\_\-alpha}}\label{classMultiBoost_1_1Hedge_a9e6d18f351d87f1900ddb2290e6f4753}
+
+\item 
+\hypertarget{classMultiBoost_1_1Hedge_ae17ad3d3c3f09adcc5329120fe5c8e1d}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ {\bfseries \-\_\-p}}\label{classMultiBoost_1_1Hedge_ae17ad3d3c3f09adcc5329120fe5c8e1d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 52 of file Exp3.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1Hedge_a3da38a7f74df23c6dc373ebc7e79a57b}{\index{Multi\-Boost\-::\-Hedge@{Multi\-Boost\-::\-Hedge}!get\-K\-Best\-Action@{get\-K\-Best\-Action}}
+\index{get\-K\-Best\-Action@{get\-K\-Best\-Action}!MultiBoost::Hedge@{Multi\-Boost\-::\-Hedge}}
+\subsubsection[{get\-K\-Best\-Action}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Hedge\-::get\-K\-Best\-Action (
+\begin{DoxyParamCaption}
+\item[{const int}]{k, }
+\item[{vector$<$ int $>$ \&}]{best\-Arms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1Hedge_a3da38a7f74df23c6dc373ebc7e79a57b}
+Get the K best arm. Hovewer, in the original bandit framework it is only allowed to pull one arm in an iteration, here we implement that case when we can pull many arms in one iteration. 
+\begin{DoxyParams}{Parameters}
+{\em k} & number of arms to be pulled in the same iteration \\
+\hline
+{\em best\-Arms} & integer vector containing the indices of arms will be pulled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_aba6a5d2e4462644f15df846305783c15}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 99 of file Exp3.\-h.
+
+\hypertarget{classMultiBoost_1_1Hedge_a0651f257320f77ceb495d3c03e5d549f}{\index{Multi\-Boost\-::\-Hedge@{Multi\-Boost\-::\-Hedge}!get\-Next\-Action@{get\-Next\-Action}}
+\index{get\-Next\-Action@{get\-Next\-Action}!MultiBoost::Hedge@{Multi\-Boost\-::\-Hedge}}
+\subsubsection[{get\-Next\-Action}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Multi\-Boost\-::\-Hedge\-::get\-Next\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1Hedge_a0651f257320f77ceb495d3c03e5d549f}
+Get the best action. \begin{DoxyReturn}{Returns}
+The index of arm which then will be pulled. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a73d90995d4694aa23649dc508527cc8c}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 100 of file Exp3.\-h.
+
+\hypertarget{classMultiBoost_1_1Hedge_afe145603b5a8948cf8d7af6a50106b9a}{\index{Multi\-Boost\-::\-Hedge@{Multi\-Boost\-::\-Hedge}!initialize@{initialize}}
+\index{initialize@{initialize}!MultiBoost::Hedge@{Multi\-Boost\-::\-Hedge}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Hedge\-::initialize (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{vals}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1Hedge_afe145603b5a8948cf8d7af6a50106b9a}
+A simple interface to initialze the member variables. This function simply sets the flag because all bandit algorithm has an own initialization process. 
+\begin{DoxyParams}{Parameters}
+{\em vals} & the values for the initalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a21bb0d3dc368c96135c387783315cc4f}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 93 of file Exp3.\-h.
+
+\hypertarget{classMultiBoost_1_1Hedge_ac16dd9e98bad81d6977a8854519c4833}{\index{Multi\-Boost\-::\-Hedge@{Multi\-Boost\-::\-Hedge}!init\-Learning\-Options@{init\-Learning\-Options}}
+\index{init\-Learning\-Options@{init\-Learning\-Options}!MultiBoost::Hedge@{Multi\-Boost\-::\-Hedge}}
+\subsubsection[{init\-Learning\-Options}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Hedge\-::init\-Learning\-Options (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1Hedge_ac16dd9e98bad81d6977a8854519c4833}
+Set the arguments of the algorithm using the standard interface of the argument handling (see in the weak learners). Call this to set the arguments given by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a61b051648cee17985a8a8bc0332e8bb9}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 102 of file Exp3.\-h.
+
+\hypertarget{classMultiBoost_1_1Hedge_a49a9fa2dc295c11be60d43e3a6a102e7}{\index{Multi\-Boost\-::\-Hedge@{Multi\-Boost\-::\-Hedge}!updateith\-Value@{updateith\-Value}}
+\index{updateith\-Value@{updateith\-Value}!MultiBoost::Hedge@{Multi\-Boost\-::\-Hedge}}
+\subsubsection[{updateith\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Multi\-Boost\-::\-Hedge\-::updateith\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{arm\-Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1Hedge_a49a9fa2dc295c11be60d43e3a6a102e7}
+Update the statics of the arms. In the case of stochastic bandit algorithms it updates the B-\/values, and in the case of adversarials bandit methods it updates the probabilities over the arms. 
+\begin{DoxyParams}{Parameters}
+{\em arm\-Num} & the index of arm whose statistics will be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a46066e41b12d20f0b962d3f46d9b0d22}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 104 of file Exp3.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Bandits/\hyperlink{Exp3_8h}{Exp3.\-h}\end{DoxyCompactItemize}

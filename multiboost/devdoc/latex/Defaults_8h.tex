@@ -1,0 +1,98 @@
+\hypertarget{Defaults_8h}{\section{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Defaults.h File Reference}
+\label{Defaults_8h}\index{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Defaults.\-h@{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Defaults.\-h}}
+}
+{\ttfamily \#include $<$iomanip$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Defaults_8h_aebde697532756c87e3d7ec08db64d332}{S\-T\-A\-B\-L\-E\-\_\-\-S\-O\-R\-T}~0
+\item 
+\#define \hyperlink{Defaults_8h_a9b0f4186c957257827925ec4444caec6}{M\-B\-\_\-\-D\-E\-B\-U\-G}~0
+\item 
+\hypertarget{Defaults_8h_ad80cfbe7456c7d029544e8bc2cec16c8}{\#define {\bfseries O\-U\-T\-P\-U\-T\-\_\-\-S\-E\-P\-A\-R\-A\-T\-O\-R}~\char`\"{}\textbackslash{}t\char`\"{}}\label{Defaults_8h_ad80cfbe7456c7d029544e8bc2cec16c8}
+
+\item 
+\hypertarget{Defaults_8h_a9ba5ea2e2160a169c43e2c762687bde6}{\#define {\bfseries H\-E\-A\-D\-E\-R\-\_\-\-F\-I\-E\-L\-D\-\_\-\-L\-E\-N\-G\-T\-H}~\char`\"{}\textbackslash{}t\char`\"{}}\label{Defaults_8h_a9ba5ea2e2160a169c43e2c762687bde6}
+
+\item 
+\hypertarget{Defaults_8h_a7ce0ae7a76afff5794ec80130b68f4c4}{\#define \hyperlink{Defaults_8h_a7ce0ae7a76afff5794ec80130b68f4c4}{S\-\_\-}(X)~\#X}\label{Defaults_8h_a7ce0ae7a76afff5794ec80130b68f4c4}
+
+\begin{DoxyCompactList}\small\item\em Used with S\-T\-R\-I\-N\-G\-I\-Z\-E can stringize a macro name. \end{DoxyCompactList}\item 
+\hypertarget{Defaults_8h_ad9ac3d6162a4c18e51a0852093eab9bd}{\#define \hyperlink{Defaults_8h_ad9ac3d6162a4c18e51a0852093eab9bd}{S\-T\-R\-I\-N\-G\-I\-Z\-E}(X)~\hyperlink{Defaults_8h_a7ce0ae7a76afff5794ec80130b68f4c4}{S\-\_\-}(X)}\label{Defaults_8h_ad9ac3d6162a4c18e51a0852093eab9bd}
+
+\begin{DoxyCompactList}\small\item\em Stringize a macro name! \-:) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real}
+\item 
+typedef double \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines macros and default values. This file just holds some macros and static strings that define some default values. \begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{Defaults_8h_source}{Defaults.\-h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{Defaults_8h_a9b0f4186c957257827925ec4444caec6}{\index{Defaults.\-h@{Defaults.\-h}!M\-B\-\_\-\-D\-E\-B\-U\-G@{M\-B\-\_\-\-D\-E\-B\-U\-G}}
+\index{M\-B\-\_\-\-D\-E\-B\-U\-G@{M\-B\-\_\-\-D\-E\-B\-U\-G}!Defaults.h@{Defaults.\-h}}
+\subsubsection[{M\-B\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-B\-\_\-\-D\-E\-B\-U\-G~0}}\label{Defaults_8h_a9b0f4186c957257827925ec4444caec6}
+Debug level. If there is a problem try activating this. \begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 101 of file Defaults.\-h.
+
+\hypertarget{Defaults_8h_aebde697532756c87e3d7ec08db64d332}{\index{Defaults.\-h@{Defaults.\-h}!S\-T\-A\-B\-L\-E\-\_\-\-S\-O\-R\-T@{S\-T\-A\-B\-L\-E\-\_\-\-S\-O\-R\-T}}
+\index{S\-T\-A\-B\-L\-E\-\_\-\-S\-O\-R\-T@{S\-T\-A\-B\-L\-E\-\_\-\-S\-O\-R\-T}!Defaults.h@{Defaults.\-h}}
+\subsubsection[{S\-T\-A\-B\-L\-E\-\_\-\-S\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-T\-A\-B\-L\-E\-\_\-\-S\-O\-R\-T~0}}\label{Defaults_8h_aebde697532756c87e3d7ec08db64d332}
+Defines the sorting method. Columns needs to be sorted when using the decision stumps algorithm; Generally conservativeness is not an issue with this type of algorithm but because I want to get {\bfseries exactly} the same results on win32 an unix, if I set non conservative sort, the outcome is different on the two. \begin{DoxyRemark}{Remarks}
+The valid values are\-:
+\begin{DoxyItemize}
+\item 1 = slow but stable
+\item 0 = fast but non stable 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 95 of file Defaults.\-h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{\index{Defaults.\-h@{Defaults.\-h}!Alpha\-Real@{Alpha\-Real}}
+\index{Alpha\-Real@{Alpha\-Real}!Defaults.h@{Defaults.\-h}}
+\subsubsection[{Alpha\-Real}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf Alpha\-Real}}}\label{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}
+The type definition of the following variables\-:
+\begin{DoxyItemize}
+\item \-: the coefficient of the base learners
+\item \{ W\}\-: the weight matrix elements
+\item \{v\}\-: the vector \{v\} \begin{DoxyDate}{Date}
+15/06/2011 
+\end{DoxyDate}
+
+\end{DoxyItemize}
+
+Definition at line 79 of file Defaults.\-h.
+
+\hypertarget{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{\index{Defaults.\-h@{Defaults.\-h}!Feature\-Real@{Feature\-Real}}
+\index{Feature\-Real@{Feature\-Real}!Defaults.h@{Defaults.\-h}}
+\subsubsection[{Feature\-Real}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf Feature\-Real}}}\label{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}
+The type definition of the values of features \begin{DoxyDate}{Date}
+15/06/2011 
+\end{DoxyDate}
+
+
+Definition at line 65 of file Defaults.\-h.
+

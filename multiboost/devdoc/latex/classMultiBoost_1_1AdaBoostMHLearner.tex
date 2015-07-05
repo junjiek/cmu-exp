@@ -1,0 +1,450 @@
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner}{\section{Multi\-Boost\-:\-:Ada\-Boost\-M\-H\-Learner Class Reference}
+\label{classMultiBoost_1_1AdaBoostMHLearner}\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+}
+
+
+{\ttfamily \#include $<$Ada\-Boost\-M\-H\-Learner.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Ada\-Boost\-M\-H\-Learner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMultiBoost_1_1AdaBoostMHLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a583ec3dfcb01bf1ae5270a8b60c50479}{Ada\-Boost\-M\-H\-Learner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a1171d948bfa1875bf663993f067a8e8d}{run} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a6cc18ddef41bb0a8981e03c4e5b41be2}{run} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, const string base\-Learner\-Name, const int num\-Iterations, vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&found\-Hypotheses)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_ab2370f7d03a14d9cb67e130e3814a6f0}{classify} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a234cd2586240f3a07dcbe5186babf8ad}{do\-Confusion\-Matrix} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_ab0067a96a9a7c2648cb0cfc8a97d8004}{do\-Posteriors} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a909140ca1b8174c42695e57065b3c8b9}{update\-Weights} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a496a96f5c332bc11bd0c680a62964344}{update\-Weights} (\hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} $\ast$p\-Out\-Info, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \&p\-Weak\-Hypothesis)
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a2bde373d5f80a4fd57b7de09e8ef327b}{print\-Output\-Info} (\hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} $\ast$p\-Out\-Info, int t, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Test\-Data, \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$p\-Weak\-Hypothesis)
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_aab49c681fb8c5eee29f346a46c2a5e29}{print\-Out\-Weights} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a45075e518fae57257fd9cfb8535060b1}{get\-Args} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+int \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_af13c90ad8fc53b88d1f20e8d52ba0049}{resume\-Weak\-Learners} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data)
+\item 
+void \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_adf47da0cc22df7ebc55170dfea933203}{resume\-Process} (\hyperlink{classMultiBoost_1_1Serialization}{Serialization} \&ss, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Test\-Data, \hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} $\ast$p\-Out\-Info)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a723596e1dcce33d594e1d9cb90c2e85f}{vector$<$ \hyperlink{classMultiBoost_1_1BaseLearner}{Base\-Learner} $\ast$ $>$ \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a723596e1dcce33d594e1d9cb90c2e85f}{\-\_\-found\-Hypotheses}}\label{classMultiBoost_1_1AdaBoostMHLearner_a723596e1dcce33d594e1d9cb90c2e85f}
+
+\begin{DoxyCompactList}\small\item\em The list of the hypotheses found. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_adc925d29e89aec971adfe091307f36a7}{string \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_adc925d29e89aec971adfe091307f36a7}{\-\_\-base\-Learner\-Name}}\label{classMultiBoost_1_1AdaBoostMHLearner_adc925d29e89aec971adfe091307f36a7}
+
+\begin{DoxyCompactList}\small\item\em The name of the basic learner used by Ada\-Boost. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_aa6cefa59149ee78ab97cc159413c845f}{string \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_aa6cefa59149ee78ab97cc159413c845f}{\-\_\-shyp\-File\-Name}}\label{classMultiBoost_1_1AdaBoostMHLearner_aa6cefa59149ee78ab97cc159413c845f}
+
+\begin{DoxyCompactList}\small\item\em File name of the strong hypothesis. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_ade7af135ce1f11882e4ad2aae172121d}{bool {\bfseries \-\_\-is\-Shyp\-Compressed}}\label{classMultiBoost_1_1AdaBoostMHLearner_ade7af135ce1f11882e4ad2aae172121d}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a4e27fd8b14c4bfc9e2359b58b592aa16}{string {\bfseries \-\_\-train\-File\-Name}}\label{classMultiBoost_1_1AdaBoostMHLearner_a4e27fd8b14c4bfc9e2359b58b592aa16}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_ad60eebad3afb84852f5bd8da314aa7fd}{string {\bfseries \-\_\-test\-File\-Name}}\label{classMultiBoost_1_1AdaBoostMHLearner_ad60eebad3afb84852f5bd8da314aa7fd}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a48db1d5b62055b631970d012f1e4656a}{int {\bfseries \-\_\-num\-Iterations}}\label{classMultiBoost_1_1AdaBoostMHLearner_a48db1d5b62055b631970d012f1e4656a}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a63d50b131c8e71523def6498213e0b50}{int \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a63d50b131c8e71523def6498213e0b50}{\-\_\-max\-Time}}\label{classMultiBoost_1_1AdaBoostMHLearner_a63d50b131c8e71523def6498213e0b50}
+
+\begin{DoxyCompactList}\small\item\em Time limit for the whole processing. Default\-: no time limit (-\/1). \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a1dcf72e78dd6906d9500bda15efaaa5a}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a1dcf72e78dd6906d9500bda15efaaa5a}{\-\_\-theta}}\label{classMultiBoost_1_1AdaBoostMHLearner_a1dcf72e78dd6906d9500bda15efaaa5a}
+
+\begin{DoxyCompactList}\small\item\em the value of theta. Default = 0. \end{DoxyCompactList}\item 
+int \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a03f43502f6ffe9873dc383cc75cfa13d}{\-\_\-verbose}
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_ae2bd1ab538ad83c3f101945e36dc67b6}{const \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_ae2bd1ab538ad83c3f101945e36dc67b6}{\-\_\-small\-Val}}\label{classMultiBoost_1_1AdaBoostMHLearner_ae2bd1ab538ad83c3f101945e36dc67b6}
+
+\begin{DoxyCompactList}\small\item\em A small value, to solve numeric issues. \end{DoxyCompactList}\item 
+string \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a2e6988a496276d32439f95970144c95c}{\-\_\-resume\-Shyp\-File\-Name}
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_aa122d670c3f294eee04620ef1baf15c7}{string \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_aa122d670c3f294eee04620ef1baf15c7}{\-\_\-output\-Info\-File}}\label{classMultiBoost_1_1AdaBoostMHLearner_aa122d670c3f294eee04620ef1baf15c7}
+
+\begin{DoxyCompactList}\small\item\em The filename of the step-\/by-\/step information file that will be updated. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a8aae9fe5cd389062806ad713213eabc0}{string {\bfseries \-\_\-weight\-File}}\label{classMultiBoost_1_1AdaBoostMHLearner_a8aae9fe5cd389062806ad713213eabc0}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a48e5f2dfd1da6b43bcc0224fc341cc5b}{bool \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a48e5f2dfd1da6b43bcc0224fc341cc5b}{\-\_\-with\-Constant\-Learner}}\label{classMultiBoost_1_1AdaBoostMHLearner_a48e5f2dfd1da6b43bcc0224fc341cc5b}
+
+\begin{DoxyCompactList}\small\item\em Check or not constant learner in each iteration. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_ae2f32a7b1285c02cdcb1c2d19a2d6b5a}{bool \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_ae2f32a7b1285c02cdcb1c2d19a2d6b5a}{\-\_\-fast\-Resume\-Process}}\label{classMultiBoost_1_1AdaBoostMHLearner_ae2f32a7b1285c02cdcb1c2d19a2d6b5a}
+
+\begin{DoxyCompactList}\small\item\em Fast resume process (true), it will calculate only the error rate of the last iteration. \end{DoxyCompactList}\item 
+bool \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_aec9596ab86f3071c4dc0acb3729227ee}{\-\_\-early\-Stopping}
+\begin{DoxyCompactList}\small\item\em stop before \-\_\-num\-Iterations iterations if test\-Error does not improve (only with traintest) \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a504a1882f72446d399cafc9659f5cd8c}{int \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a504a1882f72446d399cafc9659f5cd8c}{\-\_\-early\-Stopping\-Min\-Iterations}}\label{classMultiBoost_1_1AdaBoostMHLearner_a504a1882f72446d399cafc9659f5cd8c}
+
+\begin{DoxyCompactList}\small\item\em don't early stop before \-\_\-early\-Stopping\-Min\-Iterations iterations \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a78e937859e7dac27fa1cc50351e95437}{double \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a78e937859e7dac27fa1cc50351e95437}{\-\_\-early\-Stopping\-Smoothing\-Window\-Rate}}\label{classMultiBoost_1_1AdaBoostMHLearner_a78e937859e7dac27fa1cc50351e95437}
+
+\begin{DoxyCompactList}\small\item\em test errors are averaged in the last \-\_\-early\-Stopping\-Smoothing\-Window\-Rate$\ast$\-T \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_ab45304a1270a4f23ceda87c70a84cb45}{bool {\bfseries \-\_\-early\-Stopping\-Done}}\label{classMultiBoost_1_1AdaBoostMHLearner_ab45304a1270a4f23ceda87c70a84cb45}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_aba5c79624c7628d5c1aed225dcaa0151}{string {\bfseries \-\_\-early\-Stopping\-Output\-Column}}\label{classMultiBoost_1_1AdaBoostMHLearner_aba5c79624c7628d5c1aed225dcaa0151}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_acca83106fa1d58750d00dfdbfcc85d2d}{int \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_acca83106fa1d58750d00dfdbfcc85d2d}{\-\_\-early\-Stopping\-Max\-Lookahead\-Rate}}\label{classMultiBoost_1_1AdaBoostMHLearner_acca83106fa1d58750d00dfdbfcc85d2d}
+
+\begin{DoxyCompactList}\small\item\em if the minimum is reached at Tmin, \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_af104d5111150afc00187df762a42defd}{int \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_af104d5111150afc00187df762a42defd}{\-\_\-current\-Min\-T}}\label{classMultiBoost_1_1AdaBoostMHLearner_af104d5111150afc00187df762a42defd}
+
+\begin{DoxyCompactList}\small\item\em the iteration where the smoothed error is minimal so far \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a23e89c84081e8591624afa3ba715b395}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} {\bfseries sum\-Error\-Window}}\label{classMultiBoost_1_1AdaBoostMHLearner_a23e89c84081e8591624afa3ba715b395}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_ace4d2f4d53fe8c55866520ecd271d26f}{int {\bfseries num\-Error\-Window}}\label{classMultiBoost_1_1AdaBoostMHLearner_ace4d2f4d53fe8c55866520ecd271d26f}
+
+\item 
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a3a30133d9df2444482d6c2995b572927}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} {\bfseries current\-Min}}\label{classMultiBoost_1_1AdaBoostMHLearner_a3a30133d9df2444482d6c2995b572927}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Ada\-Boost learner. This class performs the meta-\/learning by calling the weak learners and updating the weights. \begin{DoxyDate}{Date}
+12/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 63 of file Ada\-Boost\-M\-H\-Learner.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a583ec3dfcb01bf1ae5270a8b60c50479}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!Ada\-Boost\-M\-H\-Learner@{Ada\-Boost\-M\-H\-Learner}}
+\index{Ada\-Boost\-M\-H\-Learner@{Ada\-Boost\-M\-H\-Learner}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{Ada\-Boost\-M\-H\-Learner}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::\-Ada\-Boost\-M\-H\-Learner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_a583ec3dfcb01bf1ae5270a8b60c50479}
+The constructor. It initializes the variables and sets them using the information provided by the arguments passed. They are parsed using the helpers provided by class Args. \begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 73 of file Ada\-Boost\-M\-H\-Learner.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_ab2370f7d03a14d9cb67e130e3814a6f0}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!classify@{classify}}
+\index{classify@{classify}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{classify}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::classify (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_ab2370f7d03a14d9cb67e130e3814a6f0}
+Performs the classification using the \hyperlink{classMultiBoost_1_1AdaBoostMHClassifier}{Ada\-Boost\-M\-H\-Classifier}. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line with all the options for classification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_ad4b2a6aeca5917c841c5747f0bf81e90}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 416 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a234cd2586240f3a07dcbe5186babf8ad}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!do\-Confusion\-Matrix@{do\-Confusion\-Matrix}}
+\index{do\-Confusion\-Matrix@{do\-Confusion\-Matrix}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{do\-Confusion\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::do\-Confusion\-Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_a234cd2586240f3a07dcbe5186babf8ad}
+Print to stdout (or to file) a confusion matrix. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+20/3/2006 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_a3b9a92fd37fe14cdc56c1b216b4d6889}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 434 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_ab0067a96a9a7c2648cb0cfc8a97d8004}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!do\-Posteriors@{do\-Posteriors}}
+\index{do\-Posteriors@{do\-Posteriors}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{do\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::do\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_ab0067a96a9a7c2648cb0cfc8a97d8004}
+Output the outcome of the strong learner for each class. Strictly speaking these are (currently) not posteriors, as the sum of these values is not one. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_adf92c9fd773dab4e960dee744adf3654}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Definition at line 460 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a45075e518fae57257fd9cfb8535060b1}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!get\-Args@{get\-Args}}
+\index{get\-Args@{get\-Args}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{get\-Args}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::get\-Args (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_a45075e518fae57257fd9cfb8535060b1}
+Get the needed parameters (for the strong learner) from the argumens. 
+\begin{DoxyParams}{Parameters}
+{\em The} & arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a2bde373d5f80a4fd57b7de09e8ef327b}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!print\-Output\-Info@{print\-Output\-Info}}
+\index{print\-Output\-Info@{print\-Output\-Info}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{print\-Output\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::print\-Output\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-Info} $\ast$}]{p\-Out\-Info, }
+\item[{int}]{t, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Test\-Data, }
+\item[{{\bf Base\-Learner} $\ast$}]{p\-Weak\-Hypothesis}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHLearner_a2bde373d5f80a4fd57b7de09e8ef327b}
+Print output information if option --outputinfo is specified. Called from run and resume\-Process \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1AdaBoostMHLearner_adf47da0cc22df7ebc55170dfea933203}{resume\-Process} 
+
+\hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a1171d948bfa1875bf663993f067a8e8d}{run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/04/2007 
+\end{DoxyDate}
+
+
+Definition at line 836 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_aab49c681fb8c5eee29f346a46c2a5e29}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!print\-Out\-Weights@{print\-Out\-Weights}}
+\index{print\-Out\-Weights@{print\-Out\-Weights}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{print\-Out\-Weights}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::print\-Out\-Weights (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHLearner_aab49c681fb8c5eee29f346a46c2a5e29}
+Print out the weights of the instances at the end of the learning process if output file is given. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a1171d948bfa1875bf663993f067a8e8d}{run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+29/04/2010 
+\end{DoxyDate}
+
+
+Definition at line 857 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_adf47da0cc22df7ebc55170dfea933203}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!resume\-Process@{resume\-Process}}
+\index{resume\-Process@{resume\-Process}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{resume\-Process}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::resume\-Process (
+\begin{DoxyParamCaption}
+\item[{{\bf Serialization} \&}]{ss, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Test\-Data, }
+\item[{{\bf Output\-Info} $\ast$}]{p\-Out\-Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_adf47da0cc22df7ebc55170dfea933203}
+Resume the training using the features in \-\_\-resume\-Shyp\-File\-Name if the option -\/resume has been specified. \begin{DoxyDate}{Date}
+21/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 709 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_af13c90ad8fc53b88d1f20e8d52ba0049}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!resume\-Weak\-Learners@{resume\-Weak\-Learners}}
+\index{resume\-Weak\-Learners@{resume\-Weak\-Learners}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{resume\-Weak\-Learners}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::resume\-Weak\-Learners (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_af13c90ad8fc53b88d1f20e8d52ba0049}
+Resume the weak learner list. \begin{DoxyReturn}{Returns}
+The current iteration number. 0 if not -\/resume option has been called 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Training\-Data} & The pointer to the training data, needed for class\-Map, enum\-Maps. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+21/12/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1AdaBoostMHLearner_adf47da0cc22df7ebc55170dfea933203}{resume\-Process} 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+resume\-Process must be called too! 
+\end{DoxyRemark}
+
+
+Definition at line 686 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a1171d948bfa1875bf663993f067a8e8d}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!run@{run}}
+\index{run@{run}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::run (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_a1171d948bfa1875bf663993f067a8e8d}
+Start the learning process. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line with all the options for training. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericStrongLearner_a77c75c5cbc867c191b327e5a04e9f147}{Multi\-Boost\-::\-Generic\-Strong\-Learner}.
+
+
+
+Reimplemented in \hyperlink{classMultiBoost_1_1FilterBoostLearner_a3209ce71f29e342c84142d9623583109}{Multi\-Boost\-::\-Filter\-Boost\-Learner}, and \hyperlink{classMultiBoost_1_1ArcGVLearner_ad2e5b9873d3c752307d9639ff53ee86a}{Multi\-Boost\-::\-Arc\-G\-V\-Learner}.
+
+
+
+Definition at line 154 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a6cc18ddef41bb0a8981e03c4e5b41be2}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!run@{run}}
+\index{run@{run}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::run (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data, }
+\item[{const string}]{base\-Learner\-Name, }
+\item[{const int}]{num\-Iterations, }
+\item[{vector$<$ {\bf Base\-Learner} $\ast$ $>$ \&}]{found\-Hypotheses}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHLearner_a6cc18ddef41bb0a8981e03c4e5b41be2}
+For Soft\-Cascade 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line with all the options for training. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 898 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a909140ca1b8174c42695e57065b3c8b9}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!update\-Weights@{update\-Weights}}
+\index{update\-Weights@{update\-Weights}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{update\-Weights}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::update\-Weights (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data, }
+\item[{{\bf Base\-Learner} $\ast$}]{p\-Weak\-Hypothesis}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHLearner_a909140ca1b8174c42695e57065b3c8b9}
+Updates the weights of the examples. The re-\/weighting of $w$ (the weight vector over all the examples and classes) is done using the following formula \[ w^{(t+1)}_{i, \ell}= \frac{ w^{(t)}_{i, \ell} \exp \left( -\alpha^{(t)} h_\ell^{(t)}(x_i) y_{i, \ell} \right) }{ Z^{(t)} } \] where {\itshape Z} is a normalization factor, and it is defined as \[ Z^{(t)} = \sum_{j=1}^n \sum_{\ell=1}^k w^{(t)}_{j, \ell} \exp \left( -\alpha^{(t)} h_\ell^{(t)}(x_j) y_{j, \ell} \right) \] where $n$ is the number of examples, $k$ the number of classes, $\alpha$ is the confidence in the weak classifier, $h_\ell(x_i)$ is the classification of example $x_i$ for class $\ell$ with the classifier found at the current iteration (see \hyperlink{classMultiBoost_1_1BaseLearner_af8bccd75a88d572a24ea337abcaa00f0}{Base\-Learner\-::classify()}), and $y_i$ is the binary label of that example, defined in Input\-Data\-::get\-Binary\-Class(). 
+\begin{DoxyParams}{Parameters}
+{\em p\-Training\-Data} & The pointer to the training data. \\
+\hline
+{\em p\-Weak\-Hypothesis} & The current weak hypothesis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the edge. It will be used to see if the algorithm can continue with learning. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+16/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 584 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a496a96f5c332bc11bd0c680a62964344}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!update\-Weights@{update\-Weights}}
+\index{update\-Weights@{update\-Weights}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{update\-Weights}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::update\-Weights (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-Info} $\ast$}]{p\-Out\-Info, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Base\-Learner} $\ast$ $>$ \&}]{p\-Weak\-Hypothesis}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1AdaBoostMHLearner_a496a96f5c332bc11bd0c680a62964344}
+Updates the weights of the examples. If the slowresumeprocess is on, we do not calculate the weights in every iteration, but we calculate the re-\/weighting based on the exponential margins. Let's assume that it is given a strong learner $\f^{(t)}(\bx)\$f after t iteration. Then the weights of the $+1 
+
+Definition at line 482 of file Ada\-Boost\-M\-H\-Learner.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_aec9596ab86f3071c4dc0acb3729227ee}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!\-\_\-early\-Stopping@{\-\_\-early\-Stopping}}
+\index{\-\_\-early\-Stopping@{\-\_\-early\-Stopping}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{\-\_\-early\-Stopping}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::\-\_\-early\-Stopping\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_aec9596ab86f3071c4dc0acb3729227ee}
+
+
+stop before \-\_\-num\-Iterations iterations if test\-Error does not improve (only with traintest) 
+
+In traintest mode we may stop before \-\_\-num\-Iterations iterations or \-\_\-max\-Time time. In iteration T, if T $>$ \-\_\-early\-Stopping\-Min\-Iterations, we compute the average test error in the last \-\_\-early\-Stopping\-Smoothing\-Window\-Rate$\ast$ Titerations. Let the current minimum of this smoothed error be taken at Tmin. We stop if T $>$ \-\_\-early\-Stopping\-Max\-Lookahead\-Rate$\ast$\-Tmin. 
+
+Definition at line 247 of file Ada\-Boost\-M\-H\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a2e6988a496276d32439f95970144c95c}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!\-\_\-resume\-Shyp\-File\-Name@{\-\_\-resume\-Shyp\-File\-Name}}
+\index{\-\_\-resume\-Shyp\-File\-Name@{\-\_\-resume\-Shyp\-File\-Name}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{\-\_\-resume\-Shyp\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::\-\_\-resume\-Shyp\-File\-Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_a2e6988a496276d32439f95970144c95c}
+If resume is set, this will hold the strong hypothesis file to load in order to continue with the training process. 
+
+Definition at line 234 of file Ada\-Boost\-M\-H\-Learner.\-h.
+
+\hypertarget{classMultiBoost_1_1AdaBoostMHLearner_a03f43502f6ffe9873dc383cc75cfa13d}{\index{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}!\-\_\-verbose@{\-\_\-verbose}}
+\index{\-\_\-verbose@{\-\_\-verbose}!MultiBoost::AdaBoostMHLearner@{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}}
+\subsubsection[{\-\_\-verbose}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner\-::\-\_\-verbose\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1AdaBoostMHLearner_a03f43502f6ffe9873dc383cc75cfa13d}
+Verbose level. There are three levels of verbosity\-:
+\begin{DoxyItemize}
+\item 0 = no messages
+\item 1 = basic messages
+\item 2 = show all messages 
+\end{DoxyItemize}
+
+Definition at line 227 of file Ada\-Boost\-M\-H\-Learner.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/\hyperlink{AdaBoostMHLearner_8h}{Ada\-Boost\-M\-H\-Learner.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/Ada\-Boost\-M\-H\-Learner.\-cpp\end{DoxyCompactItemize}

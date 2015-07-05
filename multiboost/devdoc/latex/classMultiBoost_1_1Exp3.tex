@@ -1,0 +1,176 @@
+\hypertarget{classMultiBoost_1_1Exp3}{\section{Multi\-Boost\-:\-:Exp3 Class Reference}
+\label{classMultiBoost_1_1Exp3}\index{Multi\-Boost\-::\-Exp3@{Multi\-Boost\-::\-Exp3}}
+}
+Inheritance diagram for Multi\-Boost\-:\-:Exp3\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1Exp3}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1Exp3_a28581884d9f378f0c8158525a9cee906}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} {\bfseries get\-Gamma} ()}\label{classMultiBoost_1_1Exp3_a28581884d9f378f0c8158525a9cee906}
+
+\item 
+\hypertarget{classMultiBoost_1_1Exp3_af1d818ccfd9369791cca8a796c112791}{void {\bfseries set\-Gamma} (\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} gamma)}\label{classMultiBoost_1_1Exp3_af1d818ccfd9369791cca8a796c112791}
+
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Exp3_aa478135069d5ac28c57eb096ff5e35b7}{receive\-Reward} (int arm\-Num, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} reward)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Exp3_a6c8fa5e1c70b5482e77cc0cd263a37f9}{initialize} (vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&vals)
+\item 
+virtual int \hyperlink{classMultiBoost_1_1Exp3_a7937ade0545a4162e2f7419c38be0a97}{get\-Next\-Action} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Exp3_adb5f9cc04795a8149153305cacfb525f}{init\-Learning\-Options} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMultiBoost_1_1Exp3_a2dc6188c0ede884c85d4d9c0354f29fa}{updateith\-Value} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1Exp3_a069a7f5bcab20426c8f33173c4c0dc11}{\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} {\bfseries \-\_\-gamma}}\label{classMultiBoost_1_1Exp3_a069a7f5bcab20426c8f33173c4c0dc11}
+
+\item 
+\hypertarget{classMultiBoost_1_1Exp3_aa49aa6b9c02da2bcd2144cc0644a9ac4}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ {\bfseries \-\_\-p}}\label{classMultiBoost_1_1Exp3_aa49aa6b9c02da2bcd2144cc0644a9ac4}
+
+\item 
+\hypertarget{classMultiBoost_1_1Exp3_a41e68d77caf95c943299c5d49edce528}{vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ {\bfseries \-\_\-p\-Hat}}\label{classMultiBoost_1_1Exp3_a41e68d77caf95c943299c5d49edce528}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 129 of file Exp3.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1Exp3_a7937ade0545a4162e2f7419c38be0a97}{\index{Multi\-Boost\-::\-Exp3@{Multi\-Boost\-::\-Exp3}!get\-Next\-Action@{get\-Next\-Action}}
+\index{get\-Next\-Action@{get\-Next\-Action}!MultiBoost::Exp3@{Multi\-Boost\-::\-Exp3}}
+\subsubsection[{get\-Next\-Action}]{\setlength{\rightskip}{0pt plus 5cm}int Multi\-Boost\-::\-Exp3\-::get\-Next\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1Exp3_a7937ade0545a4162e2f7419c38be0a97}
+Get the best action. \begin{DoxyReturn}{Returns}
+The index of arm which then will be pulled. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a73d90995d4694aa23649dc508527cc8c}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 66 of file Exp3.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Exp3_a6c8fa5e1c70b5482e77cc0cd263a37f9}{\index{Multi\-Boost\-::\-Exp3@{Multi\-Boost\-::\-Exp3}!initialize@{initialize}}
+\index{initialize@{initialize}!MultiBoost::Exp3@{Multi\-Boost\-::\-Exp3}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Exp3\-::initialize (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{vals}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1Exp3_a6c8fa5e1c70b5482e77cc0cd263a37f9}
+A simple interface to initialze the member variables. This function simply sets the flag because all bandit algorithm has an own initialization process. 
+\begin{DoxyParams}{Parameters}
+{\em vals} & the values for the initalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a21bb0d3dc368c96135c387783315cc4f}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 95 of file Exp3.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Exp3_adb5f9cc04795a8149153305cacfb525f}{\index{Multi\-Boost\-::\-Exp3@{Multi\-Boost\-::\-Exp3}!init\-Learning\-Options@{init\-Learning\-Options}}
+\index{init\-Learning\-Options@{init\-Learning\-Options}!MultiBoost::Exp3@{Multi\-Boost\-::\-Exp3}}
+\subsubsection[{init\-Learning\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Exp3\-::init\-Learning\-Options (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1Exp3_adb5f9cc04795a8149153305cacfb525f}
+Set the arguments of the algorithm using the standard interface of the argument handling (see in the weak learners). Call this to set the arguments given by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a61b051648cee17985a8a8bc0332e8bb9}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 55 of file Exp3.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Exp3_aa478135069d5ac28c57eb096ff5e35b7}{\index{Multi\-Boost\-::\-Exp3@{Multi\-Boost\-::\-Exp3}!receive\-Reward@{receive\-Reward}}
+\index{receive\-Reward@{receive\-Reward}!MultiBoost::Exp3@{Multi\-Boost\-::\-Exp3}}
+\subsubsection[{receive\-Reward}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Exp3\-::receive\-Reward (
+\begin{DoxyParamCaption}
+\item[{int}]{arm\-Num, }
+\item[{{\bf Alpha\-Real}}]{reward}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1Exp3_aa478135069d5ac28c57eb096ff5e35b7}
+Receive reward and updates the statistics, i.\-e. the sum of reward of an arm and the number of this arm had been pulled. 
+\begin{DoxyParams}{Parameters}
+{\em arm\-Num} & The index of arm has been pulled. \\
+\hline
+{\em reward} & The reward is incurred by the action, i.\-e. pulling an arm. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/03/2010 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_affd61d12f8dc47d4ad45721562ba60b7}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 157 of file Exp3.\-cpp.
+
+\hypertarget{classMultiBoost_1_1Exp3_a2dc6188c0ede884c85d4d9c0354f29fa}{\index{Multi\-Boost\-::\-Exp3@{Multi\-Boost\-::\-Exp3}!updateith\-Value@{updateith\-Value}}
+\index{updateith\-Value@{updateith\-Value}!MultiBoost::Exp3@{Multi\-Boost\-::\-Exp3}}
+\subsubsection[{updateith\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Exp3\-::updateith\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{arm\-Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1Exp3_a2dc6188c0ede884c85d4d9c0354f29fa}
+Update the statics of the arms. In the case of stochastic bandit algorithms it updates the B-\/values, and in the case of adversarials bandit methods it updates the probabilities over the arms. 
+\begin{DoxyParams}{Parameters}
+{\em arm\-Num} & the index of arm whose statistics will be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+10/03/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericBanditAlgorithm_a46066e41b12d20f0b962d3f46d9b0d22}{Multi\-Boost\-::\-Generic\-Bandit\-Algorithm}.
+
+
+
+Definition at line 123 of file Exp3.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Bandits/\hyperlink{Exp3_8h}{Exp3.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Bandits/Exp3.\-cpp\end{DoxyCompactItemize}

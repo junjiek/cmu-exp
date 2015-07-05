@@ -1,0 +1,167 @@
+\hypertarget{classMultiBoost_1_1SVMLightParser}{\section{Multi\-Boost\-:\-:S\-V\-M\-Light\-Parser Class Reference}
+\label{classMultiBoost_1_1SVMLightParser}\index{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser@{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}}
+}
+Inheritance diagram for Multi\-Boost\-:\-:S\-V\-M\-Light\-Parser\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1SVMLightParser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_aaa1fd5596da9a87b18c62e4099159907}{{\bfseries S\-V\-M\-Light\-Parser} (const string \&file\-Name, const string \&header\-File\-Name)}\label{classMultiBoost_1_1SVMLightParser_aaa1fd5596da9a87b18c62e4099159907}
+
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SVMLightParser_a447e1de2725f5c00d26d4a174b51c916}{read\-Data} (vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \&examples, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)
+\item 
+virtual int \hyperlink{classMultiBoost_1_1SVMLightParser_a71e7f44ab883a8e5f5c211d22e29a1d9}{get\-Num\-Attributes} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1SVMLightParser_acfc5877abd0a1567d744b1eff8d88514}{read\-Header} (\hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a9ae8cd5c95e20edb4f08dee04fc33577}{void {\bfseries read\-Data} (ifstream \&in, vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \&examples, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)}\label{classMultiBoost_1_1SVMLightParser_a9ae8cd5c95e20edb4f08dee04fc33577}
+
+\item 
+void \hyperlink{classMultiBoost_1_1SVMLightParser_a9734c917c4bb91468ab0c109768713ba}{get\-Header\-Info\-From\-Data} (ifstream \&in, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map, vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a8ad14196bfa8eb3db2c79ea7afcd6f8b}{string {\bfseries read\-Name} (ifstream \&in)}\label{classMultiBoost_1_1SVMLightParser_a8ad14196bfa8eb3db2c79ea7afcd6f8b}
+
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a3c7f8138778c5f21d58d45be3e7a70be}{void {\bfseries read\-Dense\-Values} (ifstream \&in, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&values, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, const vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types)}\label{classMultiBoost_1_1SVMLightParser_a3c7f8138778c5f21d58d45be3e7a70be}
+
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a4dab5e54e56154babfd60876f0a6634f}{void {\bfseries read\-Sparse\-Values} (istringstream \&ss, vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&values, vector$<$ int $>$ \&idxs, map$<$ int, int $>$ \&idxmap, vector$<$ \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} $>$ \&enum\-Maps, const vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&attribute\-Types, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&attribute\-Name\-Map)}\label{classMultiBoost_1_1SVMLightParser_a4dab5e54e56154babfd60876f0a6634f}
+
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_adfa32fbfc7db1eb9d40163169d1979f5}{void {\bfseries allocate\-Simple\-Labels} (vector$<$ int $>$ \&label\-Idx, vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \&labels, \hyperlink{classMultiBoost_1_1NameMap}{Name\-Map} \&class\-Map)}\label{classMultiBoost_1_1SVMLightParser_adfa32fbfc7db1eb9d40163169d1979f5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_af09f2e4315c3c07d57cc0ee828861580}{int {\bfseries \-\_\-num\-Attributes}}\label{classMultiBoost_1_1SVMLightParser_af09f2e4315c3c07d57cc0ee828861580}
+
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a142762cf0402e674341680c6ca9ea6fb}{locale {\bfseries \-\_\-dense\-Locale}}\label{classMultiBoost_1_1SVMLightParser_a142762cf0402e674341680c6ca9ea6fb}
+
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a77d50362431b353165a2ebf1c08fed1a}{locale {\bfseries \-\_\-sparse\-Locale}}\label{classMultiBoost_1_1SVMLightParser_a77d50362431b353165a2ebf1c08fed1a}
+
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a3ec4147d83509dc97c19b53ff7777f90}{locale {\bfseries \-\_\-label\-Locale}}\label{classMultiBoost_1_1SVMLightParser_a3ec4147d83509dc97c19b53ff7777f90}
+
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a1d2df5c2d5f3494df3794ac412bc60d8}{bool {\bfseries \-\_\-has\-Name}}\label{classMultiBoost_1_1SVMLightParser_a1d2df5c2d5f3494df3794ac412bc60d8}
+
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a84721136053db448b6332730bc339e78}{map$<$ int, \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ {\bfseries \-\_\-weight\-Of\-Classes}}\label{classMultiBoost_1_1SVMLightParser_a84721136053db448b6332730bc339e78}
+
+\item 
+\hypertarget{classMultiBoost_1_1SVMLightParser_a479b963ebbf8975387ce95abf1190ce6}{size\-\_\-t \hyperlink{classMultiBoost_1_1SVMLightParser_a479b963ebbf8975387ce95abf1190ce6}{\-\_\-num\-Rows}}\label{classMultiBoost_1_1SVMLightParser_a479b963ebbf8975387ce95abf1190ce6}
+
+\begin{DoxyCompactList}\small\item\em In the header file it is possible to define initial weights for classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 54 of file S\-V\-M\-Light\-Parser.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1SVMLightParser_a9734c917c4bb91468ab0c109768713ba}{\index{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser@{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}!get\-Header\-Info\-From\-Data@{get\-Header\-Info\-From\-Data}}
+\index{get\-Header\-Info\-From\-Data@{get\-Header\-Info\-From\-Data}!MultiBoost::SVMLightParser@{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}}
+\subsubsection[{get\-Header\-Info\-From\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-S\-V\-M\-Light\-Parser\-::get\-Header\-Info\-From\-Data (
+\begin{DoxyParamCaption}
+\item[{ifstream \&}]{in, }
+\item[{{\bf Name\-Map} \&}]{class\-Map, }
+\item[{vector$<$ {\bf Name\-Map} $>$ \&}]{enum\-Maps, }
+\item[{{\bf Name\-Map} \&}]{attribute\-Name\-Map, }
+\item[{vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&}]{attribute\-Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SVMLightParser_a9734c917c4bb91468ab0c109768713ba}
+If no header file is given, it is assumed that the labesl are 0..(K-\/1) and the features are denoted by 1..F. This function finds the label and feauter having highest index.  27/07/2011 
+
+Definition at line 76 of file S\-V\-M\-Light\-Parser.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SVMLightParser_a71e7f44ab883a8e5f5c211d22e29a1d9}{\index{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser@{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}!get\-Num\-Attributes@{get\-Num\-Attributes}}
+\index{get\-Num\-Attributes@{get\-Num\-Attributes}!MultiBoost::SVMLightParser@{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}}
+\subsubsection[{get\-Num\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Multi\-Boost\-::\-S\-V\-M\-Light\-Parser\-::get\-Num\-Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classMultiBoost_1_1SVMLightParser_a71e7f44ab883a8e5f5c211d22e29a1d9}
+It retrurns the number of features. \begin{DoxyRemark}{Remarks}
+It might be implemented here, and not as an abstract function. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+The number of features.  30/07/2011 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericParser_a5daee3b49a8cb5c2bbb515d19bff3cd6}{Multi\-Boost\-::\-Generic\-Parser}.
+
+
+
+Definition at line 63 of file S\-V\-M\-Light\-Parser.\-h.
+
+\hypertarget{classMultiBoost_1_1SVMLightParser_a447e1de2725f5c00d26d4a174b51c916}{\index{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser@{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}!read\-Data@{read\-Data}}
+\index{read\-Data@{read\-Data}!MultiBoost::SVMLightParser@{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}}
+\subsubsection[{read\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-S\-V\-M\-Light\-Parser\-::read\-Data (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Example} $>$ \&}]{examples, }
+\item[{{\bf Name\-Map} \&}]{class\-Map, }
+\item[{vector$<$ {\bf Name\-Map} $>$ \&}]{enum\-Maps, }
+\item[{{\bf Name\-Map} \&}]{attribute\-Name\-Map, }
+\item[{vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&}]{attribute\-Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1SVMLightParser_a447e1de2725f5c00d26d4a174b51c916}
+Abstract function for reading data. 
+\begin{DoxyParams}{Parameters}
+{\em examples} & The vector of examples to be filled up. \\
+\hline
+{\em class\-Map} & The map which stores the class names. \\
+\hline
+{\em enum\-Maps} & It stores the mapping of nominal values into natural numbers. \\
+\hline
+{\em attribute\-Name\-Map} & The name of attributes given by the user. \\
+\hline
+{\em attribute\-Types} & The type of attributes, for example numerical or nominal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+Raw\-Data\-::e\-Attribute\-Type  30/07/2011 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classMultiBoost_1_1GenericParser_ab9fb682a99c24f9a3ba08619b6e9686f}{Multi\-Boost\-::\-Generic\-Parser}.
+
+
+
+Definition at line 53 of file S\-V\-M\-Light\-Parser.\-cpp.
+
+\hypertarget{classMultiBoost_1_1SVMLightParser_acfc5877abd0a1567d744b1eff8d88514}{\index{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser@{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}!read\-Header@{read\-Header}}
+\index{read\-Header@{read\-Header}!MultiBoost::SVMLightParser@{Multi\-Boost\-::\-S\-V\-M\-Light\-Parser}}
+\subsubsection[{read\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-S\-V\-M\-Light\-Parser\-::read\-Header (
+\begin{DoxyParamCaption}
+\item[{{\bf Name\-Map} \&}]{class\-Map, }
+\item[{vector$<$ {\bf Name\-Map} $>$ \&}]{enum\-Maps, }
+\item[{{\bf Name\-Map} \&}]{attribute\-Name\-Map, }
+\item[{vector$<$ Raw\-Data\-::e\-Attribute\-Type $>$ \&}]{attribute\-Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1SVMLightParser_acfc5877abd0a1567d744b1eff8d88514}
+Read the header in the following form\-: First line\-: 1 2 4 6 \# class labels Second line\-: id1 id2 id3 \# feature names Third line\-: 0.\-2 0.\-2 0.\-1 0.\-5 \# label weights (optional ) 
+
+Definition at line 165 of file S\-V\-M\-Light\-Parser.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{SVMLightParser_8h}{S\-V\-M\-Light\-Parser.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/S\-V\-M\-Light\-Parser.\-cpp\end{DoxyCompactItemize}

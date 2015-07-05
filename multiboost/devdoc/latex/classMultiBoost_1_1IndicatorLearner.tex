@@ -1,0 +1,366 @@
+\hypertarget{classMultiBoost_1_1IndicatorLearner}{
+\section{MultiBoost::IndicatorLearner Class Reference}
+\label{classMultiBoost_1_1IndicatorLearner}\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+}
+
+
+{\ttfamily \#include $<$IndicatorLearner.h$>$}
+
+Inheritance diagram for MultiBoost::IndicatorLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classMultiBoost_1_1IndicatorLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1IndicatorLearner_a0dbdb5de3f239e23b989c9ca2d8c1917}{IndicatorLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1IndicatorLearner_a2df32d7f761265bc1ad243cf4d9e0262}{$\sim$IndicatorLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1IndicatorLearner_a27db4cf56fa20bbf125a82594ff6d9ac}{subCreate} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1IndicatorLearner_af6ebc02b7c3c99c3a37c29b8b315786c}{run} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1IndicatorLearner_a8ecd0b8a6454b9b6648db679183035b4}{run} (int colIdx)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1IndicatorLearner_a66dfec334db068b3ab5806723b4170b4}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1IndicatorLearner_ab4e079f316f5d882392839aa02f67d16}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1IndicatorLearner_a47fb712bf8e44ebd7a7af759423b8fcc}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1IndicatorLearner_a83002a7c378de9a4cedd65f54e677955}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1IndicatorLearner_ad6da91b334f6624773fb671a3f2ffc3b}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val, int classIdx) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1IndicatorLearner_a80e95e42cb85dcfa8575919269099c34}{cut} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1IndicatorLearner_aad628f5c4eab4ce84b5fae7571bbc929}{
+vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} $>$ {\bfseries \_\-u}}
+\label{classMultiBoost_1_1IndicatorLearner_aad628f5c4eab4ce84b5fae7571bbc929}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\bfseries single} threshold decision stump learner. There is ONE and ONE ONLY threshold here. 
+
+Definition at line 60 of file IndicatorLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1IndicatorLearner_a0dbdb5de3f239e23b989c9ca2d8c1917}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!IndicatorLearner@{IndicatorLearner}}
+\index{IndicatorLearner@{IndicatorLearner}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{IndicatorLearner}]{\setlength{\rightskip}{0pt plus 5cm}MultiBoost::IndicatorLearner::IndicatorLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_a0dbdb5de3f239e23b989c9ca2d8c1917}
+The constructor. \begin{DoxyDate}{Date}
+29/04/2010 
+\end{DoxyDate}
+
+
+Definition at line 68 of file IndicatorLearner.h.
+
+\hypertarget{classMultiBoost_1_1IndicatorLearner_a2df32d7f761265bc1ad243cf4d9e0262}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!$\sim$IndicatorLearner@{$\sim$IndicatorLearner}}
+\index{$\sim$IndicatorLearner@{$\sim$IndicatorLearner}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{$\sim$IndicatorLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::IndicatorLearner::$\sim$IndicatorLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_a2df32d7f761265bc1ad243cf4d9e0262}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 75 of file IndicatorLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1IndicatorLearner_a80e95e42cb85dcfa8575919269099c34}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!cut@{cut}}
+\index{cut@{cut}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{cut}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::IndicatorLearner::cut (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_a80e95e42cb85dcfa8575919269099c34}
+A simple cut on a feature. This simple function is needed for \hyperlink{classMultiBoost_1_1TreeLearner}{TreeLearner}. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The input data. \\
+\hline
+{\em idx} & The index of the data point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if the correspinding value of pData\mbox{[}idx\mbox{]}\mbox{[}\_\-selectedColumn\mbox{]} in array \_\-u is positive and -\/1 otherwise. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+21/07/2010 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1ScalarLearner_a8d52e02fc7664ecdc5fd0b14b04a985e}{MultiBoost::ScalarLearner}.
+
+
+
+Definition at line 156 of file IndicatorLearner.h.
+
+\hypertarget{classMultiBoost_1_1IndicatorLearner_ab4e079f316f5d882392839aa02f67d16}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!load@{load}}
+\index{load@{load}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::IndicatorLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_ab4e079f316f5d882392839aa02f67d16}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1IndicatorLearner_a66dfec334db068b3ab5806723b4170b4}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 421 of file IndicatorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1IndicatorLearner_ad6da91b334f6624773fb671a3f2ffc3b}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::IndicatorLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_ad6da91b334f6624773fb671a3f2ffc3b}
+A scalar discriminative function. 
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate, it is interpreted in the \_\-selectedColumn'th feature \\
+\hline
+{\em classIdx} & The class index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a76a3ea26da7434ebb2b48415cc83fa12}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 146 of file IndicatorLearner.h.
+
+\hypertarget{classMultiBoost_1_1IndicatorLearner_a83002a7c378de9a4cedd65f54e677955}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::IndicatorLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_a83002a7c378de9a4cedd65f54e677955}
+A discriminative function. \begin{DoxyRemark}{Remarks}
+Positive or negative do NOT refer to positive or negative classification. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}(int)val\mbox{]} 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+\end{DoxySeeAlso}
+
+
+Definition at line 401 of file IndicatorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1IndicatorLearner_af6ebc02b7c3c99c3a37c29b8b315786c}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!run@{run}}
+\index{run@{run}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::IndicatorLearner::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_af6ebc02b7c3c99c3a37c29b8b315786c}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/05/2007 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 46 of file IndicatorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1IndicatorLearner_a8ecd0b8a6454b9b6648db679183035b4}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!run@{run}}
+\index{run@{run}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::IndicatorLearner::run (
+\begin{DoxyParamCaption}
+\item[{int}]{colIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_a8ecd0b8a6454b9b6648db679183035b4}
+Run the learner to build the classifier using only one single feature from the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function {\bfseries must} update \_\-alpha too! You can use the helper functions (the getAlpha with parameters) to update it.  colIdx The index of the feature can be only used. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The energy of the weak classifier (that we want to minimize) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+getAlpha(float) 
+
+getAlpha(float, float) 
+
+getAlpha(float, float, float, float) 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 229 of file IndicatorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1IndicatorLearner_a66dfec334db068b3ab5806723b4170b4}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!save@{save}}
+\index{save@{save}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::IndicatorLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_a66dfec334db068b3ab5806723b4170b4}
+Save the current object information needed for classification, that is the \_\-u vector. 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+21/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 408 of file IndicatorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1IndicatorLearner_a47fb712bf8e44ebd7a7af759423b8fcc}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::IndicatorLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_a47fb712bf8e44ebd7a7af759423b8fcc}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1IndicatorLearner_a47fb712bf8e44ebd7a7af759423b8fcc}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1IndicatorLearner_a66dfec334db068b3ab5806723b4170b4}{save} 
+
+\hyperlink{classMultiBoost_1_1IndicatorLearner_ab4e079f316f5d882392839aa02f67d16}{load} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 433 of file IndicatorLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1IndicatorLearner_a27db4cf56fa20bbf125a82594ff6d9ac}{
+\index{MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::IndicatorLearner@{MultiBoost::IndicatorLearner}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::IndicatorLearner::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1IndicatorLearner_a27db4cf56fa20bbf125a82594ff6d9ac}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+21/05/2007 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 83 of file IndicatorLearner.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{IndicatorLearner_8h}{IndicatorLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/IndicatorLearner.cpp\end{DoxyCompactItemize}

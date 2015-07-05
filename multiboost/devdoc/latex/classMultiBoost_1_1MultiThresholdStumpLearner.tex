@@ -1,0 +1,320 @@
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner}{
+\section{MultiBoost::MultiThresholdStumpLearner Class Reference}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner}\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+}
+
+
+{\ttfamily \#include $<$MultiThresholdStumpLearner.h$>$}
+
+Inheritance diagram for MultiBoost::MultiThresholdStumpLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classMultiBoost_1_1MultiThresholdStumpLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a856fc2316eb840bc782b60651a86b727}{$\sim$MultiThresholdStumpLearner} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_ad924c25c6b9e850621095b26b17deff6}{subCreate} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$ \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a9c3040ae7a285d0949b1ae277709f6a1}{createInputData} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a9f82c8803d80e1a64427aaca042d37ff}{run} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a04e20d164fbe57b89c69a3518a06943c}{run} (int colIdx)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a0dd15d2b44a067988ff2496e2efe5aab}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a3dc38b2a4c1923866a2e63072c4a0c89}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a093c9a16e80ab2fe90470c43f24b0bfb}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a03dcf4e724c5be8aa72dba6d5169cd56}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val, int classIdx) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_a143d08b9d1f9bff74d5b79642262867d}{
+vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a143d08b9d1f9bff74d5b79642262867d}{\_\-thresholds}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_a143d08b9d1f9bff74d5b79642262867d}
+
+\begin{DoxyCompactList}\small\item\em The thresholds (one for each class) of the decision stump. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\bfseries multi} threshold decision stump learner. There is a threshold for every class. 
+
+Definition at line 61 of file MultiThresholdStumpLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_a856fc2316eb840bc782b60651a86b727}{
+\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}!$\sim$MultiThresholdStumpLearner@{$\sim$MultiThresholdStumpLearner}}
+\index{$\sim$MultiThresholdStumpLearner@{$\sim$MultiThresholdStumpLearner}!MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+\subsubsection[{$\sim$MultiThresholdStumpLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::MultiThresholdStumpLearner::$\sim$MultiThresholdStumpLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_a856fc2316eb840bc782b60651a86b727}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 69 of file MultiThresholdStumpLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_a9c3040ae7a285d0949b1ae277709f6a1}{
+\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}!createInputData@{createInputData}}
+\index{createInputData@{createInputData}!MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+\subsubsection[{createInputData}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf InputData}$\ast$ MultiBoost::MultiThresholdStumpLearner::createInputData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_a9c3040ae7a285d0949b1ae277709f6a1}
+Creates an \hyperlink{classMultiBoost_1_1InputData}{InputData} object that it is good for the weak learner. Overridden to return \hyperlink{classMultiBoost_1_1SortedData}{SortedData}. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1InputData}{InputData} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{BaseLearner::createInputData()} 
+
+\hyperlink{classMultiBoost_1_1SortedData}{SortedData} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+The object {\bfseries must} be destroyed by the caller. 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 88 of file MultiThresholdStumpLearner.h.
+
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_a3dc38b2a4c1923866a2e63072c4a0c89}{
+\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}!load@{load}}
+\index{load@{load}!MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::MultiThresholdStumpLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_a3dc38b2a4c1923866a2e63072c4a0c89}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a0dd15d2b44a067988ff2496e2efe5aab}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 132 of file MultiThresholdStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_a03dcf4e724c5be8aa72dba6d5169cd56}{
+\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::MultiThresholdStumpLearner::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_a03dcf4e724c5be8aa72dba6d5169cd56}
+A discriminative function. \begin{DoxyRemark}{Remarks}
+Positive or negative do NOT refer to positive or negative classification. This function is equivalent to the phi function in my thesis. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate \\
+\hline
+{\em classIdx} & The index of the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape val\/} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a76a3ea26da7434ebb2b48415cc83fa12}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 111 of file MultiThresholdStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_a04e20d164fbe57b89c69a3518a06943c}{
+\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}!run@{run}}
+\index{run@{run}!MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::MultiThresholdStumpLearner::run (
+\begin{DoxyParamCaption}
+\item[{int}]{colIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_a04e20d164fbe57b89c69a3518a06943c}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 105 of file MultiThresholdStumpLearner.h.
+
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_a9f82c8803d80e1a64427aaca042d37ff}{
+\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}!run@{run}}
+\index{run@{run}!MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::MultiThresholdStumpLearner::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_a9f82c8803d80e1a64427aaca042d37ff}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 47 of file MultiThresholdStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_a0dd15d2b44a067988ff2496e2efe5aab}{
+\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}!save@{save}}
+\index{save@{save}!MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::MultiThresholdStumpLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_a0dd15d2b44a067988ff2496e2efe5aab}
+Save the current object information needed for classification, that is the threshold list. 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+StumpLearner::save() 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 120 of file MultiThresholdStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_a093c9a16e80ab2fe90470c43f24b0bfb}{
+\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::MultiThresholdStumpLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_a093c9a16e80ab2fe90470c43f24b0bfb}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a093c9a16e80ab2fe90470c43f24b0bfb}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a0dd15d2b44a067988ff2496e2efe5aab}{save} 
+
+\hyperlink{classMultiBoost_1_1MultiThresholdStumpLearner_a3dc38b2a4c1923866a2e63072c4a0c89}{load} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 143 of file MultiThresholdStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1MultiThresholdStumpLearner_ad924c25c6b9e850621095b26b17deff6}{
+\index{MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::MultiThresholdStumpLearner@{MultiBoost::MultiThresholdStumpLearner}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::MultiThresholdStumpLearner::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1MultiThresholdStumpLearner_ad924c25c6b9e850621095b26b17deff6}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 77 of file MultiThresholdStumpLearner.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{MultiThresholdStumpLearner_8h}{MultiThresholdStumpLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/MultiThresholdStumpLearner.cpp\end{DoxyCompactItemize}

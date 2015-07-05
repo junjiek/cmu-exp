@@ -1,0 +1,248 @@
+\hypertarget{classMultiBoost_1_1HaarData}{\section{Multi\-Boost\-:\-:Haar\-Data Class Reference}
+\label{classMultiBoost_1_1HaarData}\index{Multi\-Boost\-::\-Haar\-Data@{Multi\-Boost\-::\-Haar\-Data}}
+}
+
+
+{\ttfamily \#include $<$Haar\-Data.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Haar\-Data\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMultiBoost_1_1HaarData}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1HaarData_ad8e370648f3ee73362be0a7de7c3c1b6}{$\sim$\-Haar\-Data} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarData_a3b37aff7853230f715ab0ad62610ddbb}{init\-Options} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarData_af48d9ca35effea8c6f653b66cfc81b71}{load} (const string \&file\-Name, e\-Input\-Type input\-Type=I\-T\-\_\-\-T\-R\-A\-I\-N, int verbose\-Level=1)
+\item 
+\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} \hyperlink{classMultiBoost_1_1HaarData_a22f4952fb0f6bc1a5b6c599a24456576}{get\-Value} (int, int) const 
+\item 
+vector$<$ \hyperlink{classMultiBoost_1_1HaarFeature}{Haar\-Feature} $\ast$ $>$ \& \hyperlink{classMultiBoost_1_1HaarData_a74f63b1f14a4c1b7d8901ad431dddb78}{get\-Loaded\-Features} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static short \hyperlink{classMultiBoost_1_1HaarData_a8a127852e10666e85dd4d013466c928e}{area\-Width} ()
+\item 
+static short \hyperlink{classMultiBoost_1_1HaarData_a86ae8e41a9e33317337b2450e9609389}{area\-Height} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1HaarData_a5a09a62a0f69dec39ff970025e4a9a70}{bool {\bfseries check\-Input} (const string \&line, int num\-Columns)}\label{classMultiBoost_1_1HaarData_a5a09a62a0f69dec39ff970025e4a9a70}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classMultiBoost_1_1HaarFeature}{Haar\-Feature} $\ast$ $>$ \hyperlink{classMultiBoost_1_1HaarData_a9afda9dde6bbde709c5e75246e52d56e}{\-\_\-loaded\-Features}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1HaarData_a73862205f817a06ff1c09aaffe389d31}{static short \hyperlink{classMultiBoost_1_1HaarData_a73862205f817a06ff1c09aaffe389d31}{\-\_\-width} = 0}\label{classMultiBoost_1_1HaarData_a73862205f817a06ff1c09aaffe389d31}
+
+\begin{DoxyCompactList}\small\item\em The width of the integral image. \end{DoxyCompactList}\item 
+\hypertarget{classMultiBoost_1_1HaarData_ae0233232368d1411399af56a0966bd0d}{static short \hyperlink{classMultiBoost_1_1HaarData_ae0233232368d1411399af56a0966bd0d}{\-\_\-height} = 0}\label{classMultiBoost_1_1HaarData_ae0233232368d1411399af56a0966bd0d}
+
+\begin{DoxyCompactList}\small\item\em The height of the integral image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Overloading of the \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} class to load data which has been already transformed into integral image representation. To get more information about this format, please see the work of Viola and Jones \char`\"{}\-Robust Real-\/time Object Detection\char`\"{}. To convert normal images (or any 1 or 2 dimensional data) you can use this simple matlab script\-: 
+\begin{DoxyCode}
+\textcolor{keyword}{function} iimage = computeIntegralImage(data, width, height)
+    
+% Uncomment \textcolor{keyword}{this} \textcolor{keywordflow}{if} your data is not an array
+% data = data(:);
+    
+% fill an array of size \textcolor{stringliteral}{"width"} with zeros
+cumulativeRowSum = zeros(width);
+arrayIdx = 1;
+iiImageIdx = 1;
+    
+\textcolor{keywordflow}{for} y = 1:height
+prevIntImValue = 0;
+    
+\textcolor{keywordflow}{for} x = 1:width
+cumulativeRowSum(x) = cumulativeRowSum(x) + data(arrayIdx);
+iimage(iiImageIdx) = prevIntImValue + cumulativeRowSum(x);
+prevIntImValue = iimage(iiImageIdx);
+    
+iiImageIdx = iiImageIdx + 1;
+arrayIdx =  arrayIdx + 1;
+end
+end
+\end{DoxyCode}
+ \begin{DoxyDate}{Date}
+17/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 94 of file Haar\-Data.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1HaarData_ad8e370648f3ee73362be0a7de7c3c1b6}{\index{Multi\-Boost\-::\-Haar\-Data@{Multi\-Boost\-::\-Haar\-Data}!$\sim$\-Haar\-Data@{$\sim$\-Haar\-Data}}
+\index{$\sim$\-Haar\-Data@{$\sim$\-Haar\-Data}!MultiBoost::HaarData@{Multi\-Boost\-::\-Haar\-Data}}
+\subsubsection[{$\sim$\-Haar\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Haar\-Data\-::$\sim$\-Haar\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1HaarData_ad8e370648f3ee73362be0a7de7c3c1b6}
+The destructor. Erases the integral image data. \begin{DoxyDate}{Date}
+17/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 50 of file Haar\-Data.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1HaarData_a86ae8e41a9e33317337b2450e9609389}{\index{Multi\-Boost\-::\-Haar\-Data@{Multi\-Boost\-::\-Haar\-Data}!area\-Height@{area\-Height}}
+\index{area\-Height@{area\-Height}!MultiBoost::HaarData@{Multi\-Boost\-::\-Haar\-Data}}
+\subsubsection[{area\-Height}]{\setlength{\rightskip}{0pt plus 5cm}static short Multi\-Boost\-::\-Haar\-Data\-::area\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classMultiBoost_1_1HaarData_a86ae8e41a9e33317337b2450e9609389}
+Return the height of the integral image. \begin{DoxyDate}{Date}
+17/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 169 of file Haar\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1HaarData_a8a127852e10666e85dd4d013466c928e}{\index{Multi\-Boost\-::\-Haar\-Data@{Multi\-Boost\-::\-Haar\-Data}!area\-Width@{area\-Width}}
+\index{area\-Width@{area\-Width}!MultiBoost::HaarData@{Multi\-Boost\-::\-Haar\-Data}}
+\subsubsection[{area\-Width}]{\setlength{\rightskip}{0pt plus 5cm}static short Multi\-Boost\-::\-Haar\-Data\-::area\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classMultiBoost_1_1HaarData_a8a127852e10666e85dd4d013466c928e}
+Return the width of the integral image. \begin{DoxyDate}{Date}
+17/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 163 of file Haar\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1HaarData_a74f63b1f14a4c1b7d8901ad431dddb78}{\index{Multi\-Boost\-::\-Haar\-Data@{Multi\-Boost\-::\-Haar\-Data}!get\-Loaded\-Features@{get\-Loaded\-Features}}
+\index{get\-Loaded\-Features@{get\-Loaded\-Features}!MultiBoost::HaarData@{Multi\-Boost\-::\-Haar\-Data}}
+\subsubsection[{get\-Loaded\-Features}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Haar\-Feature}$\ast$$>$\& Multi\-Boost\-::\-Haar\-Data\-::get\-Loaded\-Features (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1HaarData_a74f63b1f14a4c1b7d8901ad431dddb78}
+Returns the whole integral image of example {\itshape idx}. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & The index of the example. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+17/12/2005 Get the vector that contains the integral images for all the examples. 
+
+17/12/2005 Get the vector of the features types that have been loaded (or declared) by the user. 
+
+17/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 155 of file Haar\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1HaarData_a22f4952fb0f6bc1a5b6c599a24456576}{\index{Multi\-Boost\-::\-Haar\-Data@{Multi\-Boost\-::\-Haar\-Data}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!MultiBoost::HaarData@{Multi\-Boost\-::\-Haar\-Data}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\-Real} Multi\-Boost\-::\-Haar\-Data\-::get\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1HaarData_a22f4952fb0f6bc1a5b6c599a24456576}
+Overload the standard method for getting data and returns an error if called. This function cannot be overloaded for the integral image type, as it is integer. \begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 133 of file Haar\-Data.\-h.
+
+\hypertarget{classMultiBoost_1_1HaarData_a3b37aff7853230f715ab0ad62610ddbb}{\index{Multi\-Boost\-::\-Haar\-Data@{Multi\-Boost\-::\-Haar\-Data}!init\-Options@{init\-Options}}
+\index{init\-Options@{init\-Options}!MultiBoost::HaarData@{Multi\-Boost\-::\-Haar\-Data}}
+\subsubsection[{init\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Haar\-Data\-::init\-Options (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1HaarData_a3b37aff7853230f715ab0ad62610ddbb}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. on the derived classes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+It does not have a declare\-Arguments because it is dealt by the weak learner responsible for the input data (so that the option goes under its own group). 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1InputData_a2fb71a41b408568bf3f64dad6e457c34}{Multi\-Boost\-::\-Input\-Data}.
+
+
+
+Definition at line 60 of file Haar\-Data.\-cpp.
+
+\hypertarget{classMultiBoost_1_1HaarData_af48d9ca35effea8c6f653b66cfc81b71}{\index{Multi\-Boost\-::\-Haar\-Data@{Multi\-Boost\-::\-Haar\-Data}!load@{load}}
+\index{load@{load}!MultiBoost::HaarData@{Multi\-Boost\-::\-Haar\-Data}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Haar\-Data\-::load (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{file\-Name, }
+\item[{e\-Input\-Type}]{input\-Type = {\ttfamily IT\-\_\-TRAIN}, }
+\item[{int}]{verbose\-Level = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1HaarData_af48d9ca35effea8c6f653b66cfc81b71}
+Overloading of the load function to read integral images files. 
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & The name of the file to be loaded. \\
+\hline
+{\em input\-Type} & The type of input. \\
+\hline
+{\em verbose\-Level} & The level of verbosity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1InputData_abf6290345aa3ffc9f81af71c41487390}{Input\-Data\-::load()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1InputData_abf6290345aa3ffc9f81af71c41487390}{Multi\-Boost\-::\-Input\-Data}.
+
+
+
+Definition at line 112 of file Haar\-Data.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMultiBoost_1_1HaarData_a9afda9dde6bbde709c5e75246e52d56e}{\index{Multi\-Boost\-::\-Haar\-Data@{Multi\-Boost\-::\-Haar\-Data}!\-\_\-loaded\-Features@{\-\_\-loaded\-Features}}
+\index{\-\_\-loaded\-Features@{\-\_\-loaded\-Features}!MultiBoost::HaarData@{Multi\-Boost\-::\-Haar\-Data}}
+\subsubsection[{\-\_\-loaded\-Features}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Haar\-Feature}$\ast$$>$ Multi\-Boost\-::\-Haar\-Data\-::\-\_\-loaded\-Features\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1HaarData_a9afda9dde6bbde709c5e75246e52d56e}
+The list of features that have been requested by the user. 
+
+Definition at line 182 of file Haar\-Data.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/\hyperlink{HaarData_8h}{Haar\-Data.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-I\-O/Haar\-Data.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classMultiBoost_1_1ConstantAlgorithmLSHTC}{\section{Multi\-Boost\-:\-:Constant\-Algorithm\-L\-S\-H\-T\-C Class Reference}
+\label{classMultiBoost_1_1ConstantAlgorithmLSHTC}\index{Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C@{Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1ConstantAlgorithmLSHTC_a9bf95b6a32ca7af3df53ab3d76f16bca}{find\-Constant\-Weights\-Edges} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&p\-Half\-Weights\-Per\-Class, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ \&p\-Half\-Edges)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1ConstantAlgorithmLSHTC_a5a47d4c74e5e83f1d6710a559cad3c43}{find\-Constant} (\hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Data, vector$<$ \hyperlink{structMultiBoost_1_1sRates}{s\-Rates} $>$ $\ast$p\-Mu, vector$<$ \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} $>$ $\ast$p\-V)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 50 of file Constant\-Algorithm\-L\-S\-H\-T\-C.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1ConstantAlgorithmLSHTC_a5a47d4c74e5e83f1d6710a559cad3c43}{\index{Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C@{Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C}!find\-Constant@{find\-Constant}}
+\index{find\-Constant@{find\-Constant}!MultiBoost::ConstantAlgorithmLSHTC@{Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C}}
+\subsubsection[{find\-Constant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C\-::find\-Constant (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf s\-Rates} $>$ $\ast$}]{p\-Mu, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ $\ast$}]{p\-V}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1ConstantAlgorithmLSHTC_a5a47d4c74e5e83f1d6710a559cad3c43}
+Computes the classwise mus and votes (alignment) of the constant classifier 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The pointer to the data. \\
+\hline
+{\em p\-Mu} & The The class-\/wise rates to update. \\
+\hline
+{\em p\-V} & The alignment vector to update. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The edge. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+20/07/2006 
+\end{DoxyDate}
+
+
+Definition at line 84 of file Constant\-Algorithm\-L\-S\-H\-T\-C.\-cpp.
+
+\hypertarget{classMultiBoost_1_1ConstantAlgorithmLSHTC_a9bf95b6a32ca7af3df53ab3d76f16bca}{\index{Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C@{Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C}!find\-Constant\-Weights\-Edges@{find\-Constant\-Weights\-Edges}}
+\index{find\-Constant\-Weights\-Edges@{find\-Constant\-Weights\-Edges}!MultiBoost::ConstantAlgorithmLSHTC@{Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C}}
+\subsubsection[{find\-Constant\-Weights\-Edges}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Constant\-Algorithm\-L\-S\-H\-T\-C\-::find\-Constant\-Weights\-Edges (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Data} $\ast$}]{p\-Data, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{p\-Half\-Weights\-Per\-Class, }
+\item[{vector$<$ {\bf Alpha\-Real} $>$ \&}]{p\-Half\-Edges}
+\end{DoxyParamCaption}
+)}}\label{classMultiBoost_1_1ConstantAlgorithmLSHTC_a9bf95b6a32ca7af3df53ab3d76f16bca}
+Computes the half of the classwise weights and half of the classwise edges. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & The pointer to the data. \\
+\hline
+{\em p\-Half\-Weights\-Per\-Class} & The pointer to the half of the classwise weights. \\
+\hline
+{\em p\-Half\-Edges} & The pointer to the half of the classwise edges. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+30/06/2006 
+\end{DoxyDate}
+
+
+Definition at line 50 of file Constant\-Algorithm\-L\-S\-H\-T\-C.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Algorithms/Constant\-Algorithm\-L\-S\-H\-T\-C.\-h\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Algorithms/Constant\-Algorithm\-L\-S\-H\-T\-C.\-cpp\end{DoxyCompactItemize}

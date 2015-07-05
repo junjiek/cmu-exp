@@ -1,0 +1,503 @@
+\hypertarget{classMultiBoost_1_1HaarFeature}{
+\section{MultiBoost::HaarFeature Class Reference}
+\label{classMultiBoost_1_1HaarFeature}\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+}
+
+
+{\ttfamily \#include $<$HaarFeatures.h$>$}
+
+Inheritance diagram for MultiBoost::HaarFeature:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.191489cm]{classMultiBoost_1_1HaarFeature}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs}{FeaturesRegs}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1HaarFeature_a8b4550dea5dcdb0396a540cfbd0c2347}{HaarFeature} (short width=0, short height=0, const string \&shortName=\char`\"{}\char`\"{}, const string \&name=\char`\"{}\char`\"{}, eFeatureType type=FEATURE\_\-NO\_\-TYPE)
+\item 
+virtual \hyperlink{classMultiBoost_1_1HaarFeature}{HaarFeature} $\ast$ \hyperlink{classMultiBoost_1_1HaarFeature_a298d8950cb415b3b54b1ad99f54ea6bb}{create} ()=0
+\item 
+string \hyperlink{classMultiBoost_1_1HaarFeature_ab1b7caacd7d921ce2d7e98ed971949ba}{getShortName} () const 
+\item 
+string \hyperlink{classMultiBoost_1_1HaarFeature_a420839cd8a2c3b4d6e0ab5e95f1f8e44}{getName} () const 
+\item 
+eFeatureType \hyperlink{classMultiBoost_1_1HaarFeature_ac2cd1e0433cf98f251722e1765276e33}{getType} () const 
+\item 
+void \hyperlink{classMultiBoost_1_1HaarFeature_ac98963f2cd367c07cb187f1f918a5019}{setAccessType} (eAccessType accessType)
+\item 
+int \hyperlink{classMultiBoost_1_1HaarFeature_a8611eeed1ec900074c23dba2af08912a}{precomputeConfigs} ()
+\item 
+const \hyperlink{structnor__utils_1_1Rect}{nor\_\-utils::Rect} \& \hyperlink{classMultiBoost_1_1HaarFeature_aca72d175b09b99fd5ce140276b6313e7}{getCurrentConfig} () const 
+\item 
+void \hyperlink{classMultiBoost_1_1HaarFeature_a27de701185caaff11713083941f9880e}{moveToNextConfig} ()
+\item 
+bool \hyperlink{classMultiBoost_1_1HaarFeature_aa3c1cdc00b961c91ba547d5f3e2ec98f}{hasConfigs} () const 
+\item 
+void \hyperlink{classMultiBoost_1_1HaarFeature_aa3d103d556edf183eae94fd732038ad8}{resetConfigIterator} ()
+\item 
+void \hyperlink{classMultiBoost_1_1HaarFeature_afbb8266424e2ef00ffa2353874ad2582}{fillHaarData} (const vector$<$ \hyperlink{classMultiBoost_1_1Example}{Example} $>$ \&intImages, vector$<$ pair$<$ int, \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ $>$ \&haarData)
+\item 
+virtual \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} \hyperlink{classMultiBoost_1_1HaarFeature_a57d0ba94269beef5e8ed1ab984bc3099}{getValue} (const vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ \&intImage, const \hyperlink{structnor__utils_1_1Rect}{nor\_\-utils::Rect} \&r)=0
+\item 
+\hypertarget{classMultiBoost_1_1HaarFeature_a7a4768eee4b56bb67f2969d81343fe48}{
+virtual int {\bfseries getLoadedConfigIndex} ()}
+\label{classMultiBoost_1_1HaarFeature_a7a4768eee4b56bb67f2969d81343fe48}
+
+\item 
+\hypertarget{classMultiBoost_1_1HaarFeature_a866a651053e58bcb5a43b95b1abffb6d}{
+virtual void {\bfseries loadConfigByNum} (int idx)}
+\label{classMultiBoost_1_1HaarFeature_a866a651053e58bcb5a43b95b1abffb6d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs}{FeaturesRegs} \& \hyperlink{classMultiBoost_1_1HaarFeature_a790210b2a24870952aec0569e2474c3a}{RegisteredFeatures} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} \hyperlink{classMultiBoost_1_1HaarFeature_adba727c362cdb3472a32c54c76f74ac1}{getSumAt} (const vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ \&intImage, int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1HaarFeature_a0006d279446199c7548dde9c58d14a44}{
+string \hyperlink{classMultiBoost_1_1HaarFeature_a0006d279446199c7548dde9c58d14a44}{\_\-shortName}}
+\label{classMultiBoost_1_1HaarFeature_a0006d279446199c7548dde9c58d14a44}
+
+\begin{DoxyCompactList}\small\item\em The short name of the Haar-\/like feature. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class holds a Haar-\/like feature type. Each type will have a set of possible \char`\"{}configurations\char`\"{}, that is its position and size inside a window of width x height size. For instance, here is an example of 3 different configurations of a \char`\"{}2 vertical feature\char`\"{} inside a window of 24x24 pixels: \begin{DoxyVerb}
+	 24 pixels
+	 +--------------------------------+
+	 |                   +-+          |
+	 |   +--------+      | |          |
+	 |   |________|      |_|          |
+	 |   |        |      | |          |
+	 |   +--------+      | |          |
+	 |                   +-+          |  24 pixels
+	 |    +-------------------------+ |
+	 |    |                         | |
+	 |    |_________________________| |
+	 |    |                         | |
+	 |    |                         | |
+	 |    +-------------------------+ |
+	 +--------------------------------+
+	 \end{DoxyVerb}
+ The size of the window depend on the integral image loaded by \hyperlink{classMultiBoost_1_1HaarData}{HaarData}. For more information on Haar-\/like features, please see Viola and Jones 2001 paper (Robust Real-\/time Object Detection). \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarLearner}{HaarLearner} 
+
+\hyperlink{classMultiBoost_1_1HaarData}{HaarData} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 116 of file HaarFeatures.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1HaarFeature_a8b4550dea5dcdb0396a540cfbd0c2347}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!HaarFeature@{HaarFeature}}
+\index{HaarFeature@{HaarFeature}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{HaarFeature}]{\setlength{\rightskip}{0pt plus 5cm}MultiBoost::HaarFeature::HaarFeature (
+\begin{DoxyParamCaption}
+\item[{short}]{width = {\ttfamily 0}, }
+\item[{short}]{height = {\ttfamily 0}, }
+\item[{const string \&}]{shortName = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{const string \&}]{name = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{eFeatureType}]{type = {\ttfamily FEATURE\_\-NO\_\-TYPE}}
+\end{DoxyParamCaption}
+)}}
+\label{classMultiBoost_1_1HaarFeature_a8b4550dea5dcdb0396a540cfbd0c2347}
+The constructor. It just initializes the variables. 
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the Haar-\/like feature. \\
+\hline
+{\em height} & The height of the Haar-\/like feature. \\
+\hline
+{\em shortName} & The short name of the feature. This name will be used for serialization and should be short and without spaces. \\
+\hline
+{\em name} & The name of the feature. \\
+\hline
+{\em type} & The type of feature. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 53 of file HaarFeatures.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1HaarFeature_a298d8950cb415b3b54b1ad99f54ea6bb}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!create@{create}}
+\index{create@{create}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf HaarFeature}$\ast$ MultiBoost::HaarFeature::create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_a298d8950cb415b3b54b1ad99f54ea6bb}
+Returns a new object of the derived type. For instance the overriding of this method in \hyperlink{classMultiBoost_1_1HaarFeature__2H}{HaarFeature\_\-2H} will be: 
+\begin{DoxyCode}
+ return new HaarFeature_2H(_shortName)
+\end{DoxyCode}
+ \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1HaarFeature__2H_af55abf21457be8654bb2c4b94a147883}{MultiBoost::HaarFeature\_\-2H}, \hyperlink{classMultiBoost_1_1HaarFeature__2V_add1de832e33d9d4e0d6c603977519718}{MultiBoost::HaarFeature\_\-2V}, \hyperlink{classMultiBoost_1_1HaarFeature__3H_a57d9d009bcfa1ecd8ce83765614db68e}{MultiBoost::HaarFeature\_\-3H}, \hyperlink{classMultiBoost_1_1HaarFeature__3V_a78b0d02fbc910fef43e1151b9207ea00}{MultiBoost::HaarFeature\_\-3V}, and \hyperlink{classMultiBoost_1_1HaarFeature__4SQ_ab9e2a96a39586c572ddced5c716f0501}{MultiBoost::HaarFeature\_\-4SQ}.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_afbb8266424e2ef00ffa2353874ad2582}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!fillHaarData@{fillHaarData}}
+\index{fillHaarData@{fillHaarData}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{fillHaarData}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarFeature::fillHaarData (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Example} $>$ \&}]{intImages, }
+\item[{vector$<$ pair$<$ int, {\bf FeatureReal} $>$ $>$ \&}]{haarData}
+\end{DoxyParamCaption}
+)}}
+\label{classMultiBoost_1_1HaarFeature_afbb8266424e2ef00ffa2353874ad2582}
+Convert the vector of all the examples (in integral image format) into a vector of features outputs, using the current configuration. The pair represent the original index of the example, where the second element is the feature's output. \begin{DoxyRemark}{Remarks}
+This conversion could be done example-\/by-\/example with the getValue method, but a virtual call for each example would be too slow. Instead the type of Haar-\/like feature is resolved within this method, and then the filling is performed statically by \_\-fillHaarData. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em intImages} & The vector with the examples to be converted. \\
+\hline
+{\em haarData} & The returned vector of features outputs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarFeature_a57d0ba94269beef5e8ed1ab984bc3099}{getValue} 
+
+\_\-fillHaarData 
+
+\hyperlink{classMultiBoost_1_1HaarFeature_aca72d175b09b99fd5ce140276b6313e7}{getCurrentConfig} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+$<$ Two horizontal.
+
+$<$ Two vertical.
+
+$<$ Three horizontal.
+
+$<$ Three vertical.
+
+$<$ Four square. 
+
+
+
+Definition at line 60 of file HaarFeatures.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_aca72d175b09b99fd5ce140276b6313e7}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!getCurrentConfig@{getCurrentConfig}}
+\index{getCurrentConfig@{getCurrentConfig}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{getCurrentConfig}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf nor\_\-utils::Rect}\& MultiBoost::HaarFeature::getCurrentConfig (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_aca72d175b09b99fd5ce140276b6313e7}
+Return the configuration on the current position of the iterator over the list of pre-\/computed configurations. \begin{DoxyReturn}{Returns}
+The rectangle with the position and size of the current configuration. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarFeature}{HaarFeature} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 295 of file HaarFeatures.h.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_a420839cd8a2c3b4d6e0ab5e95f1f8e44}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!getName@{getName}}
+\index{getName@{getName}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}string MultiBoost::HaarFeature::getName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_a420839cd8a2c3b4d6e0ab5e95f1f8e44}
+Get the full name of the feature type. \begin{DoxyReturn}{Returns}
+The full name of the feature type. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 255 of file HaarFeatures.h.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_ab1b7caacd7d921ce2d7e98ed971949ba}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!getShortName@{getShortName}}
+\index{getShortName@{getShortName}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{getShortName}]{\setlength{\rightskip}{0pt plus 5cm}string MultiBoost::HaarFeature::getShortName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_ab1b7caacd7d921ce2d7e98ed971949ba}
+Get the short name of the feature type. \begin{DoxyReturn}{Returns}
+The short name of the feature type. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 248 of file HaarFeatures.h.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_adba727c362cdb3472a32c54c76f74ac1}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!getSumAt@{getSumAt}}
+\index{getSumAt@{getSumAt}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{getSumAt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FeatureReal} MultiBoost::HaarFeature::getSumAt (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf FeatureReal} $>$ \&}]{intImage, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_adba727c362cdb3472a32c54c76f74ac1}
+Return the integral image sum of an area which starts at 0,0 and ends at x,y. 
+\begin{DoxyParams}{Parameters}
+{\em pIntImage} & The pointer to the array of data which represent the integral image of the example. \\
+\hline
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarData}{HaarData} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 145 of file HaarFeatures.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_ac2cd1e0433cf98f251722e1765276e33}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!getType@{getType}}
+\index{getType@{getType}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{getType}]{\setlength{\rightskip}{0pt plus 5cm}eFeatureType MultiBoost::HaarFeature::getType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_ac2cd1e0433cf98f251722e1765276e33}
+Get the type of the feature. \begin{DoxyReturn}{Returns}
+The type of the feature. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+eFeatureType 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 263 of file HaarFeatures.h.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_a57d0ba94269beef5e8ed1ab984bc3099}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!getValue@{getValue}}
+\index{getValue@{getValue}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf FeatureReal} MultiBoost::HaarFeature::getValue (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf FeatureReal} $>$ \&}]{intImage, }
+\item[{const {\bf nor\_\-utils::Rect} \&}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_a57d0ba94269beef5e8ed1ab984bc3099}
+Get the feature output given a single example (in integral image format). It will be overridden by the derived classes. \begin{DoxyRemark}{Remarks}
+Because it is a virtual function it is quite slow. If the purpose is to \char`\"{}convert\char`\"{} a whole vector of examples, please use fillHaarData. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em pIntImage} & The array with the integral image data of the single example. \\
+\hline
+{\em r} & The configuration that will be used to compute the value of the feature. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarFeature}{HaarFeature} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Implemented in \hyperlink{classMultiBoost_1_1HaarFeature__2H_aee53febb25c4ad0460b301e902d096c8}{MultiBoost::HaarFeature\_\-2H}, \hyperlink{classMultiBoost_1_1HaarFeature__2V_a9eba356a09223003b106d05d0e35cda4}{MultiBoost::HaarFeature\_\-2V}, \hyperlink{classMultiBoost_1_1HaarFeature__3H_ad4f1d3e2419a439f6866be7353e657ab}{MultiBoost::HaarFeature\_\-3H}, \hyperlink{classMultiBoost_1_1HaarFeature__3V_a43ac44c9246d6bfd757cea00d080ab42}{MultiBoost::HaarFeature\_\-3V}, and \hyperlink{classMultiBoost_1_1HaarFeature__4SQ_a04fec1cfc001d643dc4be6e0d415b0d1}{MultiBoost::HaarFeature\_\-4SQ}.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_aa3c1cdc00b961c91ba547d5f3e2ec98f}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!hasConfigs@{hasConfigs}}
+\index{hasConfigs@{hasConfigs}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{hasConfigs}]{\setlength{\rightskip}{0pt plus 5cm}bool MultiBoost::HaarFeature::hasConfigs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classMultiBoost_1_1HaarFeature_aa3c1cdc00b961c91ba547d5f3e2ec98f}
+Check if there is another configuration available. \begin{DoxyReturn}{Returns}
+true if there is another configuration, otherwise false. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 220 of file HaarFeatures.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_a27de701185caaff11713083941f9880e}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!moveToNextConfig@{moveToNextConfig}}
+\index{moveToNextConfig@{moveToNextConfig}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{moveToNextConfig}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarFeature::moveToNextConfig (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classMultiBoost_1_1HaarFeature_a27de701185caaff11713083941f9880e}
+Move the iterator to the next configuration. If the access type is set to AT\_\-FULL, the next configuration will be simply the next on the list. If the access type is AT\_\-RANDOM\_\-SAMPLING, the next configuration will be a random one which has {\bfseries not} been visited yet. \begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+\begin{Desc}
+\item[\hyperlink{todo__todo000003}{Todo}]Replace the \char`\"{}visited\char`\"{} list with something less awful. \end{Desc}
+
+
+Definition at line 183 of file HaarFeatures.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_a8611eeed1ec900074c23dba2af08912a}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!precomputeConfigs@{precomputeConfigs}}
+\index{precomputeConfigs@{precomputeConfigs}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{precomputeConfigs}]{\setlength{\rightskip}{0pt plus 5cm}int MultiBoost::HaarFeature::precomputeConfigs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classMultiBoost_1_1HaarFeature_a8611eeed1ec900074c23dba2af08912a}
+Perform the pre-\/computation of all the possible configurations of the feature (position and size within the window). Once they will be ready, an iterator is positioned at the beginning of the list. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarFeature}{HaarFeature} 
+
+\hyperlink{classMultiBoost_1_1HaarFeature_a27de701185caaff11713083941f9880e}{moveToNextConfig} 
+
+\hyperlink{classMultiBoost_1_1HaarFeature_aa3c1cdc00b961c91ba547d5f3e2ec98f}{hasConfigs} 
+
+\hyperlink{classMultiBoost_1_1HaarFeature_aa3d103d556edf183eae94fd732038ad8}{resetConfigIterator} 
+
+\hyperlink{classMultiBoost_1_1HaarFeature_aca72d175b09b99fd5ce140276b6313e7}{getCurrentConfig} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 99 of file HaarFeatures.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_a790210b2a24870952aec0569e2474c3a}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!RegisteredFeatures@{RegisteredFeatures}}
+\index{RegisteredFeatures@{RegisteredFeatures}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{RegisteredFeatures}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf FeaturesRegs}\& MultiBoost::HaarFeature::RegisteredFeatures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_a790210b2a24870952aec0569e2474c3a}
+Map of the registered Haar-\/like features. This data is updated statically just by adding the macro \hyperlink{HaarFeatures_8h_adcc549bcab1fba9c2649737e60dd50ea}{REGISTER\_\-HAAR\_\-FEATURE(X, Y)} where X is the short name of the feature and Y is the enum type (see eFeatureType) \hyperlink{classMultiBoost_1_1Example}{Example} (in file \hyperlink{HaarFeatures_8cpp_source}{HaarFeatures.cpp}): 
+\begin{DoxyCode}
+ REGISTER_HAAR_FEATURE(2h, HaarFeature_2H);
+\end{DoxyCode}
+ \begin{DoxyRemark}{Remarks}
+To prevent the \char`\"{}static initialization order fiasco\char`\"{} I am using the trick described in \href{http://www.parashift.com/c++-faq-lite/ctors.html#faq-10.13}{\tt http://www.parashift.com/c++-\/faq-\/lite/ctors.html\#faq-\/10.13} 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarFeature_a298d8950cb415b3b54b1ad99f54ea6bb}{create()} 
+
+\hyperlink{classMultiBoost_1_1HaarFeature_1_1FeaturesRegs}{FeaturesRegs} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 201 of file HaarFeatures.h.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_aa3d103d556edf183eae94fd732038ad8}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!resetConfigIterator@{resetConfigIterator}}
+\index{resetConfigIterator@{resetConfigIterator}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{resetConfigIterator}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarFeature::resetConfigIterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classMultiBoost_1_1HaarFeature_aa3d103d556edf183eae94fd732038ad8}
+Reset the iterator over the list of configurations. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarFeature_a27de701185caaff11713083941f9880e}{moveToNextConfig} 
+
+\hyperlink{classMultiBoost_1_1HaarFeature_aca72d175b09b99fd5ce140276b6313e7}{getCurrentConfig} 
+
+\hyperlink{classMultiBoost_1_1HaarFeature_a8611eeed1ec900074c23dba2af08912a}{precomputeConfigs} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 161 of file HaarFeatures.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarFeature_ac98963f2cd367c07cb187f1f918a5019}{
+\index{MultiBoost::HaarFeature@{MultiBoost::HaarFeature}!setAccessType@{setAccessType}}
+\index{setAccessType@{setAccessType}!MultiBoost::HaarFeature@{MultiBoost::HaarFeature}}
+\subsubsection[{setAccessType}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarFeature::setAccessType (
+\begin{DoxyParamCaption}
+\item[{eAccessType}]{accessType}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMultiBoost_1_1HaarFeature_ac98963f2cd367c07cb187f1f918a5019}
+Set the type of access for the configurations. 
+\begin{DoxyParams}{Parameters}
+{\em accessType} & The type of access, which can be full or random. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+eAccessType 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+27/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 271 of file HaarFeatures.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/Haar/\hyperlink{HaarFeatures_8h}{HaarFeatures.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/Haar/HaarFeatures.cpp\end{DoxyCompactItemize}

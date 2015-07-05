@@ -1,0 +1,218 @@
+\hypertarget{classMultiBoost_1_1Example}{\section{Multi\-Boost\-:\-:Example Class Reference}
+\label{classMultiBoost_1_1Example}\index{Multi\-Boost\-::\-Example@{Multi\-Boost\-::\-Example}}
+}
+
+
+{\ttfamily \#include $<$Example.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1Example_a0e8d0e812cba8ff98d56192f106b04a6}{Example} (const string \&name=\char`\"{}\char`\"{})
+\item 
+\hypertarget{classMultiBoost_1_1Example_af3b54a4e8cd8b46f757cca6a362ebf2e}{const string \& {\bfseries get\-Name} () const }\label{classMultiBoost_1_1Example_af3b54a4e8cd8b46f757cca6a362ebf2e}
+
+\item 
+\hypertarget{classMultiBoost_1_1Example_acdf15e60152e0ff0667d673146a98e23}{void {\bfseries set\-Name} (const string \&name)}\label{classMultiBoost_1_1Example_acdf15e60152e0ff0667d673146a98e23}
+
+\item 
+\hypertarget{classMultiBoost_1_1Example_a7316d97ab3f93e4a1ab8ff3a26bfdafe}{void {\bfseries add\-Binary\-Label} (int label\-Idx)}\label{classMultiBoost_1_1Example_a7316d97ab3f93e4a1ab8ff3a26bfdafe}
+
+\item 
+\hypertarget{classMultiBoost_1_1Example_ac9f701b0fe36eb992e605c26779358bf}{void {\bfseries add\-Labels} (vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \&labels)}\label{classMultiBoost_1_1Example_ac9f701b0fe36eb992e605c26779358bf}
+
+\item 
+\hypertarget{classMultiBoost_1_1Example_aa2a66a60ab7ea244690f500cb0ec1f86}{void {\bfseries add\-Values} (vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \&values)}\label{classMultiBoost_1_1Example_aa2a66a60ab7ea244690f500cb0ec1f86}
+
+\item 
+const vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \& \hyperlink{classMultiBoost_1_1Example_aabd5a3f5b7b7f81d4d8d4809bbd47876}{get\-Labels} () const 
+\item 
+vector$<$ \hyperlink{structMultiBoost_1_1Label}{Label} $>$ \& \hyperlink{classMultiBoost_1_1Example_a61f200395a444ab55c6df2c57b079b73}{get\-Labels} ()
+\item 
+char \hyperlink{classMultiBoost_1_1Example_ae78a2e59ce2fc14a9a53d93aef312e9f}{get\-Label\-Y} (const int label\-Idx) const 
+\item 
+const \hyperlink{structMultiBoost_1_1Label}{Label} \& \hyperlink{classMultiBoost_1_1Example_a988f978710235d6c66f54ce60db182a7}{get\-Label} (const int label\-Idx)
+\item 
+\hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{Alpha\-Real} \hyperlink{classMultiBoost_1_1Example_a850c81c9561c26c95a26f194951af5e1}{get\-Label\-Weight} (const int label\-Idx) const 
+\item 
+bool \hyperlink{classMultiBoost_1_1Example_afc8ee241a1e5eee54ed8cff72034755e}{has\-Label} (const int label\-Idx) const 
+\item 
+bool \hyperlink{classMultiBoost_1_1Example_a361097d9ea08f7130a79841f3fb5bc2b}{has\-Positive\-Label} (const int label\-Idx) const 
+\item 
+\hypertarget{classMultiBoost_1_1Example_a9c274044bd90e1abc606043d4fccdfd2}{const vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \& {\bfseries get\-Values} () const }\label{classMultiBoost_1_1Example_a9c274044bd90e1abc606043d4fccdfd2}
+
+\item 
+\hypertarget{classMultiBoost_1_1Example_ae6688a1d16aab416dd9c667be538ea24}{vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{Feature\-Real} $>$ \& {\bfseries get\-Values} ()}\label{classMultiBoost_1_1Example_ae6688a1d16aab416dd9c667be538ea24}
+
+\item 
+\hypertarget{classMultiBoost_1_1Example_a94965fe47a392b79c986e43a75d448cc}{const vector$<$ int $>$ \& {\bfseries get\-Values\-Indexes} () const }\label{classMultiBoost_1_1Example_a94965fe47a392b79c986e43a75d448cc}
+
+\item 
+\hypertarget{classMultiBoost_1_1Example_ad3222524a810b7f38f910ba03f76e912}{vector$<$ int $>$ \& {\bfseries get\-Values\-Indexes} ()}\label{classMultiBoost_1_1Example_ad3222524a810b7f38f910ba03f76e912}
+
+\item 
+\hypertarget{classMultiBoost_1_1Example_a8314f7316bc97a73dec1a67eb8fc57c7}{const map$<$ int, int $>$ \& {\bfseries get\-Values\-Indexes\-Map} () const }\label{classMultiBoost_1_1Example_a8314f7316bc97a73dec1a67eb8fc57c7}
+
+\item 
+\hypertarget{classMultiBoost_1_1Example_a082be4e2158e16e6ea4c9f2e6fa362ac}{map$<$ int, int $>$ \& {\bfseries get\-Values\-Indexes\-Map} ()}\label{classMultiBoost_1_1Example_a082be4e2158e16e6ea4c9f2e6fa362ac}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the data of the single example. \begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 111 of file Example.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1Example_a0e8d0e812cba8ff98d56192f106b04a6}{\index{Multi\-Boost\-::\-Example@{Multi\-Boost\-::\-Example}!Example@{Example}}
+\index{Example@{Example}!MultiBoost::Example@{Multi\-Boost\-::\-Example}}
+\subsubsection[{Example}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Example\-::\-Example (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1Example_a0e8d0e812cba8ff98d56192f106b04a6}
+The constructor that create the object example. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the example. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 119 of file Example.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1Example_a988f978710235d6c66f54ce60db182a7}{\index{Multi\-Boost\-::\-Example@{Multi\-Boost\-::\-Example}!get\-Label@{get\-Label}}
+\index{get\-Label@{get\-Label}!MultiBoost::Example@{Multi\-Boost\-::\-Example}}
+\subsubsection[{get\-Label}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Label}\& Multi\-Boost\-::\-Example\-::get\-Label (
+\begin{DoxyParamCaption}
+\item[{const int}]{label\-Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1Example_a988f978710235d6c66f54ce60db182a7}
+High-\/level accessor for the label. It does linear search so it should not be used in bootlenecks. If the label is not found, it returns a special static empty label with weight = 0.\-0, y = 0, and possibly initial\-Wieght = 0.\-0, and idx = -\/1. \begin{DoxyReturn}{Returns}
+label The label, or ff the label is not explicitly enumerated (sparse label representation), it returns a special static empty label with weight = 0.\-0, y = 0, possibly initial\-Wieght = 0.\-0, and idx = -\/1. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2012 
+\end{DoxyDate}
+
+
+Definition at line 197 of file Example.\-h.
+
+\hypertarget{classMultiBoost_1_1Example_aabd5a3f5b7b7f81d4d8d4809bbd47876}{\index{Multi\-Boost\-::\-Example@{Multi\-Boost\-::\-Example}!get\-Labels@{get\-Labels}}
+\index{get\-Labels@{get\-Labels}!MultiBoost::Example@{Multi\-Boost\-::\-Example}}
+\subsubsection[{get\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<${\bf Label}$>$\& Multi\-Boost\-::\-Example\-::get\-Labels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1Example_aabd5a3f5b7b7f81d4d8d4809bbd47876}
+Low-\/level accessor for \-\_\-labels. It should be used every time when all existing labels have to be processed, such as in \hyperlink{classMultiBoost_1_1StumpAlgorithm}{Stump\-Algorithm}. \begin{DoxyReturn}{Returns}
+\-\_\-labels The label vector. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2012 
+\end{DoxyDate}
+
+
+Definition at line 162 of file Example.\-h.
+
+\hypertarget{classMultiBoost_1_1Example_a61f200395a444ab55c6df2c57b079b73}{\index{Multi\-Boost\-::\-Example@{Multi\-Boost\-::\-Example}!get\-Labels@{get\-Labels}}
+\index{get\-Labels@{get\-Labels}!MultiBoost::Example@{Multi\-Boost\-::\-Example}}
+\subsubsection[{get\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Label}$>$\& Multi\-Boost\-::\-Example\-::get\-Labels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1Example_a61f200395a444ab55c6df2c57b079b73}
+Low-\/level mutator for \-\_\-labels. It should be used every time when all existing labels have to be processed, such as in \hyperlink{classMultiBoost_1_1StumpAlgorithm}{Stump\-Algorithm}. \begin{DoxyReturn}{Returns}
+\-\_\-labels The label vector. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2012 
+\end{DoxyDate}
+
+
+Definition at line 169 of file Example.\-h.
+
+\hypertarget{classMultiBoost_1_1Example_a850c81c9561c26c95a26f194951af5e1}{\index{Multi\-Boost\-::\-Example@{Multi\-Boost\-::\-Example}!get\-Label\-Weight@{get\-Label\-Weight}}
+\index{get\-Label\-Weight@{get\-Label\-Weight}!MultiBoost::Example@{Multi\-Boost\-::\-Example}}
+\subsubsection[{get\-Label\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alpha\-Real} Multi\-Boost\-::\-Example\-::get\-Label\-Weight (
+\begin{DoxyParamCaption}
+\item[{const int}]{label\-Idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1Example_a850c81c9561c26c95a26f194951af5e1}
+High-\/level accessor for the label weight. It does linear search so it should not be used in bootlenecks. \begin{DoxyReturn}{Returns}
+weight The label weight, or 0.\-0 if the label is not explicitly enumerated (sparse label representation). 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2012 
+\end{DoxyDate}
+
+
+Definition at line 220 of file Example.\-h.
+
+\hypertarget{classMultiBoost_1_1Example_ae78a2e59ce2fc14a9a53d93aef312e9f}{\index{Multi\-Boost\-::\-Example@{Multi\-Boost\-::\-Example}!get\-Label\-Y@{get\-Label\-Y}}
+\index{get\-Label\-Y@{get\-Label\-Y}!MultiBoost::Example@{Multi\-Boost\-::\-Example}}
+\subsubsection[{get\-Label\-Y}]{\setlength{\rightskip}{0pt plus 5cm}char Multi\-Boost\-::\-Example\-::get\-Label\-Y (
+\begin{DoxyParamCaption}
+\item[{const int}]{label\-Idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1Example_ae78a2e59ce2fc14a9a53d93aef312e9f}
+High-\/level accessor for the label sign. It does linear search so it should not be used in bootlenecks. \begin{DoxyReturn}{Returns}
+y The label sign, or 0 if the label is not explicitly enumerated (sparse label representation). 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2012 
+\end{DoxyDate}
+
+
+Definition at line 177 of file Example.\-h.
+
+\hypertarget{classMultiBoost_1_1Example_afc8ee241a1e5eee54ed8cff72034755e}{\index{Multi\-Boost\-::\-Example@{Multi\-Boost\-::\-Example}!has\-Label@{has\-Label}}
+\index{has\-Label@{has\-Label}!MultiBoost::Example@{Multi\-Boost\-::\-Example}}
+\subsubsection[{has\-Label}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Example\-::has\-Label (
+\begin{DoxyParamCaption}
+\item[{const int}]{label\-Idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1Example_afc8ee241a1e5eee54ed8cff72034755e}
+High-\/level inspector for the existence of a label. It does linear search so it should not be used in bootlenecks. \begin{DoxyReturn}{Returns}
+true if the label is in the \-\_\-labels vector, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2012 
+\end{DoxyDate}
+
+
+Definition at line 237 of file Example.\-h.
+
+\hypertarget{classMultiBoost_1_1Example_a361097d9ea08f7130a79841f3fb5bc2b}{\index{Multi\-Boost\-::\-Example@{Multi\-Boost\-::\-Example}!has\-Positive\-Label@{has\-Positive\-Label}}
+\index{has\-Positive\-Label@{has\-Positive\-Label}!MultiBoost::Example@{Multi\-Boost\-::\-Example}}
+\subsubsection[{has\-Positive\-Label}]{\setlength{\rightskip}{0pt plus 5cm}bool Multi\-Boost\-::\-Example\-::has\-Positive\-Label (
+\begin{DoxyParamCaption}
+\item[{const int}]{label\-Idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1Example_a361097d9ea08f7130a79841f3fb5bc2b}
+High-\/level inspector for the existence of a positive label sign (y $>$ 0). It does linear search so it should not be used in bootlenecks. \begin{DoxyReturn}{Returns}
+true if there exists a label with y $>$ 0, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/12/2012 
+\end{DoxyDate}
+
+
+Definition at line 246 of file Example.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Others/\hyperlink{Example_8h}{Example.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,153 @@
+\hypertarget{main_8cpp}{\section{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/main.cpp File Reference}
+\label{main_8cpp}\index{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/main.\-cpp@{C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/main.\-cpp}}
+}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}Defaults.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Utils/\-Args.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Strong\-Learners/\-Generic\-Strong\-Learner.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Weak\-Learners/\-Base\-Learner.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-Serialization.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-Encode\-Data.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-Input\-Data.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Weak\-Learners/\-Parasite\-Learner.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Strong\-Learners/\-Ada\-Boost\-M\-H\-Learner.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Strong\-Learners/\-Soft\-Cascade\-Learner.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Strong\-Learners/\-V\-J\-Cascade\-Learner.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Strong\-Learners/\-Arc\-G\-V\-Learner.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-Output\-Info.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bandits/\-Generic\-Bandit\-Algorithm.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Registrations.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_a101c399249df7da0224a30c06daa0216}{check\-Base\-Learner} (const string \&base\-Learner\-Name)
+\item 
+void \hyperlink{main_8cpp_a410f45b0cca092ea49a58551678fb640}{show\-Base} ()
+\item 
+void \hyperlink{main_8cpp_a32c720a38033b7fac5d60eb3a7b16e97}{show\-Help} (\hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args, const vector$<$ string $>$ \&learners\-List)
+\item 
+void \hyperlink{main_8cpp_a51a72bfb6b35bba0005028d402ec662c}{show\-Optional\-Help} (\hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+void \hyperlink{main_8cpp_a9a9f299bc0cc9f333666a5726d70c754}{show\-Static\-Config} ()
+\item 
+int \hyperlink{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The file that contains the \hyperlink{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main()} function. \begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{main_8cpp_source}{main.\-cpp}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_a101c399249df7da0224a30c06daa0216}{\index{main.\-cpp@{main.\-cpp}!check\-Base\-Learner@{check\-Base\-Learner}}
+\index{check\-Base\-Learner@{check\-Base\-Learner}!main.cpp@{main.\-cpp}}
+\subsubsection[{check\-Base\-Learner}]{\setlength{\rightskip}{0pt plus 5cm}void check\-Base\-Learner (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{base\-Learner\-Name}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a101c399249df7da0224a30c06daa0216}
+Check if a given base learner has been registered. If not it will give an error and exit. 
+\begin{DoxyParams}{Parameters}
+{\em base\-Learner\-Name} & The name of the base learner to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+21/3/2006 
+\end{DoxyDate}
+
+
+Definition at line 179 of file main.\-cpp.
+
+\hypertarget{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{\index{main.\-cpp@{main.\-cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}
+The main function. Everything starts here! 
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of arguments. \\
+\hline
+{\em argv} & The arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 308 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a410f45b0cca092ea49a58551678fb640}{\index{main.\-cpp@{main.\-cpp}!show\-Base@{show\-Base}}
+\index{show\-Base@{show\-Base}!main.cpp@{main.\-cpp}}
+\subsubsection[{show\-Base}]{\setlength{\rightskip}{0pt plus 5cm}void show\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a410f45b0cca092ea49a58551678fb640}
+Show the basic output. Called when no argument is provided. \begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 195 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a32c720a38033b7fac5d60eb3a7b16e97}{\index{main.\-cpp@{main.\-cpp}!show\-Help@{show\-Help}}
+\index{show\-Help@{show\-Help}!main.cpp@{main.\-cpp}}
+\subsubsection[{show\-Help}]{\setlength{\rightskip}{0pt plus 5cm}void show\-Help (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Args} \&}]{args, }
+\item[{const vector$<$ string $>$ \&}]{learners\-List}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a32c720a38033b7fac5d60eb3a7b16e97}
+Show the help. Called when -\/h argument is provided. \begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 211 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a51a72bfb6b35bba0005028d402ec662c}{\index{main.\-cpp@{main.\-cpp}!show\-Optional\-Help@{show\-Optional\-Help}}
+\index{show\-Optional\-Help@{show\-Optional\-Help}!main.cpp@{main.\-cpp}}
+\subsubsection[{show\-Optional\-Help}]{\setlength{\rightskip}{0pt plus 5cm}void show\-Optional\-Help (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a51a72bfb6b35bba0005028d402ec662c}
+Show the help for the options. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+28/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 244 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a9a9f299bc0cc9f333666a5726d70c754}{\index{main.\-cpp@{main.\-cpp}!show\-Static\-Config@{show\-Static\-Config}}
+\index{show\-Static\-Config@{show\-Static\-Config}!main.cpp@{main.\-cpp}}
+\subsubsection[{show\-Static\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void show\-Static\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a9a9f299bc0cc9f333666a5726d70c754}
+Show the default values. \begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 275 of file main.\-cpp.
+

@@ -1,0 +1,410 @@
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner}{
+\section{MultiBoost::HaarSingleStumpLearner Class Reference}
+\label{classMultiBoost_1_1HaarSingleStumpLearner}\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+}
+
+
+{\ttfamily \#include $<$HaarSingleStumpLearner.h$>$}
+
+Inheritance diagram for MultiBoost::HaarSingleStumpLearner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.129794cm]{classMultiBoost_1_1HaarSingleStumpLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_ab8471396f12b113687b6f8bf2a40f694}{$\sim$HaarSingleStumpLearner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_ad994400056663aa2c030fbafaf96ca22}{declareArguments} (\hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a547dab8fd220684bf2e6dbbf7cb0708f}{initLearningOptions} (const \hyperlink{classnor__utils_1_1Args}{nor\_\-utils::Args} \&args)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a813d5ad76828496e33529a18f57756c2}{classify} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx, int classIdx)
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a5bb8091035885f03075d934a9a0effa6}{subCreate} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$ \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a49f7da9444329db0f7a10b2ed0d55d42}{createInputData} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a350c476169df330f1adedd040e96ff32}{run} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a6a565277105954f5912937ad00b92f1f}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_adaab98e0964770ed3309939b164a06c9}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a918541140437c8d7f7575c76b37ad652}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_ab1ae07a9910345e6717cbf17dc55fb77}{getStateData} (vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ \&data, const string \&, \hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData=0)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a80794c0b71642003fbba26c6f37e4044}{cut} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A learner that uses the Haar-\/like features for input and the \hyperlink{classMultiBoost_1_1SingleStumpLearner}{SingleStumpLearner} for training. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarLearner}{HaarLearner} 
+
+\hyperlink{classMultiBoost_1_1SingleStumpLearner}{SingleStumpLearner} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+17/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 64 of file HaarSingleStumpLearner.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_ab8471396f12b113687b6f8bf2a40f694}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!$\sim$HaarSingleStumpLearner@{$\sim$HaarSingleStumpLearner}}
+\index{$\sim$HaarSingleStumpLearner@{$\sim$HaarSingleStumpLearner}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{$\sim$HaarSingleStumpLearner}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::HaarSingleStumpLearner::$\sim$HaarSingleStumpLearner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_ab8471396f12b113687b6f8bf2a40f694}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 72 of file HaarSingleStumpLearner.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_a813d5ad76828496e33529a18f57756c2}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!classify@{classify}}
+\index{classify@{classify}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{classify}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::HaarSingleStumpLearner::classify (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx, }
+\item[{int}]{classIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_a813d5ad76828496e33529a18f57756c2}
+Return \{+1, -\/1\} for the given class and value using the learned classifier. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data \\
+\hline
+{\em idx} & The index of the example to classify \\
+\hline
+{\em classIdx} & The index of the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This override classify of StumpLearner, as the data must be transformed to haar-\/like feature space. 
+
+Passing the data and the index to the example is not nice at all. This will soon be replace with the passing of the example itself in some form (probably a structure to the example). 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
++1 if the classifier thinks that {\itshape val\/} belongs to class {\itshape classIdx\/}, -\/1 if it does not and 0 if it abstain 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{MultiBoost::AbstainableLearner}.
+
+
+
+Definition at line 68 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_a49f7da9444329db0f7a10b2ed0d55d42}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!createInputData@{createInputData}}
+\index{createInputData@{createInputData}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{createInputData}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InputData} $\ast$ MultiBoost::HaarSingleStumpLearner::createInputData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_a49f7da9444329db0f7a10b2ed0d55d42}
+Creates an \hyperlink{classMultiBoost_1_1InputData}{InputData} object that it is good for the weak learner. Overridden to return \hyperlink{classMultiBoost_1_1HaarData}{HaarData}. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1InputData}{InputData} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{BaseLearner::createInputData()} 
+
+\hyperlink{classMultiBoost_1_1SortedData}{SortedData} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+The object {\bfseries must} be destroyed by the caller. 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1SingleStumpLearner_af8c1f23328ee98a5ea49aa2b4f9874ff}{MultiBoost::SingleStumpLearner}.
+
+
+
+Definition at line 257 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_a80794c0b71642003fbba26c6f37e4044}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!cut@{cut}}
+\index{cut@{cut}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{cut}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::HaarSingleStumpLearner::cut (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_a80794c0b71642003fbba26c6f37e4044}
+A simple cut on a feature. This simple function is needed for \hyperlink{classMultiBoost_1_1TreeLearner}{TreeLearner}. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The input data. \\
+\hline
+{\em idx} & The index of the data point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape val\/} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1SingleStumpLearner_a95c26833c3258967ddb4f5e4d20cdea9}{MultiBoost::SingleStumpLearner}.
+
+
+
+Definition at line 82 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_ad994400056663aa2c030fbafaf96ca22}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!declareArguments@{declareArguments}}
+\index{declareArguments@{declareArguments}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{declareArguments}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarSingleStumpLearner::declareArguments (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_ad994400056663aa2c030fbafaf96ca22}
+Declare weak-\/learner-\/specific arguments. These arguments will be added to the list of arguments under the group specific of the weak learner. It is called automatically in main, when the list of arguments is built up. Use this method to declare the arguments that belongs to the weak learner only. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The Args class reference which can be used to declare additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+28/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1HaarLearner_a5b59a15acc9fc35301ad6813ea54ad21}{MultiBoost::HaarLearner}.
+
+
+
+Definition at line 50 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_ab1ae07a9910345e6717cbf17dc55fb77}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!getStateData@{getStateData}}
+\index{getStateData@{getStateData}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{getStateData}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarSingleStumpLearner::getStateData (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf FeatureReal} $>$ \&}]{, }
+\item[{const string \&}]{, }
+\item[{{\bf InputData} $\ast$}]{ = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_ab1ae07a9910345e6717cbf17dc55fb77}
+Returns a vector of float holding any data that the specific weak learner can generate using the given input dataset. This kind of information belongs only to the logic of the weak learner, and is therefore implemented into it. \begin{DoxyRemark}{Remarks}
+This particular function is a form of compromise that arise with the question: \char`\"{}how can I generate weak-\/learner specific data for analysis purposes?\char`\"{}. This almost-\/generic method was created to solve this issue, even it is not the definitive answer. The user can implement any behavior overriding this method, and if one or more behavior are needed, he can specify which one using the parameter {\itshape reason\/}. 
+
+I don't like very much the fact that the returned information is limited to a vector of floats. This is likely to change. I've been thinking about a \char`\"{}templetized\char`\"{} parameter, but I don't like the idea of putting this kind of function into a header. The other possibility is to pass a void pointer, but I don't like that either as void pointers are evil. But sometimes a little bit of evil is necessary. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_aa8945cc5179e0b732728571848bfb52f}{SingleStumpLearner::getStateData} 
+
+Classifier::saveSingleStumpFeatureData 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_aa8945cc5179e0b732728571848bfb52f}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 300 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_a547dab8fd220684bf2e6dbbf7cb0708f}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!initLearningOptions@{initLearningOptions}}
+\index{initLearningOptions@{initLearningOptions}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{initLearningOptions}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarSingleStumpLearner::initLearningOptions (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\_\-utils::Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_a547dab8fd220684bf2e6dbbf7cb0708f}
+Set the arguments of the algorithm using the standard interface of the arguments. Call this to set the arguments asked by the user. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments defined by the user in the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a24d0666de1f394b2165c2d833d36b5f6}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 59 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_adaab98e0964770ed3309939b164a06c9}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!load@{load}}
+\index{load@{load}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarSingleStumpLearner::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_adaab98e0964770ed3309939b164a06c9}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a6a565277105954f5912937ad00b92f1f}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1HaarLearner_a44c313549dd080a952b57eec400f022e}{MultiBoost::HaarLearner}.
+
+
+
+Definition at line 283 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_a350c476169df330f1adedd040e96ff32}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!run@{run}}
+\index{run@{run}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::HaarSingleStumpLearner::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_a350c476169df330f1adedd040e96ff32}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1SingleStumpLearner_a9cd7bfe1a0905857993eec0dd462a879}{SingleStumpLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1SingleStumpLearner_a9cd7bfe1a0905857993eec0dd462a879}{MultiBoost::SingleStumpLearner}.
+
+
+
+Definition at line 91 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_a6a565277105954f5912937ad00b92f1f}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!save@{save}}
+\index{save@{save}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarSingleStumpLearner::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_a6a565277105954f5912937ad00b92f1f}
+Save the current object information needed for classification. 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+StumpLearner::save() 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1HaarLearner_ae8837229c0e3e39431a8b0fd12d58291}{MultiBoost::HaarLearner}.
+
+
+
+Definition at line 274 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_a918541140437c8d7f7575c76b37ad652}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::HaarSingleStumpLearner::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_a918541140437c8d7f7575c76b37ad652}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a813d5ad76828496e33529a18f57756c2}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a918541140437c8d7f7575c76b37ad652}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a6a565277105954f5912937ad00b92f1f}{save} 
+
+\hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_adaab98e0964770ed3309939b164a06c9}{load} 
+
+\hyperlink{classMultiBoost_1_1HaarSingleStumpLearner_a813d5ad76828496e33529a18f57756c2}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1SingleStumpLearner_a81fc70ee14b9714289f998977a8e0e1b}{MultiBoost::SingleStumpLearner}.
+
+
+
+Definition at line 292 of file HaarSingleStumpLearner.cpp.
+
+\hypertarget{classMultiBoost_1_1HaarSingleStumpLearner_a5bb8091035885f03075d934a9a0effa6}{
+\index{MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::HaarSingleStumpLearner@{MultiBoost::HaarSingleStumpLearner}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::HaarSingleStumpLearner::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1HaarSingleStumpLearner_a5bb8091035885f03075d934a9a0effa6}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1SingleStumpLearner_ac78a95b491c3cef2362c6459f2465288}{MultiBoost::SingleStumpLearner}.
+
+
+
+Definition at line 118 of file HaarSingleStumpLearner.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{HaarSingleStumpLearner_8h}{HaarSingleStumpLearner.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/HaarSingleStumpLearner.cpp\end{DoxyCompactItemize}

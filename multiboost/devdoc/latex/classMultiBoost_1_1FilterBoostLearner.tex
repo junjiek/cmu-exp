@@ -1,0 +1,134 @@
+\hypertarget{classMultiBoost_1_1FilterBoostLearner}{\section{Multi\-Boost\-:\-:Filter\-Boost\-Learner Class Reference}
+\label{classMultiBoost_1_1FilterBoostLearner}\index{Multi\-Boost\-::\-Filter\-Boost\-Learner@{Multi\-Boost\-::\-Filter\-Boost\-Learner}}
+}
+
+
+{\ttfamily \#include $<$Filter\-Boost\-Learner.\-h$>$}
+
+Inheritance diagram for Multi\-Boost\-:\-:Filter\-Boost\-Learner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMultiBoost_1_1FilterBoostLearner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiBoost_1_1FilterBoostLearner_a87aa5f155d9b62127d6bb59fe12d3fd8}{Filter\-Boost\-Learner} ()
+\item 
+virtual void \hyperlink{classMultiBoost_1_1FilterBoostLearner_a3209ce71f29e342c84142d9623583109}{run} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMultiBoost_1_1FilterBoostLearner_a9bc7ce4a8a308d303810d8f15036b5d2}{get\-Args} (const \hyperlink{classnor__utils_1_1Args}{nor\-\_\-utils\-::\-Args} \&args)
+\item 
+void \hyperlink{classMultiBoost_1_1FilterBoostLearner_a54fed5a1a3e0a4556f33b3eeb80349e0}{resume\-Process} (\hyperlink{classMultiBoost_1_1Serialization}{Serialization} \&ss, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Training\-Data, \hyperlink{classMultiBoost_1_1InputData}{Input\-Data} $\ast$p\-Test\-Data, \hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} $\ast$p\-Out\-Info)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The Filter\-Boost learner. This class performs the meta-\/learning by calling the weak learners and updating the weights. \begin{DoxyVerb}@InProceedings{BrSc07,
+author =       {Bradley, J.K.  and Schapire, R.E.},
+title  =       {{FilterBoost}: Regression and Classification on Large
+Datasets},
+booktitle =    {Advances in Neural Information Processing Systems},
+volume =       {20},
+year =         {2008},
+publisher =    {The MIT Press}
+} \end{DoxyVerb}
+
+
+\begin{DoxyDate}{Date}
+04/07/2011 
+\end{DoxyDate}
+
+
+Definition at line 68 of file Filter\-Boost\-Learner.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1FilterBoostLearner_a87aa5f155d9b62127d6bb59fe12d3fd8}{\index{Multi\-Boost\-::\-Filter\-Boost\-Learner@{Multi\-Boost\-::\-Filter\-Boost\-Learner}!Filter\-Boost\-Learner@{Filter\-Boost\-Learner}}
+\index{Filter\-Boost\-Learner@{Filter\-Boost\-Learner}!MultiBoost::FilterBoostLearner@{Multi\-Boost\-::\-Filter\-Boost\-Learner}}
+\subsubsection[{Filter\-Boost\-Learner}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Boost\-::\-Filter\-Boost\-Learner\-::\-Filter\-Boost\-Learner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMultiBoost_1_1FilterBoostLearner_a87aa5f155d9b62127d6bb59fe12d3fd8}
+The constructor. It initializes the variables and sets them using the information provided by the arguments passed. They are parsed using the helpers provided by class Args. The constant learner is switched on by default. \begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Definition at line 78 of file Filter\-Boost\-Learner.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1FilterBoostLearner_a9bc7ce4a8a308d303810d8f15036b5d2}{\index{Multi\-Boost\-::\-Filter\-Boost\-Learner@{Multi\-Boost\-::\-Filter\-Boost\-Learner}!get\-Args@{get\-Args}}
+\index{get\-Args@{get\-Args}!MultiBoost::FilterBoostLearner@{Multi\-Boost\-::\-Filter\-Boost\-Learner}}
+\subsubsection[{get\-Args}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Filter\-Boost\-Learner\-::get\-Args (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1FilterBoostLearner_a9bc7ce4a8a308d303810d8f15036b5d2}
+Get the needed parameters (for the strong learner) from the argumens. 
+\begin{DoxyParams}{Parameters}
+{\em The} & arguments provided by the command line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file Filter\-Boost\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1FilterBoostLearner_a54fed5a1a3e0a4556f33b3eeb80349e0}{\index{Multi\-Boost\-::\-Filter\-Boost\-Learner@{Multi\-Boost\-::\-Filter\-Boost\-Learner}!resume\-Process@{resume\-Process}}
+\index{resume\-Process@{resume\-Process}!MultiBoost::FilterBoostLearner@{Multi\-Boost\-::\-Filter\-Boost\-Learner}}
+\subsubsection[{resume\-Process}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Filter\-Boost\-Learner\-::resume\-Process (
+\begin{DoxyParamCaption}
+\item[{{\bf Serialization} \&}]{ss, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Training\-Data, }
+\item[{{\bf Input\-Data} $\ast$}]{p\-Test\-Data, }
+\item[{{\bf Output\-Info} $\ast$}]{p\-Out\-Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMultiBoost_1_1FilterBoostLearner_a54fed5a1a3e0a4556f33b3eeb80349e0}
+Resume the training using the features in \-\_\-resume\-Shyp\-File\-Name if the option -\/resume has been specified. The margins should be updated as well. \begin{DoxyDate}{Date}
+21/12/2005 
+\end{DoxyDate}
+
+
+Definition at line 305 of file Filter\-Boost\-Learner.\-cpp.
+
+\hypertarget{classMultiBoost_1_1FilterBoostLearner_a3209ce71f29e342c84142d9623583109}{\index{Multi\-Boost\-::\-Filter\-Boost\-Learner@{Multi\-Boost\-::\-Filter\-Boost\-Learner}!run@{run}}
+\index{run@{run}!MultiBoost::FilterBoostLearner@{Multi\-Boost\-::\-Filter\-Boost\-Learner}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Multi\-Boost\-::\-Filter\-Boost\-Learner\-::run (
+\begin{DoxyParamCaption}
+\item[{const {\bf nor\-\_\-utils\-::\-Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMultiBoost_1_1FilterBoostLearner_a3209ce71f29e342c84142d9623583109}
+Start the learning process. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments provided by the command line with all the options for training. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMultiBoost_1_1OutputInfo}{Output\-Info} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1AdaBoostMHLearner_a1171d948bfa1875bf663993f067a8e8d}{Multi\-Boost\-::\-Ada\-Boost\-M\-H\-Learner}.
+
+
+
+Definition at line 44 of file Filter\-Boost\-Learner.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/\hyperlink{FilterBoostLearner_8h}{Filter\-Boost\-Learner.\-h}\item 
+C\-:/\-Users/fradav/\-Documents/\-Dev/\-C++/\-Multiboost/\-Sources/src/\-Strong\-Learners/Filter\-Boost\-Learner.\-cpp\end{DoxyCompactItemize}

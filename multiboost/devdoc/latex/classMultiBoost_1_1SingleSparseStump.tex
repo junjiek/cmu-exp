@@ -1,0 +1,432 @@
+\hypertarget{classMultiBoost_1_1SingleSparseStump}{
+\section{MultiBoost::SingleSparseStump Class Reference}
+\label{classMultiBoost_1_1SingleSparseStump}\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+}
+
+
+{\ttfamily \#include $<$SingleSparseStump.h$>$}
+
+Inheritance diagram for MultiBoost::SingleSparseStump:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classMultiBoost_1_1SingleSparseStump}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classMultiBoost_1_1SingleSparseStump_a2e094d05b5d68fa7c00d40d221de1f5d}{$\sim$SingleSparseStump} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$ \hyperlink{classMultiBoost_1_1SingleSparseStump_a7857e9ed102117f1c10f6642e06d1398}{subCreate} ()
+\item 
+virtual \hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$ \hyperlink{classMultiBoost_1_1SingleSparseStump_a7fc049426cf8eaf8dcb57b781633269d}{createInputData} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SingleSparseStump_adf6766c237fb974323ca2c49c8b1bf09}{run} ()
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SingleSparseStump_a9f71f537668b45e18567ca2f3621b51b}{run} (int colIdx)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SingleSparseStump_a69365508ff9efa93d90450621048905e}{save} (ofstream \&outputStream, int numTabs=0)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SingleSparseStump_afbd9e4ab80b2483932e03ae675159f0d}{load} (\hyperlink{classnor__utils_1_1StreamTokenizer}{nor\_\-utils::StreamTokenizer} \&st)
+\item 
+virtual void \hyperlink{classMultiBoost_1_1SingleSparseStump_a0c815aa6bd664984f0baa6d94cde7cff}{subCopyState} (\hyperlink{classMultiBoost_1_1BaseLearner}{BaseLearner} $\ast$pBaseLearner)
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SingleSparseStump_aace5a5996e4c72d2806181fec628addc}{phi} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int pointIdx) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SingleSparseStump_a8e37f68aa30c13e494b639693ae55b3d}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SingleSparseStump_ad16a2557090c526ad36306a3704f92ec}{phi} (\hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} val, int) const 
+\item 
+virtual \hyperlink{Defaults_8h_a80184c4fd10ab70a1a17c5f97dcd1563}{AlphaReal} \hyperlink{classMultiBoost_1_1SingleSparseStump_a959f78588455daafd0fce520953bdcb4}{cut} (\hyperlink{classMultiBoost_1_1InputData}{InputData} $\ast$pData, int idx) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMultiBoost_1_1SingleSparseStump_a96e5594a012cf779451539eb5a313292}{
+vector$<$ \hyperlink{Defaults_8h_a3a11cfe6a5d469d921716ca6291e934f}{FeatureReal} $>$ \hyperlink{classMultiBoost_1_1SingleSparseStump_a96e5594a012cf779451539eb5a313292}{\_\-threshold}}
+\label{classMultiBoost_1_1SingleSparseStump_a96e5594a012cf779451539eb5a313292}
+
+\begin{DoxyCompactList}\small\item\em for both thresholds of the decision stump, agnostic case \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\bfseries double} thresholds decision stump learner. There are TWO thresholds, between the thresholds it returns with 0. 
+
+Definition at line 63 of file SingleSparseStump.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMultiBoost_1_1SingleSparseStump_a2e094d05b5d68fa7c00d40d221de1f5d}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!$\sim$SingleSparseStump@{$\sim$SingleSparseStump}}
+\index{$\sim$SingleSparseStump@{$\sim$SingleSparseStump}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{$\sim$SingleSparseStump}]{\setlength{\rightskip}{0pt plus 5cm}virtual MultiBoost::SingleSparseStump::$\sim$SingleSparseStump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_a2e094d05b5d68fa7c00d40d221de1f5d}
+The destructor. Must be declared (virtual) for the proper destruction of the object. 
+
+Definition at line 71 of file SingleSparseStump.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMultiBoost_1_1SingleSparseStump_a7fc049426cf8eaf8dcb57b781633269d}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!createInputData@{createInputData}}
+\index{createInputData@{createInputData}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{createInputData}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf InputData}$\ast$ MultiBoost::SingleSparseStump::createInputData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_a7fc049426cf8eaf8dcb57b781633269d}
+Creates an \hyperlink{classMultiBoost_1_1InputData}{InputData} object that it is good for the weak learner. Overridden to return \hyperlink{classMultiBoost_1_1SortedData}{SortedData}. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1InputData}{InputData} 
+
+\hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{BaseLearner::createInputData()} 
+
+\hyperlink{classMultiBoost_1_1SortedData}{SortedData} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+The object {\bfseries must} be destroyed by the caller. 
+\end{DoxyWarning}
+\begin{DoxyDate}{Date}
+21/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1BaseLearner_aa6bce26112ef2ce1275385d06467a9a9}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 90 of file SingleSparseStump.h.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_a959f78588455daafd0fce520953bdcb4}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!cut@{cut}}
+\index{cut@{cut}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{cut}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::SingleSparseStump::cut (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_a959f78588455daafd0fce520953bdcb4}
+A simple cut on a feature. This simple function is needed for \hyperlink{classMultiBoost_1_1TreeLearner}{TreeLearner}. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The input data. \\
+\hline
+{\em idx} & The index of the data point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape val\/} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1ScalarLearner_a8d52e02fc7664ecdc5fd0b14b04a985e}{MultiBoost::ScalarLearner}.
+
+
+
+Definition at line 208 of file SingleSparseStump.h.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_afbd9e4ab80b2483932e03ae675159f0d}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!load@{load}}
+\index{load@{load}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SingleSparseStump::load (
+\begin{DoxyParamCaption}
+\item[{{\bf nor\_\-utils::StreamTokenizer} \&}]{st}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_afbd9e4ab80b2483932e03ae675159f0d}
+Load the xml file that contains the serialized information needed for the classification and that belongs to this class. 
+\begin{DoxyParams}{Parameters}
+{\em st} & The stream tokenizer that returns tags and values as tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1SingleSparseStump_a69365508ff9efa93d90450621048905e}{save()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a6de379273861d743cd85d6ea2abb20a3}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 178 of file SingleSparseStump.cpp.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_ad16a2557090c526ad36306a3704f92ec}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::SingleSparseStump::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_ad16a2557090c526ad36306a3704f92ec}
+A discriminative function. \begin{DoxyRemark}{Remarks}
+Positive or negative do NOT refer to positive or negative classification. This function is equivalent to the phi function in my thesis. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate \\
+\hline
+{\em classIdx} & The class index, used by \hyperlink{classMultiBoost_1_1MultiStumpLearner}{MultiStumpLearner} when phi depends on the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape val\/} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a76a3ea26da7434ebb2b48415cc83fa12}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 199 of file SingleSparseStump.h.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_a8e37f68aa30c13e494b639693ae55b3d}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SingleSparseStump::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf FeatureReal}}]{val}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_a8e37f68aa30c13e494b639693ae55b3d}
+A discriminative function. \begin{DoxyRemark}{Remarks}
+Positive or negative do NOT refer to positive or negative classification. This function is equivalent to the phi function in my thesis. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The value to discriminate \\
+\hline
+{\em classIdx} & The class index, used by \hyperlink{classMultiBoost_1_1MultiStumpLearner}{MultiStumpLearner} when phi depends on the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape val\/} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+\end{DoxySeeAlso}
+
+
+Definition at line 146 of file SingleSparseStump.cpp.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_aace5a5996e4c72d2806181fec628addc}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!phi@{phi}}
+\index{phi@{phi}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SingleSparseStump::phi (
+\begin{DoxyParamCaption}
+\item[{{\bf InputData} $\ast$}]{pData, }
+\item[{int}]{pointIdx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_aace5a5996e4c72d2806181fec628addc}
+Returns a vector of float holding any data that the specific weak learner can generate using the given input dataset. Right now just a single case is contemplated, therefore \char`\"{}reason\char`\"{} is not used. The returned vector of data correspond to: \[ \left\{ v^{(t)}_1, v^{(t)}_2, \cdots, v^{(t)}_K, \phi^{(t)}({\bf x}_1), \phi^{(t)}({\bf x}_2), \cdots, \phi^{(t)}({\bf x}_n) \right\} \] where $v$ is the alignment vector, $\phi$ is the discriminative function and $t$ is the current iteration (to which this instantiation of weak learner belongs to). 
+\begin{DoxyParams}{Parameters}
+{\em data} & The vector with the returned data. \\
+\hline
+{\em pData} & The pointer to the data points (the examples) previously loaded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This particular method has been created for analysis purposes (research). If you need to get similar analytical information from this weak learner, add it to the function and uncomment the parameter \char`\"{}reason\char`\"{}. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_aa8945cc5179e0b732728571848bfb52f}{BaseLearner::getStateData} 
+
+Classifier::saveSingleStumpFeatureData 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+10/2/2006 
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+TEMPORARLY OFF!! The same discriminative function as below, but called with a data point. Called only from HierarchicalStumpLearner::phi 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em pData} & The input data. \\
+\hline
+{\em pointIdx} & The index of the data point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
++1 if {\itshape pData\/}\mbox{[}pointIdx\mbox{]}\mbox{[}\_\-selectedColumn\mbox{]} is on one side of the border for {\itshape classIdx\/} and -\/1 otherwise. 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+17/02/2006 
+\end{DoxyDate}
+
+
+Definition at line 158 of file SingleSparseStump.cpp.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_a9f71f537668b45e18567ca2f3621b51b}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!run@{run}}
+\index{run@{run}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf AlphaReal} MultiBoost::SingleSparseStump::run (
+\begin{DoxyParamCaption}
+\item[{int}]{colIdx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_a9f71f537668b45e18567ca2f3621b51b}
+Run the learner to build the classifier using only one single feature from the given data. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{FeaturewiseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+21/05/2009 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a534117f1fd7727e54fbef8594e187d04}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 105 of file SingleSparseStump.h.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_adf6766c237fb974323ca2c49c8b1bf09}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!run@{run}}
+\index{run@{run}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlphaReal} MultiBoost::SingleSparseStump::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_adf6766c237fb974323ca2c49c8b1bf09}
+Run the learner to build the classifier on the given data. 
+\begin{DoxyParams}{Parameters}
+{\em pData} & The pointer to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{BaseLearner::run} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+11/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a525e8f10782055b5c9762318e6e9768e}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 51 of file SingleSparseStump.cpp.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_a69365508ff9efa93d90450621048905e}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!save@{save}}
+\index{save@{save}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SingleSparseStump::save (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{outputStream, }
+\item[{int}]{numTabs = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_a69365508ff9efa93d90450621048905e}
+Save the current object information needed for classification, that is the single threshold. 
+\begin{DoxyParams}{Parameters}
+{\em outputStream} & The stream where the data will be saved \\
+\hline
+{\em numTabs} & The number of tabs before the tag. Useful for indentation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+To fully save the object it is {\bfseries very} {\bfseries important} to call also the super-\/class method. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+StumpLearner::save() 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+13/11/2005 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_acbe3dd6b71be522672859e9c1d7745e7}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 165 of file SingleSparseStump.cpp.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_a0c815aa6bd664984f0baa6d94cde7cff}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!subCopyState@{subCopyState}}
+\index{subCopyState@{subCopyState}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{subCopyState}]{\setlength{\rightskip}{0pt plus 5cm}void MultiBoost::SingleSparseStump::subCopyState (
+\begin{DoxyParamCaption}
+\item[{{\bf BaseLearner} $\ast$}]{pBaseLearner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_a0c815aa6bd664984f0baa6d94cde7cff}
+Copy all the info we need in \hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify()}. pBaseLearner was created by subCreate so it has the correct (sub) type. Usually one must copy the same fields that are loaded and saved. Don't forget to call the parent's \hyperlink{classMultiBoost_1_1SingleSparseStump_a0c815aa6bd664984f0baa6d94cde7cff}{subCopyState()}. 
+\begin{DoxyParams}{Parameters}
+{\em pBaseLearner} & The sub type pointer into which we copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMultiBoost_1_1SingleSparseStump_a69365508ff9efa93d90450621048905e}{save} 
+
+\hyperlink{classMultiBoost_1_1SingleSparseStump_afbd9e4ab80b2483932e03ae675159f0d}{load} 
+
+\hyperlink{classMultiBoost_1_1AbstainableLearner_aedcb9bae3cce79f1f8cfc2570698aa97}{classify} 
+
+\hyperlink{classMultiBoost_1_1ProductLearner_a5904600edaf57af0c4e10088cc7279a7}{ProductLearner::run()} 
+\end{DoxySeeAlso}
+\begin{DoxyDate}{Date}
+25/05/2007 
+\end{DoxyDate}
+
+
+Reimplemented from \hyperlink{classMultiBoost_1_1FeaturewiseLearner_a31c71079d30d1d7c81624a6e789a3a24}{MultiBoost::FeaturewiseLearner}.
+
+
+
+Definition at line 193 of file SingleSparseStump.cpp.
+
+\hypertarget{classMultiBoost_1_1SingleSparseStump_a7857e9ed102117f1c10f6642e06d1398}{
+\index{MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}!subCreate@{subCreate}}
+\index{subCreate@{subCreate}!MultiBoost::SingleSparseStump@{MultiBoost::SingleSparseStump}}
+\subsubsection[{subCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf BaseLearner}$\ast$ MultiBoost::SingleSparseStump::subCreate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMultiBoost_1_1SingleSparseStump_a7857e9ed102117f1c10f6642e06d1398}
+Returns itself as object. \begin{DoxyRemark}{Remarks}
+It uses the trick described in \href{http://www.parashift.com/c++-faq-lite/serialization.html#faq-36.8}{\tt http://www.parashift.com/c++-\/faq-\/lite/serialization.html\#faq-\/36.8} for the auto-\/registering classes. 
+\end{DoxyRemark}
+\begin{DoxyDate}{Date}
+14/11/2005 
+\end{DoxyDate}
+
+
+Implements \hyperlink{classMultiBoost_1_1BaseLearner_a2a00bc0e8f9ebe1f9db596e466b56e3f}{MultiBoost::BaseLearner}.
+
+
+
+Definition at line 79 of file SingleSparseStump.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/\hyperlink{SingleSparseStump_8h}{SingleSparseStump.h}\item 
+/cygdrive/c/Users/fradav/Documents/Dev/Multiboost/Sources/src/WeakLearners/SingleSparseStump.cpp\end{DoxyCompactItemize}
