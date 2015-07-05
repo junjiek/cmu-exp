@@ -1,7 +1,7 @@
 import sys
 
 if(len(sys.argv) < 3):
-    print("usage: ./python arff_to_SVM.py inputfilename outputfilename")
+    print("usage: ./python arff2libsvm.py inputfilename outputfilename")
 #print sys.argv[1]
 
 inputfilename = sys.argv[1]
