@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <assert.h>
 
 struct FeatureElement {
     int index;
@@ -70,8 +71,9 @@ void readSampleDataFile(const std::string sampleDataFilename,
     
     sampleFeatures.resize(sampleTotal);
     sampleLabels.resize(sampleTotal);
+    assert(labelList.size() == 2);
     for (int sampleIndex = 0; sampleIndex < sampleTotal; ++sampleIndex) {
-        if (labelList[sampleIndex] > 0) sampleLabels[sampleIndex] = true;
+        if (labelList[sampleIndex] == labelList[0]) sampleLabels[sampleIndex] = true;
         else sampleLabels[sampleIndex] = false;
 
         sampleFeatures[sampleIndex].resize(featureDimension);
