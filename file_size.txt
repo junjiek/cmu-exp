@@ -1,0 +1,366 @@
+./HAR
+    330M	./RAW
+    80M	./matlab
+./IPC
+    5.5G	./RAW
+    4.2G	./pipeline
+    16G	./smart
+    5.4G	./svm
+./LFW
+    403M	./RAW
+    1.7G	./matlab
+./LSHTC
+    1.1G	./RAW
+    7.5M	./lshtc.ig.fsel
+    382M	./matlab
+    422M	./pipeline
+    4.0K	./shrink_hierarchy.cpp
+    2.7G	./svm
+./MNIST
+    347M	./deep-feature
+    480M	./matlab
+    207M	./pipeline
+    207M	./raw
+    8.0K	./results
+    207M	./svm
+./NYTC
+    144M	./dates.online_cats
+    408M	./dates.tax_cats
+    872K	./matrix.months.online_cats
+    1.4M	./matrix.months.tax_cats
+    24M	./matrix.online_cats
+    39M	./matrix.tax_cats
+    64K	./process
+    4.0K	./process.cpp
+    36K	./sorted_onlinec
+    188K	./sorted_tax
+./ODP
+    2.9G	./RAW
+./OHSUMED
+    217M	./pipeline
+    8.0K	./svm
+./PNAS
+    72G	./RAW
+./R21578
+    263M	./matlab
+    2.4G	./nn
+    44M	./pipeline
+    289M	./results
+    40M	./svm
+./RCV1
+    1.9G	./all
+    65M	./analysis
+    1.3G	./final
+    4.0K	./frompipeline
+    27M	./icml14-scd
+    3.1G	./just_topicsubset
+    119M	./labels-manip
+    1.8G	./lda
+    1.3G	./matlab
+./TDT
+    190M	./4
+    2.8G	./5
+./WSJ
+./a9a
+    12M	./matlab
+    3.7M	./svm
+./aloi
+    54M	./bin
+    117M	./raw
+./arxiv
+    2.2G	./all
+    549M	./cs
+    534M	./math
+    99M	./math-ph
+    1.8M	./output.xml
+    49M	./qbio
+    14M	./qfin
+    168M	./smart
+    46M	./stat
+./at-t-faces
+    3.8M	./RAW
+    41M	./matlab
+./australian-signs
+    8.1M	./RAW
+    3.5M	./matlab
+./binary-alpha-dig
+    528K	./RAW
+    6.1M	./matlab
+./caltech-101
+    278M	./RAW
+    4.0K	./svm
+./caltech-256
+    1.2G	./RAW
+    967M	./bin
+    331M	./matlab
+    7.4M	./svm
+./cate90
+    14M	./pipeline
+    11M	./results
+    12M	./svm
+./cifar
+    705M	./bin
+    653M	./matlab.mat
+    3.5G	./preprocessed
+    689M	./raw
+./citeseer
+    112M	./matlab
+    4.0K	./nn
+    49M	./pipeline
+    42M	./results
+    22M	./svm
+./citeseerm
+    14M	./matlab
+    18M	./pipeline
+    13M	./svm
+./clef07
+    15M	./RAW
+    3.5M	./bin
+    388K	./matlab
+    29M	./pipeline
+    31M	./svm
+./cmecp
+    144K	./YP
+    5.6G	./cmecp.mat
+./cnae
+    308K	./matlab
+    1.8M	./raw
+    300K	./svm
+./dblp
+    488M	./RAW
+./delicious
+    12M	./RAW
+    2.9M	./svm
+./dexter
+    2.2M	./pipeline
+    516K	./svm
+./diatoms
+    5.5M	./RAW
+./dmoz
+    262M	./RAW
+    1.8G	./svm
+./dmoz_3
+    719M	./RAW
+    4.2G	./svm
+./dry_LSHTC
+    116M	./RAW
+    1.1M	./dlshtc.ig.fsel
+    296K	./dlshtc.ig.ranked.fsel
+    16M	./matlab
+    81M	./pipeline
+    198M	./svm
+./dspa
+    857M	./RAW
+    1.7M	./matlab
+./emc
+    653M	./RAW
+./emotions
+    71M	./matlab
+    23M	./nn
+    1.1M	./original
+    2.5M	./pipeline
+    2.9M	./results
+    4.8M	./svm
+./enwiki
+    4.0K	./RAW
+./enwikibook
+    500M	./enwikibooks-20130826-pages-articles.xml
+./faces96
+    45M	./RAW
+    957M	./matlab
+./forestcover
+    125M	./bin
+    162M	./forestcover.train.data
+    53M	./matlab
+    388M	./svm
+./gatech-faces
+    508M	./RAW
+./gisette
+    641M	./matlab
+    283M	./raw
+    284M	./svm
+./gtzan
+    8.0K	./RAW
+./hanx
+    225M	./RAW
+./image
+    1.6M	./matlab
+    732K	./pipeline
+    1.1M	./raw
+    568K	./svm
+./image-clef-2012
+    929M	./RAW
+./image-clef-2013
+./image-net
+    15G	./2010
+    8.7M	./2011
+    8.0K	./2012
+./io
+    76K	./matlab
+    192K	./pipeline
+    456K	./raw
+    240K	./svm
+./isolet
+    79M	./matlab
+    119M	./raw
+    61M	./svm
+./jtag
+    103M	./RAW
+./k9-yahoo
+    13M	./matlab
+    6.8M	./svm
+./kaggle-displayad
+    17G	./raw
+./kaggle-lshtc
+    13M	./hierarchy.txt
+    131M	./test-remapped.csv
+    723M	./train-remapped.csv
+./kddcup99
+    46M	./kddcup.test.data
+    709M	./kddcup.train.data
+./letor
+    168M	./OHSUMED
+    451M	./letor
+    4.8G	./ms
+    443M	./trec
+    2.2G	./yahoo
+./libras
+    516K	./RAW
+    112K	./matlab
+./lshtc4
+    192K	./hierarchy-track3b.txt
+    154M	./test
+    726M	./track3UnsupervisedLSHTC4(1).tar
+    572M	./train
+./lwiki
+    1.6G	./RAW
+    4.2G	./old
+    4.7G	./svm
+./magic
+    3.2M	./RAW
+    3.0M	./matlab
+    3.4M	./pipeline
+    3.9M	./svm
+./mediamill
+    79M	./RAW
+    8.0K	./nn
+    179M	./svm
+./msr-letor
+    8.0K	./raw
+./mynips
+./newnips
+    14M	./newnips.mat
+    35M	./nips_1-17.mat
+./news20
+    36M	./20news-bydate
+    24M	./matlab
+    312K	./news20.ig.fsel
+    132M	./pipeline
+    99M	./raw
+    228M	./svm
+./nips
+    39M	./matlab
+    51M	./raw
+./nips-shahbaba
+    4.7M	./RAW
+    2.7M	./svm
+./optrec
+    1.7M	./RAW
+    10M	./matlab
+./pamap2
+    2.3G	./RAW
+./pascal_ontology
+    2.2G	./RAW
+./prax
+    44K	./RAW
+./princeton_shape
+    1.1G	./RAW
+./rcv1_nips
+    75M	./RAW
+    664M	./svm
+./rcv1_old
+    307M	./RCV1
+./scene
+    97M	./matlab
+    148M	./nn
+    8.8M	./orig
+    20M	./pipeline
+    25M	./results
+    8.6M	./svm
+./scop_go
+    96M	./RAW
+./splice
+    2.8M	./svm
+./subhoshan
+    28K	./cat_hier.txt
+    68K	./extend
+    4.0K	./extend.cpp
+    2.7M	./hierarchy_test.dat
+    6.6M	./hierarchy_train.dat
+    16K	./leaflabels
+    20K	./sushoban.hierarchy
+    64K	./sushoban.hierarchy.ext
+    4.6M	./sushoban.test.ltc.svm
+    4.6M	./sushoban.test.nnc.svm
+    12M	./sushoban.train.ltc.svm
+    12M	./sushoban.train.nnc.svm
+    3.2M	./sushobhan(1).tar.gz
+./swiki
+    239M	./RAW
+    426M	./old
+    1.3G	./svm
+./swiki-lshtc3
+    1.5G	./RAW
+    773M	./svm
+./swiki_track2
+    365M	./RAW
+    816M	./svm
+./temp
+    1001M	./00.warc
+./uci-arabic
+    37M	./RAW
+./uci-char-traj
+    7.6M	./RAW
+    4.1M	./matlab
+./uci-leaves
+    41M	./RAW
+    2.5M	./matlab
+./uci-letter
+    1.4M	./RAW
+    1.2M	./matlab
+./uci-penbased
+    1.3M	./RAW
+    1.9M	./matlab
+./umist-faces
+    5.7M	./RAW
+    4.5M	./matlab
+./usps
+    85M	./matlab
+    31M	./raw
+    31M	./svm
+./vocc_12
+    7.4G	./RAW
+./vocc_2007
+    1.8G	./RAW
+./vowel
+    152K	./matlab
+    612K	./pipeline
+    1.1M	./results
+    148K	./svm
+    8.0K	./transform_to_svm.awk
+    80K	./vowel.orig
+./yahoo
+    40M	./RAW
+    76M	./arts
+    148M	./unzip
+./yeast
+    24M	./matlab
+    349M	./nn
+    3.1M	./orig
+    8.5M	./pipeline
+    32M	./results
+    3.1M	./svm
+./yeast_go
+    47M	./RAW
+./youtube
+    2.8G	./dir_data.tar

@@ -1,2 +1,5 @@
 adaboost/build/*
 liblinear/build/*
+libsvm/build/*
+dataset/*
+*/output/*
