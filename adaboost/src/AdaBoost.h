@@ -38,11 +38,17 @@ public:
     
     void setBoostingType(const int boostingType);
     void setTrainingSamples(const std::string& trainingDataFilename);
-    
+    void setTestingSamples(const std::string& testingDataFilename);
+    void readAllSamples(const std::string& trainingDataFilename, const int k_cv);
+    void setCrossValidationSampels(const int num, const int k);
+
     void train(const int roundTotal, const bool verbose = false);
+    
+    double test(const bool outputScoreFile, const std::string& outputScorelFilename) const;
     
     double predict(const std::vector<double>& featureVector) const;
     
+
     void writeFile(const std::string filename) const;
     void readFile(const std::string filename);
     
@@ -98,8 +104,15 @@ private:
     // Training samples
     int sampleTotal_;
     std::vector< std::vector<double> > samples_;
+    std::vector< std::vector<double> > allSamples_;
     std::vector<bool> labels_;
+    std::vector<bool> allLabels_;
     std::vector<double> weights_;
+
+    // Testing samples
+    int testSampleTotal_;
+    std::vector< std::vector<double> > testSamples_;
+    std::vector<bool> testLabels_;
 
     // Data for training
     std::vector< std::vector<int> > sortedSampleIndices_;

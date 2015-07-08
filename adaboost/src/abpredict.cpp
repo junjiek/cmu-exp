@@ -109,50 +109,6 @@ int main(int argc, char* argv[]) {
 
     AdaBoost adaBoost;
     adaBoost.readFile(parameters.modelFilename);
-    
-    std::vector< std::vector<double> > testSamples;
-    std::vector<bool> testLabels;
-    readSampleDataFile(parameters.testDataFilename, testSamples, testLabels);
-    int testSampleTotal = static_cast<int>(testSamples.size());
-
-    std::ofstream outputScoreStream;
-    if (parameters.outputScoreFile) {
-        outputScoreStream.open(parameters.outputScorelFilename.c_str(), std::ios_base::out);
-        if (outputScoreStream.fail()) {
-            std::cerr << "error: can't open file (" << parameters.outputScorelFilename << ")" << std::endl;
-            exit(1);
-        }
-    }
-
-    int positiveTotal = 0;
-    int positiveCorrectTotal = 0;
-    int negativeTotal = 0;
-    int negativeCorrectTotal = 0;
-    for (int sampleIndex = 0; sampleIndex < testSampleTotal; ++sampleIndex) {
-        double score = adaBoost.predict(testSamples[sampleIndex]);
-        
-        if (testLabels[sampleIndex]) {
-            ++positiveTotal;
-            if (score > 0) ++positiveCorrectTotal;
-        } else {
-            ++negativeTotal;
-            if (score <= 0) ++negativeCorrectTotal;
-        }
-        
-        if (parameters.outputScoreFile) {
-            outputScoreStream << score << std::endl;
-        }
-    }
-    if (parameters.outputScoreFile) {
-        outputScoreStream.close();
-    }
-
-
-    double accuracyAll = static_cast<double>(positiveCorrectTotal + negativeCorrectTotal)/(positiveTotal + negativeTotal);
-    std::cout << "Accuracy = " << accuracyAll;
-    std::cout << " (" << positiveCorrectTotal + negativeCorrectTotal << " / " << positiveTotal + negativeTotal << ")" << std::endl;
-    std::cout << "  positive: " << static_cast<double>(positiveCorrectTotal)/positiveTotal;
-    std::cout << " (" << positiveCorrectTotal << " / " << positiveTotal << "), ";
-    std::cout << "negative: " << static_cast<double>(negativeCorrectTotal)/negativeTotal;
-    std::cout << " (" << negativeCorrectTotal << " / " << negativeTotal << ")" << std::endl;
+    adaBoost.setTestingSamples(parameters.testDataFilename);
+    adaBoost.test(parameters.outputScoreFile, parameters.outputScorelFilename);
 }

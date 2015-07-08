@@ -82,7 +82,50 @@ void AdaBoost::setTrainingSamples(const std::string& trainingDataFilename) {
     featureTotal_ = static_cast<int>(samples_[0].size());
     initializeWeights();
     sortSampleIndices();
-    
+
+    weakClassifiers_.clear();
+}
+
+void AdaBoost::readAllSamples(const std::string& trainingDataFilename, const int k_cv) {
+    readSampleDataFile(trainingDataFilename, allSamples_, allLabels_);
+    testSampleTotal_ = static_cast<int>(allSamples_.size()) / k_cv;
+    allSamples_.resize(testSampleTotal_ * k_cv);
+    allLabels_.resize(testSampleTotal_ * k_cv);
+
+    sampleTotal_ = static_cast<int>(allSamples_.size()) - testSampleTotal_;
+    if (sampleTotal_ == 0) {
+        std::cerr << "error: no training sample" << std::endl;
+        exit(1);
+    }
+    featureTotal_ = static_cast<int>(allSamples_[0].size());
+
+    samples_.reserve(sampleTotal_);
+    labels_.reserve(sampleTotal_);
+    testSamples_.reserve(testSampleTotal_);
+    testLabels_.reserve(testSampleTotal_);
+}
+
+void AdaBoost::setCrossValidationSampels(const int num, const int k) {
+
+    samples_.clear();
+    labels_.clear();
+    testSamples_.clear();
+    testLabels_.clear();
+    if (num >= k) return;
+    int start = num * testSampleTotal_;
+    for (int i = 0; i < testSampleTotal_; i++) {
+        testSamples_.push_back(allSamples_[start + i]);
+        testLabels_.push_back(allLabels_[start + i]);
+    }
+    for (int i = 0; i < (int)allSamples_.size(); i++) {
+        if (i / testSampleTotal_ != num) {
+            samples_.push_back(allSamples_[i]);
+            labels_.push_back(allLabels_[i]);
+        }
+    }
+    initializeWeights();
+    sortSampleIndices();
+   
     weakClassifiers_.clear();
 }
 
@@ -134,6 +177,54 @@ double AdaBoost::predict(const std::vector<double>& featureVector) const {
     }
     
     return score;
+}
+
+void AdaBoost::setTestingSamples(const std::string& testingDataFilename) {
+    readSampleDataFile(testingDataFilename, testSamples_, testLabels_);
+    testSampleTotal_ = static_cast<int>(testSamples_.size());
+}
+
+double AdaBoost::test(const bool outputScoreFile, const std::string& outputScorelFilename) const {
+    std::ofstream outputScoreStream;
+    if (outputScoreFile) {
+        outputScoreStream.open(outputScorelFilename.c_str(), std::ios_base::out);
+        if (outputScoreStream.fail()) {
+            std::cerr << "error: can't open file (" << outputScorelFilename << ")" << std::endl;
+            exit(1);
+        }
+    }
+
+    int positiveTotal = 0;
+    int positiveCorrectTotal = 0;
+    int negativeTotal = 0;
+    int negativeCorrectTotal = 0;
+    for (int sampleIndex = 0; sampleIndex < testSampleTotal_; ++sampleIndex) {
+        double score = predict(testSamples_[sampleIndex]);
+        
+        if (testLabels_[sampleIndex]) {
+            ++positiveTotal;
+            if (score > 0) ++positiveCorrectTotal;
+        } else {
+            ++negativeTotal;
+            if (score <= 0) ++negativeCorrectTotal;
+        }
+        
+        if (outputScoreFile) {
+            outputScoreStream << score << std::endl;
+        }
+    }
+    if (outputScoreFile) {
+        outputScoreStream.close();
+    }
+
+    double accuracyAll = static_cast<double>(positiveCorrectTotal + negativeCorrectTotal)/(positiveTotal + negativeTotal);
+    std::cout << "Accuracy = " << accuracyAll;
+    std::cout << " (" << positiveCorrectTotal + negativeCorrectTotal << " / " << positiveTotal + negativeTotal << ")" << std::endl;
+    std::cout << "  positive: " << static_cast<double>(positiveCorrectTotal)/positiveTotal;
+    std::cout << " (" << positiveCorrectTotal << " / " << positiveTotal << "), ";
+    std::cout << "negative: " << static_cast<double>(negativeCorrectTotal)/negativeTotal;
+    std::cout << " (" << negativeCorrectTotal << " / " << negativeTotal << ")" << std::endl;
+    return accuracyAll;
 }
 
 
