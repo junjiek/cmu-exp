@@ -108,10 +108,17 @@ int main(int argc, char* argv[]) {
     adaBoost.readAllSamples(parameters.trainingDataFilename, parameters.k_cv);
     double accuracyAll = 0.0;
     for (int i = 0; i < parameters.k_cv; i++) {
-        std::cout << "====== Round " << i << " ======" << std::endl;
+        if (parameters.verbose)
+            std::cout << "====== CV Round " << i << " ======" << std::endl;
         adaBoost.setCrossValidationSampels(i, parameters.k_cv);
         adaBoost.train(parameters.roundTotal, parameters.verbose);
-        accuracyAll += adaBoost.test(false, "");
+        TestResult res = adaBoost.test(false, "");
+        accuracyAll += res.accuracyAll;
+        if (parameters.verbose) {
+            std::cout << "Accuracy = " << res.accuracyAll << std::endl;
+            std::cout << "  precision: " << res.precision << " , negative: " << res.recall << std::endl;
+
+        }
     }
     std::cout << "\nCross Validation Accuracy: " << accuracyAll / parameters.k_cv << std::endl;
 }

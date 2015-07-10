@@ -110,5 +110,7 @@ int main(int argc, char* argv[]) {
     AdaBoost adaBoost;
     adaBoost.readFile(parameters.modelFilename);
     adaBoost.setTestingSamples(parameters.testDataFilename);
-    adaBoost.test(parameters.outputScoreFile, parameters.outputScorelFilename);
+    TestResult res = adaBoost.test(parameters.outputScoreFile, parameters.outputScorelFilename);
+    std::cout << "Accuracy = " << res.accuracyAll << std::endl;
+    std::cout << "  precision: " << res.precision << " , negative: " << res.recall << std::endl;
 }

@@ -184,7 +184,7 @@ void AdaBoost::setTestingSamples(const std::string& testingDataFilename) {
     testSampleTotal_ = static_cast<int>(testSamples_.size());
 }
 
-double AdaBoost::test(const bool outputScoreFile, const std::string& outputScorelFilename) const {
+TestResult AdaBoost::test(const bool outputScoreFile, const std::string& outputScorelFilename) const {
     std::ofstream outputScoreStream;
     if (outputScoreFile) {
         outputScoreStream.open(outputScorelFilename.c_str(), std::ios_base::out);
@@ -217,14 +217,18 @@ double AdaBoost::test(const bool outputScoreFile, const std::string& outputScore
         outputScoreStream.close();
     }
 
-    double accuracyAll = static_cast<double>(positiveCorrectTotal + negativeCorrectTotal)/(positiveTotal + negativeTotal);
-    std::cout << "Accuracy = " << accuracyAll;
-    std::cout << " (" << positiveCorrectTotal + negativeCorrectTotal << " / " << positiveTotal + negativeTotal << ")" << std::endl;
-    std::cout << "  positive: " << static_cast<double>(positiveCorrectTotal)/positiveTotal;
-    std::cout << " (" << positiveCorrectTotal << " / " << positiveTotal << "), ";
-    std::cout << "negative: " << static_cast<double>(negativeCorrectTotal)/negativeTotal;
-    std::cout << " (" << negativeCorrectTotal << " / " << negativeTotal << ")" << std::endl;
-    return accuracyAll;
+    TestResult res;
+
+    res.accuracyAll = static_cast<double>(positiveCorrectTotal + negativeCorrectTotal) / (positiveTotal + negativeTotal);
+    // std::cout << "Accuracy = " << accuracyAll;
+    // std::cout << " (" << positiveCorrectTotal + negativeCorrectTotal << " / " << positiveTotal + negativeTotal << ")" << std::endl;
+    // std::cout << "  positive: " << static_cast<double>(positiveCorrectTotal)/positiveTotal;
+    // std::cout << " (" << positiveCorrectTotal << " / " << positiveTotal << "), ";
+    // std::cout << "negative: " << static_cast<double>(negativeCorrectTotal)/negativeTotal;
+    // std::cout << " (" << negativeCorrectTotal << " / " << negativeTotal << ")" << std::endl;
+    res.precision = static_cast<double>(positiveCorrectTotal) / positiveTotal;
+    res.recall = static_cast<double> (negativeCorrectTotal) / negativeTotal;
+    return res;
 }
 
 

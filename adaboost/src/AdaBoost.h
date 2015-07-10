@@ -31,6 +31,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <string>
 #include <vector>
 
+struct TestResult {
+    double accuracyAll;
+    double precision;
+    double recall;
+};
+
 class AdaBoost {
 public:
     AdaBoost(const int boostingType = 2)
@@ -44,7 +50,7 @@ public:
 
     void train(const int roundTotal, const bool verbose = false);
     
-    double test(const bool outputScoreFile, const std::string& outputScorelFilename) const;
+    TestResult test(const bool outputScoreFile, const std::string& outputScorelFilename) const;
     
     double predict(const std::vector<double>& featureVector) const;
     
