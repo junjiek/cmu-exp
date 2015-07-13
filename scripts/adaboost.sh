@@ -1,7 +1,8 @@
 #!/bin/bash
+echo '+ adaboost'
 
-if [[ $# != 2 ]]; then
-    echo "Usage: adaboost.sh <trainDataFile> <outputFile>"
+if [[ $# != 3 ]]; then
+    echo "Usage: ./adaboost.sh <trainDataFile> <testDataFile> <outputInfoFile>"
     exit 0
 fi
 
@@ -12,14 +13,20 @@ ADABOOST_TRAIN=$ROOTDIR/adaboost/build/abtrain
 ADABOOST_PREDICT=$ROOTDIR/adaboost/build/abpredict
 ADABOOST_CV=$ROOTDIR/adaboost/build/abcrossvalidate
 
-acc=`(time -p $ADABOOST_CV -t 2 -r 100 -k 5 $1) 2> "adaboost.time"`
-realTime=`grep -o "[0-9]*\.[0-9]*" "adaboost.time" | head -1`
-rm "adaboost.time"
+(time -p $ADABOOST_TRAIN -t 2 -r 50 $1 $OUTDIR/model) 2> "$OUTDIR/adaboost.time"
+realTime=`grep -o "[0-9]*\.[0-9]*" "$OUTDIR/adaboost.time" | head -1`
+acc=`$ADABOOST_PREDICT $2 $OUTDIR/model`
 acc=`echo $acc|grep -o "[0-9]*\.[0-9]*"| head -1`
 acc=`echo $acc \* 100 | bc`
-eval $(awk 'END {print "sampleNum="NR}' $1)
-echo $sampleNum "samples, cv acc = "$acc"%, real time "$realTime"s"
-echo $sampleNum,$acc,$realTime >> $2  # append mode
+
+sampleNum=`wc -l $1 | awk '{print int($1)}'`
+echo $sampleNum "samples, testing accuracy = "$acc"%, real time "$realTime"s"
+echo $sampleNum,$acc,$realTime >> $3  # append mode
+
+# Clean up
+rm "$OUTDIR/adaboost.time"
+rm "$OUTDIR/model"
+
 
 # MODEL_FILE=${1/\//_}.model
 # if [[ $# == 2 ]]; then

@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/AdaBoost.cpp
+AdaBoost.h
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/AdaBoost.h
+iostream
+-
+fstream
+-
+cmath
+-
+algorithm
+-
+readSampleDataFile.h
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/readSampleDataFile.h
+
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/AdaBoost.h
+string
+-
+vector
+-
+
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/abpredict.cpp
+iostream
+-
+fstream
+-
+cstdlib
+-
+readSampleDataFile.h
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/readSampleDataFile.h
+AdaBoost.h
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/AdaBoost.h
+
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/readSampleDataFile.h
+string
+-
+vector
+-
+

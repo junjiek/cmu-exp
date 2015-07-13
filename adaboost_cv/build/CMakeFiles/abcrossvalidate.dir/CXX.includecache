@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/AdaBoost.h
+string
+-
+vector
+-
+
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/abcrossvalidate.cpp
+iostream
+-
+string
+-
+cstdlib
+-
+AdaBoost.h
+/Users/kejunjie/Desktop/cmu-exp/adaboost/src/AdaBoost.h
+

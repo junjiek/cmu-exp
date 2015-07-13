@@ -1,7 +1,8 @@
 #!/bin/bash
 
-if [[ $# != 2 ]]; then
-    echo "Usage: ./liblinear.sh <trainDataFile> <outputFile>"
+echo '+ liblinear'
+if [[ $# != 3 ]]; then
+    echo "Usage: ./liblinear.sh <trainDataFile> <testDataFile> <outputInfoFile>"
     exit 0
 fi
 
@@ -16,13 +17,19 @@ echo "Finding best c ..."
 res=`$LIBLINEAR_TRAIN -C -s 2 -q $1`            # the -C option will cross-validate to find the best c
 c=`echo $res|grep -o "[0-9]*\.[0-9]*"| head -1`
 echo "Best c:" $c
-acc=`(time -p $LIBLINEAR_TRAIN -c $c -s 2 -v 5 -q $1) 2> "liblinear.time"`
-realTime=`grep -o "[0-9]*\.[0-9]*" "liblinear.time" | head -1`
-rm "liblinear.time"
+(time -p $LIBLINEAR_TRAIN -c $c -s 2 -q $1 $OUTDIR/model) 2> "$OUTDIR/liblinear.time"
+realTime=`grep -o "[0-9]*\.[0-9]*" "$OUTDIR/liblinear.time" | head -1`
+acc=`$LIBLINEAR_PREDICT $2 $OUTDIR/model $OUTDIR/prediction`
+
 acc=`echo $acc|grep -o "[0-9]*\.[0-9]*"| head -1`
-eval $(awk 'END {print "sampleNum="NR}' $1)
-echo $sampleNum "samples, cv acc = "$acc"%, real time "$realTime"s"
-echo $sampleNum,$acc,$realTime >> $2  # append mode
+sampleNum=`wc -l $1 | awk '{print int($1)}'`
+echo $sampleNum "samples, testing accuracy = "$acc"%, real time "$realTime"s"
+echo $sampleNum,$acc,$realTime >> $3  # append mode
+
+# Clean up
+rm "$OUTDIR/liblinear.time"
+rm "$OUTDIR/prediction"
+rm "$OUTDIR/model"
 
 # $LIBLINEAR_TRAIN -c 1 -s 2 $NEW_DATADIR/rcv1_train.binary $OUTDIR/rcv1.model
 # $LIBLINEAR_PREDICT $NEW_DATADIR/rcv1_test.binary $OUTDIR/rcv1.model $OUTDIR/rcv1.prediction
