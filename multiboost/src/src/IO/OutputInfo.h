@@ -829,7 +829,35 @@ namespace MultiBoost {
                               map<InputData*, AlphaReal>& alphaSums,
                               BaseLearner* pWeakHypothesis = 0);
     };
+
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////
     
+    /**
+     * Micro and Macro F score (ROC curve coodinates)
+     * \date 20/07/2015
+     */
+    class FSCOREOutput : public BaseOutputInfoType {
+        
+    public:
+        
+        void outputHeader(ostream& outStream, const NameMap& namemap) 
+        {
+            outStream << "micro-f" << OUTPUT_SEPARATOR << "macro-f";
+        }
+        
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        
+        void outputDescription(ostream& outStream) { outStream << "micro-f/macro-f: Micro and Macro F Scores";} ;
+
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        
+        void computeAndOutput(ostream& outStream, InputData* pData, 
+                              map<InputData*, table>& gTableMap, 
+                              map<InputData*, table>& marginsTableMap, 
+                              map<InputData*, AlphaReal>& alphaSums,
+                              BaseLearner* pWeakHypothesis = 0);
+    };
     
     //////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////

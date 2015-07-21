@@ -398,7 +398,8 @@ namespace MultiBoost {
         if ( type.compare("roc") == 0 ) return new TPRFPROutput();
         if ( type.compare("sca") == 0 ) return new SoftCascadeOutput(*args); 
         if ( type.compare("pos") == 0 ) return new PosteriorsOutput();
-        
+        if ( type.compare("fsc") == 0 ) return new FSCOREOutput();
+
         cout << "Warning ! Unknown output type provide : " << type << endl;
         
         return NULL;
@@ -1053,6 +1054,94 @@ namespace MultiBoost {
         for( int i=0; i < numClasses; i++ ) {
             outStream << OUTPUT_SEPARATOR << FPR[i];
         }                               
+    }
+
+    // -------------------------------------------------------------------------        
+    // -------------------------------------------------------------------------        
+
+    void FSCOREOutput::computeAndOutput(ostream& outStream, InputData* pData, 
+                                        map<InputData*, table>& gTableMap, 
+                                        map<InputData*, table>& marginsTableMap, 
+                                        map<InputData*, AlphaReal>& alphaSums,
+                                        BaseLearner* pWeakHypothesis)
+
+    {
+        int numClasses = pData->getNumClasses();
+        const int numExamples = pData->getNumExamples();
+                
+        table& g = gTableMap[pData];
+                
+        vector<int> origLabels(numExamples);
+        vector<int> forecastedLabels(numExamples);
+
+        for (int i = 0; i < numExamples; ++i)
+        {
+            const vector<Label>& labels = pData->getLabels(i);
+                        
+            vector<Label>::const_iterator lIt;
+                        
+            // the vote of the winning negative class
+            AlphaReal maxClass = -numeric_limits<AlphaReal>::max();
+                        
+            for ( lIt = labels.begin(); lIt != labels.end(); ++lIt )
+            {
+                // get the negative winner class
+                if ( g[i][lIt->idx] > maxClass )
+                {
+                    forecastedLabels[i]=lIt->idx;
+                    maxClass = g[i][lIt->idx];
+                }
+                                
+                // get the positive winner class
+                if ( lIt->y > 0 )
+                {
+                    origLabels[i]=lIt->idx;
+                }
+            }
+        }
+
+        vector<int> TP(numClasses);
+        vector<int> FP(numClasses);
+                
+        vector<int> classDistr(numClasses);
+                
+        fill( classDistr.begin(), classDistr.end(), 0 );
+        fill( TP.begin(), TP.end(), 0 );
+        fill( FP.begin(), FP.end(), 0 );
+                
+        for (int i = 0; i < numExamples; ++i)
+        {
+            classDistr[origLabels[i]]++;
+                        
+            if (origLabels[i]==forecastedLabels[i]) // True positive
+            {
+                TP[origLabels[i]]++;
+            } else {
+                FP[forecastedLabels[i]]++;
+            }                       
+        }               
+                
+        int TPAll = 0, TP_FP_All = 0, TP_FN_All = 0;
+        double macro_F = 0.0;
+        for( int l=0; l<numClasses; ++l ) {
+            double Precision_l = (double)TP[l] / (TP[l] + FP[l]);
+            double Recall_l = TP[l] / ((double)classDistr[l]);
+            macro_F += 2 * Precision_l * Recall_l / (Precision_l + Recall_l);
+
+            TPAll += TP[l];
+            TP_FP_All += (TP[l] + FP[l]);
+            TP_FN_All += classDistr[l];
+
+
+        }
+                
+        macro_F /= numClasses;
+        double micro_P = TPAll / (double) TP_FP_All;
+        double micro_R = TPAll / (double) TP_FN_All;
+        double micro_F = 2 * micro_P * micro_R / (micro_P + micro_R);
+
+        outStream << micro_F << OUTPUT_SEPARATOR << macro_F;
+
     }
 
     // -------------------------------------------------------------------------        
