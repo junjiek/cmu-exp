@@ -14,14 +14,12 @@ OUTDIR=$ROOTDIR/output/multiboost
 MODEL_FILE=$OUTDIR/$5.xml
 INFO_FILE=$OUTDIR/$5
 TIME_FILE=$OUTDIR/$5.time
-HEADER_FILE=$NEW_DATADIR$5.h
 
 (time -p $MULTIBOOST \
       --stronglearner AdaBoostMH \
-	    --fileformat svmlight --verbose 0 \
-      --headerfile $HEADER_FILE \
+	    --fileformat arff --verbose 0 \
 	    --train $1 100 \
-	    --learnertype SingleSparseStumpLearner \
+	    --learnertype SingleStumpLearner \
 	    --outputinfo $INFO_FILE \
       --constant \
 	    --shypname $MODEL_FILE \
@@ -31,10 +29,9 @@ realTime=`grep -o "[0-9]*\.[0-9]*" $TIME_FILE | head -1`
 
 acc=`$MULTIBOOST \
       --stronglearner AdaBoostMH \
-      --fileformat svmlight --verbose 0 \
-      --headerfile $HEADER_FILE \
+      --fileformat arff --verbose 0 \
       --test $2 $MODEL_FILE 100 \
-      --learnertype SingleSparseStumpLearner \
+      --learnertype SingleStumpLearner \
       --outputinfo $INFO_FILE fsc`
 acc=`echo $acc|grep -o "[0-9]*\.[0-9]*"| tail -1`
 acc=`echo 100 - $acc | bc`

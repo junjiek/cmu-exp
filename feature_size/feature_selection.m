@@ -1,4 +1,4 @@
-function feature_selection(trainfile, testfile, roundnum)
+function feature_selection(trainfile, testfile)
     [train_label_vec, train_feature_mat] = libsvmread(trainfile);
     [test_label_vec, test_feature_mat] = libsvmread(testfile);
     dataTrainG1 = train_feature_mat(train_label_vec==1,:);
@@ -9,13 +9,15 @@ function feature_selection(trainfile, testfile, roundnum)
 %     ylabel('CDF value')
     [~,featureIdxSortbyP] = sort(p,2); % sort the features
     featureNum=size(featureIdxSortbyP, 2);
-    step=floor(featureNum / roundnum);
-    for i = step:step:featureNum
-        fprintf('feature num %d\n', i);
-        fs=featureIdxSortbyP(1:i);
+    fprintf('Total feature num %d\n', featureNum);
+    step=floor(featureNum/20);
+    for i = 1:1:20
+        select=i*step;
+        fprintf('  %d: feature num %d\n', i, select);
+        fs=featureIdxSortbyP(1:select);
         sample_feature=train_feature_mat(:,fs);
-        libsvmwrite(sprintf('%s_%d',trainfile,i), train_label_vec, sample_feature);
+        libsvmwrite(sprintf('%s_%c_%d',trainfile,'a'+i-1,select), train_label_vec, sample_feature);
         sample_feature=test_feature_mat(:,fs);
-        libsvmwrite(sprintf('%s_%d',testfile,i), test_label_vec, sample_feature);
+        libsvmwrite(sprintf('%s_%c_%d',testfile,'a'+i-1,select), test_label_vec, sample_feature);
     end
 end

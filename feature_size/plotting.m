@@ -1,21 +1,68 @@
-% function plotting(filename)
-M1 = csvread('liblinear.out', 1);
-M2 = csvread('adaboost.out', 1);
-M3 = csvread('multiboost.out', 1);
-fig = figure();
-subplot(211);
-hold on;
-% plot(M1(:,1), M1(:,3), '-');
-% plot(M2(:,1), M2(:,3), 'r-');
-plot(M3(:,1), M3(:,3), 'g-');
-xlabel('Feature Size');
-ylabel('Testing Accuracy (%)');
-subplot(212);
-hold on;
-% plot(M1(:,1), M1(:,4), '-');
-% plot(M2(:,1), M2(:,4), 'r-');
-plot(M3(:,1), M3(:,4), 'g-');
-xlabel('Feature Size');
-ylabel('Running Time (s)');
-saveas(fig, 'fig', 'png');
-% end
+function plotting(id)
+    M1 = csvread(sprintf('liblinear_%s.out',id), 1);
+    M2 = csvread(sprintf('fest_boosting_%s.out',id), 1);
+    M3 = csvread(sprintf('fest_randomforest_%s.out',id), 1);
+    M1=sort(M1(:,:));
+    M2=sort(M2(:,:));
+    M3=sort(M3(:,:));
+    fig = figure();
+    title(id);
+    subplot(421);
+    hold on;
+    g1 = plot(M1(:,1), M1(:,3), '-');
+    g2 = plot(M2(:,1), M2(:,3), 'r-');
+    g3 = plot(M3(:,1), M3(:,3), 'g-');
+%     legend([g1,g2,g3],'liblinear','FEST boosting', 'FEST random forest');
+    xlabel('Feature Size');
+    ylabel('Testing Accuracy (%)');
+    subplot(422);
+    hold on;
+    g1 = plot(M1(:,1), M1(:,4), '-');
+    g2 = plot(M2(:,1), M2(:,4), 'r-');
+    g3 = plot(M3(:,1), M3(:,4), 'g-');
+%     legend([g1,g2,g3],'liblinear','FEST boosting', 'FEST random forest');
+    xlabel('Feature Size');
+    ylabel('Running Time (s)');
+
+    % liblinear
+%     fig = figure();
+    subplot(423);
+    g1 = plot(M1(:,1), M1(:,3), '-');
+    legend(g1,'liblinear');
+    xlabel('Feature Size');
+    ylabel('Testing Accuracy (%)');
+    subplot(424);
+    g1 = plot(M1(:,1), M1(:,4), '-');
+    legend(g1,'liblinear');
+    xlabel('Feature Size');
+    ylabel('Running Time (s)');
+    
+    % FEST boosting
+%     fig = figure();
+    subplot(425);
+    g2 = plot(M2(:,1), M2(:,3), 'r-');
+    legend(g2,'FEST boosting');
+    xlabel('Feature Size');
+    ylabel('Testing Accuracy (%)');
+    subplot(426);
+    g2 = plot(M2(:,1), M2(:,4), 'r-');
+    legend(g2,'FEST boosting');
+    xlabel('Feature Size');
+    ylabel('Running Time (s)');
+
+    % FEST random forest
+%     fig = figure();
+    subplot(427);
+    g3 = plot(M3(:,1), M3(:,3), 'g-');
+    legend(g3,'FEST random forest');
+    xlabel('Feature Size');
+    ylabel('Testing Accuracy (%)');
+    subplot(428);
+    g3 = plot(M3(:,1), M3(:,4), 'g');
+    legend(g3,'FEST random forest');
+    xlabel('Feature Size');
+    ylabel('Running Time (s)');
+
+    % saveas(fig, 'fig', 'png');
+end
+

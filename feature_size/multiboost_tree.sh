@@ -18,13 +18,13 @@ HEADER_FILE=$NEW_DATADIR$5.h
 
 (time -p $MULTIBOOST \
       --stronglearner AdaBoostMH \
-	    --fileformat svmlight --verbose 0 \
+      --fileformat svmlight --verbose 0 \
       --headerfile $HEADER_FILE \
-	    --train $1 100 \
-	    --learnertype SingleSparseStumpLearner \
-	    --outputinfo $INFO_FILE \
+      --train $1 100 \
+      --learnertype TreeLearner --baselearnertype SingleStumpLearner 8 \
+      --outputinfo $INFO_FILE \
       --constant \
-	    --shypname $MODEL_FILE \
+      --shypname $MODEL_FILE \
       --weightpolicy proportional ) \
     2> $TIME_FILE
 realTime=`grep -o "[0-9]*\.[0-9]*" $TIME_FILE | head -1`
@@ -34,7 +34,7 @@ acc=`$MULTIBOOST \
       --fileformat svmlight --verbose 0 \
       --headerfile $HEADER_FILE \
       --test $2 $MODEL_FILE 100 \
-      --learnertype SingleSparseStumpLearner \
+      --learnertype TreeLearner --baselearnertype SingleStumpLearner 8 \
       --outputinfo $INFO_FILE fsc`
 acc=`echo $acc|grep -o "[0-9]*\.[0-9]*"| tail -1`
 acc=`echo 100 - $acc | bc`
