@@ -23,8 +23,8 @@ typedef struct dataset_t{
     int* size; /* size[i]=number of examples with non-zero feature i */
     /* Would it be better if these were short/char?*/
     int* cont;  /* Is the ith feature continuous? */
-    int* target; /* Target values */
-    int* realtarget; /* Real target value in multi-class classification */
+    short* target; /* Target values */
+    short* realtarget; /* Real target value in multi-class classification */
     float* weight; /* Weight of the ith example */
     int nfeat; /* number of features */
     int nex; /* number of examples */
@@ -35,7 +35,7 @@ typedef struct dataset_t{
 void loadData(const char* name, dataset_t* d);
 int loadHeader(const char* name, int* classId);
 int getDimensions(FILE* fp, int* examples, int* features);
-int readExample(FILE* fp, int maxline, float* example, int nfeat, int* target);
+int readExample(FILE* fp, int maxline, float* example, int nfeat, short* target);
 void freeData(dataset_t* d);
 
 #endif /* DATASET_H */

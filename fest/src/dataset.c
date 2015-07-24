@@ -109,7 +109,7 @@ int getDimensions(FILE* fp, int* examples, int* totalfeatures){
     return max+4; /* Just in case I was sloppy */
 }
 
-int readExamples(FILE* fp, int maxline, evpair_t* em, int* fm, int* trg){
+int readExamples(FILE* fp, int maxline, evpair_t* em, int* fm, short* trg){
     int i,target,example;
     float val;
     char* line;
@@ -152,7 +152,7 @@ int readExamples(FILE* fp, int maxline, evpair_t* em, int* fm, int* trg){
     return i;
 }
 
-int readExample(FILE* fp, int maxline, float* example, int nfeat, int* target){
+int readExample(FILE* fp, int maxline, float* example, int nfeat, short* target){
     int offset,feat,len;
     float val;
     char* line;
@@ -166,7 +166,7 @@ int readExample(FILE* fp, int maxline, float* example, int nfeat, int* target){
         comment=strchr(line,'#');
         if(comment!=NULL)
             *comment = '\0';
-        if(sscanf(line,"%d%n",target,&len)==EOF)
+        if(sscanf(line,"%hd%n",target,&len)==EOF)
             /* The line was a comment */
             continue;
         *target = *target <=0 ? 0 : 1;

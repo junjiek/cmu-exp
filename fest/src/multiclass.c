@@ -28,7 +28,8 @@ int main(int argc, char* argv[]){
     time_t tim;
 
     float* example;
-    int maxline,target,predict,nf,nex;
+    int maxline,predict,nf,nex;
+    short target;
     float p, pmax;
     int* TP;
     int* FP;
@@ -36,6 +37,8 @@ int main(int argc, char* argv[]){
     int TP_all = 0, TP_FP_all = 0, TP_FN_all = 0;
     double precision, recall, microF, macroF = 0.0;
     
+    clock_t start, finish;
+    double trainTime;
     const char* help="Usage: %s [options] train header test \nAvailable options:\n\
     -c <int>  : committee type:\n\
                 1 bagging\n\
@@ -89,6 +92,7 @@ int main(int argc, char* argv[]){
     }
 
     // ------------ training -------------
+    start = clock();
     tim = time(0);
     srand(tim);
 
@@ -112,6 +116,7 @@ int main(int argc, char* argv[]){
         growForest(&f[i], &d);
     }
 
+    finish = clock();
     // ------------ testing -------------
     fp = fopen(test, "r");
     if (fp == NULL){
@@ -158,8 +163,8 @@ int main(int argc, char* argv[]){
 
         precision = (double) TP[i] / (TP[i] + FP[i]);
         recall = (double) TP[i] / (TP[i] + FN[i]);
-
-        macroF += 2 * precision * recall / (precision + recall);
+        if (precision + recall != 0)
+            macroF += 2 * precision * recall / (precision + recall);
         TP_all += TP[i];
         TP_FP_all += (TP[i] + FP[i]);
         TP_FN_all += (TP[i] + FN[i]);
@@ -170,12 +175,13 @@ int main(int argc, char* argv[]){
     precision = (double) TP_all / TP_FP_all;
     recall = (double) TP_all / TP_FN_all;
     microF = 2 * precision * recall / (precision + recall);
-    printf("acc: %.6lf, microF: %.6lf, macroF: %.6lf\n", precision, microF, macroF);
+    trainTime = (double)(finish - start) / CLOCKS_PER_SEC;
+    printf("acc = %.2lf, microF = %.6lf, macroF = %.6lf, time %.2lfs\n", precision*100, microF, macroF, trainTime);
 
+    free(example);
     free(TP);
     free(FP);
     free(FN);
-    free(example);
     fclose(fp);
 
     for (i = 0; i < classnum; i++)
