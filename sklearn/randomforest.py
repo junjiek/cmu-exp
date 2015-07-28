@@ -5,12 +5,15 @@ from sklearn.metrics import accuracy_score
 import time,sys
 
 if __name__ == '__main__':
-    if len(sys.argv) != 4:
-        print 'Usage: python trainfilename testfilename predictionOutput'
+    if (len(sys.argv) != 4 and len(sys.argv) != 5):
+        print 'Usage: python trainfilename testfilename predictionOutput [verbose 0/1]'
         exit(1)
     trainfilename = sys.argv[1]
     testfilename = sys.argv[2]
     predictionOut = sys.argv[3]
+    verbose = 1
+    if len(sys.argv) == 5:
+        verbose = int(sys.argv[4])
     X_train, y_train, X_test, y_test = load_svmlight_files((trainfilename, testfilename))
     clf = RandomForestClassifier(n_estimators=100)
     start = time.clock()
@@ -25,4 +28,5 @@ if __name__ == '__main__':
     acc = accuracy_score(y_test, y_pred) * 100
     macroF = f1_score(y_test, y_pred, average='macro')
     microF = f1_score(y_test, y_pred, average='micro')
-    print("acc = %.2lf, microF = %.6lf, macroF = %.6lf, time = %.2lf s" % (acc, microF, macroF, trainTime))
+    if verbose == 1 :
+        print("acc = %.2lf, microF = %.6lf, macroF = %.6lf, time = %.2lf s" % (acc, microF, macroF, trainTime))

@@ -12,6 +12,7 @@ int main(int argc, char* argv[]){
     forest_t* f;
     int option;
     int reportoob=0;
+    int quite=0;
     int trees=100;
     int maxdepth=1000;
     int committee=2;
@@ -46,6 +47,7 @@ int main(int argc, char* argv[]){
                 1 bagging\n\
                 2 boosting (default)\n\
                 3 random forest\n\
+    -e        : quite mode (default: no)\n\
     -d <int>  : maximum depth of the trees (default: 1000)\n\
     -p <float>: parameter for random forests: (default: 1)\n\
                 (ratio of features considered over sqrt(features))\n\
@@ -60,6 +62,7 @@ int main(int argc, char* argv[]){
             // case 'n': w=atof(optarg); break;
             case 'p': param=atof(optarg); break;
             case 't': trees=atoi(optarg); break;
+            case 'e': quite=1;break;
             case '?': fprintf(stderr,help,argv[0]); exit(1); break;
         }
     }
@@ -162,26 +165,28 @@ int main(int argc, char* argv[]){
             }
         }
     }
+    if (!quite) {
+        for (i = 0; i < classnum; i++) {
+            // printf("------- classId %d,  TP:%d, FP:%d FN:%d\n", classId[i], TP[i], FP[i], FN[i]);
 
-    for (i = 0; i < classnum; i++) {
-        // printf("------- classId %d,  TP:%d, FP:%d FN:%d\n", classId[i], TP[i], FP[i], FN[i]);
+            precision = (double) TP[i] / (TP[i] + FP[i]);
+            recall = (double) TP[i] / (TP[i] + FN[i]);
+            if (precision + recall != 0)
+                macroF += 2 * precision * recall / (precision + recall);
+            TP_all += TP[i];
+            TP_FP_all += (TP[i] + FP[i]);
+            TP_FN_all += (TP[i] + FN[i]);
+        }
 
-        precision = (double) TP[i] / (TP[i] + FP[i]);
-        recall = (double) TP[i] / (TP[i] + FN[i]);
-        if (precision + recall != 0)
-            macroF += 2 * precision * recall / (precision + recall);
-        TP_all += TP[i];
-        TP_FP_all += (TP[i] + FP[i]);
-        TP_FN_all += (TP[i] + FN[i]);
+        macroF /= classnum;
+        // printf("TP_all: %d, TP_FP_all: %d, TP_FN_all: %d\n", TP_all, TP_FP_all, TP_FN_all);
+        precision = (double) TP_all / TP_FP_all;
+        recall = (double) TP_all / TP_FN_all;
+        microF = 2 * precision * recall / (precision + recall);
+        trainTime = (double)(finish - start) / CLOCKS_PER_SEC;
+        printf("acc = %.2lf, microF = %.6lf, macroF = %.6lf, time %.2lfs\n", precision*100, microF, macroF, trainTime);
+        
     }
-
-    macroF /= classnum;
-    // printf("TP_all: %d, TP_FP_all: %d, TP_FN_all: %d\n", TP_all, TP_FP_all, TP_FN_all);
-    precision = (double) TP_all / TP_FP_all;
-    recall = (double) TP_all / TP_FN_all;
-    microF = 2 * precision * recall / (precision + recall);
-    trainTime = (double)(finish - start) / CLOCKS_PER_SEC;
-    printf("acc = %.2lf, microF = %.6lf, macroF = %.6lf, time %.2lfs\n", precision*100, microF, macroF, trainTime);
 
     free(example);
     free(TP);
