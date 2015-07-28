@@ -1,0 +1,15 @@
+news20_binary: all fin            ramdom/chi/ig    +
+rcv1_binary: all fin              ramdom/chi/ig/t  +
+realsim: all fin                  ramdom/chi/ig/t  +
+gisette: all fin                  ramdom/ig/t      +
+url: all fin                      random/ig        +
+
+rcv1_multi: all   fin:                 random/chi/ig  
+sector:     all   fin:lib/rf/sk        random/chi/ig  
+news20:     all   fin:                 random/chi/ig  +
+
+rcv1_multi_r: all   fin:lib/sk/rf
+news20_r:     all   fin               + 
+sector_r:     all   fin:
+
+2361,15564,42.32,0.423200,0.169422,45.67

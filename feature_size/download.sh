@@ -4,6 +4,9 @@ if [[ $# != 1 ]]; then
     exit 0
 fi
 
-scp junjiek@bonda.lti.cs.cmu.edu:feature_size/liblinear_$1.out .
-scp junjiek@bonda.lti.cs.cmu.edu:feature_size/fest_boosting_$1.out .
-scp junjiek@bonda.lti.cs.cmu.edu:feature_size/fest_randomforest_$1.out .
+mkdir $1
+scp junjiek@bonda.lti.cs.cmu.edu:feature_size/liblinear_$1.out         $1
+scp junjiek@bonda.lti.cs.cmu.edu:feature_size/fest_boosting_$1.out     $1
+scp junjiek@bonda.lti.cs.cmu.edu:feature_size/fest_randomforest_$1.out $1
+scp junjiek@bonda.lti.cs.cmu.edu:feature_size/multiboost_$1.out        $1
+scp junjiek@bonda.lti.cs.cmu.edu:feature_size/sk_randomforest_$1.out        $1

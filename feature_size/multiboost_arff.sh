@@ -43,7 +43,7 @@ macroF=`echo $F | grep -o "[0-9]*\.[0-9]*" | tail -1`
 
 sampleNum=`wc -l $1 | awk '{print int($1)}'`
 echo $4" features, "$sampleNum" samples, acc = "$acc"%, microF = "$microF", macroF = "$macroF", time "$realTime"s"
-echo $4,$sampleNum,$acc,$microF,macroF,$realTime >> $3  # append mode
+echo $4,$sampleNum,$acc,$microF,$macroF,$realTime >> $3  # append mode
 
 rm $TIME_FILE
 rm $MODEL_FILE
