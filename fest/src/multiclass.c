@@ -24,7 +24,9 @@ int main(int argc, char* argv[]){
     char* train=0;
     char* header=0;
     char* test=0;
+    char* predictionOut=0;
     FILE* fp;
+    FILE* fpw;
     time_t tim;
 
     float* example;
@@ -39,7 +41,7 @@ int main(int argc, char* argv[]){
     
     clock_t start, finish;
     double trainTime;
-    const char* help="Usage: %s [options] train header test \nAvailable options:\n\
+    const char* help="Usage: %s [options] train header test predictionOut \nAvailable options:\n\
     -c <int>  : committee type:\n\
                 1 bagging\n\
                 2 boosting (default)\n\
@@ -81,10 +83,11 @@ int main(int argc, char* argv[]){
         fprintf(stderr,"Invalid number of trees\n");
         exit(1);
     }
-    if(argc - optind == 3){
+    if(argc - optind == 4){
         train = argv[optind];
         header = argv[optind+1];
         test = argv[optind+2];
+        predictionOut = argv[optind+3];
     }
     else{
         fprintf(stderr,help,argv[0]); 
@@ -119,6 +122,7 @@ int main(int argc, char* argv[]){
     finish = clock();
     // ------------ testing -------------
     fp = fopen(test, "r");
+    fpw = fopen(predictionOut, "w");
     if (fp == NULL){
         fprintf(stderr,"Could not open test data file\n");
         exit(1);
@@ -144,6 +148,7 @@ int main(int argc, char* argv[]){
             // printf("%d: %f\n", classId[i], p);
         }
         // printf("tar: %d, pre: %d\n========\n", target, classId[predict]);
+        fprintf(fpw, "%d\n", classId[predict]);
         if (target == classId[predict]) {
             TP[predict] ++;
         } else {
@@ -183,6 +188,7 @@ int main(int argc, char* argv[]){
     free(FP);
     free(FN);
     fclose(fp);
+    fclose(fpw);
 
     for (i = 0; i < classnum; i++)
         freeForest(&f[i]);
