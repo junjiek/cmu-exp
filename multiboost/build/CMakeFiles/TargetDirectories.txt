@@ -1,3 +1,3 @@
-/Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles/Bzip2Lib.dir
-/Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles/MultiBoostLib.dir
-/Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles/multiboost.dir
+/Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles/Bzip2Lib.dir
+/Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles/MultiBoostLib.dir
+/Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles/multiboost.dir

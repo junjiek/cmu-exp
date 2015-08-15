@@ -17,17 +17,17 @@ outDir = '../output/liblinear/'
 def process_options(argv = sys.argv):
 	global train, test, pass_through_options
 
-	if len(argv) < 3:
-		print "Usage: %s [parameters for svm-train] training_file testing_file" % argv[0]
+	if len(argv) < 4:
+		print "Usage: %s [parameters for svm-train] training_file testing_file id" % argv[0]
 		sys.exit(1)
 
-	train = argv[-2]
-	test = argv[-1]
+	train = argv[-3]
+	test = argv[-2]
 
 	assert os.path.exists(train), "training_file not found."
 	assert os.path.exists(test), "testing_file not found."
 
-	pass_through_options = join(argv[1:len(argv)-2], " ")
+	pass_through_options = join(argv[1:len(argv)-3], " ")
 
 def read_problem(file):
 	assert os.path.exists(file), "%s not found." % (file)
@@ -61,7 +61,7 @@ def count_labels(labels):
 # Give me a label
 def build_problem(lab):
 	# build binary classification problem for label lab
-	problem = open(outDir + "tmp_binary", "w")
+	problem = open(outDir + sys.argv[-1] + "_tmp_binary", "w")
 
 	for t in range(len(labels)):
 		if lab in labels[t]:
@@ -74,20 +74,20 @@ def build_problem(lab):
 def train_problem(lab):
 	# print "Training problem for label %s..." % lab
 
-	cmd = "%s %s %s %s" % (svmtrain_exe, pass_through_options, outDir + "tmp_binary", outDir + "tmp_model")
+	cmd = "%s %s %s %s" % (svmtrain_exe, pass_through_options, outDir + sys.argv[-1] + "_tmp_binary", outDir + sys.argv[-1] + "_tmp_model")
 	os.system(cmd)
 
 def test_problem(lab):
 	# print "Testing problem for label %s..." % lab
 
-	cmd = "%s %s %s %s" % (svmpredict_exe,  " -q " + outDir + "tmp_test", outDir+"tmp_model", outDir+"tmp_output")
+	cmd = "%s %s %s %s" % (svmpredict_exe,  " -q " + outDir + sys.argv[-1] + "_tmp_test", outDir + sys.argv[-1] + "_tmp_model", outDir + sys.argv[-1] + "_tmp_output")
 	os.system(cmd)
 
 def build_test(testset):
 	global test_labels
 
 	(test_labels, x) = read_problem(testset)
-	out_test = open(outDir + "tmp_test", "w")
+	out_test = open(outDir + sys.argv[-1] + "_tmp_test", "w")
 	for i in range(len(test_labels)):
 		out_test.write("+1 %s\n" % x[i])
 	out_test.close()
@@ -95,7 +95,7 @@ def build_test(testset):
 def get_output(lab):
 	index = []
 
-	output = open(outDir + "tmp_output", "r");
+	output = open(outDir + sys.argv[-1] + "_tmp_output", "r");
 
 	t = 0
 	for line in output:
@@ -134,7 +134,7 @@ def main():
 		for idx in index:
 			predict[idx].append("%s" % lab)
 
-	out_predict = open(outDir + "tmp_predict", "w")
+	out_predict = open(outDir + sys.argv[-1] + "_tmp_predict", "w")
 	for i in range(len(predict)):
 		out_predict.write("%s\n" % join(predict[i], ","))
 	out_predict.close()

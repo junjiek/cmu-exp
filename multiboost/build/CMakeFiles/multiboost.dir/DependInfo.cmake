@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/kejunjie/Downloads/MultiBoost-1.2.02/src/main.cpp" "/Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles/multiboost.dir/src/main.cpp.o"
+  "/Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/main.cpp" "/Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles/multiboost.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -15,13 +15,13 @@ set(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles/MultiBoostLib.dir/DependInfo.cmake"
-  "/Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles/Bzip2Lib.dir/DependInfo.cmake"
+  "/Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles/MultiBoostLib.dir/DependInfo.cmake"
+  "/Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles/Bzip2Lib.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "/Users/kejunjie/Downloads/MultiBoost-1.2.02/src"
+  "/Users/kejunjie/Desktop/cmu-exp/multiboost/src/src"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 set(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

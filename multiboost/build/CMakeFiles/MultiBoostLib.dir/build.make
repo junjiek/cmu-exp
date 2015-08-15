@@ -35,10 +35,10 @@ RM = /usr/local/Cellar/cmake/3.0.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kejunjie/Downloads/MultiBoost-1.2.02
+CMAKE_SOURCE_DIR = /Users/kejunjie/Desktop/cmu-exp/multiboost/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kejunjie/Downloads/MultiBoost-build
+CMAKE_BINARY_DIR = /Users/kejunjie/Desktop/cmu-exp/multiboost/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MultiBoostLib.dir/depend.make
@@ -50,18 +50,18 @@ include CMakeFiles/MultiBoostLib.dir/progress.make
 include CMakeFiles/MultiBoostLib.dir/flags.make
 
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Algorithms/ConstantAlgorithm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Algorithms/ConstantAlgorithm.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Algorithms/ConstantAlgorithm.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Algorithms/ConstantAlgorithm.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Algorithms/ConstantAlgorithm.cpp > CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Algorithms/ConstantAlgorithm.cpp > CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Algorithms/ConstantAlgorithm.cpp -o CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Algorithms/ConstantAlgorithm.cpp -o CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o.requires
@@ -73,18 +73,18 @@ CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o.provides: CM
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithm.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Algorithms/ConstantAlgorithmLSHTC.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_2)
+CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Algorithms/ConstantAlgorithmLSHTC.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Algorithms/ConstantAlgorithmLSHTC.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Algorithms/ConstantAlgorithmLSHTC.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Algorithms/ConstantAlgorithmLSHTC.cpp > CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Algorithms/ConstantAlgorithmLSHTC.cpp > CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Algorithms/ConstantAlgorithmLSHTC.cpp -o CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Algorithms/ConstantAlgorithmLSHTC.cpp -o CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o.requires
@@ -96,18 +96,18 @@ CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o.provide
 CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Algorithms/ConstantAlgorithmLSHTC.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_3)
+CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o.requires
@@ -119,18 +119,18 @@ CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o.provides: CMakeFiles/MultiBo
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3G.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_4)
+CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3G.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3G.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3G.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3G.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3G.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3G.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3G.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o.requires
@@ -142,18 +142,18 @@ CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o.provides: CMakeFiles/MultiB
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3G2.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_5)
+CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3G2.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3G2.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3G2.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3G2.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3G2.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3G2.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3G2.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o.requires
@@ -165,18 +165,18 @@ CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o.provides: CMakeFiles/Multi
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3G2.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3P.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_6)
+CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3P.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3P.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3P.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3P.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3P.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Exp3P.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Exp3P.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o.requires
@@ -188,18 +188,18 @@ CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o.provides: CMakeFiles/MultiB
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Bandits/Exp3P.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/GenericBanditAlgorithm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_7)
+CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/GenericBanditAlgorithm.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/GenericBanditAlgorithm.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/GenericBanditAlgorithm.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/GenericBanditAlgorithm.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/GenericBanditAlgorithm.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/GenericBanditAlgorithm.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/GenericBanditAlgorithm.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o.requires
@@ -211,18 +211,18 @@ CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o.provides: 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Bandits/GenericBanditAlgorithm.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Random.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_8)
+CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Random.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Random.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Random.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Random.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Random.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/Random.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/Random.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o.requires
@@ -234,18 +234,18 @@ CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o.provides: CMakeFiles/Multi
 CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Bandits/Random.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBK.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_9)
+CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBK.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBK.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBK.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBK.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBK.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBK.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBK.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o.requires
@@ -257,18 +257,18 @@ CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o.provides: CMakeFiles/MultiBo
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBK.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBKRandomized.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_10)
+CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBKRandomized.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBKRandomized.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBKRandomized.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBKRandomized.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBKRandomized.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBKRandomized.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBKRandomized.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o.requires
@@ -280,18 +280,18 @@ CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o.provides: CMakeFil
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKRandomized.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBKV.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_11)
+CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBKV.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBKV.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBKV.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBKV.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBKV.cpp > CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Bandits/UCBKV.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Bandits/UCBKV.cpp -o CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o.requires
@@ -303,18 +303,18 @@ CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o.provides: CMakeFiles/MultiB
 CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Bandits/UCBKV.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/Exp3GLS.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_12)
+CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/Exp3GLS.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/Exp3GLS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/Exp3GLS.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/Exp3GLS.cpp > CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/Exp3GLS.cpp > CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/Exp3GLS.cpp -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/Exp3GLS.cpp -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o.requires
@@ -326,18 +326,18 @@ CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o.provides: CMakeFiles/Mu
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3GLS.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/Exp3LS.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_13)
+CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/Exp3LS.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/Exp3LS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/Exp3LS.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/Exp3LS.cpp > CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/Exp3LS.cpp > CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/Exp3LS.cpp -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/Exp3LS.cpp -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o.requires
@@ -349,18 +349,18 @@ CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o.provides: CMakeFiles/Mul
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/BanditsLS/Exp3LS.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/GenericBanditAlgorithmLS.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_14)
+CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/GenericBanditAlgorithmLS.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/GenericBanditAlgorithmLS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/GenericBanditAlgorithmLS.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/GenericBanditAlgorithmLS.cpp > CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/GenericBanditAlgorithmLS.cpp > CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/GenericBanditAlgorithmLS.cpp -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/GenericBanditAlgorithmLS.cpp -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o.requires
@@ -372,18 +372,18 @@ CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o.provid
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/BanditsLS/GenericBanditAlgorithmLS.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/UCTLS.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_15)
+CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/UCTLS.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/UCTLS.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/UCTLS.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/UCTLS.cpp > CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/UCTLS.cpp > CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/BanditsLS/UCTLS.cpp -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/BanditsLS/UCTLS.cpp -o CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o.requires
@@ -395,18 +395,18 @@ CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o.provides: CMakeFiles/Mult
 CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/BanditsLS/UCTLS.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/AdaBoostMHClassifier.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_16)
+CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/AdaBoostMHClassifier.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/AdaBoostMHClassifier.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/AdaBoostMHClassifier.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/AdaBoostMHClassifier.cpp > CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/AdaBoostMHClassifier.cpp > CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/AdaBoostMHClassifier.cpp -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/AdaBoostMHClassifier.cpp -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o.requires
@@ -418,18 +418,18 @@ CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o.provides
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Classifiers/AdaBoostMHClassifier.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/ExampleResults.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_17)
+CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/ExampleResults.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/ExampleResults.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/ExampleResults.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/ExampleResults.cpp > CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/ExampleResults.cpp > CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/ExampleResults.cpp -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/ExampleResults.cpp -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o.requires
@@ -441,18 +441,18 @@ CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o.provides: CMak
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Classifiers/ExampleResults.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/SoftCascadeClassifier.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_18)
+CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/SoftCascadeClassifier.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/SoftCascadeClassifier.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/SoftCascadeClassifier.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/SoftCascadeClassifier.cpp > CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/SoftCascadeClassifier.cpp > CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/SoftCascadeClassifier.cpp -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/SoftCascadeClassifier.cpp -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o.requires
@@ -464,18 +464,18 @@ CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o.provide
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Classifiers/SoftCascadeClassifier.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/VJCascadeClassifier.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_19)
+CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/VJCascadeClassifier.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/VJCascadeClassifier.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/VJCascadeClassifier.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/VJCascadeClassifier.cpp > CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/VJCascadeClassifier.cpp > CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Classifiers/VJCascadeClassifier.cpp -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Classifiers/VJCascadeClassifier.cpp -o CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o.requires
@@ -487,18 +487,18 @@ CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o.provides:
 CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Classifiers/VJCascadeClassifier.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/ArffParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_20)
+CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/ArffParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/ArffParser.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/ArffParser.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/ArffParser.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/ArffParser.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/ArffParser.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/ArffParser.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o.requires
@@ -510,18 +510,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o.provides: CMakeFiles/MultiB
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/ArffParser.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/ArffParserBzip2.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_21)
+CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/ArffParserBzip2.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/ArffParserBzip2.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/ArffParserBzip2.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/ArffParserBzip2.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/ArffParserBzip2.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/ArffParserBzip2.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/ArffParserBzip2.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o.requires
@@ -533,18 +533,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o.provides: CMakeFiles/M
 CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/ArffParserBzip2.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/EncodeData.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_22)
+CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/EncodeData.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/EncodeData.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/EncodeData.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/EncodeData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/EncodeData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/EncodeData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/EncodeData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o.requires
@@ -556,18 +556,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o.provides: CMakeFiles/MultiB
 CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/EncodeData.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/HaarData.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_23)
+CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/HaarData.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/HaarData.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/HaarData.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/HaarData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/HaarData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/HaarData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/HaarData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o.requires
@@ -579,18 +579,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o.provides: CMakeFiles/MultiBoo
 CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/HaarData.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/InputData.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_24)
+CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/InputData.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/InputData.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/InputData.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/InputData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/InputData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/InputData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/InputData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o.requires
@@ -602,18 +602,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o.provides: CMakeFiles/MultiBo
 CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/InputData.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/NameMap.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_25)
+CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/NameMap.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/NameMap.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/NameMap.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/NameMap.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/NameMap.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/NameMap.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/NameMap.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o.requires
@@ -625,18 +625,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o.provides: CMakeFiles/MultiBoos
 CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/NameMap.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/OutputInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_26)
+CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/OutputInfo.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/OutputInfo.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/OutputInfo.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/OutputInfo.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/OutputInfo.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/OutputInfo.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/OutputInfo.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o.requires
@@ -648,18 +648,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o.provides: CMakeFiles/MultiB
 CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/OutputInfo.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/RawData.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_27)
+CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/RawData.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/RawData.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/RawData.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/RawData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/RawData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/RawData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/RawData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o.requires
@@ -671,18 +671,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o.provides: CMakeFiles/MultiBoos
 CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/RawData.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/Serialization.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_28)
+CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/Serialization.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/Serialization.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/Serialization.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/Serialization.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/Serialization.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/Serialization.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/Serialization.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o.requires
@@ -694,18 +694,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o.provides: CMakeFiles/Mul
 CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/Serialization.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/SortedData.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_29)
+CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/SortedData.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/SortedData.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/SortedData.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/SortedData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/SortedData.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/SortedData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/SortedData.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o.requires
@@ -717,18 +717,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o.provides: CMakeFiles/MultiB
 CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/SortedData.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/SVMLightParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_30)
+CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/SVMLightParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/SVMLightParser.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/SVMLightParser.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/SVMLightParser.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/SVMLightParser.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/SVMLightParser.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/SVMLightParser.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o.requires
@@ -740,18 +740,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o.provides: CMakeFiles/Mu
 CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/SVMLightParser.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/TxtParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_31)
+CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/TxtParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/TxtParser.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/TxtParser.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/TxtParser.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/TxtParser.cpp > CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/IO/TxtParser.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/IO/TxtParser.cpp -o CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o.requires
@@ -763,18 +763,18 @@ CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o.provides: CMakeFiles/MultiBo
 CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/IO/TxtParser.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/AdaBoostMHLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_32)
+CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/AdaBoostMHLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/AdaBoostMHLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/AdaBoostMHLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/AdaBoostMHLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/AdaBoostMHLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/AdaBoostMHLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/AdaBoostMHLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o.requires
@@ -786,18 +786,18 @@ CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o.provides
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/StrongLearners/AdaBoostMHLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/ArcGVLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_33)
+CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/ArcGVLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/ArcGVLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/ArcGVLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/ArcGVLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/ArcGVLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/ArcGVLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/ArcGVLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o.requires
@@ -809,18 +809,18 @@ CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o.provides: CMa
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/StrongLearners/ArcGVLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/FilterBoostLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_34)
+CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/FilterBoostLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/FilterBoostLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/FilterBoostLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/FilterBoostLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/FilterBoostLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/FilterBoostLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/FilterBoostLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o.requires
@@ -832,18 +832,18 @@ CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o.provide
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/StrongLearners/FilterBoostLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/SoftCascadeLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_35)
+CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/SoftCascadeLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/SoftCascadeLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/SoftCascadeLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/SoftCascadeLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/SoftCascadeLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/SoftCascadeLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/SoftCascadeLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o.requires
@@ -855,18 +855,18 @@ CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o.provide
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/StrongLearners/SoftCascadeLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/VJCascadeLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_36)
+CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/VJCascadeLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/VJCascadeLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/VJCascadeLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/VJCascadeLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/VJCascadeLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/StrongLearners/VJCascadeLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/StrongLearners/VJCascadeLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o.requires
@@ -878,18 +878,18 @@ CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o.provides:
 CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/StrongLearners/VJCascadeLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/Args.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_37)
+CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/Args.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/Args.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/Args.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/Args.cpp > CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/Args.cpp > CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/Args.cpp -o CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/Args.cpp -o CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o.requires
@@ -901,18 +901,18 @@ CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o.provides: CMakeFiles/MultiBoos
 CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Utils/Args.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/ClassHierarchy.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_38)
+CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/ClassHierarchy.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/ClassHierarchy.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/ClassHierarchy.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/ClassHierarchy.cpp > CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/ClassHierarchy.cpp > CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/ClassHierarchy.cpp -o CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/ClassHierarchy.cpp -o CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o.requires
@@ -924,18 +924,18 @@ CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o.provides: CMakeFiles
 CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Utils/ClassHierarchy.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/UCTutils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_39)
+CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/UCTutils.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/UCTutils.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/UCTutils.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/UCTutils.cpp > CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/UCTutils.cpp > CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/UCTutils.cpp -o CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/UCTutils.cpp -o CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o.requires
@@ -947,18 +947,18 @@ CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o.provides: CMakeFiles/Multi
 CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Utils/UCTutils.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/Utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_40)
+CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/Utils.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/Utils.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/Utils.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/Utils.cpp > CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/Utils.cpp > CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/Utils/Utils.cpp -o CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/Utils/Utils.cpp -o CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o.requires
@@ -970,18 +970,18 @@ CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o.provides: CMakeFiles/MultiBoo
 CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/Utils/Utils.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/AbstainableLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_41)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/AbstainableLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/AbstainableLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/AbstainableLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/AbstainableLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/AbstainableLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/AbstainableLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/AbstainableLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o.requires
@@ -993,18 +993,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o.provides:
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AbstainableLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/AdaLineLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_42)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/AdaLineLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/AdaLineLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/AdaLineLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/AdaLineLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/AdaLineLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/AdaLineLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/AdaLineLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o.requires
@@ -1016,18 +1016,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o.provides: CMa
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/AdaLineLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_43)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o.requires
@@ -1039,18 +1039,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o.provides: CMak
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditSingleSparseStump.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_44)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditSingleSparseStump.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditSingleSparseStump.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditSingleSparseStump.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditSingleSparseStump.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditSingleSparseStump.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditSingleSparseStump.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditSingleSparseStump.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o.requires
@@ -1062,18 +1062,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o.prov
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleSparseStump.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditSingleStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_45)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditSingleStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditSingleStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditSingleStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditSingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditSingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BanditSingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BanditSingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o.requires
@@ -1085,18 +1085,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o.pro
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BanditSingleStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BaseLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_46)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BaseLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BaseLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BaseLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BaseLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BaseLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/BaseLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/BaseLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o.requires
@@ -1108,18 +1108,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o.provides: CMakeF
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/BaseLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ConstantLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_47)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ConstantLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ConstantLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ConstantLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ConstantLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ConstantLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ConstantLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ConstantLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o.requires
@@ -1131,18 +1131,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o.provides: CM
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ConstantLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/FeaturewiseLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_48)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/FeaturewiseLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/FeaturewiseLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/FeaturewiseLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/FeaturewiseLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/FeaturewiseLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/FeaturewiseLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/FeaturewiseLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o.requires
@@ -1154,18 +1154,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o.provides:
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/FeaturewiseLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/Haar/HaarFeatures.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_49)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/Haar/HaarFeatures.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/Haar/HaarFeatures.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/Haar/HaarFeatures.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/Haar/HaarFeatures.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/Haar/HaarFeatures.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/Haar/HaarFeatures.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/Haar/HaarFeatures.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o.requires
@@ -1177,18 +1177,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o.provides: 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarFeatures.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/Haar/HaarLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_50)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/Haar/HaarLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/Haar/HaarLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/Haar/HaarLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/Haar/HaarLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/Haar/HaarLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/Haar/HaarLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/Haar/HaarLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o.requires
@@ -1200,18 +1200,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o.provides: C
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/Haar/HaarLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/HaarMultiStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_51)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/HaarMultiStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/HaarMultiStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/HaarMultiStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/HaarMultiStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/HaarMultiStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/HaarMultiStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/HaarMultiStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o.requires
@@ -1223,18 +1223,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o.provid
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarMultiStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/HaarSingleStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_52)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/HaarSingleStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/HaarSingleStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/HaarSingleStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/HaarSingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/HaarSingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/HaarSingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/HaarSingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o.requires
@@ -1246,18 +1246,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o.provi
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/HaarSingleStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/IndicatorLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_53)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/IndicatorLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/IndicatorLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/IndicatorLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/IndicatorLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/IndicatorLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/IndicatorLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/IndicatorLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o.requires
@@ -1269,18 +1269,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o.provides: C
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/IndicatorLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/MultiStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_54)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/MultiStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/MultiStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/MultiStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/MultiStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/MultiStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/MultiStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/MultiStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o.requires
@@ -1292,18 +1292,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o.provides: 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/MultiThresholdStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_55)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/MultiThresholdStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/MultiThresholdStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/MultiThresholdStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/MultiThresholdStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/MultiThresholdStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/MultiThresholdStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/MultiThresholdStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o.requires
@@ -1315,18 +1315,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o.p
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/MultiThresholdStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/NeuronLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_56)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/NeuronLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/NeuronLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/NeuronLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/NeuronLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/NeuronLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/NeuronLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/NeuronLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o.requires
@@ -1338,18 +1338,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o.provides: CMak
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/NeuronLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/OneClassStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_57)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/OneClassStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/OneClassStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/OneClassStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/OneClassStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/OneClassStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/OneClassStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/OneClassStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o.requires
@@ -1361,18 +1361,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o.provide
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/OneClassStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ParasiteLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_58)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ParasiteLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ParasiteLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ParasiteLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ParasiteLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ParasiteLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ParasiteLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ParasiteLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o.requires
@@ -1384,18 +1384,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o.provides: CM
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ParasiteLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ProductLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_59)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ProductLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ProductLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ProductLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ProductLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ProductLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ProductLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ProductLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o.requires
@@ -1407,18 +1407,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o.provides: CMa
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ProductLearnerUCT.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_60)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ProductLearnerUCT.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ProductLearnerUCT.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ProductLearnerUCT.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ProductLearnerUCT.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ProductLearnerUCT.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/ProductLearnerUCT.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/ProductLearnerUCT.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o.requires
@@ -1430,18 +1430,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o.provides: 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/ProductLearnerUCT.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SelectorLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_61)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SelectorLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SelectorLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SelectorLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SelectorLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SelectorLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SelectorLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SelectorLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o.requires
@@ -1453,18 +1453,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o.provides: CM
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SelectorLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SigmoidSingleStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_62)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SigmoidSingleStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SigmoidSingleStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SigmoidSingleStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SigmoidSingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SigmoidSingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SigmoidSingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SigmoidSingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o.requires
@@ -1476,18 +1476,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o.pr
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SigmoidSingleStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleRegressionStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_63)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleRegressionStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleRegressionStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleRegressionStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleRegressionStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleRegressionStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleRegressionStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleRegressionStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o.requires
@@ -1499,18 +1499,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleRegressionStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleSparseStump.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_64)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleSparseStump.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleSparseStump.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleSparseStump.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleSparseStump.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleSparseStump.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleSparseStump.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleSparseStump.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o.requires
@@ -1522,18 +1522,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o.provides: 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStump.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleSparseStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_65)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleSparseStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleSparseStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleSparseStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleSparseStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleSparseStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleSparseStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleSparseStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o.requires
@@ -1545,18 +1545,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o.pro
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleSparseStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_66)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/SingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/SingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o.requires
@@ -1568,18 +1568,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o.provides:
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/SingleStumpLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/StochasticLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_67)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/StochasticLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/StochasticLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/StochasticLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/StochasticLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/StochasticLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/StochasticLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/StochasticLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o.requires
@@ -1591,18 +1591,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o.provides: 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/StochasticLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/TreeLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_68)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/TreeLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/TreeLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/TreeLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/TreeLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/TreeLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/TreeLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/TreeLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o.requires
@@ -1614,18 +1614,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o.provides: CMakeF
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearner.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/TreeLearnerUCT.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_69)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/TreeLearnerUCT.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/TreeLearnerUCT.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/TreeLearnerUCT.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/TreeLearnerUCT.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/TreeLearnerUCT.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/TreeLearnerUCT.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/TreeLearnerUCT.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o.requires
@@ -1637,18 +1637,18 @@ CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o.provides: CMa
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o.provides.build: CMakeFiles/MultiBoostLib.dir/src/WeakLearners/TreeLearnerUCT.cpp.o
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.o: CMakeFiles/MultiBoostLib.dir/flags.make
-CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.o: /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles $(CMAKE_PROGRESS_70)
+CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.o: /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.o -c /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.o -c /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp > CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.i
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Downloads/MultiBoost-1.2.02/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/kejunjie/Desktop/cmu-exp/multiboost/src/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp -o CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.s
 
 CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.o.requires:
 .PHONY : CMakeFiles/MultiBoostLib.dir/src/WeakLearners/UCBVHaarSingleStumpLearner.cpp.o.requires
@@ -1892,6 +1892,6 @@ CMakeFiles/MultiBoostLib.dir/clean:
 .PHONY : CMakeFiles/MultiBoostLib.dir/clean
 
 CMakeFiles/MultiBoostLib.dir/depend:
-	cd /Users/kejunjie/Downloads/MultiBoost-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kejunjie/Downloads/MultiBoost-1.2.02 /Users/kejunjie/Downloads/MultiBoost-1.2.02 /Users/kejunjie/Downloads/MultiBoost-build /Users/kejunjie/Downloads/MultiBoost-build /Users/kejunjie/Downloads/MultiBoost-build/CMakeFiles/MultiBoostLib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/kejunjie/Desktop/cmu-exp/multiboost/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kejunjie/Desktop/cmu-exp/multiboost/src /Users/kejunjie/Desktop/cmu-exp/multiboost/src /Users/kejunjie/Desktop/cmu-exp/multiboost/build /Users/kejunjie/Desktop/cmu-exp/multiboost/build /Users/kejunjie/Desktop/cmu-exp/multiboost/build/CMakeFiles/MultiBoostLib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MultiBoostLib.dir/depend
 

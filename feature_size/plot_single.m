@@ -1,8 +1,8 @@
 function plot_single(id)
-    M1 = csvread(sprintf('./output/%s/r/liblinear_%s.out',id,id), 1);
-    M2 = csvread(sprintf('./output/%s/r/fest_boosting_%s.out',id,id), 1);
-    M3 = csvread(sprintf('./output/%s/r/fest_randomforest_%s.out',id,id), 1);
-    M4 = csvread(sprintf('./output/%s/r/sk_randomforest_%s.out',id,id), 1);
+    M1 = csvread(sprintf('./output/%s/chi/liblinear_%s.out',id,id), 1);
+    M2 = csvread(sprintf('./output/%s/chi/fest_boosting_%s.out',id,id), 1);
+    M3 = csvread(sprintf('./output/%s/chi/fest_randomforest_%s.out',id,id), 1);
+    M4 = csvread(sprintf('./output/%s/chi/svmlight_%s.out',id,id), 1);
     M1=sort(M1(:,:));
     M2=sort(M2(:,:));
     M3=sort(M3(:,:));

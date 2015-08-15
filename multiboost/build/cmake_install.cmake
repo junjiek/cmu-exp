@@ -1,4 +1,4 @@
-# Install script for directory: /Users/kejunjie/Downloads/MultiBoost-1.2.02
+# Install script for directory: /Users/kejunjie/Desktop/cmu-exp/multiboost/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,7 +33,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/Users/kejunjie/Downloads/MultiBoost-build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/Users/kejunjie/Desktop/cmu-exp/multiboost/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/Users/kejunjie/Downloads/MultiBoost-build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/Users/kejunjie/Desktop/cmu-exp/multiboost/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

@@ -1,6 +1,14 @@
-adaboost/build/*
+adaboost_cv/build/*
+adaboost_ori/build/*
 liblinear/build/*
 libsvm/build/*
-datasets/*
+multiboost/build/*
+fest/build/*
+new_dataset/*
 */output/*
 output/*
+*.out
+*.o
+*.header
+*.xml
+*.png
